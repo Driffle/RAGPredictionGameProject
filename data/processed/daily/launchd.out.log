@@ -1,0 +1,90 @@
+fetched → /Users/driffle/RAGPredictionGameProject/data/processed/daily/2026-08-17
+ 1. PGA Tour 2K25                                     google_trends
+ 2. PGA Tour 2K23                                     google_trends
+ 3. STAR WARS Zero Company                            google_trends
+ 4. STAR WARS Episode I Jedi Power Battles            google_trends
+ 5. EA SPORTS FC 27                                   google_trends
+ 6. EA SPORTS FC 26                                   google_trends
+ 7. Star Wars Outlaws Season Pass DLC                 google_trends
+ 8. Resident Evil                                     event_window
+ 9. Resident Evil 4 Gold Edition                      event_window
+10. EA SPORTS FC 25 - Pre-Order Bonus DLC             google_trends
+fetched → /Users/driffle/RAGPredictionGameProject/data/processed/daily/2026-08-18
+ 1. TopSpin 2K25                                      google_trends
+ 2. NBA 2K27                                          event_window
+ 3. Marvel's Wolverine                                event_window
+ 4. TopSpin 2K25 2700 VC                              google_trends
+ 5. EA SPORTS FC 27                                   google_trends
+ 6. EA SPORTS FC 26                                   google_trends
+ 7. Fallout 76 - Mojave Deluxe Edition                google_trends
+ 8. Fallout 4 Anniversary Edition                     google_trends
+ 9. EA SPORTS FC 25 - Pre-Order Bonus DLC             google_trends
+10. Madden NFL 27                                     event_window
+datasets refreshed · events=1108 announced=209 plans=1701 changes=430 rag=58738
+fetched → /Users/driffle/RAGPredictionGameProject/data/processed/daily/2026-08-18
+RAG index · docs=61474 trained=True as_of=2026-08-19
+Daily changes · 1119
+  [added] Doom: The Dark Ages: New product entered the live dataset
+  [added] Death Stranding 2: On the Beach: New product entered the live dataset
+  [added] Mafia: The Old Country: New product entered the live dataset
+  [added] Hollow Knight: Silksong: New product entered the live dataset
+  [added] Ghost of Yōtei: New product entered the live dataset
+  [added] Metroid Prime 4: Beyond: New product entered the live dataset
+  [added] Marvel's Wolverine: New product entered the live dataset
+  [added] OD: New product entered the live dataset
+ 1. Madden NFL 27                                     event_window
+ 2. BlazBlue Entropy Effect X – Nintendo Switch 2 Ed  event_window
+ 3. DROID                                             event_window
+ 4. Octopath Traveler II                              event_window
+ 5. Quest Master                                      event_window
+ 6. Star Wars: Galactic Racer                         event_window
+ 7. WIN                                               event_window
+ 8. Metro 2033 Redux                                  event_window
+ 9. F1 25 - 2026 Season Edition                       event_window
+10. EA SPORTS FC 25                                   event_window
+datasets refreshed · events=1762 announced=829 plans=33765 changes=1297 rag=92530
+orders · skus=14797 matched=237 events=90
+fetched → /Users/driffle/RAGPredictionGameProject/data/processed/daily/2026-08-20
+RAG index · docs=91921 trained=True as_of=2026-08-20
+Daily changes · 1007
+  [added] A Tiny Wander: New product entered the live dataset
+  [added] Animal Use Protocol: New product entered the live dataset
+  [added] EDEN.schemata();: New product entered the live dataset
+  [added] Golf With Your Friends 2: New product entered the live dataset
+  [added] Hunting Simulator 3: New product entered the live dataset
+  [added] Pararecords: New product entered the live dataset
+  [added] Prolegomena To a Hyperdimensional Interface That Will Be Able to Manifest From Three-Minute Interchanges: New product entered the live dataset
+  [added] Recur: New product entered the live dataset
+ 1. Octopath Traveler II                              event_window
+ 2. Fortnite - 5000 V-Bucks Card                      google_trends
+ 3. Fortnite - Honor Guard Skin DLC                   google_trends
+ 4. Fortnite - Baila! Emote DLC                       google_trends
+ 5. BlazBlue Entropy Effect X – Nintendo Switch 2 Ed  event_window
+ 6. EA SPORTS Madden NFL 27                           event_window
+ 7. EA SPORTS Madden NFL 27 Deluxe Edition            event_window
+ 8. Madden NFL 27                                     event_window
+ 9. Madden NFL 27 Deluxe Edition                      event_window
+10. F1 25 - 2026 Season Edition                       event_window
+datasets refreshed · events=989 announced=76 plans=34294 changes=1393 rag=91550
+orders · skus=14797 matched=247 events=111
+fetched → /Users/driffle/RAGPredictionGameProject/data/processed/daily/2026-08-21
+RAG index · docs=91550 trained=True as_of=2026-08-21
+Daily changes · 1393
+  [delayed] Gobble: Release moved 2026-09-24 → 2027-01-01
+  [delayed] over the hill: Release moved 2026-10-14 → 2027-01-01
+  [confirmation_changed] BioEden: Confirmation announced → 1
+  [confirmation_changed] ELDEN RING Tarnished Edition: Confirmation announced → 1
+  [confirmation_changed] Orbitals: Confirmation announced → 1
+  [added] PRAGMATA: New product entered the live dataset
+  [removed] A Tiny Wander: Product left the live dataset
+  [removed] Aeterna Lucis: Product left the live dataset
+ 1. Marvel's Wolverine                                event_window
+ 2. NBA 2K27                                          event_window
+ 3. God of War Ragnarok                               wikipedia_pageviews,event_window
+ 4. Madden NFL 27                                     event_window
+ 5. Grand Theft Auto VI                               wikipedia_pageviews
+ 6. Grand Theft Auto V Enhanced                       wikipedia_pageviews
+ 7. Grand Theft Auto V Story Mode DLC                 wikipedia_pageviews
+ 8. God of War Sons of Sparta                         wikipedia_pageviews
+ 9. EA SPORTS Madden NFL 27                           event_window
+10. EA SPORTS Madden NFL 27 Deluxe Edition            event_window

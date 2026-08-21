@@ -1,0 +1,145 @@
+"""Broad 2026–2030 coverage for regional/digital events and cross-media releases.
+
+Rows with exact dates are confirmed/announced. Year-wide rows are explicitly
+planning windows and must not be presented as confirmed release dates.
+"""
+
+from __future__ import annotations
+
+from datetime import date
+
+
+EXTRA_ANNUAL_EVENTS = [
+    {"name": "MAGFest", "month": 1, "start_day": 8, "end_day": 11, "event_type": "Community Festival", "location": "United States", "mode": "physical"},
+    {"name": "Global Game Jam", "month": 1, "start_day": 26, "end_day": 1, "end_month": 2, "event_type": "Game Jam", "location": "Worldwide", "mode": "hybrid"},
+    {"name": "Pocket Gamer Connects London", "month": 1, "start_day": 19, "end_day": 20, "event_type": "Industry Conference", "location": "London", "mode": "physical"},
+    {"name": "Steam Lunar New Year Sale", "month": 1, "start_day": 27, "end_day": 3, "end_month": 2, "event_type": "Digital Sale", "location": "Online", "mode": "digital"},
+    {"name": "IGN Fan Fest", "month": 2, "start_day": 20, "end_day": 24, "event_type": "Digital Showcase", "location": "Online", "mode": "digital"},
+    {"name": "Game Connection America", "month": 3, "start_day": 16, "end_day": 17, "event_type": "Business Conference", "location": "United States", "mode": "physical"},
+    {"name": "WonderCon", "month": 3, "start_day": 27, "end_day": 29, "event_type": "Fan Convention", "location": "Anaheim", "mode": "physical", "related_game": "Marvel, DC, anime, gaming adaptations"},
+    {"name": "Steam Spring Sale", "month": 3, "start_day": 12, "end_day": 19, "event_type": "Digital Sale", "location": "Online", "mode": "digital"},
+    {"name": "Reboot Develop Blue", "month": 4, "start_day": 20, "end_day": 22, "event_type": "Developer Conference", "location": "Dubrovnik, Croatia", "mode": "physical"},
+    {"name": "Gamescom Latam", "month": 4, "start_day": 30, "end_day": 3, "end_month": 5, "event_type": "Gaming Expo", "location": "São Paulo", "mode": "physical"},
+    {"name": "LudoNarraCon", "month": 5, "start_day": 7, "end_day": 11, "event_type": "Digital Festival", "location": "Online", "mode": "digital", "related_game": "Indie"},
+    {"name": "Nordic Game", "month": 5, "start_day": 20, "end_day": 22, "event_type": "Developer Conference", "location": "Malmö, Sweden", "mode": "hybrid"},
+    {"name": "Digital Dragons", "month": 5, "start_day": 18, "end_day": 19, "event_type": "Developer Conference", "location": "Kraków, Poland", "mode": "physical"},
+    {"name": "A MAZE. Berlin", "month": 5, "start_day": 13, "end_day": 16, "event_type": "Indie Festival", "location": "Berlin", "mode": "hybrid", "related_game": "Indie"},
+    {"name": "INDIE Live Expo", "month": 5, "start_day": 23, "end_day": 24, "event_type": "Digital Showcase", "location": "Online", "mode": "digital", "related_game": "Indie"},
+    {"name": "Access-Ability Summer Showcase", "month": 6, "start_day": 5, "end_day": 5, "event_type": "Digital Showcase", "location": "Online", "mode": "digital"},
+    {"name": "Wholesome Direct", "month": 6, "start_day": 6, "end_day": 6, "event_type": "Digital Showcase", "location": "Online", "mode": "digital", "related_game": "Indie"},
+    {"name": "Day of the Devs", "month": 6, "start_day": 6, "end_day": 6, "event_type": "Showcase", "location": "Los Angeles / Online", "mode": "hybrid", "related_game": "Indie"},
+    {"name": "Guerrilla Collective", "month": 6, "start_day": 7, "end_day": 7, "event_type": "Digital Showcase", "location": "Online", "mode": "digital", "related_game": "Indie"},
+    {"name": "Future Games Show Summer Showcase", "month": 6, "start_day": 7, "end_day": 7, "event_type": "Digital Showcase", "location": "Online", "mode": "digital"},
+    {"name": "DreamHack Summer", "month": 6, "start_day": 19, "end_day": 21, "event_type": "LAN / Esports Festival", "location": "Jönköping, Sweden", "mode": "physical", "related_game": "Multi-game"},
+    {"name": "Steam Summer Sale", "month": 6, "start_day": 25, "end_day": 9, "end_month": 7, "event_type": "Digital Sale", "location": "Online", "mode": "digital"},
+    {"name": "Develop:Brighton", "month": 7, "start_day": 14, "end_day": 16, "event_type": "Developer Conference", "location": "Brighton", "mode": "physical"},
+    {"name": "BitSummit", "month": 7, "start_day": 17, "end_day": 19, "event_type": "Indie Expo", "location": "Kyoto", "mode": "physical", "related_game": "Indie / Japan"},
+    {"name": "QuakeCon", "month": 8, "start_day": 6, "end_day": 9, "event_type": "Gaming Convention", "location": "Dallas, United States", "mode": "hybrid", "related_game": "Quake, DOOM, Bethesda"},
+    {"name": "Devcom Developer Conference", "month": 8, "start_day": 17, "end_day": 19, "event_type": "Developer Conference", "location": "Cologne", "mode": "physical"},
+    {"name": "Busan Indie Connect Festival", "month": 8, "start_day": 21, "end_day": 23, "event_type": "Indie Festival", "location": "Busan, South Korea", "mode": "hybrid", "related_game": "Indie / Korea"},
+    {"name": "Brasil Game Show", "month": 10, "start_day": 9, "end_day": 12, "event_type": "Gaming Expo", "location": "São Paulo", "mode": "physical"},
+    {"name": "DreamHack Atlanta", "month": 10, "start_day": 9, "end_day": 11, "event_type": "LAN / Esports Festival", "location": "Atlanta", "mode": "physical", "related_game": "Multi-game"},
+    {"name": "GameSoundCon", "month": 10, "start_day": 27, "end_day": 28, "event_type": "Game Audio Conference", "location": "United States", "mode": "hybrid"},
+    {"name": "India Game Developer Conference", "month": 11, "start_day": 4, "end_day": 6, "event_type": "Developer Conference", "location": "Hyderabad, India", "mode": "physical"},
+    {"name": "G-STAR", "month": 11, "start_day": 19, "end_day": 22, "event_type": "Gaming Expo", "location": "Busan, South Korea", "mode": "physical"},
+    {"name": "Steam Autumn Sale", "month": 11, "start_day": 25, "end_day": 2, "end_month": 12, "event_type": "Digital Sale", "location": "Online", "mode": "digital"},
+]
+
+
+def _media(
+    name: str,
+    start: date,
+    medium: str,
+    related_game: str,
+    *,
+    distributor: str = "",
+    status: str = "Confirmed",
+    url: str = "",
+    end: date | None = None,
+) -> dict:
+    return {
+        "kind": "adaptation",
+        "start_date": start.isoformat(),
+        "end_date": (end or start).isoformat(),
+        "ip_adaptation": name,
+        "medium": medium,
+        "distributor": distributor,
+        "related_game": related_game,
+        "date_status": status,
+        "wikipedia_url": url,
+        "source": "cross_media_registry",
+        "confirmation": status.lower(),
+        "format": medium,
+        "scope": "global",
+        "release_channel": medium,
+    }
+
+
+def cross_media_releases() -> list[dict]:
+    """Screen, streaming, animation, anime, audio, reality, and live-stage rows."""
+    return [
+        _media("Spider-Man: Brand New Day", date(2026, 7, 31), "Live-action theatrical film", "Marvel", distributor="Sony Pictures Releasing / Marvel Studios", url="https://www.sonypictures.com/movies/spidermanbrandnewday", end=date(2026, 8, 13)),
+        _media(
+            "Spider-Man: Beyond the Spider-Verse",
+            date(2027, 6, 18),
+            "Animated theatrical film",
+            "Spider-Man, Miles Morales",
+            distributor="Sony Pictures Releasing / Marvel",
+            url="https://en.wikipedia.org/wiki/Spider-Man:_Beyond_the_Spider-Verse",
+            status="Announced date",
+            end=date(2027, 7, 1),
+        ),
+        _media(
+            "Toy Story 5",
+            date(2026, 6, 19),
+            "Animated theatrical film",
+            "Disney, Kingdom Hearts",
+            distributor="Walt Disney Studios / Pixar",
+            url="https://en.wikipedia.org/wiki/Toy_Story_5",
+            end=date(2026, 7, 2),
+        ),
+        _media(
+            "X-Men '97 season 2",
+            date(2026, 1, 1),
+            "Animated streaming series",
+            "Marvel",
+            distributor="Disney+",
+            url="https://en.wikipedia.org/wiki/X-Men_%2797",
+            status="Announced 2026 window",
+            end=date(2026, 12, 31),
+        ),
+        _media("Supergirl: Woman of Tomorrow", date(2026, 6, 26), "Live-action theatrical film", "DC", distributor="Warner Bros. Pictures / DC Studios", url="https://en.wikipedia.org/wiki/Supergirl_(2026_film)", end=date(2026, 7, 9)),
+        _media("Clayface", date(2026, 10, 23), "Live-action theatrical film", "DC", distributor="Warner Bros. Pictures / DC Studios", url="https://en.wikipedia.org/wiki/Clayface_(film)", end=date(2026, 11, 5)),
+        _media("Avengers: Doomsday", date(2026, 12, 18), "Live-action theatrical film", "Marvel", distributor="Walt Disney Studios / Marvel Studios", url="https://www.marvel.com/movies/avengers-doomsday", end=date(2026, 12, 31)),
+        _media("Man of Tomorrow", date(2027, 7, 9), "Live-action theatrical film", "DC", distributor="Warner Bros. Pictures / DC Studios", url="https://en.wikipedia.org/wiki/Man_of_Tomorrow_(film)", end=date(2027, 7, 22)),
+        _media("The Batman Part II", date(2027, 10, 1), "Live-action theatrical film", "DC", distributor="Warner Bros. Pictures", url="https://en.wikipedia.org/wiki/The_Batman_Part_II", end=date(2027, 10, 14)),
+        _media("Avengers: Secret Wars", date(2027, 12, 17), "Live-action theatrical film", "Marvel", distributor="Walt Disney Studios / Marvel Studios", url="https://en.wikipedia.org/wiki/Avengers:_Secret_Wars", end=date(2027, 12, 31)),
+        _media("Daredevil: Born Again season 2", date(2026, 3, 4), "Live-action streaming series", "Marvel", distributor="Disney+", url="https://en.wikipedia.org/wiki/Daredevil:_Born_Again", status="Announced 2026 window", end=date(2026, 4, 15)),
+        _media("Resident Evil", date(2026, 9, 18), "Live-action theatrical film", "Resident Evil", distributor="Sony Pictures"),
+        _media("Street Fighter", date(2026, 10, 16), "Live-action theatrical film", "Street Fighter", distributor="Paramount"),
+        _media("The Witcher season 5", date(2026, 10, 1), "Live-action streaming series", "The Witcher", distributor="Netflix", status="Announced 2026 window", end=date(2026, 12, 31)),
+        _media("Devil May Cry season 2", date(2026, 1, 1), "Animated streaming series", "Devil May Cry", distributor="Netflix", status="Announced 2026 window", end=date(2026, 12, 31)),
+        _media("Sonic the Hedgehog Presents: The Chaotix Casefiles", date(2026, 1, 27), "Scripted audio drama / podcast", "Sonic", distributor="YouTube"),
+        _media("NieR orchestral world tour", date(2026, 7, 1), "Live concert / stage performance", "NieR", distributor="Square Enix", status="Planning watch window", end=date(2026, 12, 31)),
+        _media("The Angry Birds Movie 3", date(2027, 1, 29), "Animated theatrical film", "Angry Birds", distributor="Paramount"),
+        _media("Sonic the Hedgehog 4", date(2027, 3, 19), "Live-action / animated theatrical film", "Sonic", distributor="Paramount"),
+        _media("The Legend of Zelda", date(2027, 5, 7), "Live-action theatrical film", "Zelda", distributor="Sony Pictures / Nintendo"),
+        _media("A Minecraft Movie sequel", date(2027, 7, 23), "Live-action / animated theatrical film", "Minecraft", distributor="Warner Bros."),
+        _media("Ghost of Tsushima anime", date(2027, 1, 1), "Anime streaming series", "Ghost of Tsushima", distributor="Crunchyroll", status="Announced 2027 window", end=date(2027, 12, 31)),
+        _media("Death Stranding: Isolations", date(2027, 1, 1), "Animated streaming series", "Death Stranding", distributor="Disney+", status="Announced 2027 window", end=date(2027, 12, 31)),
+        _media("The Last of Us season 3", date(2027, 1, 1), "Live-action television / streaming series", "The Last of Us", distributor="HBO / Max", status="Announced 2027 window", end=date(2027, 12, 31)),
+        _media("Helldivers", date(2027, 11, 10), "Live-action theatrical film", "Helldivers", distributor="Sony Pictures"),
+        _media("Elden Ring", date(2028, 3, 3), "Live-action theatrical film", "Elden Ring", distributor="A24", status="Announced date"),
+        _media("Call of Duty", date(2028, 6, 30), "Live-action theatrical film", "Call of Duty / Modern Warfare", distributor="Paramount", status="Announced date"),
+        _media("God of War", date(2028, 1, 1), "Live-action streaming series", "God of War", distributor="Prime Video", status="In development / planning window", end=date(2028, 12, 31)),
+        _media("Tomb Raider", date(2028, 1, 1), "Live-action streaming series", "Tomb Raider", distributor="Prime Video", status="In development / planning window", end=date(2028, 12, 31)),
+        _media("Mass Effect", date(2028, 1, 1), "Live-action streaming series", "Mass Effect", distributor="Prime Video", status="In development / planning window", end=date(2028, 12, 31)),
+        _media("Overcooked reality series", date(2028, 1, 1), "Unscripted reality television", "Overcooked", status="In development / planning window", end=date(2028, 12, 31)),
+        _media("Pokémon live-action series", date(2029, 1, 1), "Live-action streaming series", "Pokémon", distributor="Netflix", status="In development / planning window", end=date(2029, 12, 31)),
+        _media("Minecraft animated series", date(2029, 1, 1), "Animated streaming series", "Minecraft", distributor="Netflix", status="In development / planning window", end=date(2029, 12, 31)),
+        _media("Assassin's Creed", date(2029, 1, 1), "Live-action streaming series", "Assassin's Creed", distributor="Netflix", status="In development / planning window", end=date(2029, 12, 31)),
+        _media("Life Is Strange", date(2029, 1, 1), "Live-action streaming series", "Life Is Strange", distributor="Prime Video", status="In development / planning window", end=date(2029, 12, 31)),
+        _media("Gears of War animated series", date(2029, 1, 1), "Animated streaming series", "Gears of War", distributor="Netflix", status="In development / planning window", end=date(2029, 12, 31)),
+        _media("BioShock", date(2030, 1, 1), "Live-action streaming film", "BioShock", distributor="Netflix", status="In development / planning window", end=date(2030, 12, 31)),
+        _media("The Sims", date(2030, 1, 1), "Live-action theatrical film", "The Sims", distributor="Amazon MGM", status="In development / planning window", end=date(2030, 12, 31)),
+    ]

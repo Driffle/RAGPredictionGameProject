@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="800" viewBox="0 0 640 800" role="img" aria-label="Product cover art pending">
+  <defs>
+    <linearGradient id="pg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#12182a"/>
+      <stop offset="100%" stop-color="#1c2744"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="800" fill="url(#pg)"/>
+  <rect x="36" y="36" width="568" height="728" rx="18" fill="none" stroke="#5ce1e6" stroke-opacity=".35" stroke-width="2"/>
+  <circle cx="320" cy="330" r="72" fill="none" stroke="#5ce1e6" stroke-opacity=".5" stroke-width="4"/>
+  <path d="M286 330h68M320 296v68" stroke="#5ce1e6" stroke-opacity=".5" stroke-width="4" stroke-linecap="round"/>
+  <text x="320" y="470" text-anchor="middle" font-family="IBM Plex Sans, Arial, sans-serif" font-size="26" fill="#f4f7ff">Cover art pending</text>
+  <text x="320" y="508" text-anchor="middle" font-family="IBM Plex Sans, Arial, sans-serif" font-size="16" fill="#9aa6c3">product artwork</text>
+</svg>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title data-i18n="shell.title">Floor Brief</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/static/css/app.css" />
+</head>
+<body>
+  <div class="aurora" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="mast">
+    <div class="mast-mark">
+      <p class="kicker"><span class="pulse-dot"></span> <span data-i18n="shell.kicker">Live desk · 2026–2030</span></p>
+      <h1 data-i18n="shell.title">Floor Brief</h1>
+    </div>
+    <div class="mast-actions">
+      <label class="locale-picker">
+        <span data-i18n="ui.marketLanguage">Market &amp; language</span>
+        <select id="geo-language" onchange="FloorI18n.setGeo(this.value)">
+          <option value="US">United States · English</option>
+          <option value="KR">대한민국 · 한국어</option>
+          <option value="JP">日本 · 日本語</option>
+          <option value="DE">Deutschland · Deutsch</option>
+          <option value="GB">United Kingdom · English</option>
+          <option value="BR">Brasil · Português</option>
+        </select>
+      </label>
+      <button type="button" class="nav-toggle" id="nav-toggle" data-i18n="shell.menu" data-i18n-aria="shell.menu">Menu</button>
+      <nav class="tabs" id="tabs" aria-label="Primary">
+        <button type="button" class="tab is-on" data-page="lookup" data-i18n="nav.product">Product</button>
+        <button type="button" class="tab" data-page="event" data-i18n="nav.event">Event</button>
+        <button type="button" class="tab" data-page="crosssell" data-i18n="nav.crosssell">Cross-sell</button>
+        <button type="button" class="tab" data-page="calendar" data-i18n="nav.calendar">Calendar</button>
+        <button type="button" class="tab" data-page="trends" data-i18n="nav.trends">Trends</button>
+        <button type="button" class="tab" data-page="traffic" data-i18n="nav.traffic">Traffic</button>
+        <button type="button" class="tab" data-page="dashboard" data-i18n="nav.dashboard">Dashboard</button>
+        <button type="button" class="tab" data-page="archive" data-i18n="nav.archive">Archive</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="page-lookup" class="page is-on">
+      <div class="intro">
+        <h2 data-i18n="product.title">What should we do with this game?</h2>
+        <p data-i18n="product.intro">Pick a title or type a name. The brief mixes the storefront catalog, announced-but-unreleased titles, cover art, event windows, and today’s search trends.</p>
+      </div>
+      <form id="lookup-form" class="desk-form" autocomplete="off">
+        <label>
+          <span data-i18n="product.featured">Featured title</span>
+          <select id="featured"><option value="" data-i18n="product.featuredPlaceholder">Today’s priorities and live campaigns…</option></select>
+        </label>
+        <label class="grow">
+          <span data-i18n="product.typeName">Or type a product name</span>
+          <input id="query" type="text" data-i18n-placeholder="product.placeholder" placeholder="Spider-Man, EA Sports FC 27, Zelda" role="combobox" aria-autocomplete="list" aria-controls="suggest" aria-expanded="false" />
+          <ul id="suggest" class="suggest" hidden role="listbox"></ul>
+        </label>
+        <button type="submit" class="go" data-i18n="product.submit">Look up</button>
+      </form>
+      <p id="lookup-status" class="status" hidden></p>
+      <div id="brief" class="brief" hidden></div>
+    </section>
+
+    <section id="page-event" class="page">
+      <div class="intro">
+        <h2 data-i18n="event.title">Which event window is live?</h2>
+        <p data-i18n="event.intro">Physical and digital shows, sports, esports, conferences, sales, festivals, and entertainment releases across every tracked format through 2030.</p>
+      </div>
+      <form id="event-form" class="desk-form" autocomplete="off">
+        <label>
+          <span data-i18n="event.featured">Upcoming on the calendar</span>
+          <select id="featured-event"><option value="" data-i18n="event.featuredPlaceholder">Next confirmed and planning windows…</option></select>
+        </label>
+        <label class="grow">
+          <span data-i18n="event.typeName">Or type an event</span>
+          <input id="event-query" type="text" data-i18n-placeholder="event.placeholder" placeholder="Gamescom, The Game Awards, FIFA World Cup" role="combobox" aria-autocomplete="list" aria-controls="event-suggest" aria-expanded="false" />
+          <ul id="event-suggest" class="suggest" hidden role="listbox"></ul>
+        </label>
+        <button type="submit" class="go" data-i18n="event.submit">Open window</button>
+      </form>
+      <div class="filter-strip" aria-label="Event filters">
+        <label><span data-i18n="event.year">Year</span><select id="event-year"><option value="">2026–2030</option><option>2026</option><option>2027</option><option>2028</option><option>2029</option><option>2030</option></select></label>
+        <label><span data-i18n="event.coverage">Coverage</span><select id="event-kind"><option value="" data-i18n="event.coverageAll">Events + entertainment</option><option value="event" data-i18n="event.coverageEvents">Physical / digital events</option><option value="adaptation" data-i18n="event.coverageAdaptations">Entertainment releases</option></select></label>
+        <label><span data-i18n="event.attendance">Attendance</span><select id="event-mode"><option value="" data-i18n="event.attendanceAny">Any mode</option><option value="physical" data-i18n="event.attendancePhysical">Physical</option><option value="digital" data-i18n="event.attendanceDigital">Digital</option><option value="hybrid" data-i18n="event.attendanceHybrid">Hybrid</option></select></label>
+        <button type="button" id="browse-events" class="go ghost" data-i18n="event.browse">Browse coverage</button>
+      </div>
+      <p id="event-status" class="status" hidden></p>
+      <div id="event-results" class="media-grid" hidden></div>
+      <div id="event-brief" class="brief" hidden></div>
+    </section>
+
+    <section id="page-crosssell" class="page">
+      <div class="intro">
+        <h2 data-i18n="crosssell.title">What can we cross-sell in this event window?</h2>
+        <p data-i18n="crosssell.intro">Enter an event or entertainment release. Floor Brief lists the catalog games and attach products to merchandise during that timeframe.</p>
+      </div>
+      <form id="crosssell-form" class="desk-form" autocomplete="off">
+        <label>
+          <span data-i18n="crosssell.featured">Events with mapped SKUs</span>
+          <select id="featured-crosssell"><option value="" data-i18n="crosssell.featuredPlaceholder">Promotion-mapped windows…</option></select>
+        </label>
+        <label class="grow">
+          <span data-i18n="crosssell.typeName">Or type an event name</span>
+          <input id="crosssell-query" type="text" data-i18n-placeholder="crosssell.placeholder" placeholder="FIFA Women's World Cup, Gamescom, Brand New Day" role="combobox" aria-autocomplete="list" aria-controls="crosssell-suggest" aria-expanded="false" />
+          <ul id="crosssell-suggest" class="suggest" hidden role="listbox"></ul>
+        </label>
+        <button type="submit" class="go" data-i18n="crosssell.submit">Cross-sell kit</button>
+      </form>
+      <p id="crosssell-status" class="status" hidden></p>
+      <div id="crosssell-brief" class="brief" hidden></div>
+    </section>
+
+    <section id="page-calendar" class="page">
+      <div class="intro">
+        <h2 data-i18n="calendar.title">What happens in this month range?</h2>
+        <p data-i18n="calendar.intro">Pick a from → to month and year. Floor Brief lists every overlapping event and entertainment release, with the games and products you can promote and cross-sell in each window.</p>
+      </div>
+      <form id="calendar-form" class="desk-form calendar-form" autocomplete="off">
+        <label>
+          <span data-i18n="calendar.fromMonth">From month</span>
+          <select id="cal-start-month">
+            <option value="1" data-i18n="month.1">January</option><option value="2" data-i18n="month.2">February</option><option value="3" data-i18n="month.3">March</option>
+            <option value="4" data-i18n="month.4">April</option><option value="5" data-i18n="month.5">May</option><option value="6" selected data-i18n="month.6">June</option>
+            <option value="7" data-i18n="month.7">July</option><option value="8" data-i18n="month.8">August</option><option value="9" data-i18n="month.9">September</option>
+            <option value="10" data-i18n="month.10">October</option><option value="11" data-i18n="month.11">November</option><option value="12" data-i18n="month.12">December</option>
+          </select>
+        </label>
+        <label>
+          <span data-i18n="calendar.fromYear">From year</span>
+          <select id="cal-start-year">
+            <option>2026</option><option>2027</option><option>2028</option><option>2029</option><option>2030</option>
+          </select>
+        </label>
+        <label>
+          <span data-i18n="calendar.toMonth">To month</span>
+          <select id="cal-end-month">
+            <option value="1" data-i18n="month.1">January</option><option value="2" data-i18n="month.2">February</option><option value="3" data-i18n="month.3">March</option>
+            <option value="4" data-i18n="month.4">April</option><option value="5" data-i18n="month.5">May</option><option value="6" data-i18n="month.6">June</option>
+            <option value="7" data-i18n="month.7">July</option><option value="8" selected data-i18n="month.8">August</option><option value="9" data-i18n="month.9">September</option>
+            <option value="10" data-i18n="month.10">October</option><option value="11" data-i18n="month.11">November</option><option value="12" data-i18n="month.12">December</option>
+          </select>
+        </label>
+        <label>
+          <span data-i18n="calendar.toYear">To year</span>
+          <select id="cal-end-year">
+            <option>2026</option><option>2027</option><option>2028</option><option>2029</option><option>2030</option>
+          </select>
+        </label>
+        <label>
+          <span data-i18n="calendar.coverage">Coverage</span>
+          <select id="cal-kind">
+            <option value="" data-i18n="calendar.coverageAll">Events + entertainment</option>
+            <option value="event" data-i18n="calendar.coverageEvents">Physical / digital events</option>
+            <option value="adaptation" data-i18n="calendar.coverageAdaptations">Entertainment releases</option>
+          </select>
+        </label>
+        <label>
+          <span data-i18n="calendar.precision">Date accuracy</span>
+          <select id="cal-precision">
+            <option value="dated" selected data-i18n="calendar.precisionDated">Confirmed day + month</option>
+            <option value="exact" data-i18n="calendar.precisionExact">Confirmed day only</option>
+            <option value="all" data-i18n="calendar.precisionAll">Include quarter / year windows</option>
+          </select>
+        </label>
+        <button type="submit" class="go" data-i18n="calendar.submit">List windows</button>
+      </form>
+      <div class="filter-strip" aria-label="Quick ranges">
+        <button type="button" class="go ghost cal-preset" data-sm="6" data-sy="2026" data-em="8" data-ey="2026" data-i18n="calendar.presetJunAug">Jun–Aug 2026</button>
+        <button type="button" class="go ghost cal-preset" data-sm="10" data-sy="2026" data-em="12" data-ey="2026" data-i18n="calendar.presetOctDec">Oct–Dec 2026</button>
+        <button type="button" class="go ghost cal-preset" data-sm="1" data-sy="2027" data-em="6" data-ey="2027" data-i18n="calendar.presetH1">H1 2027</button>
+        <button type="button" class="go ghost cal-preset" data-sm="1" data-sy="2026" data-em="12" data-ey="2026" data-i18n="calendar.presetAll2026">All of 2026</button>
+      </div>
+      <p id="calendar-status" class="status" hidden></p>
+      <div id="calendar-brief" class="brief" hidden></div>
+    </section>
+
+    <section id="page-trends" class="page">
+      <div class="intro dash-intro">
+        <div>
+          <h2 data-i18n="trends.title">Search trend desk</h2>
+          <p data-i18n="trends.intro">Google Trends RSS topics ranked by traffic, linked to merchandising priorities and cover art.</p>
+        </div>
+        <div class="dash-tools">
+          <p id="trends-asof" class="meta"></p>
+          <button type="button" id="refresh-trends-page" class="go ghost" data-i18n="trends.refresh">Refresh trends</button>
+        </div>
+      </div>
+      <p id="trends-status" class="status" data-i18n="trends.loading">Loading trend analysis…</p>
+      <div id="trends-board" hidden></div>
+    </section>
+
+    <section id="page-traffic" class="page">
+      <div class="intro">
+        <h2 data-i18n="traffic.title">Traffic &amp; pageview analysis</h2>
+        <p data-i18n="traffic.intro">Gaming search signals plus country-wise product and event placement.</p>
+      </div>
+      <p id="traffic-status" class="status" data-i18n="traffic.loading">Loading traffic charts…</p>
+      <div id="traffic-board" hidden></div>
+    </section>
+
+    <section id="page-dashboard" class="page">
+      <div class="intro dash-intro">
+        <div>
+          <h2 data-i18n="dash.title">Orders GMV vs event runtimes</h2>
+          <p data-i18n="dash.intro">2022–2026 sales weeks joined to franchise event windows. Use this as the baseline for whether the 2026–2030 RAG calendar would have caught the weeks that actually moved GMV.</p>
+        </div>
+        <div class="dash-tools">
+          <p id="dash-asof" class="meta"></p>
+          <button type="button" id="refresh-db" class="go ghost" data-i18n="dash.refreshDb">Refresh database</button>
+          <button type="button" id="refresh-trends" class="go ghost" data-i18n="dash.refreshTrends">Refresh trends</button>
+        </div>
+      </div>
+      <p id="dash-status" class="status" data-i18n="dash.loading">Loading dashboard…</p>
+      <div id="dashboard" hidden></div>
+    </section>
+
+    <section id="page-archive" class="page">
+      <div class="intro">
+        <h2 data-i18n="archive.title">Archive</h2>
+        <p data-i18n="archive.intro">Every tracked gaming event worldwide from 2022 through 2026, with the exact runtime dates for that edition.</p>
+      </div>
+      <form id="archive-form" class="desk-form" autocomplete="off">
+        <label>
+          <span data-i18n="archive.year">Year</span>
+          <select id="archive-year">
+            <option value="" data-i18n="archive.allYears">All years · 2022–2026</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+            <option value="2026">2026</option>
+          </select>
+        </label>
+        <label class="grow">
+          <span data-i18n="archive.search">Search events</span>
+          <input id="archive-query" type="search" data-i18n-placeholder="archive.searchPlaceholder" placeholder="Gamescom, Tokyo Game Show, GDC" />
+        </label>
+      </form>
+      <p id="archive-status" class="status" data-i18n="status.archive">Loading the 2022–2026 gaming archive…</p>
+      <div id="archive-board" hidden></div>
+    </section>
+  </main>
+
+  <footer class="colophon" data-i18n="shell.footer">
+    Daily Wikipedia product + event checks · catalog · Google Trends RSS · Wikimedia pageviews
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script src="/static/js/i18n.js"></script>
+  <script src="/static/js/app.js"></script>
+</body>
+</html>

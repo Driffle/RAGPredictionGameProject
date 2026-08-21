@@ -1,0 +1,15 @@
+dist/
+build/
+*.spec.bak
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.DS_Store
+.python-version
+data/processed/*
+!data/processed/.gitkeep
+!data/processed/daily/
+!data/processed/daily/.gitkeep
+data/raw/game_products.csv

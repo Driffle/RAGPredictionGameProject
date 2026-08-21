@@ -1,0 +1,373 @@
+[
+  {
+    "canonical_title": "BOKURA planet",
+    "product_id": "88560",
+    "product_sku": "9932445",
+    "platform": "Steam",
+    "role": "game",
+    "edition_year": 0,
+    "score": 138.0,
+    "sources": [
+      "event_window"
+    ],
+    "reasons": [
+      "Promote BOKURA planet as the storefront equivalent of Devcom Developer Conference (Undergrounded, Star Ocean: The Second Story R, Dreamin' Her, The Dream Of A Cockspur) for the full event runtime 2026-08-17 to 2026-08-19, with a expo lead-in and afterglow around those dates.",
+      "Promote BOKURA planet as the storefront equivalent of Busan Indie Connect Festival (Indie / Korea, Star Ocean: The Second Story R) for the full event runtime 2026-08-21 to 2026-08-23, with a expo lead-in and afterglow around those dates.",
+      "Promote BOKURA planet as the storefront equivalent of Gamescom Opening Night Live 2026 (Star Ocean: The Second Story R, Dreamin' Her, The Dream Of A Cockspur, Suika Game) for the full event runtime 2026-08-25 to 2026-08-25, with a expo lead-in and afterglow around those dates.",
+      "Promote BOKURA planet as the storefront equivalent of Future Games Show at Gamescom (Star Ocean: The Second Story R, Dreamin' Her, The Dream Of A Cockspur, Suika Game) for the full event runtime 2026-08-26 to 2026-08-30, with a expo lead-in and afterglow around those dates."
+    ],
+    "tactics": [
+      "Amplify announcements the same day; feature matching catalog SKUs within hours of a trailer"
+    ],
+    "queries": [],
+    "event": "Gamescom 2026",
+    "promo_start": "2026-08-19",
+    "promo_end": "2026-09-02",
+    "rank": 1,
+    "as_of": "2026-08-19"
+  },
+  {
+    "canonical_title": "Star Ocean: The Second Story R",
+    "product_id": "live:Q119833222",
+    "product_sku": "",
+    "platform": "Multi",
+    "role": "game",
+    "edition_year": 0,
+    "score": 78.0,
+    "sources": [
+      "event_window"
+    ],
+    "reasons": [
+      "Promote Star Ocean: The Second Story R as the storefront equivalent of Gamescom Opening Night Live 2026 (Star Ocean: The Second Story R, Dreamin' Her, The Dream Of A Cockspur, Suika Game) for the full event runtime 2026-08-25 to 2026-08-25, with a expo lead-in and afterglow around those dates.",
+      "Promote Star Ocean: The Second Story R as the storefront equivalent of Future Games Show at Gamescom (Star Ocean: The Second Story R, Dreamin' Her, The Dream Of A Cockspur, Suika Game) for the full event runtime 2026-08-26 to 2026-08-30, with a expo lead-in and afterglow around those dates.",
+      "Promote Star Ocean: The Second Story R as the storefront equivalent of Gamescom 2026 (Star Ocean: The Second Story R, Dreamin' Her, The Dream Of A Cockspur, Suika Game) for the full event runtime 2026-08-26 to 2026-08-30, with a expo lead-in and afterglow around those dates."
+    ],
+    "tactics": [
+      "Amplify announcements the same day; feature matching catalog SKUs within hours of a trailer"
+    ],
+    "queries": [],
+    "event": "Gamescom 2026",
+    "promo_start": "2026-08-19",
+    "promo_end": "2026-09-02",
+    "rank": 2,
+    "as_of": "2026-08-19"
+  },
+  {
+    "canonical_title": "Dreadweave",
+    "product_id": "155710",
+    "product_sku": "9999101",
+    "platform": "Steam",
+    "role": "game",
+    "edition_year": 0,
+    "score": 48.0,
+    "sources": [
+      "event_window"
+    ],
+    "reasons": [
+      "Promote Dreadweave as the storefront equivalent of D23 (Disney, Marvel, Star Wars) for the full event runtime 2026-08-14 to 2026-08-16, with a expo lead-in and afterglow around those dates.",
+      "Promote Dreadweave as the storefront equivalent of D23: The Ultimate Disney Fan Event (Disney, Marvel, Star Wars) for the full event runtime 2026-08-14 to 2026-08-16, with a expo lead-in and afterglow around those dates."
+    ],
+    "tactics": [
+      "Amplify announcements the same day; feature matching catalog SKUs within hours of a trailer"
+    ],
+    "queries": [],
+    "event": "D23: The Ultimate Disney Fan Event",
+    "promo_start": "2026-08-07",
+    "promo_end": "2026-08-19",
+    "rank": 3,
+    "as_of": "2026-08-19"
+  },
+  {
+    "canonical_title": "Huntin' Buddie",
+    "product_id": "155279",
+    "product_sku": "9998670",
+    "platform": "Steam",
+    "role": "game",
+    "edition_year": 0,
+    "score": 48.0,
+    "sources": [
+      "event_window"
+    ],
+    "reasons": [
+      "Promote Huntin' Buddie as the storefront equivalent of D23 (Disney, Marvel, Star Wars) for the full event runtime 2026-08-14 to 2026-08-16, with a expo lead-in and afterglow around those dates.",
+      "Promote Huntin' Buddie as the storefront equivalent of D23: The Ultimate Disney Fan Event (Disney, Marvel, Star Wars) for the full event runtime 2026-08-14 to 2026-08-16, with a expo lead-in and afterglow around those dates."
+    ],
+    "tactics": [
+      "Amplify announcements the same day; feature matching catalog SKUs within hours of a trailer"
+    ],
+    "queries": [],
+    "event": "D23: The Ultimate Disney Fan Event",
+    "promo_start": "2026-08-07",
+    "promo_end": "2026-08-19",
+    "rank": 4,
+    "as_of": "2026-08-19"
+  },
+  {
+    "canonical_title": "EA SPORTS Madden NFL 27",
+    "product_id": "155753",
+    "product_sku": "9999144",
+    "platform": "Steam",
+    "role": "game",
+    "edition_year": 2027,
+    "score": 18.0,
+    "sources": [
+      "event_window"
+    ],
+    "reasons": [
+      "Promote EA SPORTS Madden NFL 27 as the storefront equivalent of Madden NFL 27 release window (Madden NFL 27) for the full event runtime 2026-08-14 to 2026-08-28, with a default lead-in and afterglow around those dates."
+    ],
+    "tactics": [
+      "Amplify announcements the same day; feature matching catalog SKUs within hours of a trailer"
+    ],
+    "queries": [],
+    "event": "Madden NFL 27 release window",
+    "promo_start": "2026-08-07",
+    "promo_end": "2026-08-31",
+    "rank": 5,
+    "as_of": "2026-08-19"
+  },
+  {
+    "canonical_title": "EA SPORTS Madden NFL 27 Deluxe Edition",
+    "product_id": "155754",
+    "product_sku": "9999145",
+    "platform": "Steam",
+    "role": "game",
+    "edition_year": 2027,
+    "score": 18.0,
+    "sources": [
+      "event_window"
+    ],
+    "reasons": [
+      "Promote EA SPORTS Madden NFL 27 Deluxe Edition as the storefront equivalent of Madden NFL 27 release window (Madden NFL 27) for the full event runtime 2026-08-14 to 2026-08-28, with a default lead-in and afterglow around those dates."
+    ],
+    "tactics": [
+      "Amplify announcements the same day; feature matching catalog SKUs within hours of a trailer"
+    ],
+    "queries": [],
+    "event": "Madden NFL 27 release window",
+    "promo_start": "2026-08-07",
+    "promo_end": "2026-08-31",
+    "rank": 6,
+    "as_of": "2026-08-19"
+  },
+  {
+    "canonical_title": "Madden NFL 27",
+    "product_id": "154464",
+    "product_sku": "9997855",
+    "platform": "Nintendo",
+    "role": "game",
+    "edition_year": 2027,
+    "score": 18.0,
+    "sources": [
+      "event_window"
+    ],
+    "reasons": [
+      "Promote Madden NFL 27 as the storefront equivalent of Madden NFL 27 release window (Madden NFL 27) for the full event runtime 2026-08-14 to 2026-08-28, with a default lead-in and afterglow around those dates."
+    ],
+    "tactics": [
+      "Amplify announcements the same day; feature matching catalog SKUs within hours of a trailer"
+    ],
+    "queries": [],
+    "event": "Madden NFL 27 release window",
+    "promo_start": "2026-08-07",
+    "promo_end": "2026-08-31",
+    "rank": 7,
+    "as_of": "2026-08-19"
+  },
+  {
+    "canonical_title": "Madden NFL 27 Deluxe Edition",
+    "product_id": "154462",
+    "product_sku": "9997853",
+    "platform": "PSN",
+    "role": "game",
+    "edition_year": 2027,
+    "score": 18.0,
+    "sources": [
+      "event_window"
+    ],
+    "reasons": [
+      "Promote Madden NFL 27 Deluxe Edition as the storefront equivalent of Madden NFL 27 release window (Madden NFL 27) for the full event runtime 2026-08-14 to 2026-08-28, with a default lead-in and afterglow around those dates."
+    ],
+    "tactics": [
+      "Amplify announcements the same day; feature matching catalog SKUs within hours of a trailer"
+    ],
+    "queries": [],
+    "event": "Madden NFL 27 release window",
+    "promo_start": "2026-08-07",
+    "promo_end": "2026-08-31",
+    "rank": 8,
+    "as_of": "2026-08-19"
+  },
+  {
+    "canonical_title": "F1 25 - 2026 Season Edition",
+    "product_id": "153215",
+    "product_sku": "9996612",
+    "platform": "EA Play",
+    "role": "game",
+    "edition_year": 2026,
+    "score": 18.0,
+    "sources": [
+      "event_window"
+    ],
+    "reasons": [
+      "Promote F1 25 - 2026 Season Edition as the storefront equivalent of F1 World Championship (F1) for the full event runtime 2026-03-01 to 2026-12-08, with a sports lead-in and afterglow around those dates."
+    ],
+    "tactics": [
+      "Watch-along merchandising: feature the current motorsport title next to live-score / tournament content",
+      "Daily storefront slot + push/email on match days in televised regions",
+      "Highlight co-op, Ultimate Team, or tournament brackets that mirror the live event"
+    ],
+    "queries": [],
+    "event": "F1 World Championship",
+    "promo_start": "2026-02-15",
+    "promo_end": "2026-12-15",
+    "rank": 9,
+    "as_of": "2026-08-19"
+  },
+  {
+    "canonical_title": "1666: Amsterdam",
+    "product_id": "live:Q131697928",
+    "product_sku": "",
+    "platform": "Multi",
+    "role": "game",
+    "edition_year": 0,
+    "score": 18.0,
+    "sources": [
+      "event_window"
+    ],
+    "reasons": [
+      "Promote 1666: Amsterdam as the storefront equivalent of 1666: Amsterdam release window (1666: Amsterdam) for the full event runtime 2026-08-25 to 2026-09-08, with a default lead-in and afterglow around those dates."
+    ],
+    "tactics": [
+      "Amplify announcements the same day; feature matching catalog SKUs within hours of a trailer"
+    ],
+    "queries": [],
+    "event": "1666: Amsterdam release window",
+    "promo_start": "2026-08-18",
+    "promo_end": "2026-09-11",
+    "rank": 10,
+    "as_of": "2026-08-19"
+  },
+  {
+    "canonical_title": "Ace Combat Assault Horizon Enhanced Edition",
+    "product_id": "61581",
+    "product_sku": "9905441",
+    "platform": "Steam",
+    "role": "game",
+    "edition_year": 0,
+    "score": 18.0,
+    "sources": [
+      "event_window"
+    ],
+    "reasons": [
+      "Promote Ace Combat Assault Horizon Enhanced Edition as the storefront equivalent of Horizon Zero Dawn (Horizon, The Legend of Heroes: Trails Beyond the Horizon) for the full event runtime 2026-01-01 to 2026-12-31, with a adaptation lead-in and afterglow around those dates."
+    ],
+    "tactics": [
+      "Hold a featured placement for the theatrical/streaming window",
+      "Cross-sell the game next to any soundtrack or tie-in DLC"
+    ],
+    "queries": [],
+    "event": "Horizon Zero Dawn",
+    "promo_start": "2025-12-11",
+    "promo_end": "2027-01-14",
+    "rank": 11,
+    "as_of": "2026-08-19"
+  },
+  {
+    "canonical_title": "Anthro Heat",
+    "product_id": "130496",
+    "product_sku": "9973919",
+    "platform": "Steam",
+    "role": "game",
+    "edition_year": 0,
+    "score": 18.0,
+    "sources": [
+      "event_window"
+    ],
+    "reasons": [
+      "Promote Anthro Heat as the storefront equivalent of Life Is Strange (Life Is Strange) for the full event runtime 2026-01-01 to 2026-12-31, with a adaptation lead-in and afterglow around those dates."
+    ],
+    "tactics": [
+      "Hold a featured placement for the theatrical/streaming window",
+      "Cross-sell the game next to any soundtrack or tie-in DLC"
+    ],
+    "queries": [],
+    "event": "Life Is Strange",
+    "promo_start": "2025-12-11",
+    "promo_end": "2027-01-14",
+    "rank": 12,
+    "as_of": "2026-08-19"
+  },
+  {
+    "canonical_title": "Apex Legends Mobile 1050 Syndicate Gold",
+    "product_id": "135481",
+    "product_sku": "9978902",
+    "platform": "Apex Legends Mobile",
+    "role": "game",
+    "edition_year": 0,
+    "score": 18.0,
+    "sources": [
+      "event_window"
+    ],
+    "reasons": [
+      "Promote Apex Legends Mobile 1050 Syndicate Gold as the storefront equivalent of STEINS;GATE RE:BOOT release window (STEINS;GATE RE:BOOT) for the full event runtime 2026-08-19 to 2026-09-02, with a default lead-in and afterglow around those dates."
+    ],
+    "tactics": [
+      "Amplify announcements the same day; feature matching catalog SKUs within hours of a trailer"
+    ],
+    "queries": [],
+    "event": "STEINS;GATE RE:BOOT release window",
+    "promo_start": "2026-08-12",
+    "promo_end": "2026-09-05",
+    "rank": 13,
+    "as_of": "2026-08-19"
+  },
+  {
+    "canonical_title": "Apex Legends Mobile 11500 Syndicate Gold",
+    "product_id": "135016",
+    "product_sku": "9978437",
+    "platform": "Apex Legends Mobile",
+    "role": "game",
+    "edition_year": 0,
+    "score": 18.0,
+    "sources": [
+      "event_window"
+    ],
+    "reasons": [
+      "Promote Apex Legends Mobile 11500 Syndicate Gold as the storefront equivalent of STEINS;GATE RE:BOOT release window (STEINS;GATE RE:BOOT) for the full event runtime 2026-08-19 to 2026-09-02, with a default lead-in and afterglow around those dates."
+    ],
+    "tactics": [
+      "Amplify announcements the same day; feature matching catalog SKUs within hours of a trailer"
+    ],
+    "queries": [],
+    "event": "STEINS;GATE RE:BOOT release window",
+    "promo_start": "2026-08-12",
+    "promo_end": "2026-09-05",
+    "rank": 14,
+    "as_of": "2026-08-19"
+  },
+  {
+    "canonical_title": "Apex Legends Mobile 2150 Syndicate Gold",
+    "product_id": "135483",
+    "product_sku": "9978904",
+    "platform": "Apex Legends Mobile",
+    "role": "game",
+    "edition_year": 0,
+    "score": 18.0,
+    "sources": [
+      "event_window"
+    ],
+    "reasons": [
+      "Promote Apex Legends Mobile 2150 Syndicate Gold as the storefront equivalent of STEINS;GATE RE:BOOT release window (STEINS;GATE RE:BOOT) for the full event runtime 2026-08-19 to 2026-09-02, with a default lead-in and afterglow around those dates."
+    ],
+    "tactics": [
+      "Amplify announcements the same day; feature matching catalog SKUs within hours of a trailer"
+    ],
+    "queries": [],
+    "event": "STEINS;GATE RE:BOOT release window",
+    "promo_start": "2026-08-12",
+    "promo_end": "2026-09-05",
+    "rank": 15,
+    "as_of": "2026-08-19"
+  }
+]

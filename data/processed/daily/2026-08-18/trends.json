@@ -1,0 +1,86 @@
+{
+  "fetched_on": "2026-08-18",
+  "google_trends": [
+    {
+      "source": "google_trends",
+      "geo": "JP",
+      "title": "hololive dreams",
+      "traffic": 100,
+      "traffic_label": "100+",
+      "published": "Tue, 18 Aug 2026 22:20:00 -0700",
+      "news": [
+        "\u30109/18\u3011\u307b\u308d\uff5e\u304b\u308b \u6a2a\u6d5c\u7bc7\uff5c\u30db\u30ed\u30e9\u30a4\u30d67\u540d\u304c\u6a2a\u6d5c\u307f\u306a\u3068\u307f\u3089\u30445\u4f1a\u5834\u3067\u30b3\u30e9\u30dc (\u30db\u30ed\u30e9\u30a4\u30d6\u901a\u4fe1)",
+        "\u30db\u30ed\u30e9\u30a4\u30d69\u5468\u5e74-\u30db\u30ed\u82b1\u706b2026\u304c\u57fc\u7389\u30b9\u30bf\u30b8\u30a2\u30e0\u3067\u958b\u50ac\u3001\u82b1\u706b\u00d7\u30c9\u30ed\u30fc\u30f3\u306e\u591c\u7a7a\u3078 (\u682a\u5f0f\u4f1a\u793eMICE\u7814\u7a76\u6240)",
+        "\u30db\u30ed\u30e9\u30a4\u30d69\u5468\u5e74\u8a18\u5ff5\u300ehololive Dreams\u300f\u958b\u50ac\uff01\u6a2a\u6d5c\u3068\u57fc\u7389\u3092\u5f69\u308b\u5922\u306e\u796d\u5178\u3092\u5fb9\u5e95\u89e3\u8aac (UtaTen)"
+      ],
+      "blob": "hololive dreams \u30109/18\u3011\u307b\u308d\uff5e\u304b\u308b \u6a2a\u6d5c\u7bc7\uff5c\u30db\u30ed\u30e9\u30a4\u30d67\u540d\u304c\u6a2a\u6d5c\u307f\u306a\u3068\u307f\u3089\u30445\u4f1a\u5834\u3067\u30b3\u30e9\u30dc (\u30db\u30ed\u30e9\u30a4\u30d6\u901a\u4fe1) \u30db\u30ed\u30e9\u30a4\u30d69\u5468\u5e74-\u30db\u30ed\u82b1\u706b2026\u304c\u57fc\u7389\u30b9\u30bf\u30b8\u30a2\u30e0\u3067\u958b\u50ac\u3001\u82b1\u706b\u00d7\u30c9\u30ed\u30fc\u30f3\u306e\u591c\u7a7a\u3078 (\u682a\u5f0f\u4f1a\u793eMICE\u7814\u7a76\u6240) \u30db\u30ed\u30e9\u30a4\u30d69\u5468\u5e74\u8a18\u5ff5\u300ehololive Dreams\u300f\u958b\u50ac\uff01\u6a2a\u6d5c\u3068\u57fc\u7389\u3092\u5f69\u308b\u5922\u306e\u796d\u5178\u3092\u5fb9\u5e95\u89e3\u8aac (UtaTen)"
+    }
+  ],
+  "wikipedia": [
+    {
+      "source": "wikipedia_pageviews",
+      "article": "Grand Theft Auto",
+      "queries": [
+        "grand theft auto",
+        "gta"
+      ],
+      "as_of": "2026-08-17",
+      "views": 3647,
+      "baseline": 3768,
+      "spike_ratio": 0.97,
+      "series": [
+        [
+          "20260807",
+          4061
+        ],
+        [
+          "20260808",
+          3970
+        ],
+        [
+          "20260809",
+          4111
+        ],
+        [
+          "20260810",
+          4092
+        ],
+        [
+          "20260811",
+          3822
+        ],
+        [
+          "20260812",
+          3572
+        ],
+        [
+          "20260813",
+          3566
+        ],
+        [
+          "20260814",
+          3715
+        ],
+        [
+          "20260815",
+          3615
+        ],
+        [
+          "20260816",
+          3646
+        ],
+        [
+          "20260817",
+          3647
+        ]
+      ]
+    }
+  ],
+  "filter": {
+    "scope": "product_and_event_datasets",
+    "google_kept": 1,
+    "google_removed": 59,
+    "wikipedia_kept": 1,
+    "wikipedia_removed": 0
+  }
+}

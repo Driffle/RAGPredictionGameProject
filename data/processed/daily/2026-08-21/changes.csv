@@ -1,0 +1,1394 @@
+as_of,kind,change_type,title,field,before,after,source,detail
+2026-08-21,product,delayed,Gobble,release_date,2026-09-24,2027-01-01,wikidata,Release moved 2026-09-24 → 2027-01-01
+2026-08-21,product,delayed,over the hill,release_date,2026-10-14,2027-01-01,wikidata,Release moved 2026-10-14 → 2027-01-01
+2026-08-21,product,confirmation_changed,BioEden,confirmation,announced,1,catalog,Confirmation announced → 1
+2026-08-21,product,confirmation_changed,ELDEN RING Tarnished Edition,confirmation,announced,1,catalog,Confirmation announced → 1
+2026-08-21,product,confirmation_changed,Orbitals,confirmation,announced,1,catalog,Confirmation announced → 1
+2026-08-21,product,added,PRAGMATA,presence,,added,announced_registry,New product entered the live dataset
+2026-08-21,product,removed,A Tiny Wander,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Aeterna Lucis,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Alzara: Radiant Echoes,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Animal Use Protocol,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Blind Descent,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Bogdan's Cross,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Bokosuka Wars II,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Castaway Diary: Portal to the Unknown Isles,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Castle Come,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Control: Ultimate Edition,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Cosmo Tales,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Crystals of Irm,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Destiny Code,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Don't Kill Them All,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,DriveCrazy,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,EDEN.schemata();,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Endurance Motorsport Series,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Fate/EXTRA Record,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Final Formation,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Forge of the Fae,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Frostrail,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Ghost Sector,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Golf With Your Friends 2,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Haruka: Beyond the Stars,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Hell of an Office,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Hero's Hand,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Hunting Simulator 3,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Ice on the Edge,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Junxions,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Light Odyssey,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Lost Hellden,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Marvel 1943: Rise of Hydra,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Mightreya,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Mononoke no Kuni,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Nocturnal II,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Paranormal Activity: Found Footage,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Pararecords,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Pocket Wheels,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Professor Layton and the New World of Steam,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Prolegomena To a Hyperdimensional Interface That Will Be Able to Manifest From Three-Minute Interchanges,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Raev: Kingdom on the Distant Shores,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Re:Ver Project: Tokyo,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Recur,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,"Reggie, His Cousin, Two Scientists and Most Likely the End of the World",presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Rootbound,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,SacriFire,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Scriptorium: Master of Manuscripts,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Sea of Sorrow,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Serial World,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Shadow of the Road,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Sigma Star Saga,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Silent Planet,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Skyblivion,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Starfinder: Afterlight,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Steampunk Shinobi,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Sunkissed City,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Tanuki: Pon's Summer,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Tenet of the Spark,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Town of Zoz,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Ultra Mushroom,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Valkyrie of Phantasm,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Wolfhound,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,SpongeBob: Krusty Cook-Off,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Tomba! Special Edition,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Fairy Tail: Dungeons,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,I Am Future,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Fire Emblem: Path of Radiance,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,The Brew Barons,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Big Hops,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Quarantine Zone: The Last Check,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Hytale,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Temirana: The Lucky Princess and the Tragic Knights,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Animal Crossing: New Horizons,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Animal Crossing: New Horizons – Nintendo Switch 2 Edition,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Oh Demon! Fix My TV,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,The Legend of Heroes: Trails Beyond the Horizon,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,BrokenLore: Unfollow,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,2XKO,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Mio: Memories in Orbit,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,DragonSword (KR),presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Arknights: Endfield,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Cult of the Lamb: Woolhaven,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,"Dwarves: Glory, Death and Loot",presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Dynasty Warriors: Origins,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Look Mum No Computer,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,SEGA Football Club Champions,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Telenet,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,The Rumble Fish 2,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,The Rumble Fish 2 – Nintendo Switch 2 Edition,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Un:Logical,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Fighting Force,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Fighting Force Collection,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Pathologic,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Highguard,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Viractal,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Speedball,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Core Keeper – Nintendo Switch 2 Edition,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Steel Century Groove,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Card-en-Ciel – Nintendo Switch 2 Edition,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Chrono Ark Deluxe Edition,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,City Tales: Medieval Era,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,"Don’t Stop, Girlypop!",presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Dusk Index: Gion,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Kigetsu no Yoru,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Project: Gorgon,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Run for Money,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Front Mission 3: Remake,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Balloon Kid,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Opus: Echo of Starsong,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Shiren the Wanderer: The Mystery Dungeon of Serpentcoil Island,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Yoshi/Mario & Yoshi (Game Boy),presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Jimmy and the Pulsating Mass,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Lovish,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,PUBG: BLINDSPOT,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Super Bomberman Collection,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Carmageddon,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,JDM: Japanese Drift Master,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,My Hero Academia: All's Justice,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Primal Carnage: Evolution,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,World's End Club,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Crisol: Theater of Idols,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Shadows of the Afterland,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Tokyo Scramble,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,ChromaGun 2: Dye Hard,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Disciples: Domination,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Fantasista Asuka,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,God of War: Sons of Sparta,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Hakuoki SSL: Sweet School Life,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Kingdom Come: Deliverance,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Panty Party Perfect,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Rayman: 30th Anniversary Edition,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Rune Factory: Guardians of Azuma,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Caves of Qud,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,3D Tetris,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Galactic Pinball,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Golf (Virtual Boy),presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Red Alarm,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Teleroboxer,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,The Mansion of Innsmouth,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Virtual Boy Wario Land,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Hunter × Hunter: Nen × Survivor,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Star Trek: Voyager – Across the Unknown,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Earnest Evans,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Earnest Evans Collection,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Gear.Club Unlimited,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Paranormasight: The Mermaid's Curse,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Soulslinger: Envoy of Death,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Styx: Blades of Greed,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,WiZmans World,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Xenoblade Chronicles X: Definitive Edition – Nintendo Switch 2 Edition,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Prize Fighter: Heavyweight Edition,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Ys X: Proud Nordics,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Tom Clancy's Rainbow Six Mobile,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Fallout 4: Anniversary Edition,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Daisenryaku,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Icarus: Console Edition,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,No Sleep for Kaname Date – From AI: The Somnium Files,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,PC Building Simulator 2,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Path of Mystery: A Brush with Death,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Raiden Fighters,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Spellcasters Chronicles,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,The Fox's Way Home,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Fear Effect 2: Retro Helix,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Pokémon FireRed and LeafGreen,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Resident Evil 7: Biohazard,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Resident Evil Village,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,World of Warcraft: Midnight,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Japanese Rural Life Adventure,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Legacy of Kain: Defiance Remastered,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,BLOKES on BLOCKS!,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Never Grave: The Witch and The Curse,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Oceanhorn,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Planet of Lana II: Children of the Leaf,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Pokémon Pokopia,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Slay the Spire II,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Lost & Found Co.,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Methods: The Canada Files,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Peregrino,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Mario Clash,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Mario vs. Donkey Kong,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Mario's Tennis,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Piece by Piece,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,The Liar Princess and the Blind Prince,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Bravely Default: Flying Fairy HD Remaster,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Bubblegum Galaxy,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Fatal Frame II: Crimson Butterfly Remake,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,GreedFall 2: The Dying World,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,RoadOut,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Tomb Raider I–III Remastered,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Yomawari: Lost in the Dark,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Monster Hunter Stories 3: Twisted Reflection,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Pode,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Rustil: Eternal Labyrinth Castle,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Tower Tag,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Gnosia,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Starship Troopers: Ultimate Bug War!,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Fallen Tear: The Ascension,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Pokémon XD: Gale of Darkness,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Shadow Tactics: Blades of the Shogun,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Öoo,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Dragonkin: The Banished,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Human: Fall Flat – Nintendo Switch 2 Edition,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Rushing Beat X: Return of Brawl Brothers,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Star Savior,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,The Coin Game,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,The Little Tomb: The Maholova Club and the Search for a Dead Body,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Virtual Ties: Isekaijoucho Musoukyoku,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,The Seven Deadly Sins: Origin,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Dissidia Duellum Final Fantasy,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Damon and Baby,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Mado Monogatari: Fia and the Wondrous Academy,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Tales of the Shire: A The Lord of the Rings Game,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Cookie Run: OvenSmash,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Curse Warrior,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Etrange Overlord,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Hyperdevotion Noire: Goddess Black Heart,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Kena: Bridge of Spirits,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Life Is Strange: Reunion,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Neopets,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Nutmeg!,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Okayu,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Otome Daoshi: Fighting for Love,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Shinonome Abyss: The Maiden Exorcist,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Super Mario Bros. Wonder – Nintendo Switch 2 Edition + Meetup in Bellabel Park,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Taito Milestones,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Virtua Fighter 5 R.E.V.O. World Stage,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Winning Post,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,goHELLgo Gou: Tsukiotoshitego,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,The Fifth Family,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Homura: The Crimson Warriors,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Legacy of Kain: Ascendance,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Lilac,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Raccoin: Coin Pusher Roguelike,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Sprint City,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Castle of Shikigami III,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Morkull Ascend to the Gods,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Motionrec,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Temtem: Swarm,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,The New Denpa Men,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Sigma Star Saga DX,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,High Above,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Samson: A Tyndalston Story,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Beyond Words,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Faith: The Unholy Trinity,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Memories Off Sousou: Break out of my shell,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Memories Off Sōsō: Break out of my shell,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Rose Guns Days Season 1,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Skautfold: Moonless Knight,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Dosa Divas: One Last Meal,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Calamity Angels: Special Delivery,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Mongil: Star Dive,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Bunny Garden 2,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Cthulhu: The Cosmic Abyss,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Ereban: Shadow Legacy,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Mouse: P.I. for Hire,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,OPUS: Prism Peak,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Opus,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Smash It Wild,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Task Time,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Tomodachi Life: Living the Dream,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Honor of Kings: World,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Albion Online,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Dragon Quest Smash/Grow,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Vampire Crawlers: The Turbo Wildcard from Vampire Survivors,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Aquanaut's Holiday,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Card & Casino,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Castle of Shikigami 3,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Elminage ORIGINAL: Priestess of Darkness and The Ring of the Gods,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Kingdom's Return: Time-Eating Fruit and the Ancient Monster,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Lorelei and the Laser Eyes – Nintendo Switch 2 Edition,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Matsurika no Kei -kEi- Tenmei Kashokuden,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Nagi no Koi,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Sayonara Wild Hearts – Nintendo Switch 2 Edition,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Sudden Strike,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Titanium Court,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Anemoi,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Snap & Grab,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Traysia,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Flock Around,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Mahou Arms,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Moomintroll: Winter's Warmth,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Snail's Knock Out,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Diablo IV: Lord of Hatred,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Spy Drops,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,WILL: Follow The Light,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Ys Memoire: Revelations in Celceta,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Neverness to Everness,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Amnesia: Rebirth,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Heroes of Might and Magic: Olden Era,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Perennial Dusk: Kinsenka,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,R-Type DX,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Shinigami Hime to Ishokan no Kaibutsu,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,The Coma,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,inKONBINI: One Store. Many Stories,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Bow-wow Battle,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Prius Online,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Withering Realms,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Axe Cop,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Haneda Girl,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Corebreaker,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Battlestar Galactica,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,OCTOPinbs,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Call of the Elder Gods,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Nitro Gen Omega,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Jack Bros.,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Perfect Tides: Station to Station,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Smalland: Survive the Wilds,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Space Invaders Virtual Collection,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Söldner-X 2: Final Prototype Definitive Edition,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,V-Tetris,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Vertical Force,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Virtual Bowling,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Virtual Fishing,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Corsairs: Battle of the Caribbean,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Darksiders: Warmastered Edition,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,R-Type Dimensions III,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,FZ: Formation Z,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,King of Tokyo,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Psyvariar 3,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Q Collection,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,"Warhammer 40,000: Mechanicus II",presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,"Warhammer 40,000: Speed Freeks",presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Zero Parades: For Dead Spies,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Lego Batman: Legacy of the Dark Knight,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Rugrats: Retro Rewind Collection,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Tales of Arise: Beyond the Dawn Edition,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Birushana: Winds of Fate,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,LumenTale: Memories of Trey,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,MLB The Show,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,World of Tanks,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Poppy Playtime: Chapter 5,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Age of Empires II: Definitive Edition,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Bluey's Quest for the Gold Pen,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Clockfall,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Demon Kill Demon: Yomi 1984,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Lollipop Chainsaw RePOP – Nintendo Switch 2 Edition,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Monochrome Mobius: Rights and Wrongs Forgotten,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Schrödinger's Call,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Stardust: Wish of Witch,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Story of Seasons: Grand Bazaar,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Touhou Yukkuri Mountain,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Utawarerumono,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,System Shock 2: 25th Anniversary Remaster,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,A-Train 9 Evolution,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Crazy Cha!n: Elpis no Kusari,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Donkey Kong 64,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Goals,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,River City Saga,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Tetris the Grandmaster 4: Absolute Eye,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Tetris: The Grand Master 4 – Absolute Eye,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Gothic Remake,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,2 Fights in 2 Tight Spaces,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Descent,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Where Winds Meet,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Atelier Yumia: The Alchemist of Memories & the Envisioned Land,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Inazuma Eleven,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Rise of the Tomb Raider: 20 Year Celebration,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Thomas & Friends: Wonders of Sodor,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Xenoblade Chronicles: Definitive Edition – Nintendo Switch 2 Edition,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Beatdown City Survivors,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,FIFA World Cup: Launch Edition,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Powerful Pro Baseball 2026-2027,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Starseeker: Astroneer Expeditions,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Unrailed 2: Back on Track,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Unrailed! 2: Back on Track,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Pokémon Champions,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Observer: System Redux,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Soccer Kid,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,The Adventures of Elliot: The Millennium Tales,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,UsoNatsu,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,UsoNatsu: The Summer Romance Bloomed From A Lie,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,and Roger,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,EA Sports UFC 6,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Maseylia: Echoes of the Past,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,SAND: Raiders of Sophie,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Devil May Cry 5: Devil Hunter Edition,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Sonic Frontiers: Definitive Edition,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Deltarune: Chapter 5,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Catto's Post Office,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Citizen Sleeper 2: Starward Vector,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,My Merry May with be,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Namco,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Saeko: Giantess Dating Sim,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Villion: Code,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Ninja Master's,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Dokapon 3-2-1,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Deathbulge: Battle of the Bands,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Q3,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Q3/Q4,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Ganbare Goemon,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Undergrounded,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,XeGrader plus,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Dr. Mario & Puzzle League,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Fortified Zone,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,The Sword of Hope,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Wario Land: Super Mario Land 3,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Call of Duty: Black Ops,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Call of Duty: Black Ops II,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,EA Sports College Football,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Granblue Fantasy: Relink,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Gunvolt Chronicles: Luminous Avenger iX,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Magical Girl Witch Trials,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Tokyo Valkyries,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Digimon Story: Time Stranger,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Wuthering Waves,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Octopath Traveler II,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Digimon UP,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Star Ocean: The Second Story R,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Dreamin' Her,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Full Stride,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,K-pop Idol Stories: Road to Debut,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Kyoto Xanadu,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Moss: The Forgotten Relic,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,eBaseball: Pro Spirit 2026,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,The Dream Of A Cockspur,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Avatar Legends: The Fighting Game,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Dodo Duckie!,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,DragonSword: Awakening,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Hard Edge,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Hololive Dreams,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Staffer Retro: A Supernatural Mystery Quest,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,The Angel Next Door Spoils Me Rotten,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Valkyrie Tune: Synthesis of Souls,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,An Eggstremely Hard Game,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Kazuma Kaneko's Tsukuyomi,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Suika Game,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Suika Game Planet,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Dystopicon,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Prelude: Dark Pain,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,EverQuest,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Gothic Classic,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Halo: Campaign Evolved,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Harvest Moon: The Lost Valley,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,BOKURA,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Fuga: Melodies of Steel,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Aretha,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Culdcept The First,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Fantasy Maiden Wars: Dream of the Stray Dreamer,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Ira,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Kinki Spiritual Affairs Bureau,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Kusan: City of Wolves,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Rose Guns Days Season 2,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Signy & Mino: Against All Gods,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Sponge Break,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Turnip Mountain,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Verho: Curse of Faces,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Xenoblade Chronicles 2 – Nintendo Switch 2 Edition,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Batman: Caped Crusader,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,The Relic: First Guardian,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Dragon Hopper,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Final Fantasy XIV,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Zero Racers,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Lost & Found: A This Bed We Made Story,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Ao Oni,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Changeable Guardian Estique,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Cotton Rock With You,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Cotton Rock with You: Oriental Night Dreams,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Iron Nest,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Marvel Tokon: Fighting Souls,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Obakeidoro 2: Chase & Seek,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,ReStory: Chill Electronics Repairs,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Tensei Game: Karma x Cross,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Expeditions: Samurai,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Suikoden: Star Leap,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,1998: The Toll Keeper Story,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Brave Dungeon: The Meaning of Justice,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Dungeon of Dragon Knight Remake,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Knytt,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Sacred 2: Fallen Angel Remaster,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,The Elder Scrolls IV: Oblivion Remastered,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,The Lord of the Rings: War in the North,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Agefield High: Rock the School,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Finding Polka,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,BlazBlue Entropy Effect X – Nintendo Switch 2 Edition,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Dash'n'Drops,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Defender of the Crown,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Hell Let Loose: Vietnam,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,IGS,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Panzer Knights: Commander’s Edition,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Super Mario Sunshine,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Mafia: The Old Country — Man of Honor,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Platonica Space,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Gobliiins,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Dungeon Antiqua 2,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Mexican Ninja,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Mortal Shell II,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Over Requiemz,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Pipistrello and the Cursed Yoyo,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,S.T.A.L.K.E.R. 2: Cost of Hope,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,1666: Amsterdam,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Aliens: Fireteam Elite 2,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Apidya' Special,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Blood Dungeon,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Once Human,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Aggelos II,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Brigandine: Abyss,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Hakuoki Ibun: Berezinskii no Majo,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Kalanoro,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Metal Gear Solid: Master Collection Vol. 2,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Mind Diver,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Model Debut4,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Neptunia,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Resonance: A Plague Tale Legacy,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Captain Tsubasa,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Serious Sam: Shatterverse,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Aerial_Knight's MrFreezy,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Aion,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Path of Mystery,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,The Guild: Europe 1410,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Angeline Era,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Emery Hearts,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Moonlighter 2: The Endless Vault,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Hashire Hebereke: EX,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Wo Long: Fallen Dynasty,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Isle of Reveries,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Onimusha: Way of the Sword,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Phantom of Inferno,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Culdcept The First Saturn Tribute,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Halloween: The Game,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Sprawl Zero,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,In Falsus,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,BrokenLore: Don't Lie,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Dumb Ways to Build,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Ex Sanguis,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Gakkou de atta Kowai Hanashi,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Hazard Pay,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Hot Wheels,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Takeover 2,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,The Alighieri Circle: Dante's Bloodline,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,The Legend of Heroes: Trails from Zero,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,The Legend of Heroes: Trails to Azure,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Touhou Koumakyou: New Classic ~ The Embodiment of Scarlet Devil,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Tsukikomori,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Destroy All Humans! 2: Reprobed,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Fright Train,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,RuneScape,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,TCG Card Shop Simulator,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Aniimo,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Monowave,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Roman Sands RE:Build,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Two Point Hospital: Full Health Collection,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Akiba Lost,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Fire Emblem: Fortune's Weave,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Granblue Fantasy Versus: Rising,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Kernel Hearts,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Patlabor: The Case Files,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Rizz Dungeon: Skeleton Key to My Heart,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,The Alchemist of Ars Magna,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Tristia: Chronicles,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,The Grinch,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,The Walking Dead: Streets of Survival,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Cupid Parasite,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Dune: Awakening,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Derby Stallion,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Dragon Quest XI S: Echoes of an Elusive Age,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Farming Camp,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Qliphah in Providence's Shadow,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Shinobi: Art of Vengeance,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,SiN: Reloaded,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Silent Hill: Townfall,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Gothic II Complete Classic,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,TOEM 2,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Songs of Glimmerwick,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Augment Protocol,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Colorbound,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Don't Fret,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Dynasty Warriors 3: Complete Edition Remastered,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Hubert,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Kousai Toshi,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,MXGP,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Muchi Muchi Pork!,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Q4,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,RetroSpace,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Ace Combat 8: Wings of Theve,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Magical Craft: My Enchanted Dress Shop,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Disney Epic Mickey: Rebrushed,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Gears of War: E-Day,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Star Wars: Galactic Racer,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Boku to Tsuri Nikki,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Clive Barker's Hellraiser: Revival,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Echo Weaver,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Kingdom Hearts Collection [I ~ III,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Order of the Sinking Star,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Sesame Street,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,SpongeBob SquarePants: Titans of the Tide,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Castlevania: Belmont's Curse,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Harvest Moon: Echoes of Teradea,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Tormented Souls II,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Toy Story 3: Complete Edition,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Toy Story: Retro Roundup!,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Blue Ridge Hunting,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Azure Striker Gunvolt Trilogy Enhanced – Nintendo Switch 2 Edition,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Cotton Reboot!,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Cotton Reboot! High Tension!,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Demons' Night Fever,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Nintendo Switch Sports Resort,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Red Chat Ritual: TSUMIMI TIME,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Call of Duty: Modern Warfare 4,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,One Piece: Grand Gourmet,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,9 R.I.P. sequel,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Minecraft: Bedrock Edition,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Remothered,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Black Lily’s Tale,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Danchi Days,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Demon Slayer: Kimetsu no Yaiba – The Hinokami Chronicles 2 – Nintendo Switch 2 Edition,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Hello Kitty Party Land,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,The Cat in the Hat,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Godzilla: Destroy All Monsters Melee Remastered,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Radiant Starlets,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Wilderdark,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Crymelight,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,K-POP Rising: Dream to Shine,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Light: Black Cat & Amnesia Girl,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Wielders of the Essence,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Hasbro,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Barbie Rewind,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Metaphor: ReFantazio,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Prinny,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,The Binding of Isaac: Repentance+,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Gothic 3 Classic,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Kimiiro Patra IF,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Koganei-so and the Golden Swallowtail Butterfly,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,The Adventures of Bryan Scott,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Dragon Quest Monsters: The Withered World,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,SOMBRAS: negative frames,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,"Warhammer 40,000: Dawn of War IV",presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Xenoblade Chronicles 3 – Nintendo Switch 2 Edition,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Feda: The Emblem of Justice,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Ninja Baseball League-Man: Bases Loaded,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Uta no Prince-sama,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,"WIN, PSVR, Quest",presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Artis Impact,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Attack on Titan 3,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Back to the Dawn,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Brigador Killers,presence,present,removed,catalog,Product left the live dataset
+2026-08-21,product,removed,Cozy Marbles,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Crimson Moon,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,DAVE THE DIVER,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Dragon's Dogma 2,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,EARTH DEFENSE FORCE 5,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,ENDLESS Legend 2,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Exstetra,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Four Last Things,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Frosthaven,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Gallipoli,presence,present,removed,catalog,Product left the live dataset
+2026-08-21,product,removed,Hell is Us,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,iRacing Arcade,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Mamon King,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Mortal Shell II,presence,present,removed,catalog,Product left the live dataset
+2026-08-21,product,removed,Mortal Shell II Devout Edition,presence,present,removed,catalog,Product left the live dataset
+2026-08-21,product,removed,Neverway,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,No Rest for the Wicked,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Octopath Traveler,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Once Upon a KATAMARI,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Polylithic,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Puppergeist,presence,present,removed,catalog,Product left the live dataset
+2026-08-21,product,removed,Ratatan,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Romance of the Three Kingdoms XIV,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Sensory Overload,presence,present,removed,catalog,Product left the live dataset
+2026-08-21,product,removed,Shao Song I,presence,present,removed,catalog,Product left the live dataset
+2026-08-21,product,removed,SpeedRunners,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,STEINS;GATE RE:BOOT,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Stick It to the Stickman,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,The Crew Motorfest,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,TOEM,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Trine,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Vacation Cafe Simulator,presence,present,removed,catalog,Product left the live dataset
+2026-08-21,product,removed,Valheim,presence,present,removed,wikidata,Product left the live dataset
+2026-08-21,product,removed,Village in the Shade,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Way of the Hunter 2,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,product,removed,Whisper of the House,presence,present,removed,wikipedia:List_of_video_games_released_in_2026,Product left the live dataset
+2026-08-21,event,added,Academy of Interactive Arts & Sciences,presence,,added,wikipedia:2022_in_video_games,New event entered the live dataset
+2026-08-21,event,added,Business Wire,presence,,added,wikipedia:2022_in_video_games,New event entered the live dataset
+2026-08-21,event,added,The Batman,presence,,added,historical_registry,New event entered the live dataset
+2026-08-21,event,added,Polygon,presence,,added,wikipedia:2022_in_video_games,New event entered the live dataset
+2026-08-21,event,added,Polygon,presence,,added,wikipedia:2022_in_video_games,New event entered the live dataset
+2026-08-21,event,added,Black Panther: Wakanda Forever,presence,,added,historical_registry,New event entered the live dataset
+2026-08-21,event,added,Ant-Man and the Wasp: Quantumania,presence,,added,historical_registry,New event entered the live dataset
+2026-08-21,event,added,Academy of Interactive Arts & Sciences,presence,,added,wikipedia:2023_in_video_games,New event entered the live dataset
+2026-08-21,event,added,Game Developer,presence,,added,wikipedia:2023_in_video_games,New event entered the live dataset
+2026-08-21,event,added,Guardians of the Galaxy Vol. 3,presence,,added,historical_registry,New event entered the live dataset
+2026-08-21,event,added,The Flash,presence,,added,historical_registry,New event entered the live dataset
+2026-08-21,event,added,Video Games Chronicle,presence,,added,wikipedia:2023_in_video_games,New event entered the live dataset
+2026-08-21,event,added,GameSpot,presence,,added,wikipedia:2023_in_video_games,New event entered the live dataset
+2026-08-21,event,added,Academy of Interactive Arts & Sciences,presence,,added,wikipedia:2024_in_video_games,New event entered the live dataset
+2026-08-21,event,added,Deadpool & Wolverine,presence,,added,historical_registry,New event entered the live dataset
+2026-08-21,event,added,Joker: Folie à Deux,presence,,added,historical_registry,New event entered the live dataset
+2026-08-21,event,added,gaming accessories,presence,,added,wikipedia:2025_in_video_games,New event entered the live dataset
+2026-08-21,event,added,Academy of Interactive Arts & Sciences,presence,,added,wikipedia:2025_in_video_games,New event entered the live dataset
+2026-08-21,event,added,Captain America: Brave New World,presence,,added,historical_registry,New event entered the live dataset
+2026-08-21,event,added,Game Developers Conference,presence,,added,wikipedia:2025_in_video_games,New event entered the live dataset
+2026-08-21,event,added,London Games Festival,presence,,added,wikipedia:2025_in_video_games,New event entered the live dataset
+2026-08-21,event,added,Thunderbolts*,presence,,added,historical_registry,New event entered the live dataset
+2026-08-21,event,advanced,Summer Game Fest,runtime,2030-06-05 → 2030-06-08,2025-06-06 → 2025-06-09,"Wikipedia Summer Game Fest — Jun 6–9, 2025",Event window moved 2030-06-05/2030-06-08 → 2025-06-06/2025-06-09
+2026-08-21,event,added,Evolution Championship Series,presence,,added,wikipedia:2025_in_video_games,New event entered the live dataset
+2026-08-21,event,added,Superman,presence,,added,historical_registry,New event entered the live dataset
+2026-08-21,event,added,The Fantastic Four: First Steps,presence,,added,historical_registry,New event entered the live dataset
+2026-08-21,event,added,Super Mario,presence,,added,wikipedia:2025_in_video_games,New event entered the live dataset
+2026-08-21,event,advanced,Gamescom,runtime,2030-08-26 → 2030-08-30,2025-08-20 → 2025-08-24,"Wikipedia 2025 in video games — Aug 20–24, 2025",Event window moved 2030-08-26/2030-08-30 → 2025-08-20/2025-08-24
+2026-08-21,event,advanced,Tokyo Game Show,runtime,2030-09-17 → 2030-09-21,2025-09-25 → 2025-09-28,"Wikipedia 2025 in video games — Sep 25–28, 2025",Event window moved 2030-09-17/2030-09-21 → 2025-09-25/2025-09-28
+2026-08-21,event,added,Super Nintendo World,presence,,added,wikipedia:2025_in_video_games,New event entered the live dataset
+2026-08-21,event,added,Academy of Interactive Arts & Sciences,presence,,added,wikipedia:2026_in_video_games,New event entered the live dataset
+2026-08-21,event,added,Game Developers Conference,presence,,added,wikipedia:2026_in_video_games,New event entered the live dataset
+2026-08-21,event,added,European Commission,presence,,added,wikipedia:2026_in_video_games,New event entered the live dataset
+2026-08-21,event,added,Supergirl: Woman of Tomorrow,presence,,added,historical_registry,New event entered the live dataset
+2026-08-21,event,added,Blizzard Entertainment,presence,,added,wikipedia:2026_in_video_games,New event entered the live dataset
+2026-08-21,event,added,Clayface,presence,,added,historical_registry,New event entered the live dataset
+2026-08-21,event,added,Avengers: Doomsday,presence,,added,historical_registry,New event entered the live dataset
+2026-08-21,event,added,Polygon,presence,,added,wikipedia:2027_in_video_games,New event entered the live dataset
+2026-08-21,event,delayed,Gobble release window,runtime,2026-09-24 → 2026-10-08,2027-01-01 → 2027-03-31,announced_product_window,Event window moved 2026-09-24/2026-10-08 → 2027-01-01/2027-03-31
+2026-08-21,event,delayed,over the hill release window,runtime,2026-10-14 → 2026-10-28,2027-01-01 → 2027-03-31,announced_product_window,Event window moved 2026-10-14/2026-10-28 → 2027-01-01/2027-03-31
+2026-08-21,event,added,Deadline Hollywood,presence,,added,wikipedia:2027_in_video_games,New event entered the live dataset
+2026-08-21,event,added,The Last of Us,presence,,added,wikipedia:2023_in_video_games,New event entered the live dataset
+2026-08-21,event,advanced,Pou 3D,runtime,2025-12-08 → 2025-12-08,2025-12-03 → 2025-12-03,wikidata:video-game-adaptation,Event window moved 2025-12-08/2025-12-08 → 2025-12-03/2025-12-03
+2026-08-21,event,added,Daredevil: Born Again season 2,presence,,added,cross_media_registry,New event entered the live dataset
+2026-08-21,event,added,Man of Tomorrow,presence,,added,cross_media_registry,New event entered the live dataset
+2026-08-21,event,added,The Batman Part II,presence,,added,cross_media_registry,New event entered the live dataset
+2026-08-21,event,added,Avengers: Secret Wars,presence,,added,cross_media_registry,New event entered the live dataset
+2026-08-21,event,confirmation_changed,Elden Ring,confirmation,confirmed,announced date,ods,Confirmation confirmed → announced date
+2026-08-21,event,confirmation_changed,Call of Duty,confirmation,confirmed,announced date,ods,Confirmation confirmed → announced date
+2026-08-21,event,removed,A Tiny Wander release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Aeterna Lucis release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Alzara: Radiant Echoes release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Animal Use Protocol release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Blind Descent release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Bogdan's Cross release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Bokosuka Wars II release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Castaway Diary: Portal to the Unknown Isles release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Castle Come release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Control: Ultimate Edition release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Cosmo Tales release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Crystals of Irm release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Destiny Code release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Don't Kill Them All release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,DriveCrazy release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,EDEN.schemata(); release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Endurance Motorsport Series release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Fate/EXTRA Record release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Final Formation release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Forge of the Fae release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Frostrail release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Ghost Sector release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Golf With Your Friends 2 release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Haruka: Beyond the Stars release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Hell of an Office release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Hero's Hand release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Hunting Simulator 3 release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Ice on the Edge release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Junxions release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Light Odyssey release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Lost Hellden release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Marvel 1943: Rise of Hydra release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Mightreya release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Mononoke no Kuni release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Nocturnal II release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Paranormal Activity: Found Footage release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Pararecords release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Pocket Wheels release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Professor Layton and the New World of Steam release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Prolegomena To a Hyperdimensional Interface That Will Be Able to Manifest From Three-Minute Interchanges release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Raev: Kingdom on the Distant Shores release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Re:Ver Project: Tokyo release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Recur release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,"Reggie, His Cousin, Two Scientists and Most Likely the End of the World release window",presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Rootbound release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,SacriFire release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Scriptorium: Master of Manuscripts release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Sea of Sorrow release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Serial World release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Shadow of the Road release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Sigma Star Saga release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Silent Planet release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Skyblivion release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Starfinder: Afterlight release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Steampunk Shinobi release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Sunkissed City release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Tanuki: Pon's Summer release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Tenet of the Spark release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Town of Zoz release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Ultra Mushroom release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Valkyrie of Phantasm release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Wolfhound release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,"WIN, PSVR, Quest release window",presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,SpongeBob: Krusty Cook-Off release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Tomba! Special Edition release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Fairy Tail: Dungeons release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,I Am Future release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Fire Emblem: Path of Radiance release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,The Brew Barons release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Big Hops release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Quarantine Zone: The Last Check release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Hytale release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Temirana: The Lucky Princess and the Tragic Knights release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Animal Crossing: New Horizons release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Animal Crossing: New Horizons – Nintendo Switch 2 Edition release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Oh Demon! Fix My TV release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,The Legend of Heroes: Trails Beyond the Horizon release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,BrokenLore: Unfollow release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,2XKO release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Mio: Memories in Orbit release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,DragonSword (KR) release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Arknights: Endfield release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Cult of the Lamb: Woolhaven release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,"Dwarves: Glory, Death and Loot release window",presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Dynasty Warriors: Origins release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Look Mum No Computer release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,SEGA Football Club Champions release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Telenet release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,The Rumble Fish 2 release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,The Rumble Fish 2 – Nintendo Switch 2 Edition release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Un:Logical release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Fighting Force release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Fighting Force Collection release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Pathologic release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Highguard release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Viractal release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Speedball release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Core Keeper – Nintendo Switch 2 Edition release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Steel Century Groove release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Card-en-Ciel – Nintendo Switch 2 Edition release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Chrono Ark Deluxe Edition release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,City Tales: Medieval Era release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,"Don’t Stop, Girlypop! release window",presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Dusk Index: Gion release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Kigetsu no Yoru release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Project: Gorgon release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Run for Money release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Front Mission 3: Remake release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Balloon Kid release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Opus: Echo of Starsong release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Shiren the Wanderer: The Mystery Dungeon of Serpentcoil Island release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Yoshi/Mario & Yoshi (Game Boy) release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Jimmy and the Pulsating Mass release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Lovish release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,PUBG: BLINDSPOT release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Super Bomberman Collection release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Carmageddon release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,JDM: Japanese Drift Master release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,My Hero Academia: All's Justice release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Primal Carnage: Evolution release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,World's End Club release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Crisol: Theater of Idols release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Shadows of the Afterland release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Tokyo Scramble release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,ChromaGun 2: Dye Hard release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Disciples: Domination release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Fantasista Asuka release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,God of War: Sons of Sparta release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Hakuoki SSL: Sweet School Life release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Kingdom Come: Deliverance release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Panty Party Perfect release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Rayman: 30th Anniversary Edition release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Rune Factory: Guardians of Azuma release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Caves of Qud release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,3D Tetris release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Galactic Pinball release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Golf (Virtual Boy) release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Red Alarm release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Teleroboxer release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,The Mansion of Innsmouth release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Virtual Boy Wario Land release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Hunter × Hunter: Nen × Survivor release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Star Trek: Voyager – Across the Unknown release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Earnest Evans release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Earnest Evans Collection release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Gear.Club Unlimited release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Paranormasight: The Mermaid's Curse release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Soulslinger: Envoy of Death release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Styx: Blades of Greed release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,WiZmans World release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Xenoblade Chronicles X: Definitive Edition – Nintendo Switch 2 Edition release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Prize Fighter: Heavyweight Edition release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Ys X: Proud Nordics release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Tom Clancy's Rainbow Six Mobile release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Fallout 4: Anniversary Edition release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Daisenryaku release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Icarus: Console Edition release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,No Sleep for Kaname Date – From AI: The Somnium Files release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,PC Building Simulator 2 release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Path of Mystery: A Brush with Death release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Raiden Fighters release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Spellcasters Chronicles release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,The Fox's Way Home release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Fear Effect 2: Retro Helix release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Pokémon FireRed and LeafGreen release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Resident Evil 7: Biohazard release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Resident Evil Village release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,World of Warcraft: Midnight release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Japanese Rural Life Adventure release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Legacy of Kain: Defiance Remastered release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,BLOKES on BLOCKS! release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Never Grave: The Witch and The Curse release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Oceanhorn release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Planet of Lana II: Children of the Leaf release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Pokémon Pokopia release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Slay the Spire II release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Lost & Found Co. release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Methods: The Canada Files release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Peregrino release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Mario Clash release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Mario vs. Donkey Kong release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Mario's Tennis release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Piece by Piece release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,The Liar Princess and the Blind Prince release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Bravely Default: Flying Fairy HD Remaster release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Bubblegum Galaxy release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Fatal Frame II: Crimson Butterfly Remake release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,GreedFall 2: The Dying World release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,RoadOut release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Tomb Raider I–III Remastered release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Yomawari: Lost in the Dark release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Monster Hunter Stories 3: Twisted Reflection release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Pode release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Rustil: Eternal Labyrinth Castle release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Tower Tag release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Gnosia release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Starship Troopers: Ultimate Bug War! release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Fallen Tear: The Ascension release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Pokémon XD: Gale of Darkness release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Shadow Tactics: Blades of the Shogun release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Öoo release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Dragonkin: The Banished release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Human: Fall Flat – Nintendo Switch 2 Edition release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Rushing Beat X: Return of Brawl Brothers release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Star Savior release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,The Coin Game release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,The Little Tomb: The Maholova Club and the Search for a Dead Body release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Virtual Ties: Isekaijoucho Musoukyoku release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,The Seven Deadly Sins: Origin release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Dissidia Duellum Final Fantasy release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Damon and Baby release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Mado Monogatari: Fia and the Wondrous Academy release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Tales of the Shire: A The Lord of the Rings Game release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Cookie Run: OvenSmash release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Curse Warrior release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Etrange Overlord release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Hyperdevotion Noire: Goddess Black Heart release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Kena: Bridge of Spirits release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Life Is Strange: Reunion release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Neopets release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Nutmeg! release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Okayu release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Otome Daoshi: Fighting for Love release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Shinonome Abyss: The Maiden Exorcist release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Super Mario Bros. Wonder – Nintendo Switch 2 Edition + Meetup in Bellabel Park release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Taito Milestones release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Virtua Fighter 5 R.E.V.O. World Stage release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Winning Post release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,goHELLgo Gou: Tsukiotoshitego release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,The Fifth Family release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Homura: The Crimson Warriors release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Legacy of Kain: Ascendance release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Lilac release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Raccoin: Coin Pusher Roguelike release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Sprint City release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Castle of Shikigami III release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Morkull Ascend to the Gods release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Motionrec release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Temtem: Swarm release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,The New Denpa Men release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Sigma Star Saga DX release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,High Above release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Samson: A Tyndalston Story release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Beyond Words release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Faith: The Unholy Trinity release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Memories Off Sousou: Break out of my shell release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Memories Off Sōsō: Break out of my shell release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Rose Guns Days Season 1 release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Skautfold: Moonless Knight release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Dosa Divas: One Last Meal release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Calamity Angels: Special Delivery release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Mongil: Star Dive release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Bunny Garden 2 release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Cthulhu: The Cosmic Abyss release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Ereban: Shadow Legacy release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Mouse: P.I. for Hire release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,OPUS: Prism Peak release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Opus release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Smash It Wild release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Task Time release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Tomodachi Life: Living the Dream release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Honor of Kings: World release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Albion Online release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Dragon Quest Smash/Grow release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Vampire Crawlers: The Turbo Wildcard from Vampire Survivors release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Aquanaut's Holiday release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Card & Casino release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Castle of Shikigami 3 release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Elminage ORIGINAL: Priestess of Darkness and The Ring of the Gods release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Kingdom's Return: Time-Eating Fruit and the Ancient Monster release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Lorelei and the Laser Eyes – Nintendo Switch 2 Edition release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Matsurika no Kei -kEi- Tenmei Kashokuden release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Nagi no Koi release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Sayonara Wild Hearts – Nintendo Switch 2 Edition release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Sudden Strike release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Titanium Court release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Anemoi release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Snap & Grab release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Traysia release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Flock Around release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Mahou Arms release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Moomintroll: Winter's Warmth release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Snail's Knock Out release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Diablo IV: Lord of Hatred release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Spy Drops release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,WILL: Follow The Light release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Ys Memoire: Revelations in Celceta release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Neverness to Everness release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Amnesia: Rebirth release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Heroes of Might and Magic: Olden Era release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Perennial Dusk: Kinsenka release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,R-Type DX release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Shinigami Hime to Ishokan no Kaibutsu release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,The Coma release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,inKONBINI: One Store. Many Stories release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Bow-wow Battle release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Prius Online release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Withering Realms release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Axe Cop release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Haneda Girl release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Corebreaker release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Battlestar Galactica release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,OCTOPinbs release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Call of the Elder Gods release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Nitro Gen Omega release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Jack Bros. release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Perfect Tides: Station to Station release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Smalland: Survive the Wilds release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Space Invaders Virtual Collection release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Söldner-X 2: Final Prototype Definitive Edition release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,V-Tetris release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Vertical Force release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Virtual Bowling release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Virtual Fishing release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Corsairs: Battle of the Caribbean release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Darksiders: Warmastered Edition release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,R-Type Dimensions III release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,FZ: Formation Z release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,King of Tokyo release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Psyvariar 3 release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Q Collection release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,"Warhammer 40,000: Mechanicus II release window",presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,"Warhammer 40,000: Speed Freeks release window",presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Zero Parades: For Dead Spies release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Lego Batman: Legacy of the Dark Knight release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Rugrats: Retro Rewind Collection release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Tales of Arise: Beyond the Dawn Edition release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Birushana: Winds of Fate release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,LumenTale: Memories of Trey release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,MLB The Show release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,World of Tanks release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Poppy Playtime: Chapter 5 release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Age of Empires II: Definitive Edition release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Bluey's Quest for the Gold Pen release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Clockfall release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Demon Kill Demon: Yomi 1984 release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Lollipop Chainsaw RePOP – Nintendo Switch 2 Edition release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Monochrome Mobius: Rights and Wrongs Forgotten release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Schrödinger's Call release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Stardust: Wish of Witch release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Story of Seasons: Grand Bazaar release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Touhou Yukkuri Mountain release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Utawarerumono release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,System Shock 2: 25th Anniversary Remaster release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,A-Train 9 Evolution release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Crazy Cha!n: Elpis no Kusari release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Donkey Kong 64 release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Goals release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,River City Saga release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Tetris the Grandmaster 4: Absolute Eye release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Tetris: The Grand Master 4 – Absolute Eye release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Gothic Remake release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,2 Fights in 2 Tight Spaces release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Descent release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Where Winds Meet release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Atelier Yumia: The Alchemist of Memories & the Envisioned Land release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Inazuma Eleven release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Rise of the Tomb Raider: 20 Year Celebration release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Thomas & Friends: Wonders of Sodor release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Xenoblade Chronicles: Definitive Edition – Nintendo Switch 2 Edition release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Beatdown City Survivors release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,FIFA World Cup: Launch Edition release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Powerful Pro Baseball 2026-2027 release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Starseeker: Astroneer Expeditions release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Unrailed 2: Back on Track release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Unrailed! 2: Back on Track release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Pokémon Champions release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Observer: System Redux release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Soccer Kid release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,The Adventures of Elliot: The Millennium Tales release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,UsoNatsu release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,UsoNatsu: The Summer Romance Bloomed From A Lie release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,and Roger release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,EA Sports UFC 6 release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Maseylia: Echoes of the Past release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,SAND: Raiders of Sophie release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Devil May Cry 5: Devil Hunter Edition release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Sonic Frontiers: Definitive Edition release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Deltarune: Chapter 5 release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Catto's Post Office release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Citizen Sleeper 2: Starward Vector release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,My Merry May with be release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Namco release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Saeko: Giantess Dating Sim release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Villion: Code release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Ninja Master's release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Dokapon 3-2-1 release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Deathbulge: Battle of the Bands release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Q3 release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Q3/Q4 release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Ganbare Goemon release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Undergrounded release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,XeGrader plus release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Dr. Mario & Puzzle League release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Fortified Zone release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,The Sword of Hope release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Wario Land: Super Mario Land 3 release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Call of Duty: Black Ops release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Call of Duty: Black Ops II release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,EA Sports College Football release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Granblue Fantasy: Relink release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Gunvolt Chronicles: Luminous Avenger iX release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Magical Girl Witch Trials release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Tokyo Valkyries release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Digimon Story: Time Stranger release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Wuthering Waves release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Octopath Traveler II release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Digimon UP release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Star Ocean: The Second Story R release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Dreamin' Her release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Full Stride release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,K-pop Idol Stories: Road to Debut release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Kyoto Xanadu release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Moss: The Forgotten Relic release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,eBaseball: Pro Spirit 2026 release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,The Dream Of A Cockspur release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Avatar Legends: The Fighting Game release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Dodo Duckie! release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,DragonSword: Awakening release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Hard Edge release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Hololive Dreams release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Staffer Retro: A Supernatural Mystery Quest release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,The Angel Next Door Spoils Me Rotten release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Valkyrie Tune: Synthesis of Souls release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,An Eggstremely Hard Game release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Kazuma Kaneko's Tsukuyomi release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Suika Game release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Suika Game Planet release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Dystopicon release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Prelude: Dark Pain release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,EverQuest release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Gothic Classic release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Halo: Campaign Evolved release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Harvest Moon: The Lost Valley release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,BOKURA release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Fuga: Melodies of Steel release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Aretha release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Culdcept The First release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Fantasy Maiden Wars: Dream of the Stray Dreamer release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Ira release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Kinki Spiritual Affairs Bureau release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Kusan: City of Wolves release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Rose Guns Days Season 2 release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Signy & Mino: Against All Gods release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Sponge Break release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Turnip Mountain release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Verho: Curse of Faces release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Xenoblade Chronicles 2 – Nintendo Switch 2 Edition release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Batman: Caped Crusader release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,The Relic: First Guardian release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Dragon Hopper release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Final Fantasy XIV release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Zero Racers release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Lost & Found: A This Bed We Made Story release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Ao Oni release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Changeable Guardian Estique release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Cotton Rock With You release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Cotton Rock with You: Oriental Night Dreams release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Iron Nest release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Marvel Tokon: Fighting Souls release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Obakeidoro 2: Chase & Seek release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,ReStory: Chill Electronics Repairs release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Tensei Game: Karma x Cross release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Expeditions: Samurai release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Suikoden: Star Leap release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,1998: The Toll Keeper Story release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Brave Dungeon: The Meaning of Justice release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Dungeon of Dragon Knight Remake release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Knytt release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Sacred 2: Fallen Angel Remaster release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,The Elder Scrolls IV: Oblivion Remastered release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,The Lord of the Rings: War in the North release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Agefield High: Rock the School release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Finding Polka release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,BlazBlue Entropy Effect X – Nintendo Switch 2 Edition release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Dash'n'Drops release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Defender of the Crown release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Hell Let Loose: Vietnam release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,IGS release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Panzer Knights: Commander’s Edition release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Super Mario Sunshine release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Mafia: The Old Country — Man of Honor release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Platonica Space release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Gobliiins release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Dungeon Antiqua 2 release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Mexican Ninja release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Mortal Shell II release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Over Requiemz release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Pipistrello and the Cursed Yoyo release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,S.T.A.L.K.E.R. 2: Cost of Hope release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Cozy Marbles release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Gallipoli release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,1666: Amsterdam release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Aliens: Fireteam Elite 2 release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Apidya' Special release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Blood Dungeon release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Once Human release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Aggelos II release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Brigandine: Abyss release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Hakuoki Ibun: Berezinskii no Majo release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Kalanoro release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Metal Gear Solid: Master Collection Vol. 2 release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Mind Diver release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Model Debut4 release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Neptunia release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Resonance: A Plague Tale Legacy release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Lou's Lagoon release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,STAR WARS Zero Company release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Captain Tsubasa release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,ELDEN RING Tarnished Edition release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Serious Sam: Shatterverse release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Aerial_Knight's MrFreezy release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Aion release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Path of Mystery release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,The Guild: Europe 1410 release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Magical Blush release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Angeline Era release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Emery Hearts release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Moonlighter 2: The Endless Vault release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Hashire Hebereke: EX release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Wo Long: Fallen Dynasty release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,BioEden release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Orbitals release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,The Blood of Dawnwalker release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Isle of Reveries release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Onimusha: Way of the Sword release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Phantom of Inferno release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,WheelMates release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Culdcept The First Saturn Tribute release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Halloween: The Game release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Sprawl Zero release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,In Falsus release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,BrokenLore: Don't Lie release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Dumb Ways to Build release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Ex Sanguis release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Gakkou de atta Kowai Hanashi release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Hazard Pay release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Hot Wheels release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Takeover 2 release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,The Alighieri Circle: Dante's Bloodline release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,The Legend of Heroes: Trails from Zero release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,The Legend of Heroes: Trails to Azure release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Touhou Koumakyou: New Classic ~ The Embodiment of Scarlet Devil release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Tsukikomori release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Screenbound release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Destroy All Humans! 2: Reprobed release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Fright Train release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,RuneScape release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,TCG Card Shop Simulator release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Aniimo release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Monowave release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Roman Sands RE:Build release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Two Point Hospital: Full Health Collection release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Another Eden Begins release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Akiba Lost release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Fire Emblem: Fortune's Weave release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Granblue Fantasy Versus: Rising release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Kernel Hearts release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Patlabor: The Case Files release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Rizz Dungeon: Skeleton Key to My Heart release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,The Alchemist of Ars Magna release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Tristia: Chronicles release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Sniper Dan release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Trails in the Sky 2nd Chapter release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,The Grinch release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,The Walking Dead: Streets of Survival release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,PAPERHEAD release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Cupid Parasite release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Dune: Awakening release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Rivage release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Wind Runners release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Derby Stallion release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Dragon Quest XI S: Echoes of an Elusive Age release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Farming Camp release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Qliphah in Providence's Shadow release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Shinobi: Art of Vengeance release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,SiN: Reloaded release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Silent Hill: Townfall release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,CONTROL Resonant release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Dragon Shelter release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Gothic II Complete Classic release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,TOEM 2 release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Nivalis Nights release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Songs of Glimmerwick release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Minecraft Dungeons II release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Augment Protocol release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Colorbound release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Don't Fret release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Dynasty Warriors 3: Complete Edition Remastered release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Hubert release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Kousai Toshi release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,MXGP release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Muchi Muchi Pork! release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Q4 release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,RetroSpace release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,End of Abyss release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Rayman Legends Retold release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Ace Combat 8: Wings of Theve release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Magical Craft: My Enchanted Dress Shop release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Disney Epic Mickey: Rebrushed release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Gears of War: E-Day release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Star Wars: Galactic Racer release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Boku to Tsuri Nikki release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Clive Barker's Hellraiser: Revival release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Echo Weaver release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Kingdom Hearts Collection [I ~ III release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Order of the Sinking Star release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Forever Ago release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Silver Pines release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Sesame Street release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,SpongeBob SquarePants: Titans of the Tide release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Planet Zoo 2 release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Valor Mortis release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Castlevania: Belmont's Curse release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Harvest Moon: Echoes of Teradea release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Tormented Souls II release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Toy Story 3: Complete Edition release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Toy Story: Retro Roundup! release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Tales of Eternia Remastered release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Tenebris Somnia release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Blue Ridge Hunting release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Stupid Never Dies release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Azure Striker Gunvolt Trilogy Enhanced – Nintendo Switch 2 Edition release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Cotton Reboot! release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Cotton Reboot! High Tension! release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Demons' Night Fever release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Nintendo Switch Sports Resort release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Red Chat Ritual: TSUMIMI TIME release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,FINAL FANTASY RESONANCE release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Call of Duty: Modern Warfare 4 release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,One Piece: Grand Gourmet release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,9 R.I.P. sequel release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Minecraft: Bedrock Edition release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Remothered release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Emberville release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,ANOMALITH release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Black Lily’s Tale release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Danchi Days release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Demon Slayer: Kimetsu no Yaiba – The Hinokami Chronicles 2 – Nintendo Switch 2 Edition release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Hello Kitty Party Land release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Phantom Blade Zero release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,The Cat in the Hat release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Godzilla: Destroy All Monsters Melee Remastered release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Radiant Starlets release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Wilderdark release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Crymelight release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,K-POP Rising: Dream to Shine release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Light: Black Cat & Amnesia Girl release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Wielders of the Essence release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Hasbro release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Barbie Rewind release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Metaphor: ReFantazio release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Prinny release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,The Binding of Isaac: Repentance+ release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Gothic 3 Classic release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Kimiiro Patra IF release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Koganei-so and the Golden Swallowtail Butterfly release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,The Adventures of Bryan Scott release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Dragon Quest Monsters: The Withered World release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,SOMBRAS: negative frames release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,"Warhammer 40,000: Dawn of War IV release window",presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Xenoblade Chronicles 3 – Nintendo Switch 2 Edition release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Feda: The Emblem of Justice release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Ninja Baseball League-Man: Bases Loaded release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Uta no Prince-sama release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-21,event,removed,Illumination,presence,present,removed,wikipedia:2028_in_video_games,Event left the live dataset
+2026-08-21,event,removed,Untitled ''Sonic the Hedgehog'' spinoff film,presence,present,removed,wikipedia:2028_in_video_games,Event left the live dataset

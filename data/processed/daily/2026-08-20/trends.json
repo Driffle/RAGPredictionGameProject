@@ -1,0 +1,416 @@
+{
+  "fetched_on": "2026-08-20",
+  "google_trends": [
+    {
+      "source": "google_trends",
+      "geo": "US",
+      "title": "is fortnite down",
+      "traffic": 5000,
+      "traffic_label": "5000+",
+      "published": "Wed, 19 Aug 2026 22:40:00 -0700",
+      "news": [
+        "Fortnite's Upcoming Season Includes Crossovers With Iconic Games (Game Informer)",
+        "When Does Fortnite Chapter 7 Season 4 Start? Override Downtime Schedule (VICE)",
+        "Fortnite Goes 32-Bit to Reveal New Gaming Legend Season With Legally Distinct Mario Kart, Mortal Kombat Parodies, Plus Actual Sonic the Hedgehog (IGN)"
+      ],
+      "blob": "is fortnite down Fortnite's Upcoming Season Includes Crossovers With Iconic Games (Game Informer) When Does Fortnite Chapter 7 Season 4 Start? Override Downtime Schedule (VICE) Fortnite Goes 32-Bit to Reveal New Gaming Legend Season With Legally Distinct Mario Kart, Mortal Kombat Parodies, Plus Actual Sonic the Hedgehog (IGN)"
+    },
+    {
+      "source": "google_trends",
+      "geo": "AU",
+      "title": "fortnite servers",
+      "traffic": 200,
+      "traffic_label": "200+",
+      "published": "Wed, 19 Aug 2026 22:50:00 -0700",
+      "news": [
+        "Fortnite's Upcoming Season Includes Crossovers With Iconic Games (Game Informer)",
+        "When Does Fortnite Chapter 7 Season 4 Start? Override Downtime Schedule (VICE)",
+        "Fortnite Goes 32-Bit to Reveal New Gaming Legend Season With Legally Distinct Mario Kart, Mortal Kombat Parodies, Plus Actual Sonic the Hedgehog (IGN)"
+      ],
+      "blob": "fortnite servers Fortnite's Upcoming Season Includes Crossovers With Iconic Games (Game Informer) When Does Fortnite Chapter 7 Season 4 Start? Override Downtime Schedule (VICE) Fortnite Goes 32-Bit to Reveal New Gaming Legend Season With Legally Distinct Mario Kart, Mortal Kombat Parodies, Plus Actual Sonic the Hedgehog (IGN)"
+    },
+    {
+      "source": "google_trends",
+      "geo": "GB",
+      "title": "festival",
+      "traffic": 200,
+      "traffic_label": "200+",
+      "published": "Wed, 19 Aug 2026 23:00:00 -0700",
+      "news": [
+        "Dance music festival back on in September after being postponed (BBC)",
+        "Licence granted for September music festival (AOL.com)",
+        "Calls to plan ahead for Reading Festival impact (BBC)"
+      ],
+      "blob": "festival Dance music festival back on in September after being postponed (BBC) Licence granted for September music festival (AOL.com) Calls to plan ahead for Reading Festival impact (BBC)"
+    },
+    {
+      "source": "google_trends",
+      "geo": "GB",
+      "title": "fortnite",
+      "traffic": 100,
+      "traffic_label": "100+",
+      "published": "Wed, 19 Aug 2026 23:00:00 -0700",
+      "news": [
+        "'Fortnite' Chapter 7, Season 4 Start-Time, Battle Pass And More (Forbes)",
+        "Sonic Fortnite Skins Revealed \u2013 All Bundles and Release Date (VICE)",
+        "Fortnite Chapter 7 Season 4 map changes explained: List of all New POIs (The Times of India)"
+      ],
+      "blob": "fortnite 'Fortnite' Chapter 7, Season 4 Start-Time, Battle Pass And More (Forbes) Sonic Fortnite Skins Revealed \u2013 All Bundles and Release Date (VICE) Fortnite Chapter 7 Season 4 map changes explained: List of all New POIs (The Times of India)"
+    }
+  ],
+  "wikipedia": [
+    {
+      "source": "wikipedia_pageviews",
+      "article": "Grand Theft Auto",
+      "queries": [
+        "grand theft auto",
+        "gta"
+      ],
+      "as_of": "2026-08-19",
+      "views": 4689,
+      "baseline": 3681,
+      "spike_ratio": 1.27,
+      "series": [
+        [
+          "20260809",
+          4111
+        ],
+        [
+          "20260810",
+          4092
+        ],
+        [
+          "20260811",
+          3822
+        ],
+        [
+          "20260812",
+          3572
+        ],
+        [
+          "20260813",
+          3566
+        ],
+        [
+          "20260814",
+          3715
+        ],
+        [
+          "20260815",
+          3615
+        ],
+        [
+          "20260816",
+          3646
+        ],
+        [
+          "20260817",
+          3647
+        ],
+        [
+          "20260818",
+          3743
+        ],
+        [
+          "20260819",
+          4689
+        ]
+      ]
+    },
+    {
+      "source": "wikipedia_pageviews",
+      "article": "Fortnite",
+      "queries": [
+        "fortnite"
+      ],
+      "as_of": "2026-08-19",
+      "views": 2007,
+      "baseline": 1842,
+      "spike_ratio": 1.09,
+      "series": [
+        [
+          "20260809",
+          1739
+        ],
+        [
+          "20260810",
+          1869
+        ],
+        [
+          "20260811",
+          2036
+        ],
+        [
+          "20260812",
+          1789
+        ],
+        [
+          "20260813",
+          1781
+        ],
+        [
+          "20260814",
+          1816
+        ],
+        [
+          "20260815",
+          1629
+        ],
+        [
+          "20260816",
+          2121
+        ],
+        [
+          "20260817",
+          2048
+        ],
+        [
+          "20260818",
+          2082
+        ],
+        [
+          "20260819",
+          2007
+        ]
+      ]
+    },
+    {
+      "source": "wikipedia_pageviews",
+      "article": "Minecraft",
+      "queries": [
+        "minecraft"
+      ],
+      "as_of": "2026-08-19",
+      "views": 4674,
+      "baseline": 4795,
+      "spike_ratio": 0.97,
+      "series": [
+        [
+          "20260809",
+          4885
+        ],
+        [
+          "20260810",
+          4754
+        ],
+        [
+          "20260811",
+          4805
+        ],
+        [
+          "20260812",
+          4912
+        ],
+        [
+          "20260813",
+          4874
+        ],
+        [
+          "20260814",
+          4786
+        ],
+        [
+          "20260815",
+          4664
+        ],
+        [
+          "20260816",
+          5193
+        ],
+        [
+          "20260817",
+          4785
+        ],
+        [
+          "20260818",
+          4646
+        ],
+        [
+          "20260819",
+          4674
+        ]
+      ]
+    },
+    {
+      "source": "wikipedia_pageviews",
+      "article": "Batman",
+      "queries": [
+        "batman",
+        "arkham"
+      ],
+      "as_of": "2026-08-19",
+      "views": 3525,
+      "baseline": 3622,
+      "spike_ratio": 0.97,
+      "series": [
+        [
+          "20260809",
+          4099
+        ],
+        [
+          "20260810",
+          3540
+        ],
+        [
+          "20260811",
+          3307
+        ],
+        [
+          "20260812",
+          3361
+        ],
+        [
+          "20260813",
+          3436
+        ],
+        [
+          "20260814",
+          3396
+        ],
+        [
+          "20260815",
+          3704
+        ],
+        [
+          "20260816",
+          3916
+        ],
+        [
+          "20260817",
+          3760
+        ],
+        [
+          "20260818",
+          3707
+        ],
+        [
+          "20260819",
+          3525
+        ]
+      ]
+    },
+    {
+      "source": "wikipedia_pageviews",
+      "article": "Star Wars",
+      "queries": [
+        "star wars"
+      ],
+      "as_of": "2026-08-19",
+      "views": 5143,
+      "baseline": 5496,
+      "spike_ratio": 0.94,
+      "series": [
+        [
+          "20260809",
+          5587
+        ],
+        [
+          "20260810",
+          5405
+        ],
+        [
+          "20260811",
+          4787
+        ],
+        [
+          "20260812",
+          4677
+        ],
+        [
+          "20260813",
+          4578
+        ],
+        [
+          "20260814",
+          4871
+        ],
+        [
+          "20260815",
+          7114
+        ],
+        [
+          "20260816",
+          6536
+        ],
+        [
+          "20260817",
+          6115
+        ],
+        [
+          "20260818",
+          6441
+        ],
+        [
+          "20260819",
+          5143
+        ]
+      ]
+    },
+    {
+      "source": "wikipedia_pageviews",
+      "article": "Spider-Man",
+      "queries": [
+        "spider-man",
+        "spiderman",
+        "miles morales"
+      ],
+      "as_of": "2026-08-19",
+      "views": 13360,
+      "baseline": 15398,
+      "spike_ratio": 0.87,
+      "series": [
+        [
+          "20260809",
+          20586
+        ],
+        [
+          "20260810",
+          18765
+        ],
+        [
+          "20260811",
+          17459
+        ],
+        [
+          "20260812",
+          16042
+        ],
+        [
+          "20260813",
+          14862
+        ],
+        [
+          "20260814",
+          13687
+        ],
+        [
+          "20260815",
+          15249
+        ],
+        [
+          "20260816",
+          15548
+        ],
+        [
+          "20260817",
+          13538
+        ],
+        [
+          "20260818",
+          12345
+        ],
+        [
+          "20260819",
+          13360
+        ]
+      ]
+    }
+  ],
+  "filter": {
+    "scope": "product_and_event_datasets",
+    "google_kept": 4,
+    "google_removed": 0,
+    "wikipedia_kept": 6,
+    "wikipedia_removed": 0
+  }
+}

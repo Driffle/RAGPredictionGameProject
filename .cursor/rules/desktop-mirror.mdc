@@ -1,0 +1,17 @@
+---
+description: Mirror every project change to the Desktop folder and zip copies
+alwaysApply: true
+---
+
+# Desktop project mirror
+
+This workspace is `/Users/driffle/RAGPredictionGameProject`. A second copy must stay in sync on the Desktop for past, present, and future work.
+
+After **any** code, data, config, or docs change in this workspace (including at the end of a task that already rebuilt the site or Mac app):
+
+1. Run `bash scripts/sync_desktop_copy.sh` with unrestricted permissions so it can write under `~/Desktop`.
+2. That script rsyncs the repo to `/Users/driffle/Desktop/RAGPredictionGameProject` (keeps `.git`; omits `.venv`, `build`, `dist`, caches) and refreshes `/Users/driffle/Desktop/RAGPredictionGameProject.zip`.
+3. Do not skip this because a previous turn already synced; sync again after the latest edits.
+4. Do not commit, push, or change git config unless the user asked.
+
+If you are already working inside the Desktop folder, do not rsync onto yourself.

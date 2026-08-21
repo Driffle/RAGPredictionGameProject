@@ -1,0 +1,10 @@
+.venv
+venv
+__pycache__
+dist
+build
+.git
+notebooks
+data/raw/game_products.csv
+*.pyc
+.DS_Store
