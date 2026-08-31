@@ -1,11 +1,12 @@
 """Turn calendar rows and catalog products into retrieval documents.
 
-Also persists a TF-IDF RAG index that is retrained whenever product/event
-datasets change during the daily rebuild.
+Persists a gzip JSONL corpus. TF-IDF is optional (`FLOORBRIEF_TRAIN_TFIDF`)
+because the website uses keyword retrieve, not the 180MB joblib index.
 """
 
 from __future__ import annotations
 
+import gzip
 import json
 from datetime import date
 from pathlib import Path
@@ -159,10 +160,14 @@ def build_retrieval_corpus(
 def persist_corpus(documents: list[dict], path: Path | None = None) -> Path:
     target = path or CORPUS_PATH
     target.parent.mkdir(parents=True, exist_ok=True)
-    with target.open("w", encoding="utf-8") as handle:
+    gz = target if str(target).endswith(".gz") else Path(str(target) + ".gz")
+    plain = Path(str(gz)[:-3]) if str(gz).endswith(".gz") else target
+    with gzip.open(gz, "wt", encoding="utf-8") as handle:
         for doc in documents:
             handle.write(json.dumps(doc, ensure_ascii=False) + "\n")
-    return target
+    if plain.exists() and plain != gz:
+        plain.unlink()
+    return gz
 
 
 def retrain_rag_index(
@@ -171,38 +176,41 @@ def retrain_rag_index(
     products: list[dict],
     plans: list[dict] | None = None,
 ) -> dict:
-    """Rebuild the JSONL corpus and fit a TF-IDF index from the latest datasets."""
-    from joblib import dump
-    from sklearn.feature_extraction.text import TfidfVectorizer
+    """Rebuild the gzip JSONL corpus. TF-IDF is optional; the app uses keyword retrieve."""
+    import os
 
     documents = build_retrieval_corpus(events, adaptations, products, plans)
-    persist_corpus(documents)
-    texts = [f"{doc.get('title', '')}\n{doc.get('text', '')}" for doc in documents]
-    if not texts:
-        meta = {"document_count": 0, "trained": False, "as_of": date.today().isoformat()}
-        META_PATH.write_text(json.dumps(meta, indent=2), encoding="utf-8")
-        return meta
-
-    vectorizer = TfidfVectorizer(
-        lowercase=True,
-        stop_words="english",
-        ngram_range=(1, 2),
-        min_df=1,
-        max_features=50000,
-    )
-    matrix = vectorizer.fit_transform(texts)
-    dump({"vectorizer": vectorizer, "matrix": matrix, "documents": documents}, INDEX_PATH)
+    corpus_path = persist_corpus(documents)
+    kinds = {
+        kind: sum(1 for doc in documents if doc.get("kind") == kind)
+        for kind in sorted({doc.get("kind") or "other" for doc in documents})
+    }
     meta = {
         "document_count": len(documents),
-        "trained": True,
+        "trained": bool(documents),
         "as_of": date.today().isoformat(),
-        "corpus_path": str(CORPUS_PATH),
-        "index_path": str(INDEX_PATH),
-        "kinds": {
-            kind: sum(1 for doc in documents if doc.get("kind") == kind)
-            for kind in sorted({doc.get("kind") or "other" for doc in documents})
-        },
+        "corpus_path": str(corpus_path),
+        "retriever": "keyword",
+        "kinds": kinds,
     }
+    if documents and os.environ.get("FLOORBRIEF_TRAIN_TFIDF"):
+        from joblib import dump
+        from sklearn.feature_extraction.text import TfidfVectorizer
+
+        texts = [f"{doc.get('title', '')}\n{doc.get('text', '')}" for doc in documents]
+        vectorizer = TfidfVectorizer(
+            lowercase=True,
+            stop_words="english",
+            ngram_range=(1, 2),
+            min_df=1,
+            max_features=50000,
+        )
+        matrix = vectorizer.fit_transform(texts)
+        dump({"vectorizer": vectorizer, "matrix": matrix, "documents": documents}, INDEX_PATH)
+        meta["index_path"] = str(INDEX_PATH)
+        meta["retriever"] = "tfidf"
+    elif INDEX_PATH.exists():
+        INDEX_PATH.unlink()
     META_PATH.write_text(json.dumps(meta, indent=2), encoding="utf-8")
     return meta
 
@@ -236,8 +244,17 @@ def retrieve(query: str, *, limit: int = 8) -> list[tuple[float, dict]]:
                 return hits
         except Exception:
             pass
-    if CORPUS_PATH.exists():
-        documents = [json.loads(line) for line in CORPUS_PATH.read_text(encoding="utf-8").splitlines() if line.strip()]
+    gz = Path(str(CORPUS_PATH) + ".gz")
+    if gz.exists() or CORPUS_PATH.exists():
+        if gz.exists():
+            with gzip.open(gz, "rt", encoding="utf-8") as handle:
+                documents = [json.loads(line) for line in handle if line.strip()]
+        else:
+            documents = [
+                json.loads(line)
+                for line in CORPUS_PATH.read_text(encoding="utf-8").splitlines()
+                if line.strip()
+            ]
         return keyword_retrieve(documents, query, limit=limit)
     return []
 

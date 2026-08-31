@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import csv
+import gzip
 import json
 import re
 from collections import Counter, defaultdict
@@ -12,11 +13,9 @@ from xml.etree.ElementTree import iterparse
 from zipfile import ZipFile
 
 from src.calendar_dedupe import is_quarter_timeframe
-from src.load_data import canonical_title, load_events
+from src.load_data import canonical_title, gzip_sidecar, load_events, open_tabular
 from src.match import _compile_queries, _query_score, queries_for_calendar_row
 from src.paths import DATA_PROCESSED, DATA_RAW
-
-NS = "{http://schemas.openxmlformats.org/spreadsheetml/2006/main}"
 
 NS = "{http://schemas.openxmlformats.org/spreadsheetml/2006/main}"
 DEFAULT_ORDERS_XLSX = Path(
@@ -41,8 +40,8 @@ def orders_path() -> Path:
         return local
     if DEFAULT_ORDERS_XLSX.exists():
         return DEFAULT_ORDERS_XLSX
-    if ORDERS_CSV.exists():
-        return ORDERS_CSV
+    if ORDERS_CSV.exists() or gzip_sidecar(ORDERS_CSV).exists():
+        return gzip_sidecar(ORDERS_CSV) if gzip_sidecar(ORDERS_CSV).exists() else ORDERS_CSV
     raise FileNotFoundError(f"Orders file not found at {local} or {DEFAULT_ORDERS_XLSX}")
 
 
@@ -152,8 +151,9 @@ def load_orders_xlsx(path: Path) -> list[dict]:
 
 def load_orders() -> list[dict]:
     path = orders_path()
-    if path.suffix.lower() == ".csv":
-        with path.open(newline="", encoding="utf-8") as handle:
+    if path.suffix.lower() == ".csv" or str(path).endswith(".csv.gz"):
+        plain = Path(str(path).removesuffix(".gz")) if str(path).endswith(".gz") else path
+        with open_tabular(plain) as handle:
             rows = []
             for raw in csv.DictReader(handle):
                 raw["best_weeks"] = parse_week_ranges(raw.get("best_sales_week_ranges"), "best")
@@ -322,12 +322,16 @@ def summarize_order_event_peaks(links: list[dict]) -> list[dict]:
 
 def _write_csv(path: Path, rows: list[dict], fields: list[str]) -> Path:
     path.parent.mkdir(parents=True, exist_ok=True)
-    with path.open("w", newline="", encoding="utf-8") as handle:
+    gz_path = gzip_sidecar(path) if not str(path).endswith(".gz") else path
+    with gzip.open(gz_path, "wt", encoding="utf-8", newline="") as handle:
         writer = csv.DictWriter(handle, fieldnames=fields, extrasaction="ignore")
         writer.writeheader()
         for row in rows:
             writer.writerow({key: row.get(key, "") for key in fields})
-    return path
+    plain = Path(str(gz_path)[:-3]) if str(gz_path).endswith(".gz") else path
+    if plain.exists() and plain != gz_path:
+        plain.unlink()
+    return gz_path
 
 
 def write_order_datasets(*, orders: list[dict] | None = None, events: list[dict] | None = None) -> dict:
@@ -1026,10 +1030,10 @@ def _dashboard_has_year_leaders(payload: dict) -> bool:
 
 
 def _orders_from_processed_csv() -> list[dict]:
-    if not ORDERS_CSV.exists():
+    if not (ORDERS_CSV.exists() or gzip_sidecar(ORDERS_CSV).exists()):
         return load_orders()
     rows = []
-    with ORDERS_CSV.open(newline="", encoding="utf-8") as handle:
+    with open_tabular(ORDERS_CSV) as handle:
         for raw in csv.DictReader(handle):
             raw["best_weeks"] = parse_week_ranges(raw.get("best_sales_week_ranges"), "best")
             raw["worst_weeks"] = parse_week_ranges(raw.get("worst_sales_week_ranges"), "worst")
@@ -1047,13 +1051,15 @@ def load_order_dashboard() -> dict:
                 return payload
         except json.JSONDecodeError:
             pass
-    if not ORDERS_CSV.exists() or not ORDER_EVENT_PEAKS_CSV.exists():
+    if not (ORDERS_CSV.exists() or gzip_sidecar(ORDERS_CSV).exists()) or not (
+        ORDER_EVENT_PEAKS_CSV.exists() or gzip_sidecar(ORDER_EVENT_PEAKS_CSV).exists()
+    ):
         return {}
     orders = _orders_from_processed_csv()
-    with ORDER_EVENT_PEAKS_CSV.open(encoding="utf-8") as handle:
+    with open_tabular(ORDER_EVENT_PEAKS_CSV) as handle:
         links = list(csv.DictReader(handle))
-    if ORDER_SUMMARY_CSV.exists():
-        with ORDER_SUMMARY_CSV.open(encoding="utf-8") as handle:
+    if ORDER_SUMMARY_CSV.exists() or gzip_sidecar(ORDER_SUMMARY_CSV).exists():
+        with open_tabular(ORDER_SUMMARY_CSV) as handle:
             summary = list(csv.DictReader(handle))
     else:
         summary = summarize_order_event_peaks(links)

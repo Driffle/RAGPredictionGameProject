@@ -406,9 +406,7 @@ def _query_score(canonical: str, full_title: str, compiled: list[tuple[str, re.P
             elif guest:
                 best = max(best, 1)
             else:
-                # "Marvel's Spider-Man 2" is a primary IP match, not a cameo.
                 best = max(best, 2)
-    return best
     return best
 
 

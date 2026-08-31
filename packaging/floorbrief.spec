@@ -3,11 +3,38 @@ import sys
 from pathlib import Path
 
 root = Path(SPECPATH).resolve().parent
+
+# The website never loads these artifacts. Leaving them out keeps the Mac
+# bundle hundreds of megabytes smaller.
+SKIP_PROCESSED = {
+    "tfidf_index.joblib",
+    "corpus.jsonl",
+    "corpus.jsonl.gz",
+    "promotion_calendar.csv",
+    "promotion_calendar.csv.gz",
+}
+
+
+def collect_dir(src: Path, dest: str, *, skip_names=frozenset()) -> list[tuple[str, str]]:
+    items: list[tuple[str, str]] = []
+    if not src.exists():
+        return items
+    for path in src.rglob("*"):
+        if not path.is_file() or path.name in skip_names:
+            continue
+        if path.name == "game_products.csv" and (path.parent / "game_products.csv.gz").exists():
+            continue
+        rel_parent = path.parent.relative_to(src)
+        dest_dir = dest if rel_parent == Path(".") else str(Path(dest) / rel_parent)
+        items.append((str(path), dest_dir))
+    return items
+
+
 datas = [
-    (str(root / "apps" / "web"), "apps/web"),
-    (str(root / "data" / "raw"), "data/raw"),
-    (str(root / "data" / "processed"), "data/processed"),
-    (str(root / "src"), "src"),
+    *collect_dir(root / "apps" / "web", "apps/web"),
+    *collect_dir(root / "data" / "raw", "data/raw"),
+    *collect_dir(root / "data" / "processed", "data/processed", skip_names=SKIP_PROCESSED),
+    *collect_dir(root / "src", "src"),
 ]
 
 a = Analysis(
@@ -56,13 +83,11 @@ a = Analysis(
         "src.orders",
         "src.historical_calendar",
         "openpyxl",
-        "joblib",
-        "sklearn",
     ],
     hookspath=[],
     hooksconfig={},
     runtime_hooks=[],
-    excludes=["tkinter", "matplotlib", "numpy", "pandas"],
+    excludes=["tkinter", "matplotlib", "numpy", "pandas", "sklearn", "joblib", "scipy"],
     noarchive=False,
 )
 pyz = PYZ(a.pure)

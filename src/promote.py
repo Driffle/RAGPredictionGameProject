@@ -7,13 +7,14 @@ Example: EA Sports FC SKUs are promoted through the FIFA Women's World Cup windo
 from __future__ import annotations
 
 import csv
+import gzip
 import re
 from datetime import date, timedelta
 
 from src.calendar_dedupe import is_gaming_world_event, is_quarter_timeframe
 from src.dates import confirmation_kind
 from src.documents import keyword_retrieve
-from src.load_data import parse_date
+from src.load_data import gzip_sidecar, parse_date
 from src.match import (
     build_title_index,
     catalog_around_window,
@@ -1117,8 +1118,11 @@ def write_promotion_csv(plans: list[dict], path=None):
     if not rows:
         return path
     fieldnames = list(rows[0].keys())
-    with path.open("w", newline="", encoding="utf-8") as handle:
+    gz_path = gzip_sidecar(path)
+    with gzip.open(gz_path, "wt", encoding="utf-8", newline="") as handle:
         writer = csv.DictWriter(handle, fieldnames=fieldnames)
         writer.writeheader()
         writer.writerows(rows)
-    return path
+    if path.exists() and path != gz_path:
+        path.unlink()
+    return gz_path

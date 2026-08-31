@@ -30,6 +30,13 @@ def parse_date(value: str | None) -> date | None:
     text = value.strip().rstrip("+").strip()
     if not text:
         return None
+    iso = text[:10]
+    if len(iso) == 10 and iso[4] == "-" and iso[7] == "-":
+        try:
+            parsed = date.fromisoformat(iso)
+            return parsed if parsed.year >= MIN_VALID_YEAR else None
+        except ValueError:
+            pass
     candidates = [text]
     if len(text) >= 10:
         candidates.append(text[:10])
@@ -43,6 +50,25 @@ def parse_date(value: str | None) -> date | None:
                 return None
             return parsed
     return None
+
+
+def gzip_sidecar(path: Path) -> Path:
+    return Path(str(path) + ".gz")
+
+
+def open_tabular(path: Path):
+    """Open a CSV, preferring a newer or only `.gz` sidecar when present."""
+    gz = gzip_sidecar(path)
+    target = path
+    if str(path).endswith(".gz"):
+        target = path
+    elif gz.exists() and (not path.exists() or gz.stat().st_mtime >= path.stat().st_mtime):
+        target = gz
+    elif not path.exists() and gz.exists():
+        target = gz
+    if str(target).endswith(".gz"):
+        return gzip.open(target, "rt", encoding="utf-8", newline="")
+    return target.open(newline="", encoding="utf-8")
 
 
 def is_game_product(product_type: str | None) -> bool:
@@ -65,16 +91,10 @@ def canonical_title(title: str | None) -> str:
     return text.strip()
 
 
-def _open_text(path: Path):
-    if str(path).endswith(".gz"):
-        return gzip.open(path, "rt", encoding="utf-8", newline="")
-    return path.open(newline="", encoding="utf-8")
-
-
 def load_catalog(*, games_only: bool = True, drop_placeholder_dates: bool = True, include_live: bool = True) -> list[dict]:
     """Load catalog rows. Gift cards are dropped when games_only=True."""
     rows: list[dict] = []
-    with _open_text(catalog_path()) as handle:
+    with open_tabular(catalog_path()) as handle:
         reader = csv.DictReader(handle)
         for raw in reader:
             product_type = (raw.get("product_type") or "").strip()

@@ -1,0 +1,984 @@
+as_of,kind,change_type,title,field,before,after,source,detail
+2026-08-25,product,confirmation_changed,Primitive Environment Survival,confirmation,announced,0,catalog,Confirmation announced → 0
+2026-08-25,product,removed,A Tiny Wander,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Aeterna Lucis,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Alzara: Radiant Echoes,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Animal Use Protocol,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Blind Descent,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Bogdan's Cross,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Bokosuka Wars II,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Castaway Diary: Portal to the Unknown Isles,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Castle Come,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Control: Ultimate Edition,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Cosmo Tales,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Crystals of Irm,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Destiny Code,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Don't Kill Them All,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,DriveCrazy,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,EDEN.schemata();,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Endurance Motorsport Series,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Fate/EXTRA Record,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Final Formation,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Forge of the Fae,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Frostrail,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Golf With Your Friends 2,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Haruka: Beyond the Stars,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Hell of an Office,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Hunting Simulator 3,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Infinite Alliance,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Infinitesimals,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Junxions,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Light Odyssey,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Lost Hellden,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Marvel 1943: Rise of Hydra,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Mononoke no Kuni,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,On Donuts and Holes,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Paranormal Activity: Found Footage,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Pararecords,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Professor Layton and the New World of Steam,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Prolegomena To a Hyperdimensional Interface That Will Be Able to Manifest From Three-Minute Interchanges,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Recur,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,"Reggie, His Cousin, Two Scientists and Most Likely the End of the World",presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,SacriFire,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Scriptorium: Master of Manuscripts,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Sea of Sorrow,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Serial World,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Shadow of the Road,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Sigma Star Saga,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Silent Planet,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Skyblivion,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Skyclimbers,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Starfinder: Afterlight,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Steampunk Shinobi,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Sunkissed City,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Tanuki: Pon's Summer,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Tenet of the Spark,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Ultra Mushroom,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Valkyrie of Phantasm,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Wolfhound,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,SpongeBob: Krusty Cook-Off,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Tomba! Special Edition,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,I Am Future,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,The Brew Barons,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Hytale,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Temirana: The Lucky Princess and the Tragic Knights,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Animal Crossing: New Horizons,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,The Legend of Heroes: Trails Beyond the Horizon,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Mio: Memories in Orbit,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Arknights: Endfield,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,"Dwarves: Glory, Death and Loot",presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Dynasty Warriors: Origins,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Sega Football Club Champions 2026,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,The Rumble Fish 2,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Fighting Force Collection,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Speedball,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Steel Century Groove,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,City Tales: Medieval Era,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,"Don’t Stop, Girlypop!",presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Dusk Index: Gion,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Project: Gorgon,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Front Mission 3: Remake,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Jimmy and the Pulsating Mass,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Lovish,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,PUBG: BLINDSPOT,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,JDM: Japanese Drift Master,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Shadows of the Afterland,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Fantasista Asuka,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Kingdom Come: Deliverance,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Caves of Qud,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Earnest Evans Collection,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Soulslinger: Envoy of Death,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,PC Building Simulator 2,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,The Fox's Way Home,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Japanese Rural Life Adventure,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Never Grave: The Witch and The Curse,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Methods: The Canada Files,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Peregrino,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Piece by Piece,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,The Liar Princess and the Blind Prince,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Yomawari: Lost in the Dark,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Pode,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Rustil: Eternal Labyrinth Castle,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Tower Tag,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Shadow Tactics: Blades of the Shogun,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Dragonkin: The Banished,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,The Coin Game,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,The Little Tomb: The Maholova Club and the Search for a Dead Body,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,The Seven Deadly Sins: Origin,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Mado Monogatari: Fia and the Wondrous Academy,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Tales of the Shire: A The Lord of the Rings Game,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Shinonome Abyss: The Maiden Exorcist,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,The Fifth Family,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Homura: The Crimson Warriors,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Lilac,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Little Nemo and the Guardians of Slumberland,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Castle of Shikigami III,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,The New Denpa Men,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Faith: The Unholy Trinity,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Memories Off Sōsō: Break out of my shell,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Skautfold: Moonless Knight,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Nekopara Sekai Connect,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Calamity Angels: Special Delivery,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Mongil: Star Dive,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Ereban: Shadow Legacy,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,OPUS: Prism Peak,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Smash It Wild,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Task Time,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Anemoi,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Mahou Arms,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Snail's Knock Out,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Spy Drops,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,WILL: Follow The Light,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Ys Memoire: Revelations in Celceta,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Amnesia: Rebirth,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Heroes of Might and Magic: Olden Era,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Perennial Dusk: Kinsenka,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Prius Online,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Withering Realms,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Axe Cop,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Haneda Girl,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Corebreaker,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Nitro Gen Omega,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Smalland: Survive the Wilds,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Corsairs: Battle of the Caribbean,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,"Warhammer 40,000: Mechanicus II",presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,"Warhammer 40,000: Speed Freeks",presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Birushana: Winds of Fate,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Age of Empires II: Definitive Edition,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Tetris the Grandmaster 4: Absolute Eye,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Gothic Remake,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Atelier Yumia: The Alchemist of Memories & the Envisioned Land,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Unrailed! 2: Back on Track,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,UsoNatsu,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,and Roger,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Citizen Sleeper 2: Starward Vector,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,My Merry May with be,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Saeko: Giantess Dating Sim,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Deathbulge: Battle of the Bands,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Magical Girl Witch Trials,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Star Ocean: The Second Story R,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Dreamin' Her,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,K-pop Idol Stories: Road to Debut,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,The Dream Of A Cockspur,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Suika Game,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Prelude: Dark Pain,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,BOKURA,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Fuga: Melodies of Steel,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Ira,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Kusan: City of Wolves,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,The Relic: First Guardian,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Cotton Rock With You,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Brave Dungeon: The Meaning of Justice,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Angeline Era,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,The Legend of Heroes: Trails from Zero,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,The Legend of Heroes: Trails to Azure,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,TCG Card Shop Simulator,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Kernel Hearts,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,The Alchemist of Ars Magna,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Cupid Parasite,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,TOEM 2,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Kousai Toshi,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Echo Weaver,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Cotton Reboot!,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Cotton Reboot! High Tension!,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Radiant Starlets,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,LIGHT: Black Cat & Amnesia Girl,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Metaphor: ReFantazio,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Koganei-so and the Golden Swallowtail Butterfly,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,The Adventures of Bryan Scott,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,ARTIUS: Pure Imagination,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Agni: Village of Calamity,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Anima: Song from the Abyss,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Arma 4,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Back in Time,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Beaten Path,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Calame,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Crescent County,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Cytus II,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Everbloom,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Final Fantasy XIV: Evercold,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Frame Zero,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Frostpunk: 1886,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Gobble,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Hatsune Miku: Starry Party,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,HellHeart Breaker,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Ill,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Impermanence,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Itachi: Haunted Abodes – Wandering Through 2000s Tokyo Culture,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Kidbash: Super Legend,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Kingdom Hearts IV,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Knock Off: The Battle for Imagination,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Long Gone,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Memoria Wake,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,My Brother Hacker,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Oni Zero: Cross,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Piggy One Super Spark,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Pokémon Waves,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Pokémon Winds,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Quiet Express: Cabin 909,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,SUPER DEBT,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,TAL: The Arcane Lands,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,The Detectorist Guild,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,The Lift,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,The Pines,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,The Witcher 3: Wild Hunt – Songs of the Past,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Tiny Metal 2,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Vivarium,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Warota: I Live Next to The Demon King's Castle LOL,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Welcome to Brightville,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Yokai Batting Game in Kawagoe,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,over the hill,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Astrostrike,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Demi and the Fractured Dream,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Tideward,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,JOIN US,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Just a simulation,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,KharkivVision 2035,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,ShotFightDisaster,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,NYIP,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Proximity Effect,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Aether Wizard Life,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Neo Berlin 2087,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Shibuya Scramble Stories,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,They Are Rising,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,DAUGHTER OF PAIN,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,WhyTaoism,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Off The Grid: Bad Dream,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Orbit Or Beat Extended Edition,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Art Gallery Simulator,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,CookieRun: New World,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Formula Team,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Akatori,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Back to the Dawn,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,DAVE THE DIVER,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Deep Russian Depression,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,EARTH DEFENSE FORCE 5,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Enshrouded,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Exstetra,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Goblin Cleanup,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Octopath Traveler,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Polylithic,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Ratatan,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Stick It to the Stickman,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,THE DEAD WE KNEW Open World Survival,presence,present,removed,catalog,Product left the live dataset
+2026-08-25,product,removed,Valheim,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Voyagers of Nera,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,product,removed,Wandering Sword,presence,present,removed,wikidata,Product left the live dataset
+2026-08-25,event,removed,Academy of Interactive Arts & Sciences,presence,present,removed,wikipedia:2022_in_video_games,Event left the live dataset
+2026-08-25,event,removed,Business Wire,presence,present,removed,wikipedia:2022_in_video_games,Event left the live dataset
+2026-08-25,event,removed,Polygon,presence,present,removed,wikipedia:2022_in_video_games,Event left the live dataset
+2026-08-25,event,removed,Polygon,presence,present,removed,wikipedia:2022_in_video_games,Event left the live dataset
+2026-08-25,event,removed,Academy of Interactive Arts & Sciences,presence,present,removed,wikipedia:2023_in_video_games,Event left the live dataset
+2026-08-25,event,removed,Game Developer,presence,present,removed,wikipedia:2023_in_video_games,Event left the live dataset
+2026-08-25,event,removed,Video Games Chronicle,presence,present,removed,wikipedia:2023_in_video_games,Event left the live dataset
+2026-08-25,event,removed,GameSpot,presence,present,removed,wikipedia:2023_in_video_games,Event left the live dataset
+2026-08-25,event,removed,Academy of Interactive Arts & Sciences,presence,present,removed,wikipedia:2024_in_video_games,Event left the live dataset
+2026-08-25,event,removed,gaming accessories,presence,present,removed,wikipedia:2025_in_video_games,Event left the live dataset
+2026-08-25,event,removed,Academy of Interactive Arts & Sciences,presence,present,removed,wikipedia:2025_in_video_games,Event left the live dataset
+2026-08-25,event,removed,Game Developers Conference,presence,present,removed,wikipedia:2025_in_video_games,Event left the live dataset
+2026-08-25,event,removed,London Games Festival,presence,present,removed,wikipedia:2025_in_video_games,Event left the live dataset
+2026-08-25,event,removed,Evolution Championship Series,presence,present,removed,wikipedia:2025_in_video_games,Event left the live dataset
+2026-08-25,event,removed,Super Mario,presence,present,removed,wikipedia:2025_in_video_games,Event left the live dataset
+2026-08-25,event,removed,Super Nintendo World,presence,present,removed,wikipedia:2025_in_video_games,Event left the live dataset
+2026-08-25,event,removed,A Tiny Wander release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Aeterna Lucis release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Alzara: Radiant Echoes release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Animal Use Protocol release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Blind Descent release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Bogdan's Cross release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Bokosuka Wars II release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Castaway Diary: Portal to the Unknown Isles release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Castle Come release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Control: Ultimate Edition release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Cosmo Tales release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Crystals of Irm release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Destiny Code release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Don't Kill Them All release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,DriveCrazy release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,EDEN.schemata(); release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Endurance Motorsport Series release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Fate/EXTRA Record release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Final Formation release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Forge of the Fae release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Frostrail release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Golf With Your Friends 2 release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Haruka: Beyond the Stars release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Hell of an Office release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Hunting Simulator 3 release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Infinite Alliance release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Infinitesimals release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Junxions release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Light Odyssey release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Lost Hellden release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Marvel 1943: Rise of Hydra release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Mononoke no Kuni release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,On Donuts and Holes release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Paranormal Activity: Found Footage release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Pararecords release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Professor Layton and the New World of Steam release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Prolegomena To a Hyperdimensional Interface That Will Be Able to Manifest From Three-Minute Interchanges release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Recur release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,"Reggie, His Cousin, Two Scientists and Most Likely the End of the World release window",presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,SacriFire release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Scriptorium: Master of Manuscripts release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Sea of Sorrow release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Serial World release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Shadow of the Road release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Sigma Star Saga release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Silent Planet release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Skyblivion release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Skyclimbers release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Starfinder: Afterlight release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Steampunk Shinobi release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Sunkissed City release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Tanuki: Pon's Summer release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Tenet of the Spark release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Ultra Mushroom release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Valkyrie of Phantasm release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Wolfhound release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,SpongeBob: Krusty Cook-Off release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Tomba! Special Edition release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,I Am Future release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,The Brew Barons release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Academy of Interactive Arts & Sciences,presence,present,removed,wikipedia:2026_in_video_games,Event left the live dataset
+2026-08-25,event,removed,Hytale release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Temirana: The Lucky Princess and the Tragic Knights release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Animal Crossing: New Horizons release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,The Legend of Heroes: Trails Beyond the Horizon release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Mio: Memories in Orbit release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Arknights: Endfield release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,"Dwarves: Glory, Death and Loot release window",presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Dynasty Warriors: Origins release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Sega Football Club Champions 2026 release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,The Rumble Fish 2 release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Fighting Force Collection release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Speedball release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Steel Century Groove release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,City Tales: Medieval Era release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,"Don’t Stop, Girlypop! release window",presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Dusk Index: Gion release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Project: Gorgon release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Front Mission 3: Remake release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Jimmy and the Pulsating Mass release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Lovish release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,PUBG: BLINDSPOT release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,JDM: Japanese Drift Master release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Shadows of the Afterland release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Fantasista Asuka release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Kingdom Come: Deliverance release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Caves of Qud release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Earnest Evans Collection release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Soulslinger: Envoy of Death release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,PC Building Simulator 2 release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,The Fox's Way Home release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Japanese Rural Life Adventure release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Never Grave: The Witch and The Curse release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Methods: The Canada Files release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Peregrino release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Game Developers Conference,presence,present,removed,wikipedia:2026_in_video_games,Event left the live dataset
+2026-08-25,event,removed,Piece by Piece release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,The Liar Princess and the Blind Prince release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Yomawari: Lost in the Dark release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Pode release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Rustil: Eternal Labyrinth Castle release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Tower Tag release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Shadow Tactics: Blades of the Shogun release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Dragonkin: The Banished release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,The Coin Game release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,The Little Tomb: The Maholova Club and the Search for a Dead Body release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,The Seven Deadly Sins: Origin release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Mado Monogatari: Fia and the Wondrous Academy release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Tales of the Shire: A The Lord of the Rings Game release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Shinonome Abyss: The Maiden Exorcist release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,The Fifth Family release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Homura: The Crimson Warriors release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Lilac release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Little Nemo and the Guardians of Slumberland release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Castle of Shikigami III release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,The New Denpa Men release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Faith: The Unholy Trinity release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Memories Off Sōsō: Break out of my shell release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Skautfold: Moonless Knight release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Nekopara Sekai Connect release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Calamity Angels: Special Delivery release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Mongil: Star Dive release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Ereban: Shadow Legacy release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,OPUS: Prism Peak release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Smash It Wild release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Task Time release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Anemoi release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Mahou Arms release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Snail's Knock Out release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Spy Drops release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,WILL: Follow The Light release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Ys Memoire: Revelations in Celceta release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Amnesia: Rebirth release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Heroes of Might and Magic: Olden Era release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Perennial Dusk: Kinsenka release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Prius Online release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Withering Realms release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Axe Cop release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Haneda Girl release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Corebreaker release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Nitro Gen Omega release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Smalland: Survive the Wilds release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Corsairs: Battle of the Caribbean release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,"Warhammer 40,000: Mechanicus II release window",presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,"Warhammer 40,000: Speed Freeks release window",presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Birushana: Winds of Fate release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Age of Empires II: Definitive Edition release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Tetris the Grandmaster 4: Absolute Eye release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Gothic Remake release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Atelier Yumia: The Alchemist of Memories & the Envisioned Land release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Unrailed! 2: Back on Track release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,European Commission,presence,present,removed,wikipedia:2026_in_video_games,Event left the live dataset
+2026-08-25,event,removed,UsoNatsu release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,and Roger release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Citizen Sleeper 2: Starward Vector release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,My Merry May with be release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Saeko: Giantess Dating Sim release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Deathbulge: Battle of the Bands release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Magical Girl Witch Trials release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Star Ocean: The Second Story R release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Dreamin' Her release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,K-pop Idol Stories: Road to Debut release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,The Dream Of A Cockspur release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Suika Game release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Prelude: Dark Pain release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,BOKURA release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Fuga: Melodies of Steel release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Ira release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Kusan: City of Wolves release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,The Relic: First Guardian release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Cotton Rock With You release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Brave Dungeon: The Meaning of Justice release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Blizzard Entertainment,presence,present,removed,wikipedia:2026_in_video_games,Event left the live dataset
+2026-08-25,event,removed,Angeline Era release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,The Legend of Heroes: Trails from Zero release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,The Legend of Heroes: Trails to Azure release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,TCG Card Shop Simulator release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Kernel Hearts release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,The Alchemist of Ars Magna release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Cupid Parasite release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,TOEM 2 release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Kousai Toshi release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Echo Weaver release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Tenebris Somnia release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Cotton Reboot! release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Cotton Reboot! High Tension! release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Radiant Starlets release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,LIGHT: Black Cat & Amnesia Girl release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Metaphor: ReFantazio release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Koganei-so and the Golden Swallowtail Butterfly release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,The Adventures of Bryan Scott release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Polygon,presence,present,removed,wikipedia:2027_in_video_games,Event left the live dataset
+2026-08-25,event,removed,ARTIUS: Pure Imagination release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Agni: Village of Calamity release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Anima: Song from the Abyss release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Arma 4 release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Back in Time release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Beaten Path release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Calame release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Crescent County release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Cytus II release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Everbloom release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Final Fantasy XIV: Evercold release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Frame Zero release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Frostpunk: 1886 release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Gobble release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Hatsune Miku: Starry Party release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,HellHeart Breaker release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Ill release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Impermanence release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Itachi: Haunted Abodes – Wandering Through 2000s Tokyo Culture release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Kidbash: Super Legend release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Kingdom Hearts IV release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Knock Off: The Battle for Imagination release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Long Gone release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Memoria Wake release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,My Brother Hacker release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Oni Zero: Cross release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Piggy One Super Spark release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Pokémon Waves release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Pokémon Winds release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Quiet Express: Cabin 909 release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,SUPER DEBT release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,TAL: The Arcane Lands release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,The Detectorist Guild release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,The Lift release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,The Pines release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,The Witcher 3: Wild Hunt – Songs of the Past release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Tiny Metal 2 release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Vivarium release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Warota: I Live Next to The Demon King's Castle LOL release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Welcome to Brightville release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Yokai Batting Game in Kawagoe release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,over the hill release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Astrostrike release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,STRANGER THAN HEAVEN release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Deadline Hollywood,presence,present,removed,wikipedia:2027_in_video_games,Event left the live dataset
+2026-08-25,event,removed,Demi and the Fractured Dream release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Tideward release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Persona 4 Revival release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,JOIN US release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Just a simulation release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,KharkivVision 2035 release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Primitive Environment Survival release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,ShotFightDisaster release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,NYIP release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Proximity Effect release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Aether Wizard Life release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Neo Berlin 2087 release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Shibuya Scramble Stories release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,They Are Rising release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,DAUGHTER OF PAIN release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,WhyTaoism release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Off The Grid: Bad Dream release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Orbit Or Beat Extended Edition release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Art Gallery Simulator release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,CookieRun: New World release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Formula Team release window,presence,present,removed,announced_product_window,Event left the live dataset
+2026-08-25,event,removed,Destroy All Humans! 2 – Reprobed,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Spider-Man Remastered,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Uncharted 4: A Thief's End Remastered,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Uncharted: The Lost Legacy Remastered,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Shark! Shark!,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Frostpunk: The Board Game,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Dorfromantik: The Board Game,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Semantle,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Squabble,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Pac-Man Museum+,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Mir tankov,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Quordle,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Who's Your Daddy?!,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Termo,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Resident Evil: Welcome to Raccoon City,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Absurdle,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Shadow Man Remastered,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Tom Clancy's Rainbow Six Extraction,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Nerdle,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Elasto Mania Remastered,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Bloodborne PSX,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Life is Strange: Before the Storm Remastered,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Life is Strange Remastered,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Breakout: Recharged,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,PowerSlave Exhumed,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Oddworld: Stranger's Wrath HD,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Five Nights in Anime 3D,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Touken Ranbu Warriors,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Final Fantasy VI,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Deemo: Memorial Keys,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Ghostwire: Tokyo - Prelude,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Ensemble Stars!! Road to Show!!,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Persona 4 Arena Ultimax,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,New Super Mario Bros. - Mario Vs Luigi,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Zero Escape: The Nonary Games,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Ship of Harkinian,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Shattered Pixel Dungeon,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Alto's Adventure — Remastered,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Lost Judgment: The Kaito Files,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,"The Legend of Zelda: Twilight Princess, Volume 11",presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,G-Darius HD,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Death Stranding Director's Cut,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Reed Remastered,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Real Heroes: Firefighter HD,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Birushana: Winds of Fate,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Chrono Cross: The Radical Dreamers Edition,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,The House of the Dead: Remake,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Ib,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Dōkyūsei: Bangin' Summer,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,The Stanley Parable: Ultra Deluxe,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Layer Section & Galactic Attack S-Tribute,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,This War of Mine: Final Cut,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Apex Legends Mobile,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Snow Bros. Nick and Tom Special,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Touken Ranbu Warriors,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Hatsune Miku: Project DIVA Mega Mix+,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Pac-Man Museum+,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Gravitar: Recharged,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Super Perils of Baking,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,SpellForce III Reforced,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Bad Monday Simulator,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Disc Room,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,IMSCARED - 2022 TEST BUILD,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Final Fantasy VII Remake Intergrade,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Shadowrun: Dragonfall - Director's Cut,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Blade Runner Enhanced Edition,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Fire Emblem Warriors: Three Hopes,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,UKRAINE GTA,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,DNF Duel,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Little Noah: Scion of Paradise,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Snow Bros. Nick and Tom Special,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Klonoa Phantasy Reverie Series,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Crypt of the Serpent King Remastered 4K Edition,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Blackout Rugby Manager,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Koi Remake,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Live A Live,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,GrimGrimoire OnceMore,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Koumajou Remilia: Scarlet Symphony,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Wadanohara and the Great Blue Sea -Reboot-,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Sonic Triple Trouble 16-Bit,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Scar of the Doll,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,A Tale of Paper: Refolded,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Pac-Man World Re-Pac,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Destroy All Humans! 2 – Reprobed,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Commandos 3 HD Remaster,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,MapleStory Worlds,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Q.U.B.E. 10th Anniversary,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Ni no Kuni: Wrath of the White Witch Remastered,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,OneShot: World Machine Edition,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,The House of the Dead: Remake,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,P-47 Aces Mk.II,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Sam & Max Save The World: Remastered,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Pamali,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Atri: My Dear Moments,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Kamiwaza: Way of the Thief,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,The Witch's House MV,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Persona 5 Royal,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Baldi's Basics Classic Remastered,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Resident Evil Village: Shadows of Rose,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Missile Command: Recharged,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Checkered Flag,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,VCTR-SCTR,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,The Forest of Drizzling Rain,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Neural Cloud,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Cleopatra Fortune S-Tribute,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Scar of the Doll,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Front Mission 1st: Remake,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Elevator Action -Returns- S-Tribute,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Dwarf Fortress,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Genius Invokation TCG,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Crisis Core: Final Fantasy VII Reunion,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,New Joe & Mac - Caveman Ninja,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Earth Defense Force 4.1: The Shadow of New Despair,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Sports Story,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Lee's Detective Agency,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Assassin's Creed Valhalla,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Persona 4: Golden,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Persona 3 Portable,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,The House of the Dead: Remake,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Dead Space,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Age of Empires II: Definitive Edition,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Metal Black S-Tribute,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Metroid Prime Remastered,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Ikki Unite,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Pharaoh: A New Era,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Cities: Skylines - Remastered,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Tales of Symphonia Remastered,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Emesis Blue,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Akka Arrh,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Like a Dragon: Ishin!,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Kirby's Return to Dream Land Deluxe,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Rune Factory 3 Special,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Caverns of Mars: Recharged,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Citadel,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Strip Poker Night at the Inventory,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,LegacyClonk,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Scar of the Doll,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Touken Ranbu reimei,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Sherlock Holmes: The Awakened,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Minecraft Legends,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Final Fantasy VI,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Teslagrad Remastered,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,DNF Duel,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Live A Live,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Ys Memoire: The Oath in Felghana,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,GrimGrimoire OnceMore,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Ys Memoire: The Oath in Felghana,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Aoi Shiro HD Remaster,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,We Love Katamari Reroll+ Royal Reverie,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Class of '09: The Re-Up,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Pikmin 1,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Reverie: Sweet As Edition,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Satebo's Wordgame,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Atelier Marie Remake: The Alchemist of Salburg,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Ridiculous Fishing EX,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Might & Magic: Clash of Heroes - Definitive Edition,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Psychic 5: Eternal,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,MapleStory R: Evolution,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,WHITE ALBUM: Memories like Falling Snow,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Cyberpunk 2077: No Coincidence,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Slap Fight,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Brave Nine,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Solitary Fighter,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Rune Factory 3 Special,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Paper Minecraft,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Baten Kaitos I & II HD Remaster,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,F-Zero 99,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Wizardry: Proving Grounds of the Mad Overlord,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,WitchSpring R,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Sore wa Maichiru Sakura no You ni -Re:BIRTH-,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Megami Ibunroku Persona: Ikū no Tō-hen,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Front Mission 2: Remake,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Astrosmash,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Star Trek: Infinite,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Alphadia I & II,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Suika Game,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,METAL GEAR SOLID: MASTER COLLECTION Vol.1 BONUS CONTENT,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,METAL GEAR & METAL GEAR 2: Solid Snake,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Taimanin RPG Extasy,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Ark: Survival Ascended,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Idol Mahjong: Final Romance 4 Remaster,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Taimanin RPG Extasy,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Alien Hominid HD,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Star Ocean: The Second Story R,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Little Noah: Scion of Paradise,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Battle City (SMS),presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Double Dragon Advance,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Risk of Rain Returns,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,The Idolmaster Shiny Colors Song for Prism,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,The King of Fighters XIII: Global Match,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Super Mario RPG,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Turok 3: Shadow of Oblivion Remastered,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Trip World DX,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Hitman: Blood Money Reprisal,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Kingpin: Reloaded,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Lego Fortnite,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Rocket Racing,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Fortnite Festival,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Granblue Fantasy Versus: Rising,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,One.,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Solitary Fighter,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Daggerfall Unity,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,X-Out: Resurfaced,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Suika Game,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Winter Memories,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Another Code: Recollection,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,The Last of Us Part II Remastered,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,The Legend of Steel Empire,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Yūki Yūna wa Yūsha de Aru: Hanayui no Kirameki,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Death Stranding Director's Cut,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Granblue Fantasy: Relink,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,To Heart 2: Dungeon Travelers,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Trip World DX,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Star Wars: Dark Forces Remaster,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Brothers: A Tale of Two Sons Remake,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Riviera: The Promised Land Remaster,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,"Of the Red, the Light, and the Ayakashi Tsuzuri",presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Akka Arrh,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Contra: Operation Galuga,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Paper Minecraft,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Grandia HD Collection,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Suika Game,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Suika Game,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Anno 1701 History Edition,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Teenage Mutant Ninja Turtles Arcade: Wrath of the Mutants,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Assault Suit Leynos 2 - Saturn Tribute,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Ghost of Tsushima Director's Cut,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Paper Mario: The Thousand-Year Door,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Ys Memoire: The Oath in Felghana,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Wizardry: Proving Grounds of the Mad Overlord,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Riviera: The Promised Land Remaster,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,WiZmans World Re:Try,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Rug Rats,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Sore wa Maichiru Sakura no You ni -Re:BIRTH-,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Shin Megami Tensei V: Vengeance,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Baten Kaitos I & II HD Remaster,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Kanon,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Natsuno-Kanata: Beyond Summer,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Figure Adventure,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Riven,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Beyond Good & Evil 20th Anniversary Edition,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Tsukihime: A piece of blue glass moon,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Luigi's Mansion 2 HD,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Dōkyūsei 2 Remake,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Brickadia,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Master Detective Archives: Rain Code +,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,KRITIKA:ZERO,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Tomba! Special Edition,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Star Wars: Bounty Hunter,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Super Minesweeper,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Koumajou Remilia: Scarlet Symphony,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Fate/stay night Remastered,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Misao 2024 HD Remaster,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Sam & Max: The Devil’s Playhouse Remastered,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Natsuno-Kanata: Beyond Summer,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Blade & Soul Heroes,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,WitchSpring R,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Age of Mythology: Retold,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Ace Attorney Investigations Collection,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Metro Quester: Osaka,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Dead Rising Deluxe Remaster,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Broken Sword - Shadow of the Templars: Reforged,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,The Exit 8 VR,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Incredibox - Sprunki MODDED!!,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Epic Mickey: Rebrushed,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Figure Story: Re.Start,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Lollipop Chainsaw RePOP,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,9th Dawn Remake,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Trials of Mana,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Final Fantasy VI,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,"Pokémon Let's Go, Pikachu! and Let's Go, Eevee!",presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Worms Armageddon: Anniversary Edition,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Night Slashers: Remake,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,OneShot: World Machine Edition,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Master Detective Archives: Rain Code +,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Flappy Bird,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Backyard Baseball '97,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Microtopia: Prologue,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Arizona Sunshine Remake,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Dandy's World - Bake Night Terror!,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Romancing SaGa 2: Revenge of the Seven,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Romance of the Three Kingdoms VIII: Remake,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Sonic X Shadow Generations,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Incredibox - Sprunki Babies,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Oasis,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Shadows of the Damned: Hella Remastered,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Clock Tower: Rewind,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Sprunki Icebox Cool As Ice Incredibox,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Incredibop - Deadline,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Empire of the Ants,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Little Big Adventure: Twinsen's Quest,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Dragon Quest III HD-2D Remake,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Stellar Blade x NieR:Automata,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Backyard Soccer '98,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Lollipop Chainsaw RePOP,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Under Defeat HD,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Legacy of Kain: Soul Reaver 1-2 Remastered,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Fortnite Ballistic,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Kono Aozora ni Yakusoku o Refine,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Fate/hollow ataraxia Remastered,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,"SFBC ""Fake"" Commercial Film",presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Ys Memoire: The Oath in Felghana,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Freedom Wars Remastered,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Tales of Graces f Remastered,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Donkey Kong Country Returns HD,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Montezuma's Revenge - The 40th Anniversary Edition,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,DreadOut Remastered Collection,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Colorful Stage! The Movie: A Miku Who Can't Sing,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Needy Streamer Overload: Typing of The Net,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Star Wars Episode I: Jedi Power Battles,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Sword of the Necromancer: Resurrection,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Virtua Fighter 5 R.E.V.O.,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Under Defeat HD,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Mizuiro Remake,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,The King of Fighters XIII: Global Match,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,MapleStory R: Evolution,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Suikoden I & II HD Remaster: Gate Rune and Dunan Unification Wars,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Fate: Reawakened,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,P-47 II MD,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Phantom Thief Angels: Twin Angel – Labyrinth of Time and World – Re:light,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Half-Life 2 RTX,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Xenoblade Chronicles X: Definitive Edition,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Iron Saga VS,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Last Origin R+,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Tayutama: Kiss on my Deity,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,SaGa Frontier 2 Remastered,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Bubble Ghost Remake,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Madoka Magica Magia Exedra,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Venus Vacation Prism: Dead or Alive Xtreme,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Backyard Baseball '97,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Croc: Legend of the Gobbos,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,The Last of Us Part II Remastered,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,The Talos Principle: Reawakened,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Snow Bros. 2 Special,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Home Sweet Home Rebirth,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Phantom Breaker: Battle Grounds Ultimate,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Lunar Remastered Collection,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,MapleStory Worlds,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Amerzone: The Explorer's Legacy,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,OneShot: World Machine Edition,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,9th Dawn Remake,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Flappy Bird,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,9th Dawn Remake,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Age of Empires II: Definitive Edition,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Tokimeki Memorial: forever with you Emotional,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Colorful Stage! The Movie: A Miku Who Can't Sing,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,DreadOut Remastered Collection,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Mobile Suit Gundam SEED: Battle Destiny Remastered,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Ys Memoire: Revelations in Celceta,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Onimusha 2: Samurai's Destiny Remaster,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Sonic X Shadow Generations,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Bravely Default: Flying Fairy HD Remaster,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Yakuza 0: Director's Cut,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Side Kicks! beyond,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,"Warhammer 40,000: Space Marine – Master Crafted Edition",presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Stellar Blade x Goddess of Victory: Nikke,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Raidou Remastered: The Mystery of the Soulless Army,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Front Mission 3: Remake,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,To Heart,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Backyard Baseball '01,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Tony Hawk's Pro Skater 3 + 4,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Patapon 1+2 Replay,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Stronghold Crusader: Definitive Edition,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Dungeons & Dragons Neverwinter Nights 2: Enhanced Edition,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Madoka Magica Magia Exedra,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Blue Protocol: Star Resonance,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Tomba! Special Edition,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Heretic + Hexen,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,The House of the Dead 2: Remake,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,"Warhammer 40,000: Dawn of War – Definitive Edition",presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,OFF,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,As One,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Gears of War: Reloaded,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Backyard Football '99,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Gloomy Eyes,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Platypus Reclayed,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Class of Heroes 3: Remaster,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Trails in the Sky 1st Chapter,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Blade & Soul Heroes,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Mamorukun ReCurse!,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Pac-Man World 2 Re-Pac,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Kao no nai Tsuki - Matsuyoi no Soutsubaki,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Final Fantasy Tactics - The Ivalice Chronicles,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Castle of Heart: Retold,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,The Legend of Steel Empire,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Yooka-Replaylee,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Blue Protocol: Star Resonance,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Little Nightmares Enhanced Edition,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Miliastra Wonderland,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Miliastra Sandbox,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,The House of the Dead 2: Remake,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Dragon Quest I & II HD-2D Remake,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,D.C. ~Da Capo~ Re:tune,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Virtua Fighter 5 R.E.V.O.,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Tales of Xillia Remastered,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Anima: Gate of Memories I & II Remaster,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,R-Type Delta: HD Boosted,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Outlaws + Handful of Missions: Remaster,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Ripple Island: Kyle and Cal's Restaurant,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,LoveR Kiss: Endless Memories,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Pou 3D,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Suika Game Planet,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Yūkyū Gensōkyoku Revival,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Skyblivion,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Broken Sword: The Smoking Mirror – Reforged,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Fate/EXTRA Record,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Tomba! Special Edition,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Suika Game Planet,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,DreadOut Remastered Collection,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Kotama & Academy Citadel,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Final Fantasy VII Remake Intergrade,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Arknights: Endfield,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,BetaSharp,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Front Mission 3: Remake,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Dragon Quest VII Reimagined,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Yakuza Kiwami 3 & Dark Ties,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,BlazBlue Entropy Effect X,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,City Hunter,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Tales of Berseria Remastered,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Fatal Frame II: Crimson Butterfly Remake,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Suika Game Planet,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Lollipop Chainsaw RePOP,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Screamer,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Memories Off Sōsō: Break out of my shell,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Ys Memoire: Revelations in Celceta,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,LoveR Kiss: Endless Memories,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Last Origin R+,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Birushana: Winds of Fate,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Age of Empires II: Definitive Edition,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,House Flipper Remastered Collection,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,A-Train9 Evolution,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Gothic Remake,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Observer System Redux,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Dead or Alive 6 Last Round,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Star Ocean: The Second Story R,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,70s-style Robot Anime Geppy-X,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Suika Game Planet,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Suika Game,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Culdcept The First,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,BlazBlue Entropy Effect X,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Hashire Hebereke: EX,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Trails in the Sky 2nd Chapter,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Dynasty Warriors 3: Complete Edition Remastered,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset
+2026-08-25,event,removed,Persona 4 Revival,presence,present,removed,wikidata:video-game-adaptation,Event left the live dataset

@@ -1,0 +1,380 @@
+[
+  {
+    "canonical_title": "BOKURA planet",
+    "product_id": "88560",
+    "product_sku": "9932445",
+    "platform": "Steam",
+    "role": "game",
+    "edition_year": 0,
+    "score": 78.0,
+    "sources": [
+      "event_window"
+    ],
+    "reasons": [
+      "Promote BOKURA planet as the storefront equivalent of Future Games Show at Gamescom (Star Ocean: The Second Story R, Dreamin' Her, The Dream Of A Cockspur, Suika Game) for the full event runtime 2026-08-26 to 2026-08-30, with a expo lead-in and afterglow around those dates.",
+      "Promote BOKURA planet as the storefront equivalent of Gamescom 2026 (Star Ocean: The Second Story R, Dreamin' Her, The Dream Of A Cockspur, Suika Game) for the full event runtime 2026-08-26 to 2026-08-30, with a expo lead-in and afterglow around those dates.",
+      "Promote BOKURA planet as the storefront equivalent of PAX West (The Dream Of A Cockspur, Suika Game, Prelude: Dark Pain, BOKURA) for the full event runtime 2026-09-04 to 2026-09-07, with a expo lead-in and afterglow around those dates."
+    ],
+    "tactics": [
+      "Amplify announcements the same day; feature matching catalog SKUs within hours of a trailer"
+    ],
+    "queries": [],
+    "event": "PAX West",
+    "promo_start": "2026-08-28",
+    "promo_end": "2026-09-10",
+    "rank": 1,
+    "as_of": "2026-08-31"
+  },
+  {
+    "canonical_title": "Grand Theft Auto VI",
+    "product_id": "108391",
+    "product_sku": "9952265",
+    "platform": "Rockstar Games",
+    "role": "game",
+    "edition_year": 2026,
+    "score": 53.0,
+    "sources": [
+      "wikipedia_pageviews"
+    ],
+    "reasons": [
+      "Wikipedia interest in \u201cGrand Theft Auto\u201d is 2.73\u00d7 the recent baseline (15,515 vs 5,681 daily views, as of 2026-08-30).",
+      "Wikipedia interest in \u201cGrand Theft Auto VI\u201d is 1.92\u00d7 the recent baseline (42,843 vs 22,320 daily views, as of 2026-08-30)."
+    ],
+    "tactics": [
+      "Raise merchandising rank while Wikipedia attention is above baseline",
+      "Pair the game with the related show/movie/IP landing module"
+    ],
+    "queries": [],
+    "wiki_article": "Grand Theft Auto",
+    "rank": 2,
+    "as_of": "2026-08-31"
+  },
+  {
+    "canonical_title": "Grand Theft Auto V Enhanced",
+    "product_id": "128648",
+    "product_sku": "9972080",
+    "platform": "Rockstar Games",
+    "role": "game",
+    "edition_year": 2025,
+    "score": 53.0,
+    "sources": [
+      "wikipedia_pageviews"
+    ],
+    "reasons": [
+      "Wikipedia interest in \u201cGrand Theft Auto\u201d is 2.73\u00d7 the recent baseline (15,515 vs 5,681 daily views, as of 2026-08-30).",
+      "Wikipedia interest in \u201cGrand Theft Auto VI\u201d is 1.92\u00d7 the recent baseline (42,843 vs 22,320 daily views, as of 2026-08-30)."
+    ],
+    "tactics": [
+      "Raise merchandising rank while Wikipedia attention is above baseline",
+      "Pair the game with the related show/movie/IP landing module"
+    ],
+    "queries": [],
+    "wiki_article": "Grand Theft Auto",
+    "rank": 3,
+    "as_of": "2026-08-31"
+  },
+  {
+    "canonical_title": "Madden NFL 27",
+    "product_id": "154464",
+    "product_sku": "9997855",
+    "platform": "Nintendo",
+    "role": "game",
+    "edition_year": 2027,
+    "score": 48.0,
+    "sources": [
+      "event_window"
+    ],
+    "reasons": [
+      "Promote Madden NFL 27 as the storefront equivalent of Madden NFL 27 release window (Madden NFL 27) for the full event runtime 2026-08-14 to 2026-08-28, with a default lead-in and afterglow around those dates.",
+      "Promote Madden NFL 27 as the storefront equivalent of NFL Season (Madden NFL, Madden NFL 27) for the full event runtime 2026-09-04 to 2027-02-08, with a sports lead-in and afterglow around those dates."
+    ],
+    "tactics": [
+      "Amplify announcements the same day; feature matching catalog SKUs within hours of a trailer"
+    ],
+    "queries": [],
+    "event": "NFL Season",
+    "promo_start": "2026-08-21",
+    "promo_end": "2027-02-15",
+    "rank": 4,
+    "as_of": "2026-08-31"
+  },
+  {
+    "canonical_title": "Hashire Hebereke: EX",
+    "product_id": "live:Q127602900",
+    "product_sku": "",
+    "platform": "Multi",
+    "role": "game",
+    "edition_year": 0,
+    "score": 48.0,
+    "sources": [
+      "event_window"
+    ],
+    "reasons": [
+      "Promote Hashire Hebereke: EX as the storefront equivalent of Hashire Hebereke: EX (Hashire Hebereke) for the full event runtime 2026-09-03 to 2026-09-03, with a adaptation lead-in and afterglow around those dates.",
+      "Promote Hashire Hebereke: EX as the storefront equivalent of Hashire Hebereke: EX release window (Hashire Hebereke: EX) for the full event runtime 2026-09-03 to 2026-09-17, with a default lead-in and afterglow around those dates."
+    ],
+    "tactics": [
+      "Hold a featured placement for the theatrical/streaming window",
+      "Cross-sell the game next to any soundtrack or tie-in DLC"
+    ],
+    "queries": [],
+    "event": "Hashire Hebereke: EX release window",
+    "promo_start": "2026-08-27",
+    "promo_end": "2026-09-20",
+    "rank": 5,
+    "as_of": "2026-08-31"
+  },
+  {
+    "canonical_title": "Star Ocean: The Second Story R",
+    "product_id": "live:Q119833222",
+    "product_sku": "",
+    "platform": "Multi",
+    "role": "game",
+    "edition_year": 0,
+    "score": 48.0,
+    "sources": [
+      "event_window"
+    ],
+    "reasons": [
+      "Promote Star Ocean: The Second Story R as the storefront equivalent of Future Games Show at Gamescom (Star Ocean: The Second Story R, Dreamin' Her, The Dream Of A Cockspur, Suika Game) for the full event runtime 2026-08-26 to 2026-08-30, with a expo lead-in and afterglow around those dates.",
+      "Promote Star Ocean: The Second Story R as the storefront equivalent of Gamescom 2026 (Star Ocean: The Second Story R, Dreamin' Her, The Dream Of A Cockspur, Suika Game) for the full event runtime 2026-08-26 to 2026-08-30, with a expo lead-in and afterglow around those dates."
+    ],
+    "tactics": [
+      "Amplify announcements the same day; feature matching catalog SKUs within hours of a trailer"
+    ],
+    "queries": [],
+    "event": "Gamescom 2026",
+    "promo_start": "2026-08-19",
+    "promo_end": "2026-09-02",
+    "rank": 6,
+    "as_of": "2026-08-31"
+  },
+  {
+    "canonical_title": "Pok\u00e9mon Winds",
+    "product_id": "live:Q138499263",
+    "product_sku": "",
+    "platform": "Multi",
+    "role": "game",
+    "edition_year": 2027,
+    "score": 31.010299956639813,
+    "sources": [
+      "google_trends"
+    ],
+    "reasons": [
+      "Google Trends (US) lists \u201cpokemon wild card\u201d (200+ searches). Highlight equivalent catalog games today. Related coverage: \u2018Pok\u00e9mon: Wild Card\u2019 Movie Sets 2027 Release Date, Drops Anime Teaser Starring Trading Card Game Player (Variety)."
+    ],
+    "tactics": [
+      "Feature this IP on the storefront homepage for the next 24 hours while search interest is elevated",
+      "Reuse the trending headline/movie/news creative rather than generic key-art",
+      "Hold current-edition price; attach DLC/currency underneath the hero SKU"
+    ],
+    "queries": [
+      "pokemon",
+      "pok\u00e9mon"
+    ],
+    "trend_title": "pokemon wild card",
+    "trend_geo": "US",
+    "rank": 7,
+    "as_of": "2026-08-31"
+  },
+  {
+    "canonical_title": "Pokemon Champions",
+    "product_id": "146701",
+    "product_sku": "9990106",
+    "platform": "Nintendo",
+    "role": "game",
+    "edition_year": 2026,
+    "score": 31.010299956639813,
+    "sources": [
+      "google_trends"
+    ],
+    "reasons": [
+      "Google Trends (US) lists \u201cpokemon wild card\u201d (200+ searches). Highlight equivalent catalog games today. Related coverage: \u2018Pok\u00e9mon: Wild Card\u2019 Movie Sets 2027 Release Date, Drops Anime Teaser Starring Trading Card Game Player (Variety)."
+    ],
+    "tactics": [
+      "Feature this IP on the storefront homepage for the next 24 hours while search interest is elevated",
+      "Reuse the trending headline/movie/news creative rather than generic key-art",
+      "Hold current-edition price; attach DLC/currency underneath the hero SKU"
+    ],
+    "queries": [
+      "pokemon",
+      "pok\u00e9mon"
+    ],
+    "trend_title": "pokemon wild card",
+    "trend_geo": "US",
+    "rank": 8,
+    "as_of": "2026-08-31"
+  },
+  {
+    "canonical_title": "Grand Theft Auto V Story Mode DLC",
+    "product_id": "63971",
+    "product_sku": "9907816",
+    "platform": "Xbox Live",
+    "role": "dlc",
+    "edition_year": 2022,
+    "score": 26.5,
+    "sources": [
+      "wikipedia_pageviews"
+    ],
+    "reasons": [
+      "Wikipedia interest in \u201cGrand Theft Auto\u201d is 2.73\u00d7 the recent baseline (15,515 vs 5,681 daily views, as of 2026-08-30).",
+      "Wikipedia interest in \u201cGrand Theft Auto VI\u201d is 1.92\u00d7 the recent baseline (42,843 vs 22,320 daily views, as of 2026-08-30)."
+    ],
+    "tactics": [
+      "Raise merchandising rank while Wikipedia attention is above baseline",
+      "Pair the game with the related show/movie/IP landing module"
+    ],
+    "queries": [],
+    "wiki_article": "Grand Theft Auto",
+    "rank": 9,
+    "as_of": "2026-08-31"
+  },
+  {
+    "canonical_title": "EA SPORTS Madden NFL 27",
+    "product_id": "155753",
+    "product_sku": "9999144",
+    "platform": "Steam",
+    "role": "game",
+    "edition_year": 2027,
+    "score": 18.0,
+    "sources": [
+      "event_window"
+    ],
+    "reasons": [
+      "Promote EA SPORTS Madden NFL 27 as the storefront equivalent of Madden NFL 27 release window (Madden NFL 27) for the full event runtime 2026-08-14 to 2026-08-28, with a default lead-in and afterglow around those dates."
+    ],
+    "tactics": [
+      "Amplify announcements the same day; feature matching catalog SKUs within hours of a trailer"
+    ],
+    "queries": [],
+    "event": "Madden NFL 27 release window",
+    "promo_start": "2026-08-07",
+    "promo_end": "2026-08-31",
+    "rank": 10,
+    "as_of": "2026-08-31"
+  },
+  {
+    "canonical_title": "EA SPORTS Madden NFL 27 Deluxe Edition",
+    "product_id": "155754",
+    "product_sku": "9999145",
+    "platform": "Steam",
+    "role": "game",
+    "edition_year": 2027,
+    "score": 18.0,
+    "sources": [
+      "event_window"
+    ],
+    "reasons": [
+      "Promote EA SPORTS Madden NFL 27 Deluxe Edition as the storefront equivalent of Madden NFL 27 release window (Madden NFL 27) for the full event runtime 2026-08-14 to 2026-08-28, with a default lead-in and afterglow around those dates."
+    ],
+    "tactics": [
+      "Amplify announcements the same day; feature matching catalog SKUs within hours of a trailer"
+    ],
+    "queries": [],
+    "event": "Madden NFL 27 release window",
+    "promo_start": "2026-08-07",
+    "promo_end": "2026-08-31",
+    "rank": 11,
+    "as_of": "2026-08-31"
+  },
+  {
+    "canonical_title": "Madden NFL 27 Deluxe Edition",
+    "product_id": "154462",
+    "product_sku": "9997853",
+    "platform": "PSN",
+    "role": "game",
+    "edition_year": 2027,
+    "score": 18.0,
+    "sources": [
+      "event_window"
+    ],
+    "reasons": [
+      "Promote Madden NFL 27 Deluxe Edition as the storefront equivalent of Madden NFL 27 release window (Madden NFL 27) for the full event runtime 2026-08-14 to 2026-08-28, with a default lead-in and afterglow around those dates."
+    ],
+    "tactics": [
+      "Amplify announcements the same day; feature matching catalog SKUs within hours of a trailer"
+    ],
+    "queries": [],
+    "event": "Madden NFL 27 release window",
+    "promo_start": "2026-08-07",
+    "promo_end": "2026-08-31",
+    "rank": 12,
+    "as_of": "2026-08-31"
+  },
+  {
+    "canonical_title": "NBA 2K27",
+    "product_id": "155907",
+    "product_sku": "9999298",
+    "platform": "Steam",
+    "role": "game",
+    "edition_year": 2027,
+    "score": 18.0,
+    "sources": [
+      "event_window"
+    ],
+    "reasons": [
+      "Promote NBA 2K27 as the storefront equivalent of NBA 2K27 release window (NBA 2K27) for the full event runtime 2026-09-04 to 2026-09-18, with a default lead-in and afterglow around those dates."
+    ],
+    "tactics": [
+      "Amplify announcements the same day; feature matching catalog SKUs within hours of a trailer"
+    ],
+    "queries": [],
+    "event": "NBA 2K27 release window",
+    "promo_start": "2026-08-28",
+    "promo_end": "2026-09-21",
+    "rank": 13,
+    "as_of": "2026-08-31"
+  },
+  {
+    "canonical_title": "EA SPORTS Madden NFL 26",
+    "product_id": "136576",
+    "product_sku": "9979997",
+    "platform": "EA Play",
+    "role": "game",
+    "edition_year": 2026,
+    "score": 18.0,
+    "sources": [
+      "event_window"
+    ],
+    "reasons": [
+      "Promote EA SPORTS Madden NFL 26 as the storefront equivalent of NFL Season (Madden NFL, Madden NFL 27) for the full event runtime 2026-09-04 to 2027-02-08, with a sports lead-in and afterglow around those dates."
+    ],
+    "tactics": [
+      "Watch-along merchandising: feature the current american football title next to live-score / tournament content",
+      "Daily storefront slot + push/email on match days in televised regions",
+      "Highlight co-op, Ultimate Team, or tournament brackets that mirror the live event"
+    ],
+    "queries": [],
+    "event": "NFL Season",
+    "promo_start": "2026-08-21",
+    "promo_end": "2027-02-15",
+    "rank": 14,
+    "as_of": "2026-08-31"
+  },
+  {
+    "canonical_title": "F1 25 - 2026 Season Edition",
+    "product_id": "153215",
+    "product_sku": "9996612",
+    "platform": "EA Play",
+    "role": "game",
+    "edition_year": 2026,
+    "score": 18.0,
+    "sources": [
+      "event_window"
+    ],
+    "reasons": [
+      "Promote F1 25 - 2026 Season Edition as the storefront equivalent of F1 World Championship (F1) for the full event runtime 2026-03-01 to 2026-12-08, with a sports lead-in and afterglow around those dates."
+    ],
+    "tactics": [
+      "Watch-along merchandising: feature the current motorsport title next to live-score / tournament content",
+      "Daily storefront slot + push/email on match days in televised regions",
+      "Highlight co-op, Ultimate Team, or tournament brackets that mirror the live event"
+    ],
+    "queries": [],
+    "event": "F1 World Championship",
+    "promo_start": "2026-02-15",
+    "promo_end": "2026-12-15",
+    "rank": 15,
+    "as_of": "2026-08-31"
+  }
+]

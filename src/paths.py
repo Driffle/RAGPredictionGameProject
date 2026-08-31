@@ -27,10 +27,10 @@ ORIGINAL_CALENDAR_ODS = Path(
 
 
 def catalog_path() -> Path:
-    if CATALOG_CSV.exists():
-        return CATALOG_CSV
     if CATALOG_CSV_GZ.exists():
         return CATALOG_CSV_GZ
+    if CATALOG_CSV.exists():
+        return CATALOG_CSV
     if ORIGINAL_CATALOG_CSV.exists():
         return ORIGINAL_CATALOG_CSV
     raise FileNotFoundError(

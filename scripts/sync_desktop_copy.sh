@@ -18,6 +18,12 @@ rsync -a --delete \
   --exclude '*.pyc' \
   --exclude '.pytest_cache/' \
   --exclude '.DS_Store' \
+  --exclude 'data/processed/rag/tfidf_index.joblib' \
+  --exclude 'data/processed/rag/corpus.jsonl' \
+  --exclude 'data/processed/rag/corpus.jsonl.gz' \
+  --exclude 'data/processed/promotion_calendar.csv' \
+  --exclude 'data/processed/promotion_calendar.csv.gz' \
+  --exclude 'data/raw/game_products.csv' \
   "$ROOT/" "$DEST/"
 
 ditto -c -k --sequesterRsrc --keepParent "$DEST" "$ZIP"

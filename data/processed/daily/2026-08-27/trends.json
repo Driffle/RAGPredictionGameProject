@@ -1,0 +1,600 @@
+{
+  "fetched_on": "2026-08-27",
+  "google_trends": [
+    {
+      "source": "google_trends",
+      "geo": "US",
+      "title": "pokemon worlds 2026",
+      "traffic": 500,
+      "traffic_label": "500+",
+      "published": "Wed, 26 Aug 2026 20:50:00 -0700",
+      "news": [
+        "Celebrate Worlds and Pok\u00e9monXP with Champion-Level Bundles and a Pikachu Coin (Pokemon.com)",
+        "Pok\u00e9mon championships: Tens of thousands of fans expected at San Francisco's Moscone Center and Chase Center (ABC7 Bay Area)",
+        "Pok\u00e9mon World Championships in SF: Here\u2019s what to know (KRON4)"
+      ],
+      "blob": "pokemon worlds 2026 Celebrate Worlds and Pok\u00e9monXP with Champion-Level Bundles and a Pikachu Coin (Pokemon.com) Pok\u00e9mon championships: Tens of thousands of fans expected at San Francisco's Moscone Center and Chase Center (ABC7 Bay Area) Pok\u00e9mon World Championships in SF: Here\u2019s what to know (KRON4)"
+    }
+  ],
+  "wikipedia": [
+    {
+      "source": "wikipedia_pageviews",
+      "article": "Cyberpunk 2077",
+      "queries": [
+        "cyberpunk"
+      ],
+      "as_of": "2026-08-26",
+      "views": 3845,
+      "baseline": 2677,
+      "spike_ratio": 1.44,
+      "series": [
+        [
+          "20260816",
+          2472
+        ],
+        [
+          "20260817",
+          2502
+        ],
+        [
+          "20260818",
+          2445
+        ],
+        [
+          "20260819",
+          2548
+        ],
+        [
+          "20260820",
+          2599
+        ],
+        [
+          "20260821",
+          2884
+        ],
+        [
+          "20260822",
+          2755
+        ],
+        [
+          "20260823",
+          3023
+        ],
+        [
+          "20260824",
+          3032
+        ],
+        [
+          "20260825",
+          3169
+        ],
+        [
+          "20260826",
+          3845
+        ]
+      ]
+    },
+    {
+      "source": "wikipedia_pageviews",
+      "article": "Pok\u00e9mon",
+      "queries": [
+        "pokemon",
+        "pok\u00e9mon"
+      ],
+      "as_of": "2026-08-26",
+      "views": 3994,
+      "baseline": 3536,
+      "spike_ratio": 1.13,
+      "series": [
+        [
+          "20260816",
+          3751
+        ],
+        [
+          "20260817",
+          3583
+        ],
+        [
+          "20260818",
+          3499
+        ],
+        [
+          "20260819",
+          3517
+        ],
+        [
+          "20260820",
+          3452
+        ],
+        [
+          "20260821",
+          3593
+        ],
+        [
+          "20260822",
+          3534
+        ],
+        [
+          "20260823",
+          3550
+        ],
+        [
+          "20260824",
+          3467
+        ],
+        [
+          "20260825",
+          3538
+        ],
+        [
+          "20260826",
+          3994
+        ]
+      ]
+    },
+    {
+      "source": "wikipedia_pageviews",
+      "article": "Street Fighter",
+      "queries": [
+        "street fighter"
+      ],
+      "as_of": "2026-08-26",
+      "views": 1316,
+      "baseline": 1236,
+      "spike_ratio": 1.06,
+      "series": [
+        [
+          "20260816",
+          1420
+        ],
+        [
+          "20260817",
+          1278
+        ],
+        [
+          "20260818",
+          1155
+        ],
+        [
+          "20260819",
+          1150
+        ],
+        [
+          "20260820",
+          1194
+        ],
+        [
+          "20260821",
+          1111
+        ],
+        [
+          "20260822",
+          1261
+        ],
+        [
+          "20260823",
+          1276
+        ],
+        [
+          "20260824",
+          1259
+        ],
+        [
+          "20260825",
+          1213
+        ],
+        [
+          "20260826",
+          1316
+        ]
+      ]
+    },
+    {
+      "source": "wikipedia_pageviews",
+      "article": "Resident Evil",
+      "queries": [
+        "resident evil"
+      ],
+      "as_of": "2026-08-26",
+      "views": 4423,
+      "baseline": 4226,
+      "spike_ratio": 1.05,
+      "series": [
+        [
+          "20260816",
+          4113
+        ],
+        [
+          "20260817",
+          4133
+        ],
+        [
+          "20260818",
+          3834
+        ],
+        [
+          "20260819",
+          3741
+        ],
+        [
+          "20260820",
+          3885
+        ],
+        [
+          "20260821",
+          4319
+        ],
+        [
+          "20260822",
+          4847
+        ],
+        [
+          "20260823",
+          5193
+        ],
+        [
+          "20260824",
+          4803
+        ],
+        [
+          "20260825",
+          4955
+        ],
+        [
+          "20260826",
+          4423
+        ]
+      ]
+    },
+    {
+      "source": "wikipedia_pageviews",
+      "article": "God of War",
+      "queries": [
+        "god of war"
+      ],
+      "as_of": "2026-08-26",
+      "views": 34,
+      "baseline": 33,
+      "spike_ratio": 1.01,
+      "series": [
+        [
+          "20260816",
+          20
+        ],
+        [
+          "20260817",
+          23
+        ],
+        [
+          "20260818",
+          28
+        ],
+        [
+          "20260819",
+          20
+        ],
+        [
+          "20260820",
+          49
+        ],
+        [
+          "20260821",
+          122
+        ],
+        [
+          "20260822",
+          64
+        ],
+        [
+          "20260823",
+          47
+        ],
+        [
+          "20260824",
+          34
+        ],
+        [
+          "20260825",
+          33
+        ],
+        [
+          "20260826",
+          34
+        ]
+      ]
+    },
+    {
+      "source": "wikipedia_pageviews",
+      "article": "Fallout",
+      "queries": [
+        "fallout"
+      ],
+      "as_of": "2026-08-26",
+      "views": 56,
+      "baseline": 57,
+      "spike_ratio": 0.98,
+      "series": [
+        [
+          "20260816",
+          60
+        ],
+        [
+          "20260817",
+          47
+        ],
+        [
+          "20260818",
+          59
+        ],
+        [
+          "20260819",
+          55
+        ],
+        [
+          "20260820",
+          64
+        ],
+        [
+          "20260821",
+          52
+        ],
+        [
+          "20260822",
+          33
+        ],
+        [
+          "20260823",
+          65
+        ],
+        [
+          "20260824",
+          62
+        ],
+        [
+          "20260825",
+          55
+        ],
+        [
+          "20260826",
+          56
+        ]
+      ]
+    },
+    {
+      "source": "wikipedia_pageviews",
+      "article": "Fallout (American TV series)",
+      "queries": [
+        "fallout"
+      ],
+      "as_of": "2026-08-26",
+      "views": 3009,
+      "baseline": 3154,
+      "spike_ratio": 0.95,
+      "series": [
+        [
+          "20260816",
+          3695
+        ],
+        [
+          "20260817",
+          3369
+        ],
+        [
+          "20260818",
+          3120
+        ],
+        [
+          "20260819",
+          2933
+        ],
+        [
+          "20260820",
+          3010
+        ],
+        [
+          "20260821",
+          2800
+        ],
+        [
+          "20260822",
+          3110
+        ],
+        [
+          "20260823",
+          3570
+        ],
+        [
+          "20260824",
+          3325
+        ],
+        [
+          "20260825",
+          3189
+        ],
+        [
+          "20260826",
+          3009
+        ]
+      ]
+    },
+    {
+      "source": "wikipedia_pageviews",
+      "article": "The Legend of Zelda",
+      "queries": [
+        "zelda",
+        "legend of zelda"
+      ],
+      "as_of": "2026-08-26",
+      "views": 2627,
+      "baseline": 2757,
+      "spike_ratio": 0.95,
+      "series": [
+        [
+          "20260816",
+          2955
+        ],
+        [
+          "20260817",
+          2867
+        ],
+        [
+          "20260818",
+          2678
+        ],
+        [
+          "20260819",
+          2581
+        ],
+        [
+          "20260820",
+          2567
+        ],
+        [
+          "20260821",
+          2777
+        ],
+        [
+          "20260822",
+          2719
+        ],
+        [
+          "20260823",
+          3000
+        ],
+        [
+          "20260824",
+          2935
+        ],
+        [
+          "20260825",
+          2738
+        ],
+        [
+          "20260826",
+          2627
+        ]
+      ]
+    },
+    {
+      "source": "wikipedia_pageviews",
+      "article": "Super Mario",
+      "queries": [
+        "mario"
+      ],
+      "as_of": "2026-08-26",
+      "views": 1374,
+      "baseline": 1449,
+      "spike_ratio": 0.95,
+      "series": [
+        [
+          "20260816",
+          1668
+        ],
+        [
+          "20260817",
+          1449
+        ],
+        [
+          "20260818",
+          1373
+        ],
+        [
+          "20260819",
+          1263
+        ],
+        [
+          "20260820",
+          1238
+        ],
+        [
+          "20260821",
+          1450
+        ],
+        [
+          "20260822",
+          1357
+        ],
+        [
+          "20260823",
+          1456
+        ],
+        [
+          "20260824",
+          1489
+        ],
+        [
+          "20260825",
+          1507
+        ],
+        [
+          "20260826",
+          1374
+        ]
+      ]
+    },
+    {
+      "source": "wikipedia_pageviews",
+      "article": "Sonic the Hedgehog",
+      "queries": [
+        "sonic"
+      ],
+      "as_of": "2026-08-26",
+      "views": 2278,
+      "baseline": 2437,
+      "spike_ratio": 0.93,
+      "series": [
+        [
+          "20260816",
+          2222
+        ],
+        [
+          "20260817",
+          2123
+        ],
+        [
+          "20260818",
+          2478
+        ],
+        [
+          "20260819",
+          2284
+        ],
+        [
+          "20260820",
+          2429
+        ],
+        [
+          "20260821",
+          2576
+        ],
+        [
+          "20260822",
+          2444
+        ],
+        [
+          "20260823",
+          2431
+        ],
+        [
+          "20260824",
+          2457
+        ],
+        [
+          "20260825",
+          2456
+        ],
+        [
+          "20260826",
+          2278
+        ]
+      ]
+    }
+  ],
+  "filter": {
+    "scope": "product_and_event_datasets",
+    "google_kept": 1,
+    "google_removed": 59,
+    "wikipedia_kept": 10,
+    "wikipedia_removed": 0
+  }
+}

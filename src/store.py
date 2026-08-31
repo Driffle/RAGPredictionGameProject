@@ -133,13 +133,17 @@ class FloorStore:
         self.events: list[dict] = []
         self.adaptations: list[dict] = []
         self.plans: list[dict] = []
+        self.plans_by_title: dict[str, list[dict]] = defaultdict(list)
+        self.plans_by_event: dict[str, list[dict]] = defaultdict(list)
         self.by_title: dict[str, list[dict]] = defaultdict(list)
         self.titles: list[str] = []
+        self.title_compact: list[tuple[str, str]] = []
         self.featured: list[str] = []
         self.bundle: dict = {"google_trends": [], "wikipedia": []}
         self.priorities: list[dict] = []
         self.meta: dict = {}
         self.loaded = False
+        self._dashboard_cache: dict | None = None
 
     def load(self) -> None:
         # Publisher/organizer confirmed dates win over raw catalog + scrapes at
@@ -167,12 +171,25 @@ class FloorStore:
         ]
         self.events, self.adaptations = split_deduped_calendar(self.events, self.adaptations)
         self.plans = build_plans(self.events, self.adaptations, self.catalog)
+        self.plans_by_title = defaultdict(list)
+        self.plans_by_event = defaultdict(list)
+        for plan in self.plans:
+            title = (plan.get("canonical_title") or "").strip().lower()
+            if title:
+                self.plans_by_title[title].append(plan)
+            event = (plan.get("event") or "").strip().lower()
+            if event:
+                self.plans_by_event[event].append(plan)
         self.by_title = defaultdict(list)
         for row in self.catalog:
             title = (row.get("canonical_title") or "").strip()
             if title:
                 self.by_title[title.lower()].append(row)
         self.titles = sorted(self.by_title, key=lambda key: key)
+        self.title_compact = [
+            (title, re.sub(r"[\s\-':.]+", " ", title).strip()) for title in self.titles
+        ]
+        self._dashboard_cache = None
         self._refresh_trends(refresh=False)
         self._build_featured()
         self.meta = live_meta()
@@ -241,6 +258,11 @@ class FloorStore:
                 break
         self.featured = ordered[:80]
 
+    def _lookup_plans(self, mapping: dict[str, list[dict]], key: str, field: str) -> list[dict]:
+        if mapping:
+            return mapping.get(key) or []
+        return [plan for plan in self.plans if (plan.get(field) or "").strip().lower() == key]
+
     def search_products(self, query: str, *, limit: int = 30) -> list[dict]:
         needle = (query or "").strip().lower()
         if not needle:
@@ -252,9 +274,10 @@ class FloorStore:
             for item in self.priorities
             if item.get("canonical_title")
         }
+        word = re.compile(rf"\b{re.escape(compact)}\b")
+        sequel = re.compile(r"^(\d+|ii|iii|iv|v|vi|remastered|edition|deluxe)\b")
         scored: list[tuple[int, str]] = []
-        for title in self.titles:
-            compact_title = re.sub(r"[\s\-':.]+", " ", title).strip()
+        for title, compact_title in self.title_compact:
             if compact not in compact_title:
                 continue
             score = 0
@@ -262,11 +285,11 @@ class FloorStore:
                 score += 1000
             elif compact_title.startswith(compact + " "):
                 rest = compact_title[len(compact) :].strip()
-                if re.match(r"^(\d+|ii|iii|iv|v|vi|remastered|edition|deluxe)\b", rest):
+                if sequel.match(rest):
                     score += 520
                 else:
                     score += 90
-            elif re.search(rf"\b{re.escape(compact)}\b", compact_title):
+            elif word.search(compact_title):
                 score += 320
             else:
                 score += 40
@@ -382,8 +405,7 @@ class FloorStore:
     ) -> list[dict]:
         synced = [
             self._sync_promo_window(plan, cross_media)
-            for plan in self.plans
-            if plan.get("canonical_title", "").lower() == title.lower()
+            for plan in self._lookup_plans(self.plans_by_title, title.lower(), "canonical_title")
         ]
         kept = self._filter_promo_windows(synced, range_start=range_start, range_end=range_end)
         if kept:
@@ -866,7 +888,7 @@ class FloorStore:
         name = row.get("event") or row.get("ip_adaptation") or ""
         today = date.today().isoformat()
         range_start, range_end = self._calendar_bounds(start_year, start_month, end_year, end_month)
-        related_plans = [plan for plan in self.plans if (plan.get("event") or "").lower() == name.lower()]
+        related_plans = self._lookup_plans(self.plans_by_event, name.lower(), "event")
         products = []
         seen: set[str] = set()
         exact_titles: list[str] = []
@@ -1478,6 +1500,8 @@ class FloorStore:
         return payload
 
     def dashboard(self) -> dict:
+        if self._dashboard_cache is not None:
+            return self._dashboard_cache
         today = date.today()
         dated = [row for row in self.catalog if row.get("release_date")]
         types = Counter(row.get("product_type") or "unknown" for row in self.catalog)
@@ -1586,7 +1610,7 @@ class FloorStore:
                     "official_source": cal.get("official_source") or plan.get("official_source") or "",
                 }
             )
-        return {
+        payload = {
             "as_of": today.isoformat(),
             "kpis": {
                 "catalog_skus": len(self.catalog),
@@ -1688,6 +1712,8 @@ class FloorStore:
             "wikipedia": wiki,
             "orders": self._ensure_leader_event_names(load_order_dashboard()),
         }
+        self._dashboard_cache = payload
+        return payload
 
     def trends_analysis(self) -> dict:
         """Series payloads for the Trends and Traffic analysis pages."""
