@@ -1,0 +1,830 @@
+{
+  "fetched_on": "2026-09-01",
+  "google_trends": [
+    {
+      "source": "google_trends",
+      "geo": "DE",
+      "title": "the last of us",
+      "traffic": 200,
+      "traffic_label": "200+",
+      "published": "Mon, 31 Aug 2026 22:10:00 -0700",
+      "news": [
+        "'It would be really Last of Us' \u2014 Asobo Games says it would 'love' to make a potential modern-day sequel to Resonance: A Plague Tale Legacy, since Naughty Dog's The Last of Us 'was a big inspiration' (Yahoo Tech)",
+        "The Last of Us im echten Leben: PC-Spieler kommt nach einem Monat nach Hause zur\u00fcck - Sieht, dass sein ganzes Setup von einem Pilz befallen wurde (GamePro)"
+      ],
+      "blob": "the last of us 'It would be really Last of Us' \u2014 Asobo Games says it would 'love' to make a potential modern-day sequel to Resonance: A Plague Tale Legacy, since Naughty Dog's The Last of Us 'was a big inspiration' (Yahoo Tech) The Last of Us im echten Leben: PC-Spieler kommt nach einem Monat nach Hause zur\u00fcck - Sieht, dass sein ganzes Setup von einem Pilz befallen wurde (GamePro)"
+    }
+  ],
+  "wikipedia": [
+    {
+      "source": "wikipedia_pageviews",
+      "article": "Grand Theft Auto",
+      "queries": [
+        "grand theft auto",
+        "gta"
+      ],
+      "as_of": "2026-08-31",
+      "views": 13856,
+      "baseline": 6190,
+      "spike_ratio": 2.24,
+      "series": [
+        [
+          "20260821",
+          5062
+        ],
+        [
+          "20260822",
+          5291
+        ],
+        [
+          "20260823",
+          5570
+        ],
+        [
+          "20260824",
+          5709
+        ],
+        [
+          "20260825",
+          5654
+        ],
+        [
+          "20260826",
+          6672
+        ],
+        [
+          "20260827",
+          11983
+        ],
+        [
+          "20260828",
+          26806
+        ],
+        [
+          "20260829",
+          17456
+        ],
+        [
+          "20260830",
+          15515
+        ],
+        [
+          "20260831",
+          13856
+        ]
+      ]
+    },
+    {
+      "source": "wikipedia_pageviews",
+      "article": "Cyberpunk 2077",
+      "queries": [
+        "cyberpunk"
+      ],
+      "as_of": "2026-08-31",
+      "views": 3643,
+      "baseline": 3327,
+      "spike_ratio": 1.09,
+      "series": [
+        [
+          "20260821",
+          2884
+        ],
+        [
+          "20260822",
+          2755
+        ],
+        [
+          "20260823",
+          3023
+        ],
+        [
+          "20260824",
+          3032
+        ],
+        [
+          "20260825",
+          3169
+        ],
+        [
+          "20260826",
+          3845
+        ],
+        [
+          "20260827",
+          3826
+        ],
+        [
+          "20260828",
+          3597
+        ],
+        [
+          "20260829",
+          3486
+        ],
+        [
+          "20260830",
+          3624
+        ],
+        [
+          "20260831",
+          3643
+        ]
+      ]
+    },
+    {
+      "source": "wikipedia_pageviews",
+      "article": "Ghost of Tsushima",
+      "queries": [
+        "ghost of tsushima"
+      ],
+      "as_of": "2026-08-31",
+      "views": 1660,
+      "baseline": 1564,
+      "spike_ratio": 1.06,
+      "series": [
+        [
+          "20260821",
+          1462
+        ],
+        [
+          "20260822",
+          1703
+        ],
+        [
+          "20260823",
+          1690
+        ],
+        [
+          "20260824",
+          1688
+        ],
+        [
+          "20260825",
+          1516
+        ],
+        [
+          "20260826",
+          1558
+        ],
+        [
+          "20260827",
+          1449
+        ],
+        [
+          "20260828",
+          1562
+        ],
+        [
+          "20260829",
+          1566
+        ],
+        [
+          "20260830",
+          1741
+        ],
+        [
+          "20260831",
+          1660
+        ]
+      ]
+    },
+    {
+      "source": "wikipedia_pageviews",
+      "article": "Elden Ring",
+      "queries": [
+        "elden ring"
+      ],
+      "as_of": "2026-08-31",
+      "views": 3675,
+      "baseline": 3486,
+      "spike_ratio": 1.05,
+      "series": [
+        [
+          "20260821",
+          3180
+        ],
+        [
+          "20260822",
+          3072
+        ],
+        [
+          "20260823",
+          3134
+        ],
+        [
+          "20260824",
+          3228
+        ],
+        [
+          "20260825",
+          3041
+        ],
+        [
+          "20260826",
+          3744
+        ],
+        [
+          "20260827",
+          4289
+        ],
+        [
+          "20260828",
+          4265
+        ],
+        [
+          "20260829",
+          4006
+        ],
+        [
+          "20260830",
+          4180
+        ],
+        [
+          "20260831",
+          3675
+        ]
+      ]
+    },
+    {
+      "source": "wikipedia_pageviews",
+      "article": "Fallout (American TV series)",
+      "queries": [
+        "fallout"
+      ],
+      "as_of": "2026-08-31",
+      "views": 3448,
+      "baseline": 3273,
+      "spike_ratio": 1.05,
+      "series": [
+        [
+          "20260821",
+          2800
+        ],
+        [
+          "20260822",
+          3110
+        ],
+        [
+          "20260823",
+          3570
+        ],
+        [
+          "20260824",
+          3325
+        ],
+        [
+          "20260825",
+          3189
+        ],
+        [
+          "20260826",
+          3009
+        ],
+        [
+          "20260827",
+          3222
+        ],
+        [
+          "20260828",
+          3366
+        ],
+        [
+          "20260829",
+          3823
+        ],
+        [
+          "20260830",
+          3766
+        ],
+        [
+          "20260831",
+          3448
+        ]
+      ]
+    },
+    {
+      "source": "wikipedia_pageviews",
+      "article": "Star Wars",
+      "queries": [
+        "star wars"
+      ],
+      "as_of": "2026-08-31",
+      "views": 5103,
+      "baseline": 4949,
+      "spike_ratio": 1.03,
+      "series": [
+        [
+          "20260821",
+          5011
+        ],
+        [
+          "20260822",
+          5091
+        ],
+        [
+          "20260823",
+          5517
+        ],
+        [
+          "20260824",
+          5187
+        ],
+        [
+          "20260825",
+          4873
+        ],
+        [
+          "20260826",
+          4778
+        ],
+        [
+          "20260827",
+          4746
+        ],
+        [
+          "20260828",
+          4761
+        ],
+        [
+          "20260829",
+          4888
+        ],
+        [
+          "20260830",
+          5464
+        ],
+        [
+          "20260831",
+          5103
+        ]
+      ]
+    },
+    {
+      "source": "wikipedia_pageviews",
+      "article": "Fortnite",
+      "queries": [
+        "fortnite"
+      ],
+      "as_of": "2026-08-31",
+      "views": 2059,
+      "baseline": 2027,
+      "spike_ratio": 1.02,
+      "series": [
+        [
+          "20260821",
+          2465
+        ],
+        [
+          "20260822",
+          2018
+        ],
+        [
+          "20260823",
+          1924
+        ],
+        [
+          "20260824",
+          2099
+        ],
+        [
+          "20260825",
+          2057
+        ],
+        [
+          "20260826",
+          2156
+        ],
+        [
+          "20260827",
+          2036
+        ],
+        [
+          "20260828",
+          2009
+        ],
+        [
+          "20260829",
+          1850
+        ],
+        [
+          "20260830",
+          1863
+        ],
+        [
+          "20260831",
+          2059
+        ]
+      ]
+    },
+    {
+      "source": "wikipedia_pageviews",
+      "article": "League of Legends",
+      "queries": [
+        "league of legends"
+      ],
+      "as_of": "2026-08-31",
+      "views": 1459,
+      "baseline": 1445,
+      "spike_ratio": 1.01,
+      "series": [
+        [
+          "20260821",
+          2004
+        ],
+        [
+          "20260822",
+          1536
+        ],
+        [
+          "20260823",
+          1549
+        ],
+        [
+          "20260824",
+          1594
+        ],
+        [
+          "20260825",
+          1448
+        ],
+        [
+          "20260826",
+          1442
+        ],
+        [
+          "20260827",
+          1373
+        ],
+        [
+          "20260828",
+          1286
+        ],
+        [
+          "20260829",
+          1339
+        ],
+        [
+          "20260830",
+          1390
+        ],
+        [
+          "20260831",
+          1459
+        ]
+      ]
+    },
+    {
+      "source": "wikipedia_pageviews",
+      "article": "Valorant",
+      "queries": [
+        "valorant"
+      ],
+      "as_of": "2026-08-31",
+      "views": 781,
+      "baseline": 785,
+      "spike_ratio": 0.99,
+      "series": [
+        [
+          "20260821",
+          1135
+        ],
+        [
+          "20260822",
+          913
+        ],
+        [
+          "20260823",
+          835
+        ],
+        [
+          "20260824",
+          835
+        ],
+        [
+          "20260825",
+          803
+        ],
+        [
+          "20260826",
+          766
+        ],
+        [
+          "20260827",
+          768
+        ],
+        [
+          "20260828",
+          744
+        ],
+        [
+          "20260829",
+          667
+        ],
+        [
+          "20260830",
+          737
+        ],
+        [
+          "20260831",
+          781
+        ]
+      ]
+    },
+    {
+      "source": "wikipedia_pageviews",
+      "article": "Horizon Zero Dawn",
+      "queries": [
+        "horizon zero dawn"
+      ],
+      "as_of": "2026-08-31",
+      "views": 983,
+      "baseline": 1004,
+      "spike_ratio": 0.98,
+      "series": [
+        [
+          "20260821",
+          1069
+        ],
+        [
+          "20260822",
+          1020
+        ],
+        [
+          "20260823",
+          1038
+        ],
+        [
+          "20260824",
+          1014
+        ],
+        [
+          "20260825",
+          941
+        ],
+        [
+          "20260826",
+          965
+        ],
+        [
+          "20260827",
+          975
+        ],
+        [
+          "20260828",
+          994
+        ],
+        [
+          "20260829",
+          921
+        ],
+        [
+          "20260830",
+          1177
+        ],
+        [
+          "20260831",
+          983
+        ]
+      ]
+    },
+    {
+      "source": "wikipedia_pageviews",
+      "article": "Assassin's Creed",
+      "queries": [
+        "assassin's creed",
+        "assassins creed"
+      ],
+      "as_of": "2026-08-31",
+      "views": 3608,
+      "baseline": 3794,
+      "spike_ratio": 0.95,
+      "series": [
+        [
+          "20260821",
+          3811
+        ],
+        [
+          "20260822",
+          3927
+        ],
+        [
+          "20260823",
+          4203
+        ],
+        [
+          "20260824",
+          3950
+        ],
+        [
+          "20260825",
+          3688
+        ],
+        [
+          "20260826",
+          3653
+        ],
+        [
+          "20260827",
+          3526
+        ],
+        [
+          "20260828",
+          3501
+        ],
+        [
+          "20260829",
+          3778
+        ],
+        [
+          "20260830",
+          4140
+        ],
+        [
+          "20260831",
+          3608
+        ]
+      ]
+    },
+    {
+      "source": "wikipedia_pageviews",
+      "article": "Counter-Strike 2",
+      "queries": [
+        "counter-strike",
+        "counter strike"
+      ],
+      "as_of": "2026-08-31",
+      "views": 681,
+      "baseline": 776,
+      "spike_ratio": 0.88,
+      "series": [
+        [
+          "20260821",
+          795
+        ],
+        [
+          "20260822",
+          806
+        ],
+        [
+          "20260823",
+          947
+        ],
+        [
+          "20260824",
+          838
+        ],
+        [
+          "20260825",
+          814
+        ],
+        [
+          "20260826",
+          733
+        ],
+        [
+          "20260827",
+          683
+        ],
+        [
+          "20260828",
+          606
+        ],
+        [
+          "20260829",
+          591
+        ],
+        [
+          "20260830",
+          758
+        ],
+        [
+          "20260831",
+          681
+        ]
+      ]
+    },
+    {
+      "source": "wikipedia_pageviews",
+      "article": "Helldivers 2",
+      "queries": [
+        "helldivers"
+      ],
+      "as_of": "2026-08-31",
+      "views": 1074,
+      "baseline": 1232,
+      "spike_ratio": 0.87,
+      "series": [
+        [
+          "20260821",
+          1327
+        ],
+        [
+          "20260822",
+          1306
+        ],
+        [
+          "20260823",
+          1319
+        ],
+        [
+          "20260824",
+          1438
+        ],
+        [
+          "20260825",
+          1312
+        ],
+        [
+          "20260826",
+          1159
+        ],
+        [
+          "20260827",
+          1060
+        ],
+        [
+          "20260828",
+          1073
+        ],
+        [
+          "20260829",
+          1039
+        ],
+        [
+          "20260830",
+          1068
+        ],
+        [
+          "20260831",
+          1074
+        ]
+      ]
+    },
+    {
+      "source": "wikipedia_pageviews",
+      "article": "Spider-Man",
+      "queries": [
+        "spider-man",
+        "spiderman",
+        "miles morales"
+      ],
+      "as_of": "2026-08-31",
+      "views": 7628,
+      "baseline": 10869,
+      "spike_ratio": 0.7,
+      "series": [
+        [
+          "20260821",
+          12519
+        ],
+        [
+          "20260822",
+          12310
+        ],
+        [
+          "20260823",
+          13240
+        ],
+        [
+          "20260824",
+          12103
+        ],
+        [
+          "20260825",
+          11396
+        ],
+        [
+          "20260826",
+          10342
+        ],
+        [
+          "20260827",
+          8285
+        ],
+        [
+          "20260828",
+          8109
+        ],
+        [
+          "20260829",
+          7902
+        ],
+        [
+          "20260830",
+          8153
+        ],
+        [
+          "20260831",
+          7628
+        ]
+      ]
+    }
+  ],
+  "filter": {
+    "scope": "product_and_event_datasets",
+    "google_kept": 1,
+    "google_removed": 0,
+    "wikipedia_kept": 14,
+    "wikipedia_removed": 0
+  }
+}

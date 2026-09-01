@@ -44,6 +44,29 @@ class CoverageTests(unittest.TestCase):
         self.assertIn("Despicable Me 4", titles)
         self.assertIn("The Super Mario Bros. Movie", titles)
 
+    def test_september_2026_platform_showcases(self) -> None:
+        from src.historical_calendar import historical_events
+
+        by_name = {row["event"]: row for row in historical_events()}
+        play = by_name["PlayStation State of Play September 2026"]
+        japan = by_name["PlayStation State of Play Japan September 2026"]
+        self.assertEqual(play["start_date"], "2026-09-03")
+        self.assertEqual(play["confirmation"], "confirmed")
+        self.assertIn("Final Fantasy VII", play["related_game"])
+        self.assertEqual(japan["start_date"], "2026-09-03")
+        xbox = by_name["Xbox Developer Direct 2026"]
+        gears = by_name["Gears of War: E-Day Direct"]
+        self.assertEqual(xbox["start_date"], "2026-01-22")
+        self.assertEqual(gears["start_date"], "2026-06-07")
+        september = [
+            row
+            for row in projected_events(range(2026, 2027))
+            if row.get("event") == "Nintendo Direct (September)"
+        ]
+        self.assertTrue(september)
+        self.assertEqual(september[0]["start_date"], "2026-09-12")
+        self.assertIn("planning", (september[0].get("confirmation") or "").lower())
+
     def test_beyond_the_spider_verse_is_registered(self) -> None:
         hits = [
             row
