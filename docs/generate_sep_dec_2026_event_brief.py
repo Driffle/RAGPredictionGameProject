@@ -9,17 +9,17 @@ thirty recommended games per event.
 from __future__ import annotations
 
 import html
+import io
 import shutil
-import subprocess
 import sys
 from datetime import date
 from pathlib import Path
+from zipfile import ZIP_DEFLATED, ZipFile
 
 ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from src.artwork import artwork_for, load_artwork
 from src.calendar_dedupe import canonical_event_name, dedupe_calendar_rows, is_gaming_world_event, unique_event_listings
 from src.date_range import event_window, events_in_range, row_precision
 from src.dates import annotate_event
@@ -150,20 +150,6 @@ def top_events(rows: list[dict], *, limit: int = 5) -> list[dict]:
     return picked
 
 
-def art_uri(name: str, kind: str, dataset: dict) -> str:
-    art = artwork_for(name, kind=kind, dataset=dataset)
-    path = Path(str(art.get("local_path") or ""))
-    if path.exists():
-        return path.resolve().as_uri()
-    return str(art.get("image_url") or "")
-
-
-def local_art(name: str, kind: str, dataset: dict) -> Path | None:
-    art = artwork_for(name, kind=kind, dataset=dataset)
-    path = Path(str(art.get("local_path") or ""))
-    return path if path.exists() else None
-
-
 def _unique_tags(*groups: list) -> list[str]:
     out: list[str] = []
     seen: set[str] = set()
@@ -244,7 +230,6 @@ def chip_html(tags: list[str]) -> str:
 def build_payload() -> dict:
     catalog = load_catalog(games_only=True, drop_placeholder_dates=True)
     title_index = build_title_index(catalog)
-    artwork = load_artwork()
     events = []
     for row in top_events(load_calendar()):
         games = recommended_games_for_event(row, catalog, limit=GAMES_PER_EVENT, title_index=title_index)
@@ -266,8 +251,6 @@ def build_payload() -> dict:
                 "start": start_iso,
                 "end": end_iso,
                 "owner": owner.publisher_label if owner else "",
-                "image": art_uri(calendar_label(row), "event", artwork),
-                "image_path": local_art(calendar_label(row), "event", artwork),
                 "hashtags": social["hashtags"],
                 "platforms": social["platforms"],
                 "family": social["family"],
@@ -280,8 +263,6 @@ def build_payload() -> dict:
                         else "TBA",
                         "type": game.get("product_type") or "game",
                         "publisher": game.get("publisher") or "",
-                        "image": art_uri(game.get("canonical_title") or "", "product", artwork),
-                        "image_path": local_art(game.get("canonical_title") or "", "product", artwork),
                         **product_engagement(game, calendar_label(row), social["family"], start_iso, end_iso),
                     }
                     for game in games
@@ -300,16 +281,10 @@ def render_html(payload: dict) -> str:
     for index, event in enumerate(payload["events"], start=1):
         tiles = []
         for rank, game in enumerate(event["games"], start=1):
-            img = (
-                f'<img src="{html.escape(game["image"])}" alt="">'
-                if game["image"]
-                else '<span class="thumb-empty"></span>'
-            )
             tiles.append(
                 f"""
             <article class="media-tile">
               <span class="rank">#{rank:02d}</span>
-              {img}
               <h5>{html.escape(game["title"])}</h5>
               <p class="meta">{html.escape(game["release"])} · {html.escape(game["type"])}</p>
               <p class="meta">{html.escape(game["platform"] or "Multi")}</p>
@@ -319,11 +294,6 @@ def render_html(payload: dict) -> str:
             )
         owner_badge = (
             f'<span class="badge on">{html.escape(event["owner"])}</span>' if event["owner"] else ""
-        )
-        cover = (
-            f'<img class="lede-cover" src="{html.escape(event["image"])}" alt="">'
-            if event["image"]
-            else '<div class="lede-cover empty"></div>'
         )
         platform_cols = "".join(
             f"""<div>
@@ -337,7 +307,6 @@ def render_html(payload: dict) -> str:
             f"""
         <article class="lede">
           <div class="lede-hero">
-            {cover}
             <div>
               <div class="badge-row">
                 <span class="badge on">#{index:02d} · {html.escape(event["kind"])}</span>
@@ -372,12 +341,10 @@ def render_html(payload: dict) -> str:
 <head>
   <meta charset="utf-8"/>
   <title>Floor Brief · Sep–Dec 2026</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Syne:wght@700;800&display=swap" rel="stylesheet"/>
   <style>
     :root {{ --bg:#{BG}; --ink:#{INK}; --muted:#{MUTED}; --cyan:#{CYAN}; --magenta:#{MAGENTA}; --amber:#{AMBER}; --card:#{CARD}; --line:#{LINE}; }}
     * {{ box-sizing:border-box; }}
-    html, body {{ margin:0; background:var(--bg); color:var(--ink); font:15px/1.5 "IBM Plex Sans", "Segoe UI", sans-serif; }}
+    html, body {{ margin:0; background:var(--bg); color:var(--ink); font:15px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif; }}
     body {{ -webkit-print-color-adjust:exact; print-color-adjust:exact; }}
     .aurora {{ position:fixed; inset:0; pointer-events:none; background:
       radial-gradient(900px 500px at 12% -10%, rgba(92,225,230,.22), transparent 55%),
@@ -387,16 +354,15 @@ def render_html(payload: dict) -> str:
     .mast {{ display:flex; justify-content:space-between; align-items:flex-end; padding:28px 36px 18px; border-bottom:1px solid rgba(255,255,255,.12); }}
     .kicker {{ margin:0; letter-spacing:.16em; text-transform:uppercase; font-size:11px; color:var(--cyan); display:flex; align-items:center; gap:8px; }}
     .pulse-dot {{ width:8px; height:8px; border-radius:50%; background:var(--cyan); }}
-    .mast h1 {{ margin:6px 0 0; font-family:Syne, Palatino, sans-serif; font-size:48px; letter-spacing:-.04em; line-height:.9;
+    .mast h1 {{ margin:6px 0 0; font-family:Palatino, "Palatino Linotype", Georgia, serif; font-size:48px; letter-spacing:-.04em; line-height:.9;
       background:linear-gradient(120deg,#fff 20%,var(--cyan) 50%,var(--magenta) 90%); -webkit-background-clip:text; background-clip:text; color:transparent; }}
     .range {{ color:var(--muted); font-size:13px; text-align:right; }}
     main {{ padding:28px 36px 48px; width:min(1100px,100%); }}
-    .intro h2 {{ font-family:Syne, sans-serif; font-size:32px; margin:0 0 8px; letter-spacing:-.03em; }}
+    .intro h2 {{ font-family:Palatino, "Palatino Linotype", Georgia, serif; font-size:32px; margin:0 0 8px; letter-spacing:-.03em; }}
     .intro p {{ margin:0 0 22px; color:var(--muted); max-width:70ch; }}
     .lede, .card {{ background:rgba(14,18,34,.86); border:1px solid rgba(255,255,255,.12); border-radius:20px; padding:22px; margin:0 0 22px; }}
-    .lede-hero {{ display:grid; grid-template-columns:140px 1fr; gap:18px; align-items:start; }}
-    .lede-cover {{ width:140px; height:180px; object-fit:cover; border-radius:14px; background:rgba(255,255,255,.06); }}
-    .event-title {{ margin:0 0 8px; font-family:Syne, sans-serif; font-size:30px; letter-spacing:-.03em; }}
+    .lede-hero {{ display:block; }}
+    .event-title {{ margin:0 0 8px; font-family:Palatino, "Palatino Linotype", Georgia, serif; font-size:30px; letter-spacing:-.03em; }}
     .action {{ font-size:17px; color:var(--amber); margin:0 0 6px; }}
     .badge-row {{ display:flex; flex-wrap:wrap; gap:8px; margin:0 0 12px; }}
     .badge {{ font-size:10px; letter-spacing:.08em; text-transform:uppercase; padding:5px 9px; border-radius:999px; border:1px solid rgba(255,255,255,.12); }}
@@ -408,9 +374,8 @@ def render_html(payload: dict) -> str:
     .kpi span {{ color:var(--muted); font-size:10px; letter-spacing:.1em; text-transform:uppercase; }}
     h4 {{ margin:0 0 12px; letter-spacing:.08em; text-transform:uppercase; font-size:11px; color:var(--cyan); }}
     .media-grid {{ display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; }}
-    .media-tile {{ position:relative; padding:12px 12px 12px 70px; min-height:118px; border:1px solid rgba(255,255,255,.12); border-radius:16px; background:linear-gradient(145deg,rgba(255,255,255,.05),rgba(92,225,230,.04)); }}
-    .media-tile img, .thumb-empty {{ position:absolute; left:12px; top:12px; width:44px; height:58px; object-fit:cover; border-radius:8px; background:rgba(255,255,255,.08); }}
-    .media-tile h5 {{ margin:0 0 4px; font:700 15px/1.25 Syne, sans-serif; }}
+    .media-tile {{ position:relative; padding:12px 14px; min-height:auto; border:1px solid rgba(255,255,255,.12); border-radius:16px; background:linear-gradient(145deg,rgba(255,255,255,.05),rgba(92,225,230,.04)); }}
+    .media-tile h5 {{ margin:0 28px 4px 0; font:700 15px/1.25 Palatino, "Palatino Linotype", Georgia, serif; }}
     .meta {{ margin:3px 0; color:var(--muted); font-size:12px; }}
     .meta.seo {{ font-size:11px; }}
     .rank {{ position:absolute; right:10px; top:8px; color:var(--cyan); font-size:10px; letter-spacing:.12em; }}
@@ -448,22 +413,193 @@ def render_html(payload: dict) -> str:
 """
 
 
-def write_pdf(html_path: Path, pdf_path: Path) -> None:
-    chrome = Path("/Applications/Google Chrome.app/Contents/MacOS/Google Chrome")
-    if not chrome.exists():
-        raise FileNotFoundError("Google Chrome is required to print the Floor Brief PDF")
-    pdf_path.parent.mkdir(parents=True, exist_ok=True)
-    cmd = [
-        str(chrome),
-        "--headless=new",
-        "--disable-gpu",
-        "--no-pdf-header-footer",
-        "--allow-file-access-from-files",
-        "--virtual-time-budget=20000",
-        f"--print-to-pdf={pdf_path}",
-        html_path.resolve().as_uri(),
-    ]
-    subprocess.run(cmd, check=True, capture_output=True, text=True)
+def write_pdf(payload: dict, path: Path) -> None:
+    from reportlab.lib import colors
+    from reportlab.lib.enums import TA_LEFT, TA_RIGHT
+    from reportlab.lib.pagesizes import A4
+    from reportlab.lib.styles import ParagraphStyle
+    from reportlab.lib.units import mm
+    from reportlab.platypus import (
+        Paragraph,
+        SimpleDocTemplate,
+        Spacer,
+        Table,
+        TableStyle,
+    )
+
+    bg = colors.HexColor(f"#{BG}")
+    ink = colors.HexColor(f"#{INK}")
+    muted = colors.HexColor(f"#{MUTED}")
+    cyan = colors.HexColor(f"#{CYAN}")
+    amber = colors.HexColor(f"#{AMBER}")
+    card = colors.HexColor(f"#{CARD}")
+    header = colors.HexColor("#12182A")
+    stripe = colors.HexColor("#141A2C")
+
+    kicker = ParagraphStyle("kicker", fontName="Helvetica-Bold", fontSize=8, textColor=cyan, leading=11, spaceAfter=2)
+    title = ParagraphStyle("title", fontName="Helvetica-Bold", fontSize=22, textColor=cyan, leading=26, spaceAfter=2)
+    h2 = ParagraphStyle("h2", fontName="Helvetica-Bold", fontSize=14, textColor=ink, leading=18, spaceAfter=4)
+    body = ParagraphStyle("body", fontName="Helvetica", fontSize=9, textColor=muted, leading=12)
+    event_name = ParagraphStyle("event_name", fontName="Helvetica-Bold", fontSize=16, textColor=ink, leading=20, spaceAfter=2)
+    runtime = ParagraphStyle("runtime", fontName="Helvetica-Bold", fontSize=11, textColor=amber, leading=14, spaceAfter=2)
+    meta = ParagraphStyle("meta", fontName="Helvetica", fontSize=8, textColor=muted, leading=11)
+    tags = ParagraphStyle("tags", fontName="Helvetica-Bold", fontSize=8, textColor=cyan, leading=11)
+    cell = ParagraphStyle("cell", fontName="Helvetica", fontSize=8, textColor=ink, leading=10)
+    cell_title = ParagraphStyle("cell_title", fontName="Helvetica-Bold", fontSize=8, textColor=ink, leading=10)
+    cell_social = ParagraphStyle("cell_social", fontName="Helvetica", fontSize=7, textColor=cyan, leading=9)
+    head_cell = ParagraphStyle("head_cell", fontName="Helvetica-Bold", fontSize=7, textColor=cyan, leading=9)
+    range_style = ParagraphStyle("range", fontName="Helvetica-Bold", fontSize=10, textColor=ink, leading=13, alignment=TA_RIGHT)
+    range_muted = ParagraphStyle("range_muted", fontName="Helvetica", fontSize=8, textColor=muted, leading=11, alignment=TA_RIGHT)
+    left_wrap = ParagraphStyle("left_wrap", parent=kicker, alignment=TA_LEFT)
+
+    path.parent.mkdir(parents=True, exist_ok=True)
+    doc = SimpleDocTemplate(
+        str(path),
+        pagesize=A4,
+        leftMargin=12 * mm,
+        rightMargin=12 * mm,
+        topMargin=10 * mm,
+        bottomMargin=10 * mm,
+        title="Floor Brief · Sep–Dec 2026",
+    )
+    story = []
+
+    mast = Table(
+        [
+            [
+                [
+                    Paragraph("LIVE DESK · 2026–2030", left_wrap),
+                    Paragraph("Floor Brief", title),
+                ],
+                [
+                    Paragraph("Event window", range_muted),
+                    Paragraph(payload["range_label"], range_style),
+                    Paragraph(f"As of {payload['as_of']}", range_muted),
+                ],
+            ]
+        ],
+        colWidths=[110 * mm, 70 * mm],
+    )
+    mast.setStyle(
+        TableStyle(
+            [
+                ("BACKGROUND", (0, 0), (-1, -1), bg),
+                ("VALIGN", (0, 0), (-1, -1), "BOTTOM"),
+                ("LEFTPADDING", (0, 0), (-1, -1), 0),
+                ("RIGHTPADDING", (0, 0), (-1, -1), 0),
+                ("TOPPADDING", (0, 0), (-1, -1), 2),
+                ("BOTTOMPADDING", (0, 0), (-1, -1), 8),
+            ]
+        )
+    )
+    story.append(mast)
+    story.append(Spacer(1, 8))
+    story.append(Paragraph("Which event windows are live?", h2))
+    story.append(
+        Paragraph(
+            "Top five merchandising events overlapping 1 Sep 2026–31 Dec 2026. "
+            "Each card lists the event runtime, social engagement tags, and thirty catalog games to recommend. "
+            "Console showcases keep first-party owned-studio games.",
+            body,
+        )
+    )
+    story.append(Spacer(1, 8))
+
+    def text(value: str, style: ParagraphStyle) -> Paragraph:
+        return Paragraph(html.escape(value or ""), style)
+
+    for index, event in enumerate(payload["events"], start=1):
+        owner = f"    ·    {event['owner']}" if event.get("owner") else ""
+        place = event["location"] or event["country"] or "Worldwide"
+        blocks = [
+            text(f"#{index:02d}  {event['kind'].upper()}   ·   {event['status']}", kicker),
+            text(event["name"], event_name),
+            text(f"Event runtime  {event['runtime']}", runtime),
+            text(
+                f"{event['start']} → {event['end']}    ·    {place}    ·    {event['mode'] or '—'}{owner}",
+                meta,
+            ),
+            text("  ".join(event.get("hashtags") or []) or "—", tags),
+        ]
+        for pack in (event.get("platforms") or {}).values():
+            blocks.append(
+                text(
+                    f"{pack['label']}  ·  {pack['best_times']}  ·  {'  '.join(pack.get('hashtags') or [])}",
+                    meta,
+                )
+            )
+        header_table = Table([[blocks]], colWidths=[180 * mm])
+        header_table.setStyle(
+            TableStyle(
+                [
+                    ("BACKGROUND", (0, 0), (-1, -1), card),
+                    ("LEFTPADDING", (0, 0), (-1, -1), 10),
+                    ("RIGHTPADDING", (0, 0), (-1, -1), 10),
+                    ("TOPPADDING", (0, 0), (-1, -1), 8),
+                    ("BOTTOMPADDING", (0, 0), (-1, -1), 8),
+                ]
+            )
+        )
+
+        rows = [
+            [
+                text("#", head_cell),
+                text("RECOMMENDED GAME", head_cell),
+                text("RELEASE", head_cell),
+                text("PLATFORM", head_cell),
+                text("SOCIAL ENGAGEMENT", head_cell),
+            ]
+        ]
+        for row_i, game in enumerate(event["games"], start=1):
+            social_bits = "  ".join(game.get("hashtags") or [])
+            seo = " · ".join(game.get("seo_keywords") or [])
+            times = game.get("post_times") or {}
+            bits = [
+                times.get("tiktok") and f"TikTok · {times['tiktok']}",
+                times.get("instagram") and f"IG · {times['instagram']}",
+            ]
+            extra = "  |  ".join(bit for bit in bits if bit)
+            social = "<br/>".join(html.escape(part) for part in (social_bits, seo, extra) if part)
+            rows.append(
+                [
+                    text(f"{row_i:02d}", cell),
+                    text(game["title"], cell_title),
+                    text(game["release"], cell),
+                    text(game["platform"] or "Multi", cell),
+                    Paragraph(social or "—", cell_social),
+                ]
+            )
+        games_table = Table(rows, colWidths=[10 * mm, 58 * mm, 28 * mm, 32 * mm, 52 * mm], repeatRows=1)
+        style_cmds = [
+            ("BACKGROUND", (0, 0), (-1, 0), header),
+            ("VALIGN", (0, 0), (-1, -1), "TOP"),
+            ("LEFTPADDING", (0, 0), (-1, -1), 4),
+            ("RIGHTPADDING", (0, 0), (-1, -1), 4),
+            ("TOPPADDING", (0, 0), (-1, -1), 3),
+            ("BOTTOMPADDING", (0, 0), (-1, -1), 3),
+        ]
+        for row_i in range(1, len(rows)):
+            style_cmds.append(("BACKGROUND", (0, row_i), (-1, row_i), stripe if row_i % 2 else card))
+        games_table.setStyle(TableStyle(style_cmds))
+        story.append(header_table)
+        story.append(Spacer(1, 3))
+        story.append(games_table)
+        story.append(Spacer(1, 10))
+
+    story.append(
+        Paragraph(
+            f"Floor Brief · mapped products from the live catalog · {payload['as_of']}",
+            meta,
+        )
+    )
+
+    def paint(canvas, _doc):
+        canvas.saveState()
+        canvas.setFillColor(bg)
+        canvas.rect(0, 0, A4[0], A4[1], fill=1, stroke=0)
+        canvas.restoreState()
+
+    doc.build(story, onFirstPage=paint, onLaterPages=paint)
 
 
 def _shade(cell, fill: str) -> None:
@@ -494,7 +630,7 @@ def write_docx(payload: dict, path: Path) -> None:
     from docx.enum.text import WD_ALIGN_PARAGRAPH
     from docx.oxml import parse_xml
     from docx.oxml.ns import qn
-    from docx.shared import Cm, Inches, Pt, RGBColor
+    from docx.shared import Cm, Pt
 
     doc = Document()
     section = doc.sections[0]
@@ -569,10 +705,6 @@ def write_docx(payload: dict, path: Path) -> None:
             size=10,
             color=MUTED,
         )
-        if event["image_path"]:
-            pic = card.cell(0, 0).add_paragraph()
-            run = pic.add_run()
-            run.add_picture(str(event["image_path"]), width=Inches(1.4))
         tags = card.cell(0, 0).add_paragraph()
         _run(tags, "  ".join(event.get("hashtags") or []) or "—", size=10, color=CYAN, bold=True)
         for pack in (event.get("platforms") or {}).values():
@@ -607,12 +739,6 @@ def write_docx(payload: dict, path: Path) -> None:
                 para = games.cell(row_i, col).paragraphs[0]
                 para.text = ""
                 _run(para, value, size=9 if col == 4 else 10, color=CYAN if col == 4 else INK, bold=col == 1)
-                if game["image_path"] and col == 1:
-                    try:
-                        pic = games.cell(row_i, col).add_paragraph()
-                        pic.add_run().add_picture(str(game["image_path"]), width=Inches(0.42))
-                    except Exception:
-                        pass
                 if col == 4:
                     times = game.get("post_times") or {}
                     bits = [
@@ -634,6 +760,37 @@ def write_docx(payload: dict, path: Path) -> None:
     )
     path.parent.mkdir(parents=True, exist_ok=True)
     doc.save(path)
+    _strip_docx_images(path)
+
+
+def _strip_docx_images(path: Path) -> None:
+    """Drop Word's package thumbnail so the brief ships with no image parts."""
+    buf = io.BytesIO()
+    with ZipFile(path) as zin, ZipFile(buf, "w", ZIP_DEFLATED) as zout:
+        for item in zin.infolist():
+            name = item.filename
+            if name.startswith("docProps/thumbnail") or name.lower().endswith(
+                (".jpeg", ".jpg", ".png", ".gif", ".emf", ".wmf")
+            ):
+                continue
+            data = zin.read(name)
+            if name == "_rels/.rels":
+                data = (
+                    data.decode("utf-8")
+                    .replace(
+                        '<Relationship Id="rId2" Type="http://schemas.openxmlformats.org/package/2006/relationships/metadata/thumbnail" Target="docProps/thumbnail.jpeg"/>',
+                        "",
+                    )
+                    .encode("utf-8")
+                )
+            elif name == "[Content_Types].xml":
+                data = (
+                    data.decode("utf-8")
+                    .replace('<Default Extension="jpeg" ContentType="image/jpeg"/>', "")
+                    .encode("utf-8")
+                )
+            zout.writestr(item, data)
+    path.write_bytes(buf.getvalue())
 
 
 def main() -> None:
@@ -642,8 +799,8 @@ def main() -> None:
     pdf_path = DOCS / f"{STEM}.pdf"
     docx_path = DOCS / f"{STEM}.docx"
     html_path.write_text(render_html(payload), encoding="utf-8")
-    write_pdf(html_path, pdf_path)
     write_docx(payload, docx_path)
+    write_pdf(payload, pdf_path)
     DESKTOP.mkdir(parents=True, exist_ok=True)
     for src in (pdf_path, docx_path):
         shutil.copy2(src, DESKTOP / src.name)
