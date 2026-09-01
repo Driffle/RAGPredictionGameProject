@@ -580,6 +580,16 @@ def recommended_games_for_event(
         add(item)
         if len(games) >= limit:
             return games[:limit]
+    extra = [
+        item
+        for item in catalog
+        if product_role(item) == "game" and not _is_junk_title(item.get("canonical_title") or "")
+    ]
+    extra.sort(key=lambda item: item.get("release_date") or "", reverse=True)
+    for item in extra:
+        add(item)
+        if len(games) >= limit:
+            break
     return games[:limit]
 
 

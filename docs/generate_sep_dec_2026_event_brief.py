@@ -2,7 +2,8 @@
 """Export Floor Brief's top Sep–Dec 2026 events to PDF and DOCX.
 
 Layout mirrors the website desk: dark mast, kicker, event lede cards,
-runtime KPIs, and a mapped-products grid of ten recommended games.
+runtime KPIs, social engagement tags, and a mapped-products grid of
+thirty recommended games per event.
 """
 
 from __future__ import annotations
@@ -22,16 +23,18 @@ from src.artwork import artwork_for, load_artwork
 from src.calendar_dedupe import canonical_event_name, dedupe_calendar_rows, is_gaming_world_event, unique_event_listings
 from src.date_range import event_window, events_in_range, row_precision
 from src.dates import annotate_event
+from src.content_marketing import FAMILY_TAGS, PLATFORMS, UNIVERSE_TAGS, correlation_from_plan, hashtag, social_pack
 from src.first_party import showcase_owner
 from src.load_data import load_catalog
-from src.match import build_title_index
-from src.promote import calendar_label, recommended_games_for_event
+from src.match import build_title_index, superhero_universe_for_row
+from src.promote import calendar_label, promo_family, recommended_games_for_event
 
 RANGE_START = date(2026, 9, 1)
 RANGE_END = date(2026, 12, 31)
 STEM = "FloorBrief_Sep-Dec_2026_Top_Events"
 DESKTOP = Path.home() / "Desktop"
 DOCS = ROOT / "docs"
+GAMES_PER_EVENT = 30
 
 BG = "07080F"
 INK = "F4F7FF"
@@ -161,15 +164,95 @@ def local_art(name: str, kind: str, dataset: dict) -> Path | None:
     return path if path.exists() else None
 
 
+def _unique_tags(*groups: list) -> list[str]:
+    out: list[str] = []
+    seen: set[str] = set()
+    for group in groups:
+        for tag in group or []:
+            if tag and tag not in seen:
+                seen.add(tag)
+                out.append(tag)
+    return out
+
+
+def event_engagement(row: dict, games: list[dict]) -> dict:
+    name = calendar_label(row)
+    family = promo_family(row)
+    universe = superhero_universe_for_row(name)
+    hero = (games[0].get("canonical_title") if games else "") or name
+    pack = social_pack(hero, name, family)
+    tags = _unique_tags(
+        [hashtag(name), "#ad"],
+        UNIVERSE_TAGS.get(universe) or [],
+        FAMILY_TAGS.get(family) or FAMILY_TAGS["default"],
+        (pack.get("tiktok") or {}).get("hashtags") or [],
+    )
+    platforms = {}
+    for key, label, when in PLATFORMS:
+        item = pack.get(key) or {}
+        platforms[key] = {
+            "label": item.get("platform") or label,
+            "hashtags": (item.get("hashtags") or [])[:8],
+            "best_times": item.get("best_times") or when,
+        }
+    return {
+        "family": family,
+        "hashtags": tags[:10],
+        "platforms": platforms,
+    }
+
+
+def product_engagement(game: dict, event_name: str, family: str, start: str, end: str) -> dict:
+    corr = (
+        correlation_from_plan(
+            {
+                "canonical_title": game.get("canonical_title") or "",
+                "event": event_name,
+                "platform": game.get("platform") or "",
+                "promo_family": family,
+                "role": "game",
+                "runtime_start": start,
+                "runtime_end": end,
+                "promo_start": start,
+                "promo_end": end,
+            }
+        )
+        or {}
+    )
+    social = corr.get("social") or {}
+    return {
+        "hashtags": (corr.get("top_hashtags") or [])[:5],
+        "seo_keywords": (corr.get("seo_keywords") or [])[:4],
+        "post_times": corr.get("post_times") or {},
+        "platforms": {
+            key: {
+                "label": pack.get("platform") or key,
+                "hashtags": (pack.get("hashtags") or [])[:6],
+                "best_times": pack.get("best_times") or "",
+            }
+            for key, pack in social.items()
+        },
+    }
+
+
+def chip_html(tags: list[str]) -> str:
+    if not tags:
+        return '<span class="meta">—</span>'
+    return "".join(f'<span class="hashtag">{html.escape(tag)}</span>' for tag in tags)
+
+
 def build_payload() -> dict:
     catalog = load_catalog(games_only=True, drop_placeholder_dates=True)
     title_index = build_title_index(catalog)
     artwork = load_artwork()
     events = []
     for row in top_events(load_calendar()):
-        games = recommended_games_for_event(row, catalog, limit=10, title_index=title_index)
+        games = recommended_games_for_event(row, catalog, limit=GAMES_PER_EVENT, title_index=title_index)
         start, end = event_window(row)
         owner = showcase_owner(calendar_label(row))
+        start_iso = start.isoformat() if start else ""
+        end_iso = (end or start).isoformat() if (end or start) else ""
+        social = event_engagement(row, games)
         events.append(
             {
                 "name": calendar_label(row),
@@ -180,11 +263,14 @@ def build_payload() -> dict:
                 "mode": row.get("attendance_mode") or "",
                 "related": row.get("related_game") or "",
                 "runtime": runtime_label(row),
-                "start": start.isoformat() if start else "",
-                "end": (end or start).isoformat() if (end or start) else "",
+                "start": start_iso,
+                "end": end_iso,
                 "owner": owner.publisher_label if owner else "",
                 "image": art_uri(calendar_label(row), "event", artwork),
                 "image_path": local_art(calendar_label(row), "event", artwork),
+                "hashtags": social["hashtags"],
+                "platforms": social["platforms"],
+                "family": social["family"],
                 "games": [
                     {
                         "title": game.get("canonical_title") or "",
@@ -196,6 +282,7 @@ def build_payload() -> dict:
                         "publisher": game.get("publisher") or "",
                         "image": art_uri(game.get("canonical_title") or "", "product", artwork),
                         "image_path": local_art(game.get("canonical_title") or "", "product", artwork),
+                        **product_engagement(game, calendar_label(row), social["family"], start_iso, end_iso),
                     }
                     for game in games
                 ],
@@ -226,6 +313,8 @@ def render_html(payload: dict) -> str:
               <h5>{html.escape(game["title"])}</h5>
               <p class="meta">{html.escape(game["release"])} · {html.escape(game["type"])}</p>
               <p class="meta">{html.escape(game["platform"] or "Multi")}</p>
+              <div class="chip-row">{chip_html(game.get("hashtags") or [])}</div>
+              <p class="meta seo">{html.escape(" · ".join(game.get("seo_keywords") or []) or "—")}</p>
             </article>"""
             )
         owner_badge = (
@@ -235,6 +324,14 @@ def render_html(payload: dict) -> str:
             f'<img class="lede-cover" src="{html.escape(event["image"])}" alt="">'
             if event["image"]
             else '<div class="lede-cover empty"></div>'
+        )
+        platform_cols = "".join(
+            f"""<div>
+              <b>{html.escape(pack["label"])}</b>
+              <p class="meta">Post when {html.escape(pack["best_times"])}</p>
+              <div class="chip-row">{chip_html(pack.get("hashtags") or [])}</div>
+            </div>"""
+            for pack in (event.get("platforms") or {}).values()
         )
         cards.append(
             f"""
@@ -251,6 +348,7 @@ def render_html(payload: dict) -> str:
               <h3 class="event-title">{html.escape(event["name"])}</h3>
               <p class="action">Event runtime {html.escape(event["runtime"])}</p>
               <p class="meta">{html.escape(event["location"] or event["country"] or "Worldwide")}</p>
+              <div class="chip-row event-tags">{chip_html(event.get("hashtags") or [])}</div>
             </div>
           </div>
           <div class="kpis">
@@ -260,7 +358,11 @@ def render_html(payload: dict) -> str:
             <div class="kpi"><b>{html.escape(event["mode"] or "—")}</b><span>Attendance</span></div>
           </div>
           <section class="card">
-            <h4>Mapped products · top 10 recommended games</h4>
+            <h4>Content marketing · social engagement</h4>
+            <div class="content-social">{platform_cols}</div>
+          </section>
+          <section class="card">
+            <h4>Mapped products · top {GAMES_PER_EVENT} recommended games</h4>
             <div class="media-grid">{"".join(tiles)}</div>
           </section>
         </article>"""
@@ -306,15 +408,21 @@ def render_html(payload: dict) -> str:
     .kpi span {{ color:var(--muted); font-size:10px; letter-spacing:.1em; text-transform:uppercase; }}
     h4 {{ margin:0 0 12px; letter-spacing:.08em; text-transform:uppercase; font-size:11px; color:var(--cyan); }}
     .media-grid {{ display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; }}
-    .media-tile {{ position:relative; padding:12px 12px 12px 70px; min-height:78px; border:1px solid rgba(255,255,255,.12); border-radius:16px; background:linear-gradient(145deg,rgba(255,255,255,.05),rgba(92,225,230,.04)); }}
+    .media-tile {{ position:relative; padding:12px 12px 12px 70px; min-height:118px; border:1px solid rgba(255,255,255,.12); border-radius:16px; background:linear-gradient(145deg,rgba(255,255,255,.05),rgba(92,225,230,.04)); }}
     .media-tile img, .thumb-empty {{ position:absolute; left:12px; top:12px; width:44px; height:58px; object-fit:cover; border-radius:8px; background:rgba(255,255,255,.08); }}
     .media-tile h5 {{ margin:0 0 4px; font:700 15px/1.25 Syne, sans-serif; }}
     .meta {{ margin:3px 0; color:var(--muted); font-size:12px; }}
+    .meta.seo {{ font-size:11px; }}
     .rank {{ position:absolute; right:10px; top:8px; color:var(--cyan); font-size:10px; letter-spacing:.12em; }}
+    .chip-row {{ display:flex; flex-wrap:wrap; gap:4px; margin:6px 0 0; }}
+    .hashtag {{ display:inline-block; font-size:11px; color:var(--cyan); background:rgba(92,225,230,.08); border:1px solid rgba(255,255,255,.12); border-radius:999px; padding:2px 8px; }}
+    .content-social {{ display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; }}
+    .content-social b {{ display:block; font-size:11px; letter-spacing:.08em; text-transform:uppercase; color:var(--cyan); margin-bottom:4px; }}
     .colophon {{ color:var(--muted); font-size:11px; padding:0 36px 28px; }}
     @page {{ size:A4; margin:12mm; }}
     @media print {{
-      .lede {{ break-inside:avoid; page-break-inside:avoid; }}
+      .lede {{ break-inside:auto; }}
+      .media-tile, .card {{ break-inside:avoid; page-break-inside:avoid; }}
     }}
   </style>
 </head>
@@ -330,7 +438,7 @@ def render_html(payload: dict) -> str:
   <main>
     <div class="intro">
       <h2>Which event windows are live?</h2>
-      <p>Top five merchandising events overlapping 1 Sep 2026–31 Dec 2026, ranked like the Floor Brief desk: confirmed showcases and expos first. Each card lists the event runtime and the ten catalog games to recommend in that window. Console showcases keep first-party owned-studio games (SIE on State of Play, Nintendo on Directs).</p>
+      <p>Top five merchandising events overlapping 1 Sep 2026–31 Dec 2026, ranked like the Floor Brief desk: confirmed showcases and expos first. Each card lists the event runtime, social engagement tags (TikTok, Instagram, YouTube Shorts, X), and thirty catalog games to recommend — with product hashtags, post windows, and SEO keywords. Console showcases keep first-party owned-studio games (SIE on State of Play, Nintendo on Directs).</p>
     </div>
     {"".join(cards)}
   </main>
@@ -351,6 +459,7 @@ def write_pdf(html_path: Path, pdf_path: Path) -> None:
         "--disable-gpu",
         "--no-pdf-header-footer",
         "--allow-file-access-from-files",
+        "--virtual-time-budget=20000",
         f"--print-to-pdf={pdf_path}",
         html_path.resolve().as_uri(),
     ]
@@ -438,7 +547,7 @@ def write_docx(payload: dict, path: Path) -> None:
     _run(
         p,
         "Top five merchandising events overlapping 1 Sep 2026–31 Dec 2026. "
-        "Each card lists the event runtime and the ten catalog games to recommend. "
+        "Each card lists the event runtime, social engagement tags, and thirty catalog games to recommend. "
         "Console showcases keep first-party owned-studio games.",
         size=11,
         color=MUTED,
@@ -464,28 +573,56 @@ def write_docx(payload: dict, path: Path) -> None:
             pic = card.cell(0, 0).add_paragraph()
             run = pic.add_run()
             run.add_picture(str(event["image_path"]), width=Inches(1.4))
+        tags = card.cell(0, 0).add_paragraph()
+        _run(tags, "  ".join(event.get("hashtags") or []) or "—", size=10, color=CYAN, bold=True)
+        for pack in (event.get("platforms") or {}).values():
+            line = card.cell(0, 0).add_paragraph()
+            _run(
+                line,
+                f"{pack['label']}  ·  {pack['best_times']}  ·  {'  '.join(pack.get('hashtags') or [])}",
+                size=9,
+                color=MUTED,
+            )
 
-        games = dark_table(11, 4)
-        headers = ("#", "Recommended game", "Release", "Platform")
+        games = dark_table(1 + len(event["games"]), 5)
+        headers = ("#", "Recommended game", "Release", "Platform", "Social engagement")
         for col, label in enumerate(headers):
             _shade(games.cell(0, col), "12182A")
             para = games.cell(0, col).paragraphs[0]
             para.text = ""
             _run(para, label.upper(), size=8, color=CYAN, bold=True)
         for row_i, game in enumerate(event["games"], start=1):
-            values = (f"{row_i:02d}", game["title"], game["release"], game["platform"] or "Multi")
+            social_bits = "  ".join(game.get("hashtags") or [])
+            seo = " · ".join(game.get("seo_keywords") or [])
+            values = (
+                f"{row_i:02d}",
+                game["title"],
+                game["release"],
+                game["platform"] or "Multi",
+                f"{social_bits}\n{seo}".strip(),
+            )
             for col, value in enumerate(values):
                 fill = "141A2C" if row_i % 2 else CARD
                 _shade(games.cell(row_i, col), fill)
                 para = games.cell(row_i, col).paragraphs[0]
                 para.text = ""
-                _run(para, value, size=10, color=INK, bold=col == 1)
+                _run(para, value, size=9 if col == 4 else 10, color=CYAN if col == 4 else INK, bold=col == 1)
                 if game["image_path"] and col == 1:
                     try:
                         pic = games.cell(row_i, col).add_paragraph()
                         pic.add_run().add_picture(str(game["image_path"]), width=Inches(0.42))
                     except Exception:
                         pass
+                if col == 4:
+                    times = game.get("post_times") or {}
+                    bits = [
+                        times.get("tiktok") and f"TikTok · {times['tiktok']}",
+                        times.get("instagram") and f"IG · {times['instagram']}",
+                    ]
+                    extra = "  |  ".join(bit for bit in bits if bit)
+                    if extra:
+                        when = games.cell(row_i, col).add_paragraph()
+                        _run(when, extra, size=8, color=MUTED)
 
     note = dark_table(1, 1)
     _shade(note.cell(0, 0), BG)
@@ -515,7 +652,8 @@ def main() -> None:
     print(f"Copied to {DESKTOP}")
     for event in payload["events"]:
         games = ", ".join(game["title"] for game in event["games"][:4])
-        print(f"  {event['name']} [{event['runtime']}] → {games}")
+        tags = " ".join(event.get("hashtags") or [])[:80]
+        print(f"  {event['name']} [{event['runtime']}] {len(event['games'])} games · {tags} → {games}")
 
 
 if __name__ == "__main__":
