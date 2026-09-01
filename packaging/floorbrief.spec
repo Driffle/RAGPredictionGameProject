@@ -81,6 +81,7 @@ a = Analysis(
         "src.paths",
         "src.store",
         "src.orders",
+        "src.first_party",
         "src.historical_calendar",
         "openpyxl",
     ],

@@ -13,6 +13,7 @@ from xml.etree.ElementTree import iterparse
 from zipfile import ZipFile
 
 from src.calendar_dedupe import is_quarter_timeframe
+from src.first_party import is_owned_title, showcase_owner
 from src.load_data import canonical_title, gzip_sidecar, load_events, open_tabular
 from src.match import _compile_queries, _query_score, queries_for_calendar_row
 from src.paths import DATA_PROCESSED, DATA_RAW
@@ -564,6 +565,20 @@ def _recommended_products_for_event(
         if title:
             buckets[title] += float(row.get("week_gmv") or 0)
     ranked = sorted(buckets.items(), key=lambda item: (-item[1], item[0]))[:limit]
+    owner = showcase_owner(event)
+    if owner:
+        owned = [(name, gmv) for name, gmv in ranked if is_owned_title(name, owner)]
+        if len(owned) < limit:
+            seen = {name.lower() for name, _ in owned}
+            extras = sorted(buckets.items(), key=lambda item: (-item[1], item[0]))
+            for name, gmv in extras:
+                if name.lower() in seen or not is_owned_title(name, owner):
+                    continue
+                owned.append((name, gmv))
+                seen.add(name.lower())
+                if len(owned) >= limit:
+                    break
+        ranked = owned[:limit] or ranked
     return [{"canonical_title": name, "year_gmv": _money(gmv)} for name, gmv in ranked]
 
 

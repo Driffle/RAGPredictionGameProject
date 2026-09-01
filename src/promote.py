@@ -14,6 +14,11 @@ from datetime import date, timedelta
 from src.calendar_dedupe import is_gaming_world_event, is_quarter_timeframe
 from src.dates import confirmation_kind
 from src.documents import keyword_retrieve
+from src.first_party import (
+    is_owned_product,
+    owned_search_queries,
+    showcase_owner,
+)
 from src.load_data import gzip_sidecar, parse_date
 from src.match import (
     build_title_index,
@@ -509,6 +514,34 @@ def products_for_event(
     fallback_cursor: list[int] | None = None,
 ) -> list[dict]:
     """At least one catalog SKU for this event: franchise, window, then bucket."""
+    owner = showcase_owner(calendar_label(row))
+    if owner:
+        owned = [
+            item
+            for item in catalog
+            if is_owned_product(item, owner) and not _is_junk_title(item.get("canonical_title") or "")
+        ]
+        if owned:
+            queries = owned_search_queries(owner)
+            chosen = _select_products(
+                owned,
+                queries,
+                title_index=title_index,
+                game_limit=8,
+                max_total=10,
+            )
+            if len(chosen) < 4:
+                seen = {(item.get("canonical_title") or "").lower() for item in chosen}
+                extra = [
+                    item
+                    for item in owned
+                    if product_role(item) == "game"
+                    and (item.get("canonical_title") or "").lower() not in seen
+                ]
+                extra.sort(key=lambda item: item.get("release_date") or "", reverse=True)
+                chosen.extend(extra[: 8 - len(chosen)])
+            if chosen:
+                return chosen
     queries = queries_for_calendar_row(row)
     label = calendar_label(row).lower()
     rank_queries = [query for query in queries if query != label]
@@ -765,6 +798,8 @@ def _select_products(
     *,
     title_index: dict[str, list[dict]] | None = None,
     universe: str | None = None,
+    game_limit: int | None = None,
+    max_total: int | None = None,
 ) -> list[dict]:
     ranked = rank_catalog(catalog, queries, min_score=1, title_index=title_index)
     preferred = queries[0] if queries else ""
@@ -793,10 +828,10 @@ def _select_products(
     counts = {"game": 0, "currency": 0, "dlc": 0}
     if universe:
         limits = {"game": 40, "currency": 4, "dlc": 8}
-        max_total = 48
+        cap = 48
     else:
-        limits = {"game": 2, "currency": 1, "dlc": 1}
-        max_total = 4
+        limits = {"game": game_limit or 2, "currency": 1, "dlc": 1}
+        cap = max_total or 4
     seen_titles: set[str] = set()
     seen_game_years: set[int] = set()
     for _, row in scored:
@@ -823,7 +858,7 @@ def _select_products(
             seen_game_years.add(year)
         counts[role] += 1
         chosen.append(row)
-        if sum(counts.values()) >= max_total:
+        if sum(counts.values()) >= cap:
             break
     return chosen
 
@@ -955,7 +990,8 @@ def build_plans(
     events_with_products: set[str] = set()
 
     for row in calendar:
-        queries = queries_for_calendar_row(row)
+        owner = showcase_owner(calendar_label(row))
+        queries = owned_search_queries(owner) if owner else queries_for_calendar_row(row)
         products = products_for_event(
             row,
             unique,

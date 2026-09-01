@@ -1,5 +1,59 @@
 [
   {
+    "canonical_title": "God of War Laufey",
+    "product_id": "live:God of War Laufey",
+    "product_sku": "",
+    "platform": "PS5",
+    "role": "game",
+    "edition_year": 0,
+    "score": 78.0,
+    "sources": [
+      "event_window"
+    ],
+    "reasons": [
+      "Promote God of War Laufey as the storefront equivalent of God of War (God of War, God of War: Sons of Sparta) for the full event runtime 2026-01-01 to 2026-12-31, with a adaptation lead-in and afterglow around those dates.",
+      "Promote God of War Laufey as the storefront equivalent of PlayStation State of Play Japan September 2026 (PlayStation, Japan / Asia studios, The Dream Of A Cockspur) for the full event runtime 2026-09-03 to 2026-09-03, with a expo lead-in and afterglow around those dates.",
+      "Promote God of War Laufey as the storefront equivalent of PlayStation State of Play September 2026 (PlayStation, Final Fantasy VII Revelation, Marvel's Wolverine, Dissidia Duellum Final Fantasy) for the full event runtime 2026-09-03 to 2026-09-03, with a expo lead-in and afterglow around those dates."
+    ],
+    "tactics": [
+      "Hold a featured placement for the theatrical/streaming window",
+      "Cross-sell the game next to any soundtrack or tie-in DLC"
+    ],
+    "queries": [],
+    "event": "PlayStation State of Play September 2026",
+    "promo_start": "2026-08-27",
+    "promo_end": "2026-09-06",
+    "rank": 1,
+    "as_of": "2026-09-01"
+  },
+  {
+    "canonical_title": "God of War: Sons of Sparta",
+    "product_id": "live:God of War: Sons of Sparta",
+    "product_sku": "",
+    "platform": "PS5",
+    "role": "game",
+    "edition_year": 0,
+    "score": 78.0,
+    "sources": [
+      "event_window"
+    ],
+    "reasons": [
+      "Promote God of War: Sons of Sparta as the storefront equivalent of God of War (God of War, God of War: Sons of Sparta) for the full event runtime 2026-01-01 to 2026-12-31, with a adaptation lead-in and afterglow around those dates.",
+      "Promote God of War: Sons of Sparta as the storefront equivalent of PlayStation State of Play Japan September 2026 (PlayStation, Japan / Asia studios, The Dream Of A Cockspur) for the full event runtime 2026-09-03 to 2026-09-03, with a expo lead-in and afterglow around those dates.",
+      "Promote God of War: Sons of Sparta as the storefront equivalent of PlayStation State of Play September 2026 (PlayStation, Final Fantasy VII Revelation, Marvel's Wolverine, Dissidia Duellum Final Fantasy) for the full event runtime 2026-09-03 to 2026-09-03, with a expo lead-in and afterglow around those dates."
+    ],
+    "tactics": [
+      "Hold a featured placement for the theatrical/streaming window",
+      "Cross-sell the game next to any soundtrack or tie-in DLC"
+    ],
+    "queries": [],
+    "event": "PlayStation State of Play September 2026",
+    "promo_start": "2026-08-27",
+    "promo_end": "2026-09-06",
+    "rank": 2,
+    "as_of": "2026-09-01"
+  },
+  {
     "canonical_title": "The Last of Us Part II Remastered",
     "product_id": "87735",
     "product_sku": "9931621",
@@ -28,7 +82,7 @@
     "event": "The Last of Us S3",
     "promo_start": "2025-12-11",
     "promo_end": "2027-01-14",
-    "rank": 1,
+    "rank": 3,
     "as_of": "2026-09-01"
   },
   {
@@ -60,7 +114,7 @@
     "event": "The Last of Us S3",
     "promo_start": "2025-12-11",
     "promo_end": "2027-01-14",
-    "rank": 2,
+    "rank": 4,
     "as_of": "2026-09-01"
   },
   {
@@ -86,12 +140,12 @@
     "event": "Hashire Hebereke: EX release window",
     "promo_start": "2026-08-27",
     "promo_end": "2026-09-20",
-    "rank": 3,
+    "rank": 5,
     "as_of": "2026-09-01"
   },
   {
-    "canonical_title": "Marvel's Wolverine",
-    "product_id": "announced:marvel's-wolverine",
+    "canonical_title": "Intergalactic: The Heretic Prophet",
+    "product_id": "announced:intergalactic:-the-heretic-prophet",
     "product_sku": "",
     "platform": "PlayStation 5",
     "role": "game",
@@ -101,18 +155,17 @@
       "event_window"
     ],
     "reasons": [
-      "Promote Marvel's Wolverine with the full Marvel catalog during X-Men '97 season 2 (Marvel, Marvel 1943: Rise of Hydra) \u2014 existing and upcoming Marvel games, not only the film's lead character. Runtime 2026-01-01 to 2026-12-31 with a play-before-you-watch lead-in.",
-      "Promote Marvel's Wolverine as the storefront equivalent of PlayStation State of Play September 2026 (PlayStation, Final Fantasy VII Revelation, Marvel's Wolverine, Dissidia Duellum Final Fantasy) for the full event runtime 2026-09-03 to 2026-09-03, with a expo lead-in and afterglow around those dates."
+      "Promote Intergalactic: The Heretic Prophet as the storefront equivalent of PlayStation State of Play Japan September 2026 (PlayStation, Japan / Asia studios, The Dream Of A Cockspur) for the full event runtime 2026-09-03 to 2026-09-03, with a expo lead-in and afterglow around those dates.",
+      "Promote Intergalactic: The Heretic Prophet as the storefront equivalent of PlayStation State of Play September 2026 (PlayStation, Final Fantasy VII Revelation, Marvel's Wolverine, Dissidia Duellum Final Fantasy) for the full event runtime 2026-09-03 to 2026-09-03, with a expo lead-in and afterglow around those dates."
     ],
     "tactics": [
-      "Feature every Marvel SKU in the database for the theatrical window, not only the lead character",
-      "Pair upcoming Marvel releases (wishlist / pre-order) next to back-catalog heroes"
+      "Amplify announcements the same day; feature matching catalog SKUs within hours of a trailer"
     ],
     "queries": [],
     "event": "PlayStation State of Play September 2026",
     "promo_start": "2026-08-27",
     "promo_end": "2026-09-06",
-    "rank": 4,
+    "rank": 6,
     "as_of": "2026-09-01"
   },
   {
@@ -137,7 +190,7 @@
     "event": "Golden Axe",
     "promo_start": "2026-08-26",
     "promo_end": "2026-09-30",
-    "rank": 5,
+    "rank": 7,
     "as_of": "2026-09-01"
   },
   {
@@ -162,7 +215,7 @@
     "event": "Gamescom 2026",
     "promo_start": "2026-08-19",
     "promo_end": "2026-09-02",
-    "rank": 6,
+    "rank": 8,
     "as_of": "2026-09-01"
   },
   {
@@ -185,7 +238,7 @@
     ],
     "queries": [],
     "wiki_article": "Grand Theft Auto",
-    "rank": 7,
+    "rank": 9,
     "as_of": "2026-09-01"
   },
   {
@@ -208,7 +261,7 @@
     ],
     "queries": [],
     "wiki_article": "Grand Theft Auto",
-    "rank": 8,
+    "rank": 10,
     "as_of": "2026-09-01"
   },
   {
@@ -234,7 +287,7 @@
     "event": "NFL Season",
     "promo_start": "2026-08-21",
     "promo_end": "2027-02-15",
-    "rank": 9,
+    "rank": 11,
     "as_of": "2026-09-01"
   },
   {
@@ -258,7 +311,7 @@
     "event": "NBA 2K27 release window",
     "promo_start": "2026-08-28",
     "promo_end": "2026-09-21",
-    "rank": 10,
+    "rank": 12,
     "as_of": "2026-09-01"
   },
   {
@@ -284,7 +337,7 @@
     "event": "NFL Season",
     "promo_start": "2026-08-21",
     "promo_end": "2027-02-15",
-    "rank": 11,
+    "rank": 13,
     "as_of": "2026-09-01"
   },
   {
@@ -310,7 +363,7 @@
     "event": "F1 World Championship",
     "promo_start": "2026-02-15",
     "promo_end": "2026-12-15",
-    "rank": 12,
+    "rank": 14,
     "as_of": "2026-09-01"
   },
   {
@@ -334,55 +387,6 @@
     "event": "12\u201313 release window",
     "promo_start": "2026-08-25",
     "promo_end": "2026-10-03",
-    "rank": 13,
-    "as_of": "2026-09-01"
-  },
-  {
-    "canonical_title": "1666: Amsterdam",
-    "product_id": "live:Q131697928",
-    "product_sku": "",
-    "platform": "Multi",
-    "role": "game",
-    "edition_year": 0,
-    "score": 18.0,
-    "sources": [
-      "event_window"
-    ],
-    "reasons": [
-      "Promote 1666: Amsterdam as the storefront equivalent of 1666: Amsterdam release window (1666: Amsterdam) for the full event runtime 2026-08-25 to 2026-09-08, with a default lead-in and afterglow around those dates."
-    ],
-    "tactics": [
-      "Amplify announcements the same day; feature matching catalog SKUs within hours of a trailer"
-    ],
-    "queries": [],
-    "event": "1666: Amsterdam release window",
-    "promo_start": "2026-08-18",
-    "promo_end": "2026-09-11",
-    "rank": 14,
-    "as_of": "2026-09-01"
-  },
-  {
-    "canonical_title": "Ace Combat Assault Horizon Enhanced Edition",
-    "product_id": "61581",
-    "product_sku": "9905441",
-    "platform": "Steam",
-    "role": "game",
-    "edition_year": 0,
-    "score": 18.0,
-    "sources": [
-      "event_window"
-    ],
-    "reasons": [
-      "Promote Ace Combat Assault Horizon Enhanced Edition as the storefront equivalent of Horizon Zero Dawn (Horizon, The Legend of Heroes: Trails Beyond the Horizon) for the full event runtime 2026-01-01 to 2026-12-31, with a adaptation lead-in and afterglow around those dates."
-    ],
-    "tactics": [
-      "Hold a featured placement for the theatrical/streaming window",
-      "Cross-sell the game next to any soundtrack or tie-in DLC"
-    ],
-    "queries": [],
-    "event": "Horizon Zero Dawn",
-    "promo_start": "2025-12-11",
-    "promo_end": "2027-01-14",
     "rank": 15,
     "as_of": "2026-09-01"
   }

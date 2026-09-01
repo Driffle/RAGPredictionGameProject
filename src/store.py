@@ -18,6 +18,7 @@ from src.database import live_meta, refresh_live_database
 from src.date_range import calendar_range_payload, is_current_or_in_range, range_span
 from src.dates import annotate_event, annotate_product, confirmation_kind
 from src.documents import load_rag_meta
+from src.first_party import is_owned_product, is_owned_title, prioritize_owned, showcase_owner
 from src.geo_placement import apply_event_geo, market_sections, placement_payload
 from src.official_dates import apply_event_overrides, apply_product_overrides
 from src.historical_calendar import historical_adaptations
@@ -919,6 +920,7 @@ class FloorStore:
                 if title and title.lower() not in seen:
                     seen.add(title.lower())
                     products.append(self._title_card(title))
+        products = self._backfill_owned_products(name, prioritize_owned(name, products))
         start = row.get("start_date") or ""
         end = row.get("end_date") or start
         live = bool(start and start <= today <= (end or start))
@@ -1106,12 +1108,13 @@ class FloorStore:
             }
             return out
 
-        products = [enrich(plan) for plan in payload.get("products") or []]
-        by_role = {
-            role: [enrich(plan) for plan in rows]
-            for role, rows in (payload.get("by_role") or {}).items()
-        }
-        hero = enrich(payload["hero"]) if payload.get("hero") else None
+        products = self._backfill_owned_products(
+            label, [enrich(plan) for plan in payload.get("products") or []]
+        )
+        by_role: dict[str, list[dict]] = {}
+        for item in products:
+            by_role.setdefault(item.get("role") or "game", []).append(item)
+        hero = products[0] if products else (enrich(payload["hero"]) if payload.get("hero") else None)
         event_card = self._event_card(row) if row else {
             "name": payload.get("name") or raw,
             "kind": payload.get("kind") or "event",
@@ -1462,6 +1465,58 @@ class FloorStore:
             product["year_max_events"] = filled
         return product
 
+    def _backfill_owned_products(self, event: str, products: list[dict], *, limit: int = 8) -> list[dict]:
+        spec = showcase_owner(event)
+        if not spec:
+            return products
+        owned = [
+            row
+            for row in products
+            if is_owned_product(row, spec) or is_owned_title(row.get("canonical_title") or "", spec)
+        ]
+        seen = {(row.get("canonical_title") or "").lower() for row in owned}
+        for needle in spec.title_needles:
+            if len(owned) >= limit:
+                break
+            for hit in self.search_products(needle, limit=2):
+                title = hit.get("canonical_title") or ""
+                if not title or title.lower() in seen:
+                    continue
+                hero = (self.by_title.get(title.lower()) or [hit])[0]
+                if not is_owned_product(hero, spec) and not is_owned_title(title, spec):
+                    continue
+                owned.append(hit)
+                seen.add(title.lower())
+                if len(owned) >= limit:
+                    break
+        return owned[:limit] or products
+
+    def _owned_recommendations(self, event: str, existing: list[dict] | None, *, limit: int = 5) -> list[dict]:
+        spec = showcase_owner(event)
+        if not spec:
+            return list(existing or [])
+        owned = [
+            dict(row)
+            for row in existing or []
+            if is_owned_title(row.get("canonical_title") or "", spec)
+        ]
+        seen = {(row.get("canonical_title") or "").lower() for row in owned}
+        for needle in spec.title_needles:
+            if len(owned) >= limit:
+                break
+            for hit in self.search_products(needle, limit=2):
+                title = hit.get("canonical_title") or ""
+                if not title or title.lower() in seen:
+                    continue
+                hero = (self.by_title.get(title.lower()) or [hit])[0]
+                if not is_owned_product(hero, spec):
+                    continue
+                owned.append({"canonical_title": title, "year_gmv": 0})
+                seen.add(title.lower())
+                if len(owned) >= limit:
+                    break
+        return owned[:limit] or list(existing or [])
+
     def _ensure_leader_event_names(self, orders: dict) -> dict:
         calendar = self.events + self.adaptations
         span_subset, span_keys = correlation_indexes(calendar, "2022-01-01", "2026-12-31")
@@ -1482,6 +1537,15 @@ class FloorStore:
             )
             for row in orders.get("period_top_products") or []
         ]
+        payload["period_top_events"] = [
+            {
+                **row,
+                "recommended_products": self._owned_recommendations(
+                    row.get("event") or "", row.get("recommended_products")
+                ),
+            }
+            for row in orders.get("period_top_events") or []
+        ]
         years = []
         for block in orders.get("years") or []:
             year_block = dict(block)
@@ -1494,6 +1558,15 @@ class FloorStore:
                     year_indexes=year_indexes,
                 )
                 for row in block.get("top_products") or []
+            ]
+            year_block["top_events"] = [
+                {
+                    **row,
+                    "recommended_products": self._owned_recommendations(
+                        row.get("event") or "", row.get("recommended_products")
+                    ),
+                }
+                for row in block.get("top_events") or []
             ]
             years.append(year_block)
         payload["years"] = years

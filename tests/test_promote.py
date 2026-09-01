@@ -72,6 +72,50 @@ class PromoteCoverageTests(unittest.TestCase):
         self.assertIn("Hades II", titles)
         self.assertIn("Super Mario Bros. Wonder", titles)
 
+    def test_state_of_play_recommends_sie_not_third_party(self) -> None:
+        events = [_event("PlayStation State of Play September 2026", "2026-09-03", "2026-09-03", related_game="Final Fantasy VII Revelation")]
+        catalog = [
+            _product("Final Fantasy VII Rebirth", publisher="Square Enix", platform="PSN", release_date="2024-02-29"),
+            _product("God of War Ragnarök", publisher="Sony Interactive Entertainment", platform="PSN", release_date="2022-11-09"),
+            _product("Marvel's Spider-Man 2", publisher="Sony Interactive Entertainment", platform="PSN", release_date="2023-10-20"),
+            _product("Fable", publisher="Xbox Game Studios", platform="Xbox Series X/S", release_date="2026-09-01"),
+        ]
+        products = products_for_event(events[0], catalog)
+        titles = {row["canonical_title"] for row in products}
+        self.assertIn("God of War Ragnarök", titles)
+        self.assertIn("Marvel's Spider-Man 2", titles)
+        self.assertNotIn("Final Fantasy VII Rebirth", titles)
+        self.assertNotIn("Fable", titles)
+
+    def test_nintendo_direct_recommends_nintendo_published(self) -> None:
+        events = [_event("Nintendo Direct June 2026", "2026-06-09", "2026-06-09")]
+        catalog = [
+            _product("Super Mario Bros. Wonder", publisher="Nintendo", platform="Nintendo Switch", release_date="2023-10-20"),
+            _product("Fortnite", publisher="Epic Games", platform="Nintendo Switch", release_date="2017-07-25"),
+        ]
+        titles = {row["canonical_title"] for row in products_for_event(events[0], catalog)}
+        self.assertIn("Super Mario Bros. Wonder", titles)
+        self.assertNotIn("Fortnite", titles)
+
+    def test_partner_showcase_is_not_forced_first_party(self) -> None:
+        events = [_event("Nintendo Direct: Partner Showcase July 2025", "2025-07-31", "2025-07-31")]
+        catalog = [
+            _product("Just Dance 2026 Edition", publisher="Ubisoft", platform="Nintendo Switch", release_date="2025-10-14"),
+            _product("Super Mario Bros. Wonder", publisher="Nintendo", platform="Nintendo Switch", release_date="2023-10-20"),
+        ]
+        titles = {row["canonical_title"] for row in products_for_event(events[0], catalog)}
+        self.assertTrue(titles)
+
+    def test_xbox_showcase_recommends_xbox_game_studios(self) -> None:
+        events = [_event("Xbox Games Showcase 2026", "2026-06-07", "2026-06-07")]
+        catalog = [
+            _product("Forza Horizon 6", publisher="Xbox Game Studios", platform="Xbox Series X/S", release_date="2026-05-19"),
+            _product("Call of Duty: Modern Warfare 4", publisher="Activision", platform="Xbox Series X/S", release_date="2026-10-23"),
+        ]
+        titles = {row["canonical_title"] for row in products_for_event(events[0], catalog)}
+        self.assertIn("Forza Horizon 6", titles)
+        self.assertNotIn("Call of Duty: Modern Warfare 4", titles)
+
     def test_correlate_keeps_year_and_prefers_franchise(self) -> None:
         events = [
             _event("Gamescom 2022", "2022-08-24", "2022-08-28"),
