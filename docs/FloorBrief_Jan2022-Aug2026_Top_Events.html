@@ -1,0 +1,1504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>Floor Brief · Sep–Dec 2026</title>
+  <style>
+    :root { --bg:#07080F; --ink:#F4F7FF; --muted:#9AA6C3; --cyan:#5CE1E6; --magenta:#FF5CA8; --amber:#FFC14A; --card:#0E1222; --line:#2A3148; }
+    * { box-sizing:border-box; }
+    html, body { margin:0; background:var(--bg); color:var(--ink); font:15px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif; }
+    body { -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+    .aurora { position:fixed; inset:0; pointer-events:none; background:
+      radial-gradient(900px 500px at 12% -10%, rgba(92,225,230,.22), transparent 55%),
+      radial-gradient(700px 420px at 90% 8%, rgba(255,92,168,.18), transparent 50%),
+      radial-gradient(600px 400px at 70% 90%, rgba(255,193,74,.1), transparent 55%); }
+    .mast, main { position:relative; z-index:1; }
+    .mast { display:flex; justify-content:space-between; align-items:flex-end; padding:28px 36px 18px; border-bottom:1px solid rgba(255,255,255,.12); }
+    .kicker { margin:0; letter-spacing:.16em; text-transform:uppercase; font-size:11px; color:var(--cyan); display:flex; align-items:center; gap:8px; }
+    .pulse-dot { width:8px; height:8px; border-radius:50%; background:var(--cyan); }
+    .mast h1 { margin:6px 0 0; font-family:Palatino, "Palatino Linotype", Georgia, serif; font-size:48px; letter-spacing:-.04em; line-height:.9;
+      background:linear-gradient(120deg,#fff 20%,var(--cyan) 50%,var(--magenta) 90%); -webkit-background-clip:text; background-clip:text; color:transparent; }
+    .range { color:var(--muted); font-size:13px; text-align:right; }
+    main { padding:28px 36px 48px; width:min(1100px,100%); }
+    .intro h2 { font-family:Palatino, "Palatino Linotype", Georgia, serif; font-size:32px; margin:0 0 8px; letter-spacing:-.03em; }
+    .intro p { margin:0 0 22px; color:var(--muted); max-width:70ch; }
+    .lede, .card { background:rgba(14,18,34,.86); border:1px solid rgba(255,255,255,.12); border-radius:20px; padding:22px; margin:0 0 22px; }
+    .lede-hero { display:block; }
+    .event-title { margin:0 0 8px; font-family:Palatino, "Palatino Linotype", Georgia, serif; font-size:30px; letter-spacing:-.03em; }
+    .action { font-size:17px; color:var(--amber); margin:0 0 6px; }
+    .badge-row { display:flex; flex-wrap:wrap; gap:8px; margin:0 0 12px; }
+    .badge { font-size:10px; letter-spacing:.08em; text-transform:uppercase; padding:5px 9px; border-radius:999px; border:1px solid rgba(255,255,255,.12); }
+    .badge.on { border-color:var(--cyan); color:var(--cyan); }
+    .badge.live { border-color:#7dffb0; color:#7dffb0; }
+    .kpis { display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin:16px 0; }
+    .kpi { border:1px solid rgba(255,255,255,.12); border-radius:14px; padding:10px 12px; background:rgba(255,255,255,.03); }
+    .kpi b { display:block; font-size:16px; }
+    .kpi span { color:var(--muted); font-size:10px; letter-spacing:.1em; text-transform:uppercase; }
+    h4 { margin:0 0 12px; letter-spacing:.08em; text-transform:uppercase; font-size:11px; color:var(--cyan); }
+    .media-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; }
+    .media-tile { position:relative; padding:12px 14px; min-height:auto; border:1px solid rgba(255,255,255,.12); border-radius:16px; background:linear-gradient(145deg,rgba(255,255,255,.05),rgba(92,225,230,.04)); }
+    .media-tile h5 { margin:0 28px 4px 0; font:700 15px/1.25 Palatino, "Palatino Linotype", Georgia, serif; }
+    .meta { margin:3px 0; color:var(--muted); font-size:12px; }
+    .meta.seo { font-size:11px; }
+    .rank { position:absolute; right:10px; top:8px; color:var(--cyan); font-size:10px; letter-spacing:.12em; }
+    .chip-row { display:flex; flex-wrap:wrap; gap:4px; margin:6px 0 0; }
+    .hashtag { display:inline-block; font-size:11px; color:var(--cyan); background:rgba(92,225,230,.08); border:1px solid rgba(255,255,255,.12); border-radius:999px; padding:2px 8px; }
+    .content-social { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; }
+    .content-social b { display:block; font-size:11px; letter-spacing:.08em; text-transform:uppercase; color:var(--cyan); margin-bottom:4px; }
+    .colophon { color:var(--muted); font-size:11px; padding:0 36px 28px; }
+    @page { size:A4; margin:12mm; }
+    @media print {
+      .lede { break-inside:auto; }
+      .media-tile, .card { break-inside:avoid; page-break-inside:avoid; }
+    }
+  </style>
+</head>
+<body>
+  <div class="aurora"></div>
+  <header class="mast">
+    <div>
+      <p class="kicker"><span class="pulse-dot"></span> Live desk · 2022–2026</p>
+      <h1>Floor Brief</h1>
+    </div>
+    <p class="range">Event window<br><b style="color:F4F7FF">1 Jan 2022 → 31 Aug 2026</b><br>As of 2026-09-01</p>
+  </header>
+  <main>
+    <div class="intro">
+      <h2>Which event windows are live?</h2>
+      <p>Top five merchandising events overlapping 1 Jan 2022–31 Aug 2026, ranked like the Floor Brief desk: confirmed showcases and expos first. Each card lists the event runtime, social engagement tags (TikTok, Instagram, YouTube Shorts, X), and thirty catalog games to recommend — with product hashtags, post windows, and SEO keywords. Console showcases keep first-party owned-studio games (SIE on State of Play, Nintendo on Directs).</p>
+    </div>
+    
+        <article class="lede">
+          <div class="lede-hero">
+            <div>
+              <div class="badge-row">
+                <span class="badge on">#01 · Awards + Showcase</span>
+                <span class="badge live">confirmed</span>
+                
+                <span class="badge">hybrid</span>
+              </div>
+              <h3 class="event-title">The Game Awards 2025</h3>
+              <p class="action">Event runtime 11 Dec 2025</p>
+              <p class="meta">Peacock Theater, Los Angeles</p>
+              <div class="chip-row event-tags"><span class="hashtag">#TheGameAwards2025</span><span class="hashtag">#ad</span><span class="hashtag">#GOTY</span><span class="hashtag">#GameAwards</span><span class="hashtag">#Nominees</span><span class="hashtag">#AwardsSeason</span><span class="hashtag">#MetroidPrime4Beyond</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+            </div>
+          </div>
+          <div class="kpis">
+            <div class="kpi"><b>11 Dec 2025</b><span>Runtime start</span></div>
+            <div class="kpi"><b>11 Dec 2025</b><span>Runtime end</span></div>
+            <div class="kpi"><b>30</b><span>Recommended games</span></div>
+            <div class="kpi"><b>hybrid</b><span>Attendance</span></div>
+          </div>
+          <section class="card">
+            <h4>Content marketing · social engagement</h4>
+            <div class="content-social"><div>
+              <b>TikTok</b>
+              <p class="meta">Post when 18:00–21:00 local</p>
+              <div class="chip-row"><span class="hashtag">#MetroidPrime4Beyond</span><span class="hashtag">#TheGameAwards2025</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span><span class="hashtag">#GOTY</span><span class="hashtag">#GameAwards</span></div>
+            </div><div>
+              <b>Instagram Reels</b>
+              <p class="meta">Post when 11:00–13:00 and 19:00–21:00 local</p>
+              <div class="chip-row"><span class="hashtag">#MetroidPrime4Beyond</span><span class="hashtag">#TheGameAwards2025</span><span class="hashtag">#ad</span><span class="hashtag">#Reels</span><span class="hashtag">#InstaGaming</span><span class="hashtag">#GOTY</span><span class="hashtag">#GameAwards</span></div>
+            </div><div>
+              <b>YouTube Shorts</b>
+              <p class="meta">Post when 12:00–15:00 and 18:00–21:00 local</p>
+              <div class="chip-row"><span class="hashtag">#MetroidPrime4Beyond</span><span class="hashtag">#TheGameAwards2025</span><span class="hashtag">#ad</span><span class="hashtag">#Shorts</span><span class="hashtag">#YouTubeGaming</span><span class="hashtag">#GOTY</span><span class="hashtag">#GameAwards</span></div>
+            </div><div>
+              <b>X / Twitter</b>
+              <p class="meta">Post when 08:00–10:00 and during live sessions</p>
+              <div class="chip-row"><span class="hashtag">#MetroidPrime4Beyond</span><span class="hashtag">#TheGameAwards2025</span><span class="hashtag">#ad</span><span class="hashtag">#gaming</span><span class="hashtag">#GOTY</span><span class="hashtag">#GameAwards</span></div>
+            </div></div>
+          </section>
+          <section class="card">
+            <h4>Mapped products · top 30 recommended games</h4>
+            <div class="media-grid">
+            <article class="media-tile">
+              <span class="rank">#01</span>
+              <h5>Metroid Prime 4: Beyond</h5>
+              <p class="meta">4 Dec 2025 · announced</p>
+              <p class="meta">Nintendo Switch</p>
+              <div class="chip-row"><span class="hashtag">#MetroidPrime4Beyond</span><span class="hashtag">#TheGameAwards2025</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Metroid Prime 4: Beyond The Game Awards 2025 · buy Metroid Prime 4: Beyond · Metroid Prime 4: Beyond gameplay · The Game Awards 2025 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#02</span>
+              <h5>Blind Descent</h5>
+              <p class="meta">1 Jan 2026 · announced</p>
+              <p class="meta">Multi</p>
+              <div class="chip-row"><span class="hashtag">#BlindDescent</span><span class="hashtag">#TheGameAwards2025</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Blind Descent The Game Awards 2025 · buy Blind Descent · Blind Descent gameplay · The Game Awards 2025 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#03</span>
+              <h5>Cleared Hot</h5>
+              <p class="meta">20 Nov 2025 · game</p>
+              <p class="meta">Steam</p>
+              <div class="chip-row"><span class="hashtag">#ClearedHot</span><span class="hashtag">#TheGameAwards2025</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Cleared Hot The Game Awards 2025 · buy Cleared Hot · Cleared Hot gameplay · The Game Awards 2025 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#04</span>
+              <h5>Cursed Companions</h5>
+              <p class="meta">20 Nov 2025 · game</p>
+              <p class="meta">Steam</p>
+              <div class="chip-row"><span class="hashtag">#CursedCompanions</span><span class="hashtag">#TheGameAwards2025</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Cursed Companions The Game Awards 2025 · buy Cursed Companions · Cursed Companions gameplay · The Game Awards 2025 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#05</span>
+              <h5>Demeo x Dungeons &amp; Dragons Battlemarked</h5>
+              <p class="meta">20 Nov 2025 · game</p>
+              <p class="meta">Steam</p>
+              <div class="chip-row"><span class="hashtag">#DemeoXDungeonsDragonsBattlemarked</span><span class="hashtag">#TheGameAwards2025</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Demeo x Dungeons &amp; Dragons Battlemarked The Game Awards 2025 · buy Demeo x Dungeons &amp; Dragons Battlemarked · Demeo x Dungeons &amp; Dragons Battlemarked gameplay · The Game Awards 2025 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#06</span>
+              <h5>Kirby Air Ride(Global)</h5>
+              <p class="meta">20 Nov 2025 · game</p>
+              <p class="meta">Nintendo</p>
+              <div class="chip-row"><span class="hashtag">#KirbyAirRideGlobal</span><span class="hashtag">#TheGameAwards2025</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Kirby Air Ride(Global) The Game Awards 2025 · buy Kirby Air Ride(Global) · Kirby Air Ride(Global) gameplay · The Game Awards 2025 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#07</span>
+              <h5>Kriophobia</h5>
+              <p class="meta">20 Nov 2025 · game</p>
+              <p class="meta">Steam</p>
+              <div class="chip-row"><span class="hashtag">#Kriophobia</span><span class="hashtag">#TheGameAwards2025</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Kriophobia The Game Awards 2025 · buy Kriophobia · Kriophobia gameplay · The Game Awards 2025 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#08</span>
+              <h5>Monsters are Coming! Rock &amp; Road</h5>
+              <p class="meta">20 Nov 2025 · game</p>
+              <p class="meta">Steam</p>
+              <div class="chip-row"><span class="hashtag">#MonstersAreComingRockRoad</span><span class="hashtag">#TheGameAwards2025</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Monsters are Coming! Rock &amp; Road The Game Awards 2025 · buy Monsters are Coming! Rock &amp; Road · Monsters are Coming! Rock &amp; Road gameplay · The Game Awards 2025 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#09</span>
+              <h5>Neon Inferno</h5>
+              <p class="meta">20 Nov 2025 · game</p>
+              <p class="meta">Steam</p>
+              <div class="chip-row"><span class="hashtag">#NeonInferno</span><span class="hashtag">#TheGameAwards2025</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Neon Inferno The Game Awards 2025 · buy Neon Inferno · Neon Inferno gameplay · The Game Awards 2025 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#10</span>
+              <h5>Prologue - Go Wayback!</h5>
+              <p class="meta">20 Nov 2025 · game</p>
+              <p class="meta">Steam</p>
+              <div class="chip-row"><span class="hashtag">#PrologueGoWayback</span><span class="hashtag">#TheGameAwards2025</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Prologue - Go Wayback! The Game Awards 2025 · buy Prologue - Go Wayback! · Prologue - Go Wayback! gameplay · The Game Awards 2025 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#11</span>
+              <h5>Abandoned Archive</h5>
+              <p class="meta">24 Nov 2025 · game</p>
+              <p class="meta">Steam</p>
+              <div class="chip-row"><span class="hashtag">#AbandonedArchive</span><span class="hashtag">#TheGameAwards2025</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Abandoned Archive The Game Awards 2025 · buy Abandoned Archive · Abandoned Archive gameplay · The Game Awards 2025 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#12</span>
+              <h5>Constance</h5>
+              <p class="meta">24 Nov 2025 · game</p>
+              <p class="meta">Steam</p>
+              <div class="chip-row"><span class="hashtag">#Constance</span><span class="hashtag">#TheGameAwards2025</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Constance The Game Awards 2025 · buy Constance · Constance gameplay · The Game Awards 2025 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#13</span>
+              <h5>Of Ash and Steel</h5>
+              <p class="meta">24 Nov 2025 · game</p>
+              <p class="meta">Steam</p>
+              <div class="chip-row"><span class="hashtag">#OfAshAndSteel</span><span class="hashtag">#TheGameAwards2025</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Of Ash and Steel The Game Awards 2025 · buy Of Ash and Steel · Of Ash and Steel gameplay · The Game Awards 2025 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#14</span>
+              <h5>Repel The Rifts</h5>
+              <p class="meta">24 Nov 2025 · game</p>
+              <p class="meta">Steam</p>
+              <div class="chip-row"><span class="hashtag">#RepelTheRifts</span><span class="hashtag">#TheGameAwards2025</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Repel The Rifts The Game Awards 2025 · buy Repel The Rifts · Repel The Rifts gameplay · The Game Awards 2025 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#15</span>
+              <h5>Solo Leveling ARISE OVERDRIVE</h5>
+              <p class="meta">24 Nov 2025 · game</p>
+              <p class="meta">Microsoft Store</p>
+              <div class="chip-row"><span class="hashtag">#SoloLevelingARISEOVERDRIVE</span><span class="hashtag">#TheGameAwards2025</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Solo Leveling ARISE OVERDRIVE The Game Awards 2025 · buy Solo Leveling ARISE OVERDRIVE · Solo Leveling ARISE OVERDRIVE gameplay · The Game Awards 2025 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#16</span>
+              <h5>A.I.L.A</h5>
+              <p class="meta">25 Nov 2025 · game</p>
+              <p class="meta">Steam</p>
+              <div class="chip-row"><span class="hashtag">#AILA</span><span class="hashtag">#TheGameAwards2025</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">A.I.L.A The Game Awards 2025 · buy A.I.L.A · A.I.L.A gameplay · The Game Awards 2025 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#17</span>
+              <h5>Project Motor Racing</h5>
+              <p class="meta">25 Nov 2025 · game</p>
+              <p class="meta">Steam</p>
+              <div class="chip-row"><span class="hashtag">#ProjectMotorRacing</span><span class="hashtag">#TheGameAwards2025</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Project Motor Racing The Game Awards 2025 · buy Project Motor Racing · Project Motor Racing gameplay · The Game Awards 2025 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#18</span>
+              <h5>Randomice</h5>
+              <p class="meta">25 Nov 2025 · game</p>
+              <p class="meta">Steam</p>
+              <div class="chip-row"><span class="hashtag">#Randomice</span><span class="hashtag">#TheGameAwards2025</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Randomice The Game Awards 2025 · buy Randomice · Randomice gameplay · The Game Awards 2025 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#19</span>
+              <h5>TORMENTOR</h5>
+              <p class="meta">25 Nov 2025 · game</p>
+              <p class="meta">Steam</p>
+              <div class="chip-row"><span class="hashtag">#TORMENTOR</span><span class="hashtag">#TheGameAwards2025</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">TORMENTOR The Game Awards 2025 · buy TORMENTOR · TORMENTOR gameplay · The Game Awards 2025 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#20</span>
+              <h5>AFTERBLAST</h5>
+              <p class="meta">26 Nov 2025 · game</p>
+              <p class="meta">Steam</p>
+              <div class="chip-row"><span class="hashtag">#AFTERBLAST</span><span class="hashtag">#TheGameAwards2025</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">AFTERBLAST The Game Awards 2025 · buy AFTERBLAST · AFTERBLAST gameplay · The Game Awards 2025 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#21</span>
+              <h5>Cowboy Life Simulator</h5>
+              <p class="meta">26 Nov 2025 · game</p>
+              <p class="meta">Steam</p>
+              <div class="chip-row"><span class="hashtag">#CowboyLifeSimulator</span><span class="hashtag">#TheGameAwards2025</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Cowboy Life Simulator The Game Awards 2025 · buy Cowboy Life Simulator · Cowboy Life Simulator gameplay · The Game Awards 2025 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#22</span>
+              <h5>FrostBound</h5>
+              <p class="meta">26 Nov 2025 · game</p>
+              <p class="meta">Steam</p>
+              <div class="chip-row"><span class="hashtag">#FrostBound</span><span class="hashtag">#TheGameAwards2025</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">FrostBound The Game Awards 2025 · buy FrostBound · FrostBound gameplay · The Game Awards 2025 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#23</span>
+              <h5>Ars Notoria</h5>
+              <p class="meta">27 Nov 2025 · game</p>
+              <p class="meta">Steam</p>
+              <div class="chip-row"><span class="hashtag">#ArsNotoria</span><span class="hashtag">#TheGameAwards2025</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Ars Notoria The Game Awards 2025 · buy Ars Notoria · Ars Notoria gameplay · The Game Awards 2025 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#24</span>
+              <h5>Geo-Political Simulator 2026 Edition</h5>
+              <p class="meta">27 Nov 2025 · game</p>
+              <p class="meta">Steam</p>
+              <div class="chip-row"><span class="hashtag">#GeoPoliticalSimulator2026Edition</span><span class="hashtag">#TheGameAwards2025</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Geo-Political Simulator 2026 Edition The Game Awards 2025 · buy Geo-Political Simulator 2026 Edition · Geo-Political Simulator 2026 Edition gameplay · The Game Awards 2025 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#25</span>
+              <h5>Hail to the Rainbow</h5>
+              <p class="meta">27 Nov 2025 · game</p>
+              <p class="meta">Steam</p>
+              <div class="chip-row"><span class="hashtag">#HailToTheRainbow</span><span class="hashtag">#TheGameAwards2025</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Hail to the Rainbow The Game Awards 2025 · buy Hail to the Rainbow · Hail to the Rainbow gameplay · The Game Awards 2025 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#26</span>
+              <h5>Incredicer</h5>
+              <p class="meta">27 Nov 2025 · game</p>
+              <p class="meta">Steam</p>
+              <div class="chip-row"><span class="hashtag">#Incredicer</span><span class="hashtag">#TheGameAwards2025</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Incredicer The Game Awards 2025 · buy Incredicer · Incredicer gameplay · The Game Awards 2025 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#27</span>
+              <h5>Astro Busters</h5>
+              <p class="meta">28 Nov 2025 · game</p>
+              <p class="meta">Steam</p>
+              <div class="chip-row"><span class="hashtag">#AstroBusters</span><span class="hashtag">#TheGameAwards2025</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Astro Busters The Game Awards 2025 · buy Astro Busters · Astro Busters gameplay · The Game Awards 2025 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#28</span>
+              <h5>Light Up The Town</h5>
+              <p class="meta">28 Nov 2025 · game</p>
+              <p class="meta">Steam</p>
+              <div class="chip-row"><span class="hashtag">#LightUpTheTown</span><span class="hashtag">#TheGameAwards2025</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Light Up The Town The Game Awards 2025 · buy Light Up The Town · Light Up The Town gameplay · The Game Awards 2025 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#29</span>
+              <h5>The Shimmering Horizon and Cursed Blacksmith</h5>
+              <p class="meta">28 Nov 2025 · game</p>
+              <p class="meta">Steam</p>
+              <div class="chip-row"><span class="hashtag">#TheShimmeringHorizonAndCursedBlacksmith</span><span class="hashtag">#TheGameAwards2025</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">The Shimmering Horizon and Cursed Blacksmith The Game Awards 2025 · buy The Shimmering Horizon and Cursed Blacksmith · The Shimmering Horizon and Cursed Blacksmith gameplay · The Game Awards 2025 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#30</span>
+              <h5>轮回修仙传</h5>
+              <p class="meta">28 Nov 2025 · game</p>
+              <p class="meta">Steam</p>
+              <div class="chip-row"><span class="hashtag">#TheGameAwards2025</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span><span class="hashtag">#GOTY</span></div>
+              <p class="meta seo">轮回修仙传 The Game Awards 2025 · buy 轮回修仙传 · 轮回修仙传 gameplay · The Game Awards 2025 highlights</p>
+            </article></div>
+          </section>
+        </article>
+        <article class="lede">
+          <div class="lede-hero">
+            <div>
+              <div class="badge-row">
+                <span class="badge on">#02 · Digital Showcase</span>
+                <span class="badge live">confirmed</span>
+                <span class="badge on">Sony Interactive Entertainment</span>
+                <span class="badge">digital</span>
+              </div>
+              <h3 class="event-title">PlayStation State of Play June 2026</h3>
+              <p class="action">Event runtime 2 Jun 2026</p>
+              <p class="meta">Online</p>
+              <div class="chip-row event-tags"><span class="hashtag">#PlayStationStateOfPlayJune2026</span><span class="hashtag">#ad</span><span class="hashtag">#GamingExpo</span><span class="hashtag">#Showcase</span><span class="hashtag">#HandsOn</span><span class="hashtag">#BoothTour</span><span class="hashtag">#GodOfWarLaufey</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+            </div>
+          </div>
+          <div class="kpis">
+            <div class="kpi"><b>2 Jun 2026</b><span>Runtime start</span></div>
+            <div class="kpi"><b>2 Jun 2026</b><span>Runtime end</span></div>
+            <div class="kpi"><b>30</b><span>Recommended games</span></div>
+            <div class="kpi"><b>digital</b><span>Attendance</span></div>
+          </div>
+          <section class="card">
+            <h4>Content marketing · social engagement</h4>
+            <div class="content-social"><div>
+              <b>TikTok</b>
+              <p class="meta">Post when 18:00–21:00 local</p>
+              <div class="chip-row"><span class="hashtag">#GodOfWarLaufey</span><span class="hashtag">#PlayStationStateOfPlayJune2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span><span class="hashtag">#GamingExpo</span><span class="hashtag">#Showcase</span></div>
+            </div><div>
+              <b>Instagram Reels</b>
+              <p class="meta">Post when 11:00–13:00 and 19:00–21:00 local</p>
+              <div class="chip-row"><span class="hashtag">#GodOfWarLaufey</span><span class="hashtag">#PlayStationStateOfPlayJune2026</span><span class="hashtag">#ad</span><span class="hashtag">#Reels</span><span class="hashtag">#InstaGaming</span><span class="hashtag">#GamingExpo</span><span class="hashtag">#Showcase</span></div>
+            </div><div>
+              <b>YouTube Shorts</b>
+              <p class="meta">Post when 12:00–15:00 and 18:00–21:00 local</p>
+              <div class="chip-row"><span class="hashtag">#GodOfWarLaufey</span><span class="hashtag">#PlayStationStateOfPlayJune2026</span><span class="hashtag">#ad</span><span class="hashtag">#Shorts</span><span class="hashtag">#YouTubeGaming</span><span class="hashtag">#GamingExpo</span><span class="hashtag">#Showcase</span></div>
+            </div><div>
+              <b>X / Twitter</b>
+              <p class="meta">Post when 08:00–10:00 and during live sessions</p>
+              <div class="chip-row"><span class="hashtag">#GodOfWarLaufey</span><span class="hashtag">#PlayStationStateOfPlayJune2026</span><span class="hashtag">#ad</span><span class="hashtag">#gaming</span><span class="hashtag">#GamingExpo</span><span class="hashtag">#Showcase</span></div>
+            </div></div>
+          </section>
+          <section class="card">
+            <h4>Mapped products · top 30 recommended games</h4>
+            <div class="media-grid">
+            <article class="media-tile">
+              <span class="rank">#01</span>
+              <h5>God of War Laufey</h5>
+              <p class="meta">16 Feb 2027 · announced</p>
+              <p class="meta">PS5</p>
+              <div class="chip-row"><span class="hashtag">#GodOfWarLaufey</span><span class="hashtag">#PlayStationStateOfPlayJune2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">God of War Laufey PlayStation State of Play June 2026 · buy God of War Laufey · God of War Laufey gameplay · PlayStation State of Play June 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#02</span>
+              <h5>Intergalactic: The Heretic Prophet</h5>
+              <p class="meta">31 Dec 2028 · announced</p>
+              <p class="meta">PlayStation 5</p>
+              <div class="chip-row"><span class="hashtag">#IntergalacticTheHereticProphet</span><span class="hashtag">#PlayStationStateOfPlayJune2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Intergalactic: The Heretic Prophet PlayStation State of Play June 2026 · buy Intergalactic: The Heretic Prophet · Intergalactic: The Heretic Prophet gameplay · PlayStation State of Play June 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#03</span>
+              <h5>Marvel&#x27;s Wolverine</h5>
+              <p class="meta">15 Sep 2026 · announced</p>
+              <p class="meta">PlayStation 5</p>
+              <div class="chip-row"><span class="hashtag">#MarvelSWolverine</span><span class="hashtag">#PlayStationStateOfPlayJune2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Marvel&#x27;s Wolverine PlayStation State of Play June 2026 · buy Marvel&#x27;s Wolverine · Marvel&#x27;s Wolverine gameplay · PlayStation State of Play June 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#04</span>
+              <h5>Death Stranding 2: On the Beach</h5>
+              <p class="meta">26 Jun 2025 · announced</p>
+              <p class="meta">PlayStation 5</p>
+              <div class="chip-row"><span class="hashtag">#DeathStranding2OnTheBeach</span><span class="hashtag">#PlayStationStateOfPlayJune2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Death Stranding 2: On the Beach PlayStation State of Play June 2026 · buy Death Stranding 2: On the Beach · Death Stranding 2: On the Beach gameplay · PlayStation State of Play June 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#05</span>
+              <h5>Ghost of Yōtei</h5>
+              <p class="meta">2 Oct 2025 · announced</p>
+              <p class="meta">PlayStation 5</p>
+              <div class="chip-row"><span class="hashtag">#GhostOfYTei</span><span class="hashtag">#PlayStationStateOfPlayJune2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Ghost of Yōtei PlayStation State of Play June 2026 · buy Ghost of Yōtei · Ghost of Yōtei gameplay · PlayStation State of Play June 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#06</span>
+              <h5>God of War: Sons of Sparta</h5>
+              <p class="meta">12 Feb 2026 · announced</p>
+              <p class="meta">PS5</p>
+              <div class="chip-row"><span class="hashtag">#GodOfWarSonsOfSparta</span><span class="hashtag">#PlayStationStateOfPlayJune2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">God of War: Sons of Sparta PlayStation State of Play June 2026 · buy God of War: Sons of Sparta · God of War: Sons of Sparta gameplay · PlayStation State of Play June 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#07</span>
+              <h5>Marvel Tokon: Fighting Souls</h5>
+              <p class="meta">6 Aug 2026 · announced</p>
+              <p class="meta">WIN</p>
+              <div class="chip-row"><span class="hashtag">#MarvelTokonFightingSouls</span><span class="hashtag">#PlayStationStateOfPlayJune2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Marvel Tokon: Fighting Souls PlayStation State of Play June 2026 · buy Marvel Tokon: Fighting Souls · Marvel Tokon: Fighting Souls gameplay · PlayStation State of Play June 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#08</span>
+              <h5>MLB The Show</h5>
+              <p class="meta">26 May 2026 · announced</p>
+              <p class="meta">iOS</p>
+              <div class="chip-row"><span class="hashtag">#MLBTheShow</span><span class="hashtag">#PlayStationStateOfPlayJune2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">MLB The Show PlayStation State of Play June 2026 · buy MLB The Show · MLB The Show gameplay · PlayStation State of Play June 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#09</span>
+              <h5>Astro Bot</h5>
+              <p class="meta">6 Sep 2024 · game</p>
+              <p class="meta">PSN</p>
+              <div class="chip-row"><span class="hashtag">#AstroBot</span><span class="hashtag">#PlayStationStateOfPlayJune2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Astro Bot PlayStation State of Play June 2026 · buy Astro Bot · Astro Bot gameplay · PlayStation State of Play June 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#10</span>
+              <h5>Bloodborne</h5>
+              <p class="meta">15 Mar 2015 · game</p>
+              <p class="meta">PSN</p>
+              <div class="chip-row"><span class="hashtag">#Bloodborne</span><span class="hashtag">#PlayStationStateOfPlayJune2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Bloodborne PlayStation State of Play June 2026 · buy Bloodborne · Bloodborne gameplay · PlayStation State of Play June 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#11</span>
+              <h5>Days Gone</h5>
+              <p class="meta">18 May 2021 · game</p>
+              <p class="meta">Steam</p>
+              <div class="chip-row"><span class="hashtag">#DaysGone</span><span class="hashtag">#PlayStationStateOfPlayJune2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Days Gone PlayStation State of Play June 2026 · buy Days Gone · Days Gone gameplay · PlayStation State of Play June 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#12</span>
+              <h5>Days Gone Remastered</h5>
+              <p class="meta">24 Apr 2025 · game</p>
+              <p class="meta">PSN</p>
+              <div class="chip-row"><span class="hashtag">#DaysGoneRemastered</span><span class="hashtag">#PlayStationStateOfPlayJune2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Days Gone Remastered PlayStation State of Play June 2026 · buy Days Gone Remastered · Days Gone Remastered gameplay · PlayStation State of Play June 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#13</span>
+              <h5>Death Stranding</h5>
+              <p class="meta">23 Aug 2022 · game</p>
+              <p class="meta">Xbox Live</p>
+              <div class="chip-row"><span class="hashtag">#DeathStranding</span><span class="hashtag">#PlayStationStateOfPlayJune2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Death Stranding PlayStation State of Play June 2026 · buy Death Stranding · Death Stranding gameplay · PlayStation State of Play June 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#14</span>
+              <h5>DEATH STRANDING 2 - ON THE BEACH</h5>
+              <p class="meta">19 Mar 2026 · game</p>
+              <p class="meta">Steam</p>
+              <div class="chip-row"><span class="hashtag">#DEATHSTRANDING2ONTHEBEACH</span><span class="hashtag">#PlayStationStateOfPlayJune2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">DEATH STRANDING 2 - ON THE BEACH PlayStation State of Play June 2026 · buy DEATH STRANDING 2 - ON THE BEACH · DEATH STRANDING 2 - ON THE BEACH gameplay · PlayStation State of Play June 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#15</span>
+              <h5>DEATH STRANDING 2 - ON THE BEACH - Digital Deluxe Edition</h5>
+              <p class="meta">19 Mar 2026 · game</p>
+              <p class="meta">Steam</p>
+              <div class="chip-row"><span class="hashtag">#DEATHSTRANDING2ONTHEBEACHDigitalDeluxeEdi</span><span class="hashtag">#PlayStationStateOfPlayJune2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">DEATH STRANDING 2 - ON THE BEACH - Digital Deluxe Edition PlayStation State of Play June 2026 · buy DEATH STRANDING 2 - ON THE BEACH - Digital Deluxe Edition · DEATH STRANDING 2 - ON THE BEACH - Digital Deluxe Edition gameplay · PlayStation State of Play June 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#16</span>
+              <h5>Death Stranding 2 On the Beach</h5>
+              <p class="meta">26 Jun 2025 · game</p>
+              <p class="meta">PSN</p>
+              <div class="chip-row"><span class="hashtag">#DeathStranding2OnTheBeach</span><span class="hashtag">#PlayStationStateOfPlayJune2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Death Stranding 2 On the Beach PlayStation State of Play June 2026 · buy Death Stranding 2 On the Beach · Death Stranding 2 On the Beach gameplay · PlayStation State of Play June 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#17</span>
+              <h5>Death Stranding Day One Edition</h5>
+              <p class="meta">30 Mar 2022 · game</p>
+              <p class="meta">Steam</p>
+              <div class="chip-row"><span class="hashtag">#DeathStrandingDayOneEdition</span><span class="hashtag">#PlayStationStateOfPlayJune2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Death Stranding Day One Edition PlayStation State of Play June 2026 · buy Death Stranding Day One Edition · Death Stranding Day One Edition gameplay · PlayStation State of Play June 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#18</span>
+              <h5>Death Stranding Director&#x27;s Cut</h5>
+              <p class="meta">6 Nov 2024 · game</p>
+              <p class="meta">Xbox Live</p>
+              <div class="chip-row"><span class="hashtag">#DeathStrandingDirectorSCut</span><span class="hashtag">#PlayStationStateOfPlayJune2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Death Stranding Director&#x27;s Cut PlayStation State of Play June 2026 · buy Death Stranding Director&#x27;s Cut · Death Stranding Director&#x27;s Cut gameplay · PlayStation State of Play June 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#19</span>
+              <h5>Death Stranding(PC)</h5>
+              <p class="meta">30 Mar 2022 · game</p>
+              <p class="meta">Steam</p>
+              <div class="chip-row"><span class="hashtag">#DeathStrandingPC</span><span class="hashtag">#PlayStationStateOfPlayJune2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Death Stranding(PC) PlayStation State of Play June 2026 · buy Death Stranding(PC) · Death Stranding(PC) gameplay · PlayStation State of Play June 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#20</span>
+              <h5>Ghost of Tsushima</h5>
+              <p class="meta">17 Jul 2020 · game</p>
+              <p class="meta">PSN</p>
+              <div class="chip-row"><span class="hashtag">#GhostOfTsushima</span><span class="hashtag">#PlayStationStateOfPlayJune2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Ghost of Tsushima PlayStation State of Play June 2026 · buy Ghost of Tsushima · Ghost of Tsushima gameplay · PlayStation State of Play June 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#21</span>
+              <h5>Ghost of Tsushima Director’s Cut</h5>
+              <p class="meta">16 May 2024 · game</p>
+              <p class="meta">Steam</p>
+              <div class="chip-row"><span class="hashtag">#GhostOfTsushimaDirectorSCut</span><span class="hashtag">#PlayStationStateOfPlayJune2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Ghost of Tsushima Director’s Cut PlayStation State of Play June 2026 · buy Ghost of Tsushima Director’s Cut · Ghost of Tsushima Director’s Cut gameplay · PlayStation State of Play June 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#22</span>
+              <h5>Ghost of Yotei</h5>
+              <p class="meta">2 Oct 2025 · game</p>
+              <p class="meta">PSN</p>
+              <div class="chip-row"><span class="hashtag">#GhostOfYotei</span><span class="hashtag">#PlayStationStateOfPlayJune2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Ghost of Yotei PlayStation State of Play June 2026 · buy Ghost of Yotei · Ghost of Yotei gameplay · PlayStation State of Play June 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#23</span>
+              <h5>God of War</h5>
+              <p class="meta">14 Jan 2022 · game</p>
+              <p class="meta">Steam</p>
+              <div class="chip-row"><span class="hashtag">#GodOfWar</span><span class="hashtag">#PlayStationStateOfPlayJune2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">God of War PlayStation State of Play June 2026 · buy God of War · God of War gameplay · PlayStation State of Play June 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#24</span>
+              <h5>God of War Ragnarok</h5>
+              <p class="meta">19 Sep 2024 · game</p>
+              <p class="meta">Steam</p>
+              <div class="chip-row"><span class="hashtag">#GodOfWarRagnarok</span><span class="hashtag">#PlayStationStateOfPlayJune2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">God of War Ragnarok PlayStation State of Play June 2026 · buy God of War Ragnarok · God of War Ragnarok gameplay · PlayStation State of Play June 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#25</span>
+              <h5>God of War Sons of Sparta</h5>
+              <p class="meta">12 Feb 2026 · game</p>
+              <p class="meta">PSN</p>
+              <div class="chip-row"><span class="hashtag">#GodOfWarSonsOfSparta</span><span class="hashtag">#PlayStationStateOfPlayJune2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">God of War Sons of Sparta PlayStation State of Play June 2026 · buy God of War Sons of Sparta · God of War Sons of Sparta gameplay · PlayStation State of Play June 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#26</span>
+              <h5>Gran Turismo 7</h5>
+              <p class="meta">4 Mar 2022 · game</p>
+              <p class="meta">PSN</p>
+              <div class="chip-row"><span class="hashtag">#GranTurismo7</span><span class="hashtag">#PlayStationStateOfPlayJune2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Gran Turismo 7 PlayStation State of Play June 2026 · buy Gran Turismo 7 · Gran Turismo 7 gameplay · PlayStation State of Play June 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#27</span>
+              <h5>Gran Turismo 7 25th Anniversary Edition</h5>
+              <p class="meta">4 Mar 2022 · game</p>
+              <p class="meta">PSN</p>
+              <div class="chip-row"><span class="hashtag">#GranTurismo725thAnniversaryEdition</span><span class="hashtag">#PlayStationStateOfPlayJune2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Gran Turismo 7 25th Anniversary Edition PlayStation State of Play June 2026 · buy Gran Turismo 7 25th Anniversary Edition · Gran Turismo 7 25th Anniversary Edition gameplay · PlayStation State of Play June 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#28</span>
+              <h5>HELLDIVERS + HELLDIVERS 2</h5>
+              <p class="meta">8 Feb 2024 · game</p>
+              <p class="meta">Steam</p>
+              <div class="chip-row"><span class="hashtag">#HELLDIVERSHELLDIVERS2</span><span class="hashtag">#PlayStationStateOfPlayJune2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">HELLDIVERS + HELLDIVERS 2 PlayStation State of Play June 2026 · buy HELLDIVERS + HELLDIVERS 2 · HELLDIVERS + HELLDIVERS 2 gameplay · PlayStation State of Play June 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#29</span>
+              <h5>Helldivers 2</h5>
+              <p class="meta">26 Aug 2025 · game</p>
+              <p class="meta">Xbox Live</p>
+              <div class="chip-row"><span class="hashtag">#Helldivers2</span><span class="hashtag">#PlayStationStateOfPlayJune2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Helldivers 2 PlayStation State of Play June 2026 · buy Helldivers 2 · Helldivers 2 gameplay · PlayStation State of Play June 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#30</span>
+              <h5>Helldivers 2 Super Citizen Edition</h5>
+              <p class="meta">8 Feb 2024 · game</p>
+              <p class="meta">Steam</p>
+              <div class="chip-row"><span class="hashtag">#Helldivers2SuperCitizenEdition</span><span class="hashtag">#PlayStationStateOfPlayJune2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Helldivers 2 Super Citizen Edition PlayStation State of Play June 2026 · buy Helldivers 2 Super Citizen Edition · Helldivers 2 Super Citizen Edition gameplay · PlayStation State of Play June 2026 highlights</p>
+            </article></div>
+          </section>
+        </article>
+        <article class="lede">
+          <div class="lede-hero">
+            <div>
+              <div class="badge-row">
+                <span class="badge on">#03 · Showcase</span>
+                <span class="badge live">confirmed</span>
+                
+                <span class="badge">hybrid</span>
+              </div>
+              <h3 class="event-title">Summer Game Fest 2026</h3>
+              <p class="action">Event runtime 5 Jun 2026 → 8 Jun 2026</p>
+              <p class="meta">Dolby Theatre, Los Angeles</p>
+              <div class="chip-row event-tags"><span class="hashtag">#SummerGameFest2026</span><span class="hashtag">#ad</span><span class="hashtag">#GamingExpo</span><span class="hashtag">#Showcase</span><span class="hashtag">#HandsOn</span><span class="hashtag">#BoothTour</span><span class="hashtag">#AlbionOnline</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+            </div>
+          </div>
+          <div class="kpis">
+            <div class="kpi"><b>5 Jun 2026</b><span>Runtime start</span></div>
+            <div class="kpi"><b>8 Jun 2026</b><span>Runtime end</span></div>
+            <div class="kpi"><b>30</b><span>Recommended games</span></div>
+            <div class="kpi"><b>hybrid</b><span>Attendance</span></div>
+          </div>
+          <section class="card">
+            <h4>Content marketing · social engagement</h4>
+            <div class="content-social"><div>
+              <b>TikTok</b>
+              <p class="meta">Post when 18:00–21:00 local</p>
+              <div class="chip-row"><span class="hashtag">#AlbionOnline</span><span class="hashtag">#SummerGameFest2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span><span class="hashtag">#GamingExpo</span><span class="hashtag">#Showcase</span></div>
+            </div><div>
+              <b>Instagram Reels</b>
+              <p class="meta">Post when 11:00–13:00 and 19:00–21:00 local</p>
+              <div class="chip-row"><span class="hashtag">#AlbionOnline</span><span class="hashtag">#SummerGameFest2026</span><span class="hashtag">#ad</span><span class="hashtag">#Reels</span><span class="hashtag">#InstaGaming</span><span class="hashtag">#GamingExpo</span><span class="hashtag">#Showcase</span></div>
+            </div><div>
+              <b>YouTube Shorts</b>
+              <p class="meta">Post when 12:00–15:00 and 18:00–21:00 local</p>
+              <div class="chip-row"><span class="hashtag">#AlbionOnline</span><span class="hashtag">#SummerGameFest2026</span><span class="hashtag">#ad</span><span class="hashtag">#Shorts</span><span class="hashtag">#YouTubeGaming</span><span class="hashtag">#GamingExpo</span><span class="hashtag">#Showcase</span></div>
+            </div><div>
+              <b>X / Twitter</b>
+              <p class="meta">Post when 08:00–10:00 and during live sessions</p>
+              <div class="chip-row"><span class="hashtag">#AlbionOnline</span><span class="hashtag">#SummerGameFest2026</span><span class="hashtag">#ad</span><span class="hashtag">#gaming</span><span class="hashtag">#GamingExpo</span><span class="hashtag">#Showcase</span></div>
+            </div></div>
+          </section>
+          <section class="card">
+            <h4>Mapped products · top 30 recommended games</h4>
+            <div class="media-grid">
+            <article class="media-tile">
+              <span class="rank">#01</span>
+              <h5>Albion Online</h5>
+              <p class="meta">21 Apr 2026 · announced</p>
+              <p class="meta">XBX/S</p>
+              <div class="chip-row"><span class="hashtag">#AlbionOnline</span><span class="hashtag">#SummerGameFest2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Albion Online Summer Game Fest 2026 · buy Albion Online · Albion Online gameplay · Summer Game Fest 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#02</span>
+              <h5>The Factory Must Grow</h5>
+              <p class="meta">15 Sep 2024 · game</p>
+              <p class="meta">Steam</p>
+              <div class="chip-row"><span class="hashtag">#TheFactoryMustGrow</span><span class="hashtag">#SummerGameFest2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">The Factory Must Grow Summer Game Fest 2026 · buy The Factory Must Grow · The Factory Must Grow gameplay · Summer Game Fest 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#03</span>
+              <h5>Pandora&#x27;s Toybox</h5>
+              <p class="meta">15 May 2026 · game</p>
+              <p class="meta">Steam</p>
+              <div class="chip-row"><span class="hashtag">#PandoraSToybox</span><span class="hashtag">#SummerGameFest2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Pandora&#x27;s Toybox Summer Game Fest 2026 · buy Pandora&#x27;s Toybox · Pandora&#x27;s Toybox gameplay · Summer Game Fest 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#04</span>
+              <h5>Steel Artery - Train City Builder</h5>
+              <p class="meta">15 May 2026 · game</p>
+              <p class="meta">Steam</p>
+              <div class="chip-row"><span class="hashtag">#SteelArteryTrainCityBuilder</span><span class="hashtag">#SummerGameFest2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Steel Artery - Train City Builder Summer Game Fest 2026 · buy Steel Artery - Train City Builder · Steel Artery - Train City Builder gameplay · Summer Game Fest 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#05</span>
+              <h5>Corsairs - Battle of the Caribbean</h5>
+              <p class="meta">18 May 2026 · game</p>
+              <p class="meta">Steam</p>
+              <div class="chip-row"><span class="hashtag">#CorsairsBattleOfTheCaribbean</span><span class="hashtag">#SummerGameFest2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Corsairs - Battle of the Caribbean Summer Game Fest 2026 · buy Corsairs - Battle of the Caribbean · Corsairs - Battle of the Caribbean gameplay · Summer Game Fest 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#06</span>
+              <h5>Dwarf Eats Mountain</h5>
+              <p class="meta">18 May 2026 · game</p>
+              <p class="meta">Steam</p>
+              <div class="chip-row"><span class="hashtag">#DwarfEatsMountain</span><span class="hashtag">#SummerGameFest2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Dwarf Eats Mountain Summer Game Fest 2026 · buy Dwarf Eats Mountain · Dwarf Eats Mountain gameplay · Summer Game Fest 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#07</span>
+              <h5>Thrifty Business</h5>
+              <p class="meta">18 May 2026 · game</p>
+              <p class="meta">Steam</p>
+              <div class="chip-row"><span class="hashtag">#ThriftyBusiness</span><span class="hashtag">#SummerGameFest2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Thrifty Business Summer Game Fest 2026 · buy Thrifty Business · Thrifty Business gameplay · Summer Game Fest 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#08</span>
+              <h5>Corsairs: Battle of the Caribbean</h5>
+              <p class="meta">18 May 2026 · announced</p>
+              <p class="meta">Multi</p>
+              <div class="chip-row"><span class="hashtag">#CorsairsBattleOfTheCaribbean</span><span class="hashtag">#SummerGameFest2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Corsairs: Battle of the Caribbean Summer Game Fest 2026 · buy Corsairs: Battle of the Caribbean · Corsairs: Battle of the Caribbean gameplay · Summer Game Fest 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#09</span>
+              <h5>Forza Horizon 6</h5>
+              <p class="meta">19 May 2026 · game</p>
+              <p class="meta">Xbox Live</p>
+              <div class="chip-row"><span class="hashtag">#ForzaHorizon6</span><span class="hashtag">#SummerGameFest2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Forza Horizon 6 Summer Game Fest 2026 · buy Forza Horizon 6 · Forza Horizon 6 gameplay · Summer Game Fest 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#10</span>
+              <h5>Forza Horizon 6 Premium Edition</h5>
+              <p class="meta">19 May 2026 · game</p>
+              <p class="meta">Xbox Live</p>
+              <div class="chip-row"><span class="hashtag">#ForzaHorizon6PremiumEdition</span><span class="hashtag">#SummerGameFest2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Forza Horizon 6 Premium Edition Summer Game Fest 2026 · buy Forza Horizon 6 Premium Edition · Forza Horizon 6 Premium Edition gameplay · Summer Game Fest 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#11</span>
+              <h5>Project - Mist</h5>
+              <p class="meta">19 May 2026 · game</p>
+              <p class="meta">Steam</p>
+              <div class="chip-row"><span class="hashtag">#ProjectMist</span><span class="hashtag">#SummerGameFest2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Project - Mist Summer Game Fest 2026 · buy Project - Mist · Project - Mist gameplay · Summer Game Fest 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#12</span>
+              <h5>Project Mist</h5>
+              <p class="meta">19 May 2026 · game</p>
+              <p class="meta">Steam</p>
+              <div class="chip-row"><span class="hashtag">#ProjectMist</span><span class="hashtag">#SummerGameFest2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Project Mist Summer Game Fest 2026 · buy Project Mist · Project Mist gameplay · Summer Game Fest 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#13</span>
+              <h5>Rune Dice</h5>
+              <p class="meta">19 May 2026 · game</p>
+              <p class="meta">Steam</p>
+              <div class="chip-row"><span class="hashtag">#RuneDice</span><span class="hashtag">#SummerGameFest2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Rune Dice Summer Game Fest 2026 · buy Rune Dice · Rune Dice gameplay · Summer Game Fest 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#14</span>
+              <h5>Darksiders: Warmastered Edition</h5>
+              <p class="meta">19 May 2026 · announced</p>
+              <p class="meta">PS5</p>
+              <div class="chip-row"><span class="hashtag">#DarksidersWarmasteredEdition</span><span class="hashtag">#SummerGameFest2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Darksiders: Warmastered Edition Summer Game Fest 2026 · buy Darksiders: Warmastered Edition · Darksiders: Warmastered Edition gameplay · Summer Game Fest 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#15</span>
+              <h5>R-Type Dimensions III</h5>
+              <p class="meta">19 May 2026 · announced</p>
+              <p class="meta">WIN</p>
+              <div class="chip-row"><span class="hashtag">#RTypeDimensionsIII</span><span class="hashtag">#SummerGameFest2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">R-Type Dimensions III Summer Game Fest 2026 · buy R-Type Dimensions III · R-Type Dimensions III gameplay · Summer Game Fest 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#16</span>
+              <h5>ATMOSFAR</h5>
+              <p class="meta">20 May 2026 · game</p>
+              <p class="meta">Steam</p>
+              <div class="chip-row"><span class="hashtag">#ATMOSFAR</span><span class="hashtag">#SummerGameFest2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">ATMOSFAR Summer Game Fest 2026 · buy ATMOSFAR · ATMOSFAR gameplay · Summer Game Fest 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#17</span>
+              <h5>Deep Rock Galactic Rogue Core</h5>
+              <p class="meta">20 May 2026 · game</p>
+              <p class="meta">Steam</p>
+              <div class="chip-row"><span class="hashtag">#DeepRockGalacticRogueCore</span><span class="hashtag">#SummerGameFest2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Deep Rock Galactic Rogue Core Summer Game Fest 2026 · buy Deep Rock Galactic Rogue Core · Deep Rock Galactic Rogue Core gameplay · Summer Game Fest 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#18</span>
+              <h5>Phonopolis</h5>
+              <p class="meta">20 May 2026 · game</p>
+              <p class="meta">Steam</p>
+              <div class="chip-row"><span class="hashtag">#Phonopolis</span><span class="hashtag">#SummerGameFest2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Phonopolis Summer Game Fest 2026 · buy Phonopolis · Phonopolis gameplay · Summer Game Fest 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#19</span>
+              <h5>Thick As Thieves</h5>
+              <p class="meta">20 May 2026 · game</p>
+              <p class="meta">Steam</p>
+              <div class="chip-row"><span class="hashtag">#ThickAsThieves</span><span class="hashtag">#SummerGameFest2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Thick As Thieves Summer Game Fest 2026 · buy Thick As Thieves · Thick As Thieves gameplay · Summer Game Fest 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#20</span>
+              <h5>Coffee Talk Tokyo</h5>
+              <p class="meta">21 May 2026 · game</p>
+              <p class="meta">Steam</p>
+              <div class="chip-row"><span class="hashtag">#CoffeeTalkTokyo</span><span class="hashtag">#SummerGameFest2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Coffee Talk Tokyo Summer Game Fest 2026 · buy Coffee Talk Tokyo · Coffee Talk Tokyo gameplay · Summer Game Fest 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#21</span>
+              <h5>Luna Abyss</h5>
+              <p class="meta">21 May 2026 · game</p>
+              <p class="meta">Steam</p>
+              <div class="chip-row"><span class="hashtag">#LunaAbyss</span><span class="hashtag">#SummerGameFest2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Luna Abyss Summer Game Fest 2026 · buy Luna Abyss · Luna Abyss gameplay · Summer Game Fest 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#22</span>
+              <h5>STARBITES</h5>
+              <p class="meta">21 May 2026 · game</p>
+              <p class="meta">Steam</p>
+              <div class="chip-row"><span class="hashtag">#STARBITES</span><span class="hashtag">#SummerGameFest2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">STARBITES Summer Game Fest 2026 · buy STARBITES · STARBITES gameplay · Summer Game Fest 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#23</span>
+              <h5>The House Always Wins</h5>
+              <p class="meta">21 May 2026 · game</p>
+              <p class="meta">Steam</p>
+              <div class="chip-row"><span class="hashtag">#TheHouseAlwaysWins</span><span class="hashtag">#SummerGameFest2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">The House Always Wins Summer Game Fest 2026 · buy The House Always Wins · The House Always Wins gameplay · Summer Game Fest 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#24</span>
+              <h5>Warhammer 40,000 - Mechanicus 2</h5>
+              <p class="meta">21 May 2026 · game</p>
+              <p class="meta">Steam</p>
+              <div class="chip-row"><span class="hashtag">#Warhammer40000Mechanicus2</span><span class="hashtag">#SummerGameFest2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Warhammer 40,000 - Mechanicus 2 Summer Game Fest 2026 · buy Warhammer 40,000 - Mechanicus 2 · Warhammer 40,000 - Mechanicus 2 gameplay · Summer Game Fest 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#25</span>
+              <h5>Warhammer 40,000 - Mechanicus 2 Omnissiah Edition</h5>
+              <p class="meta">21 May 2026 · game</p>
+              <p class="meta">Steam</p>
+              <div class="chip-row"><span class="hashtag">#Warhammer40000Mechanicus2OmnissiahEdition</span><span class="hashtag">#SummerGameFest2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Warhammer 40,000 - Mechanicus 2 Omnissiah Edition Summer Game Fest 2026 · buy Warhammer 40,000 - Mechanicus 2 Omnissiah Edition · Warhammer 40,000 - Mechanicus 2 Omnissiah Edition gameplay · Summer Game Fest 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#26</span>
+              <h5>FZ: Formation Z</h5>
+              <p class="meta">21 May 2026 · announced</p>
+              <p class="meta">WIN</p>
+              <div class="chip-row"><span class="hashtag">#FZFormationZ</span><span class="hashtag">#SummerGameFest2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">FZ: Formation Z Summer Game Fest 2026 · buy FZ: Formation Z · FZ: Formation Z gameplay · Summer Game Fest 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#27</span>
+              <h5>Gravelord</h5>
+              <p class="meta">21 May 2026 · announced</p>
+              <p class="meta">Multi</p>
+              <div class="chip-row"><span class="hashtag">#Gravelord</span><span class="hashtag">#SummerGameFest2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Gravelord Summer Game Fest 2026 · buy Gravelord · Gravelord gameplay · Summer Game Fest 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#28</span>
+              <h5>King of Tokyo</h5>
+              <p class="meta">21 May 2026 · announced</p>
+              <p class="meta">WIN</p>
+              <div class="chip-row"><span class="hashtag">#KingOfTokyo</span><span class="hashtag">#SummerGameFest2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">King of Tokyo Summer Game Fest 2026 · buy King of Tokyo · King of Tokyo gameplay · Summer Game Fest 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#29</span>
+              <h5>Psyvariar 3</h5>
+              <p class="meta">21 May 2026 · announced</p>
+              <p class="meta">WIN</p>
+              <div class="chip-row"><span class="hashtag">#Psyvariar3</span><span class="hashtag">#SummerGameFest2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Psyvariar 3 Summer Game Fest 2026 · buy Psyvariar 3 · Psyvariar 3 gameplay · Summer Game Fest 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#30</span>
+              <h5>Q Collection</h5>
+              <p class="meta">21 May 2026 · announced</p>
+              <p class="meta">NS</p>
+              <div class="chip-row"><span class="hashtag">#QCollection</span><span class="hashtag">#SummerGameFest2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Q Collection Summer Game Fest 2026 · buy Q Collection · Q Collection gameplay · Summer Game Fest 2026 highlights</p>
+            </article></div>
+          </section>
+        </article>
+        <article class="lede">
+          <div class="lede-hero">
+            <div>
+              <div class="badge-row">
+                <span class="badge on">#04 · Platform Showcase</span>
+                <span class="badge live">confirmed</span>
+                <span class="badge on">Nintendo</span>
+                <span class="badge">digital</span>
+              </div>
+              <h3 class="event-title">Nintendo Direct June 2026</h3>
+              <p class="action">Event runtime 9 Jun 2026</p>
+              <p class="meta">Online</p>
+              <div class="chip-row event-tags"><span class="hashtag">#NintendoDirectJune2026</span><span class="hashtag">#ad</span><span class="hashtag">#GamingExpo</span><span class="hashtag">#Showcase</span><span class="hashtag">#HandsOn</span><span class="hashtag">#BoothTour</span><span class="hashtag">#FireEmblemFortuneSWeave</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+            </div>
+          </div>
+          <div class="kpis">
+            <div class="kpi"><b>9 Jun 2026</b><span>Runtime start</span></div>
+            <div class="kpi"><b>9 Jun 2026</b><span>Runtime end</span></div>
+            <div class="kpi"><b>30</b><span>Recommended games</span></div>
+            <div class="kpi"><b>digital</b><span>Attendance</span></div>
+          </div>
+          <section class="card">
+            <h4>Content marketing · social engagement</h4>
+            <div class="content-social"><div>
+              <b>TikTok</b>
+              <p class="meta">Post when 18:00–21:00 local</p>
+              <div class="chip-row"><span class="hashtag">#FireEmblemFortuneSWeave</span><span class="hashtag">#NintendoDirectJune2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span><span class="hashtag">#GamingExpo</span><span class="hashtag">#Showcase</span></div>
+            </div><div>
+              <b>Instagram Reels</b>
+              <p class="meta">Post when 11:00–13:00 and 19:00–21:00 local</p>
+              <div class="chip-row"><span class="hashtag">#FireEmblemFortuneSWeave</span><span class="hashtag">#NintendoDirectJune2026</span><span class="hashtag">#ad</span><span class="hashtag">#Reels</span><span class="hashtag">#InstaGaming</span><span class="hashtag">#GamingExpo</span><span class="hashtag">#Showcase</span></div>
+            </div><div>
+              <b>YouTube Shorts</b>
+              <p class="meta">Post when 12:00–15:00 and 18:00–21:00 local</p>
+              <div class="chip-row"><span class="hashtag">#FireEmblemFortuneSWeave</span><span class="hashtag">#NintendoDirectJune2026</span><span class="hashtag">#ad</span><span class="hashtag">#Shorts</span><span class="hashtag">#YouTubeGaming</span><span class="hashtag">#GamingExpo</span><span class="hashtag">#Showcase</span></div>
+            </div><div>
+              <b>X / Twitter</b>
+              <p class="meta">Post when 08:00–10:00 and during live sessions</p>
+              <div class="chip-row"><span class="hashtag">#FireEmblemFortuneSWeave</span><span class="hashtag">#NintendoDirectJune2026</span><span class="hashtag">#ad</span><span class="hashtag">#gaming</span><span class="hashtag">#GamingExpo</span><span class="hashtag">#Showcase</span></div>
+            </div></div>
+          </section>
+          <section class="card">
+            <h4>Mapped products · top 30 recommended games</h4>
+            <div class="media-grid">
+            <article class="media-tile">
+              <span class="rank">#01</span>
+              <h5>Fire Emblem: Fortune&#x27;s Weave</h5>
+              <p class="meta">17 Sep 2026 · announced</p>
+              <p class="meta">NS2</p>
+              <div class="chip-row"><span class="hashtag">#FireEmblemFortuneSWeave</span><span class="hashtag">#NintendoDirectJune2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Fire Emblem: Fortune&#x27;s Weave Nintendo Direct June 2026 · buy Fire Emblem: Fortune&#x27;s Weave · Fire Emblem: Fortune&#x27;s Weave gameplay · Nintendo Direct June 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#02</span>
+              <h5>Nintendo Switch Sports Resort</h5>
+              <p class="meta">22 Oct 2026 · announced</p>
+              <p class="meta">NS2</p>
+              <div class="chip-row"><span class="hashtag">#NintendoSwitchSportsResort</span><span class="hashtag">#NintendoDirectJune2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Nintendo Switch Sports Resort Nintendo Direct June 2026 · buy Nintendo Switch Sports Resort · Nintendo Switch Sports Resort gameplay · Nintendo Direct June 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#03</span>
+              <h5>Pokémon Waves</h5>
+              <p class="meta">1 Jan 2027 · announced</p>
+              <p class="meta">Multi</p>
+              <div class="chip-row"><span class="hashtag">#PokMonWaves</span><span class="hashtag">#NintendoDirectJune2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Pokémon Waves Nintendo Direct June 2026 · buy Pokémon Waves · Pokémon Waves gameplay · Nintendo Direct June 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#04</span>
+              <h5>Pokémon Winds</h5>
+              <p class="meta">1 Jan 2027 · announced</p>
+              <p class="meta">Multi</p>
+              <div class="chip-row"><span class="hashtag">#PokMonWinds</span><span class="hashtag">#NintendoDirectJune2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Pokémon Winds Nintendo Direct June 2026 · buy Pokémon Winds · Pokémon Winds gameplay · Nintendo Direct June 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#05</span>
+              <h5>Xenoblade Chronicles 3 – Nintendo Switch 2 Edition</h5>
+              <p class="meta">3 Dec 2026 · announced</p>
+              <p class="meta">NS2</p>
+              <div class="chip-row"><span class="hashtag">#XenobladeChronicles3NintendoSwitch2Editio</span><span class="hashtag">#NintendoDirectJune2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Xenoblade Chronicles 3 – Nintendo Switch 2 Edition Nintendo Direct June 2026 · buy Xenoblade Chronicles 3 – Nintendo Switch 2 Edition · Xenoblade Chronicles 3 – Nintendo Switch 2 Edition gameplay · Nintendo Direct June 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#06</span>
+              <h5>Animal Crossing: New Horizons</h5>
+              <p class="meta">15 Jan 2026 · announced</p>
+              <p class="meta">Multi</p>
+              <div class="chip-row"><span class="hashtag">#AnimalCrossingNewHorizons</span><span class="hashtag">#NintendoDirectJune2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Animal Crossing: New Horizons Nintendo Direct June 2026 · buy Animal Crossing: New Horizons · Animal Crossing: New Horizons gameplay · Nintendo Direct June 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#07</span>
+              <h5>Animal Crossing: New Horizons – Nintendo Switch 2 Edition</h5>
+              <p class="meta">15 Jan 2026 · announced</p>
+              <p class="meta">NS2</p>
+              <div class="chip-row"><span class="hashtag">#AnimalCrossingNewHorizonsNintendoSwitch2E</span><span class="hashtag">#NintendoDirectJune2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Animal Crossing: New Horizons – Nintendo Switch 2 Edition Nintendo Direct June 2026 · buy Animal Crossing: New Horizons – Nintendo Switch 2 Edition · Animal Crossing: New Horizons – Nintendo Switch 2 Edition gameplay · Nintendo Direct June 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#08</span>
+              <h5>Balloon Kid</h5>
+              <p class="meta">4 Feb 2026 · announced</p>
+              <p class="meta">NS</p>
+              <div class="chip-row"><span class="hashtag">#BalloonKid</span><span class="hashtag">#NintendoDirectJune2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Balloon Kid Nintendo Direct June 2026 · buy Balloon Kid · Balloon Kid gameplay · Nintendo Direct June 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#09</span>
+              <h5>Donkey Kong 64</h5>
+              <p class="meta">4 Jun 2026 · announced</p>
+              <p class="meta">NS</p>
+              <div class="chip-row"><span class="hashtag">#DonkeyKong64</span><span class="hashtag">#NintendoDirectJune2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Donkey Kong 64 Nintendo Direct June 2026 · buy Donkey Kong 64 · Donkey Kong 64 gameplay · Nintendo Direct June 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#10</span>
+              <h5>Dr. Mario &amp; Puzzle League</h5>
+              <p class="meta">7 Jul 2026 · announced</p>
+              <p class="meta">NS</p>
+              <div class="chip-row"><span class="hashtag">#DrMarioPuzzleLeague</span><span class="hashtag">#NintendoDirectJune2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Dr. Mario &amp; Puzzle League Nintendo Direct June 2026 · buy Dr. Mario &amp; Puzzle League · Dr. Mario &amp; Puzzle League gameplay · Nintendo Direct June 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#11</span>
+              <h5>Dragon Hopper</h5>
+              <p class="meta">4 Aug 2026 · announced</p>
+              <p class="meta">NS</p>
+              <div class="chip-row"><span class="hashtag">#DragonHopper</span><span class="hashtag">#NintendoDirectJune2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Dragon Hopper Nintendo Direct June 2026 · buy Dragon Hopper · Dragon Hopper gameplay · Nintendo Direct June 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#12</span>
+              <h5>Fire Emblem: Path of Radiance</h5>
+              <p class="meta">9 Jan 2026 · announced</p>
+              <p class="meta">NS2</p>
+              <div class="chip-row"><span class="hashtag">#FireEmblemPathOfRadiance</span><span class="hashtag">#NintendoDirectJune2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Fire Emblem: Path of Radiance Nintendo Direct June 2026 · buy Fire Emblem: Path of Radiance · Fire Emblem: Path of Radiance gameplay · Nintendo Direct June 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#13</span>
+              <h5>Galactic Pinball</h5>
+              <p class="meta">17 Feb 2026 · announced</p>
+              <p class="meta">NS</p>
+              <div class="chip-row"><span class="hashtag">#GalacticPinball</span><span class="hashtag">#NintendoDirectJune2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Galactic Pinball Nintendo Direct June 2026 · buy Galactic Pinball · Galactic Pinball gameplay · Nintendo Direct June 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#14</span>
+              <h5>Mahou Arms</h5>
+              <p class="meta">27 Apr 2026 · announced</p>
+              <p class="meta">Multi</p>
+              <div class="chip-row"><span class="hashtag">#MahouArms</span><span class="hashtag">#NintendoDirectJune2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Mahou Arms Nintendo Direct June 2026 · buy Mahou Arms · Mahou Arms gameplay · Nintendo Direct June 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#15</span>
+              <h5>Mario Clash</h5>
+              <p class="meta">10 Mar 2026 · announced</p>
+              <p class="meta">NS</p>
+              <div class="chip-row"><span class="hashtag">#MarioClash</span><span class="hashtag">#NintendoDirectJune2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Mario Clash Nintendo Direct June 2026 · buy Mario Clash · Mario Clash gameplay · Nintendo Direct June 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#16</span>
+              <h5>Mario vs. Donkey Kong</h5>
+              <p class="meta">10 Mar 2026 · announced</p>
+              <p class="meta">NS</p>
+              <div class="chip-row"><span class="hashtag">#MarioVsDonkeyKong</span><span class="hashtag">#NintendoDirectJune2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Mario vs. Donkey Kong Nintendo Direct June 2026 · buy Mario vs. Donkey Kong · Mario vs. Donkey Kong gameplay · Nintendo Direct June 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#17</span>
+              <h5>Mario&#x27;s Tennis</h5>
+              <p class="meta">10 Mar 2026 · announced</p>
+              <p class="meta">NS</p>
+              <div class="chip-row"><span class="hashtag">#MarioSTennis</span><span class="hashtag">#NintendoDirectJune2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Mario&#x27;s Tennis Nintendo Direct June 2026 · buy Mario&#x27;s Tennis · Mario&#x27;s Tennis gameplay · Nintendo Direct June 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#18</span>
+              <h5>Metroid Prime 4: Beyond</h5>
+              <p class="meta">4 Dec 2025 · announced</p>
+              <p class="meta">Nintendo Switch</p>
+              <div class="chip-row"><span class="hashtag">#MetroidPrime4Beyond</span><span class="hashtag">#NintendoDirectJune2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Metroid Prime 4: Beyond Nintendo Direct June 2026 · buy Metroid Prime 4: Beyond · Metroid Prime 4: Beyond gameplay · Nintendo Direct June 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#19</span>
+              <h5>Pokémon Champions</h5>
+              <p class="meta">17 Jun 2026 · announced</p>
+              <p class="meta">iOS</p>
+              <div class="chip-row"><span class="hashtag">#PokMonChampions</span><span class="hashtag">#NintendoDirectJune2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Pokémon Champions Nintendo Direct June 2026 · buy Pokémon Champions · Pokémon Champions gameplay · Nintendo Direct June 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#20</span>
+              <h5>Pokémon FireRed and LeafGreen</h5>
+              <p class="meta">27 Feb 2026 · announced</p>
+              <p class="meta">NS</p>
+              <div class="chip-row"><span class="hashtag">#PokMonFireRedAndLeafGreen</span><span class="hashtag">#NintendoDirectJune2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Pokémon FireRed and LeafGreen Nintendo Direct June 2026 · buy Pokémon FireRed and LeafGreen · Pokémon FireRed and LeafGreen gameplay · Nintendo Direct June 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#21</span>
+              <h5>Pokémon Pokopia</h5>
+              <p class="meta">5 Mar 2026 · announced</p>
+              <p class="meta">NS2</p>
+              <div class="chip-row"><span class="hashtag">#PokMonPokopia</span><span class="hashtag">#NintendoDirectJune2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Pokémon Pokopia Nintendo Direct June 2026 · buy Pokémon Pokopia · Pokémon Pokopia gameplay · Nintendo Direct June 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#22</span>
+              <h5>Pokémon XD: Gale of Darkness</h5>
+              <p class="meta">17 Mar 2026 · announced</p>
+              <p class="meta">NS2</p>
+              <div class="chip-row"><span class="hashtag">#PokMonXDGaleOfDarkness</span><span class="hashtag">#NintendoDirectJune2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Pokémon XD: Gale of Darkness Nintendo Direct June 2026 · buy Pokémon XD: Gale of Darkness · Pokémon XD: Gale of Darkness gameplay · Nintendo Direct June 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#23</span>
+              <h5>Super Mario Bros. Wonder – Nintendo Switch 2 Edition + Meetup in Bellabel Park</h5>
+              <p class="meta">26 Mar 2026 · announced</p>
+              <p class="meta">NS2</p>
+              <div class="chip-row"><span class="hashtag">#SuperMarioBrosWonderNintendoSwitch2Editio</span><span class="hashtag">#NintendoDirectJune2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Super Mario Bros. Wonder – Nintendo Switch 2 Edition + Meetup in Bellabel Park Nintendo Direct June 2026 · buy Super Mario Bros. Wonder – Nintendo Switch 2 Edition + Meetup in Bellabel Park · Super Mario Bros. Wonder – Nintendo Switch 2 Edition + Meetup in Bellabel Park gameplay · Nintendo Direct June 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#24</span>
+              <h5>Super Mario Sunshine</h5>
+              <p class="meta">13 Aug 2026 · announced</p>
+              <p class="meta">NS2</p>
+              <div class="chip-row"><span class="hashtag">#SuperMarioSunshine</span><span class="hashtag">#NintendoDirectJune2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Super Mario Sunshine Nintendo Direct June 2026 · buy Super Mario Sunshine · Super Mario Sunshine gameplay · Nintendo Direct June 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#25</span>
+              <h5>Teleroboxer</h5>
+              <p class="meta">17 Feb 2026 · announced</p>
+              <p class="meta">NS</p>
+              <div class="chip-row"><span class="hashtag">#Teleroboxer</span><span class="hashtag">#NintendoDirectJune2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Teleroboxer Nintendo Direct June 2026 · buy Teleroboxer · Teleroboxer gameplay · Nintendo Direct June 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#26</span>
+              <h5>Tomodachi Life: Living the Dream</h5>
+              <p class="meta">16 Apr 2026 · announced</p>
+              <p class="meta">Multi</p>
+              <div class="chip-row"><span class="hashtag">#TomodachiLifeLivingTheDream</span><span class="hashtag">#NintendoDirectJune2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Tomodachi Life: Living the Dream Nintendo Direct June 2026 · buy Tomodachi Life: Living the Dream · Tomodachi Life: Living the Dream gameplay · Nintendo Direct June 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#27</span>
+              <h5>Vertical Force</h5>
+              <p class="meta">14 May 2026 · announced</p>
+              <p class="meta">NS</p>
+              <div class="chip-row"><span class="hashtag">#VerticalForce</span><span class="hashtag">#NintendoDirectJune2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Vertical Force Nintendo Direct June 2026 · buy Vertical Force · Vertical Force gameplay · Nintendo Direct June 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#28</span>
+              <h5>Virtual Boy Wario Land</h5>
+              <p class="meta">17 Feb 2026 · announced</p>
+              <p class="meta">NS</p>
+              <div class="chip-row"><span class="hashtag">#VirtualBoyWarioLand</span><span class="hashtag">#NintendoDirectJune2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Virtual Boy Wario Land Nintendo Direct June 2026 · buy Virtual Boy Wario Land · Virtual Boy Wario Land gameplay · Nintendo Direct June 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#29</span>
+              <h5>Wario Land: Super Mario Land 3</h5>
+              <p class="meta">7 Jul 2026 · announced</p>
+              <p class="meta">NS</p>
+              <div class="chip-row"><span class="hashtag">#WarioLandSuperMarioLand3</span><span class="hashtag">#NintendoDirectJune2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Wario Land: Super Mario Land 3 Nintendo Direct June 2026 · buy Wario Land: Super Mario Land 3 · Wario Land: Super Mario Land 3 gameplay · Nintendo Direct June 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#30</span>
+              <h5>Xenoblade Chronicles 2 – Nintendo Switch 2 Edition</h5>
+              <p class="meta">30 Jul 2026 · announced</p>
+              <p class="meta">NS2</p>
+              <div class="chip-row"><span class="hashtag">#XenobladeChronicles2NintendoSwitch2Editio</span><span class="hashtag">#NintendoDirectJune2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Xenoblade Chronicles 2 – Nintendo Switch 2 Edition Nintendo Direct June 2026 · buy Xenoblade Chronicles 2 – Nintendo Switch 2 Edition · Xenoblade Chronicles 2 – Nintendo Switch 2 Edition gameplay · Nintendo Direct June 2026 highlights</p>
+            </article></div>
+          </section>
+        </article>
+        <article class="lede">
+          <div class="lede-hero">
+            <div>
+              <div class="badge-row">
+                <span class="badge on">#05 · Gaming Expo</span>
+                <span class="badge live">confirmed</span>
+                
+                <span class="badge">physical</span>
+              </div>
+              <h3 class="event-title">Gamescom 2026</h3>
+              <p class="action">Event runtime 26 Aug 2026 → 30 Aug 2026</p>
+              <p class="meta">Cologne</p>
+              <div class="chip-row event-tags"><span class="hashtag">#Gamescom2026</span><span class="hashtag">#ad</span><span class="hashtag">#GamingExpo</span><span class="hashtag">#Showcase</span><span class="hashtag">#HandsOn</span><span class="hashtag">#BoothTour</span><span class="hashtag">#OctopathTravelerII</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+            </div>
+          </div>
+          <div class="kpis">
+            <div class="kpi"><b>26 Aug 2026</b><span>Runtime start</span></div>
+            <div class="kpi"><b>30 Aug 2026</b><span>Runtime end</span></div>
+            <div class="kpi"><b>30</b><span>Recommended games</span></div>
+            <div class="kpi"><b>physical</b><span>Attendance</span></div>
+          </div>
+          <section class="card">
+            <h4>Content marketing · social engagement</h4>
+            <div class="content-social"><div>
+              <b>TikTok</b>
+              <p class="meta">Post when 18:00–21:00 local</p>
+              <div class="chip-row"><span class="hashtag">#OctopathTravelerII</span><span class="hashtag">#Gamescom2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span><span class="hashtag">#GamingExpo</span><span class="hashtag">#Showcase</span></div>
+            </div><div>
+              <b>Instagram Reels</b>
+              <p class="meta">Post when 11:00–13:00 and 19:00–21:00 local</p>
+              <div class="chip-row"><span class="hashtag">#OctopathTravelerII</span><span class="hashtag">#Gamescom2026</span><span class="hashtag">#ad</span><span class="hashtag">#Reels</span><span class="hashtag">#InstaGaming</span><span class="hashtag">#GamingExpo</span><span class="hashtag">#Showcase</span></div>
+            </div><div>
+              <b>YouTube Shorts</b>
+              <p class="meta">Post when 12:00–15:00 and 18:00–21:00 local</p>
+              <div class="chip-row"><span class="hashtag">#OctopathTravelerII</span><span class="hashtag">#Gamescom2026</span><span class="hashtag">#ad</span><span class="hashtag">#Shorts</span><span class="hashtag">#YouTubeGaming</span><span class="hashtag">#GamingExpo</span><span class="hashtag">#Showcase</span></div>
+            </div><div>
+              <b>X / Twitter</b>
+              <p class="meta">Post when 08:00–10:00 and during live sessions</p>
+              <div class="chip-row"><span class="hashtag">#OctopathTravelerII</span><span class="hashtag">#Gamescom2026</span><span class="hashtag">#ad</span><span class="hashtag">#gaming</span><span class="hashtag">#GamingExpo</span><span class="hashtag">#Showcase</span></div>
+            </div></div>
+          </section>
+          <section class="card">
+            <h4>Mapped products · top 30 recommended games</h4>
+            <div class="media-grid">
+            <article class="media-tile">
+              <span class="rank">#01</span>
+              <h5>Octopath Traveler II</h5>
+              <p class="meta">13 Jul 2026 · announced</p>
+              <p class="meta">Multi</p>
+              <div class="chip-row"><span class="hashtag">#OctopathTravelerII</span><span class="hashtag">#Gamescom2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Octopath Traveler II Gamescom 2026 · buy Octopath Traveler II · Octopath Traveler II gameplay · Gamescom 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#02</span>
+              <h5>Akatori</h5>
+              <p class="meta">5 Aug 2026 · game</p>
+              <p class="meta">Xbox Live</p>
+              <div class="chip-row"><span class="hashtag">#Akatori</span><span class="hashtag">#Gamescom2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Akatori Gamescom 2026 · buy Akatori · Akatori gameplay · Gamescom 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#03</span>
+              <h5>Block Block Block</h5>
+              <p class="meta">5 Aug 2026 · game</p>
+              <p class="meta">Steam</p>
+              <div class="chip-row"><span class="hashtag">#BlockBlockBlock</span><span class="hashtag">#Gamescom2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Block Block Block Gamescom 2026 · buy Block Block Block · Block Block Block gameplay · Gamescom 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#04</span>
+              <h5>Cargo, Please!</h5>
+              <p class="meta">5 Aug 2026 · game</p>
+              <p class="meta">Steam</p>
+              <div class="chip-row"><span class="hashtag">#CargoPlease</span><span class="hashtag">#Gamescom2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Cargo, Please! Gamescom 2026 · buy Cargo, Please! · Cargo, Please! gameplay · Gamescom 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#05</span>
+              <h5>Emergency Call - The Firefighting Simulation 3</h5>
+              <p class="meta">5 Aug 2026 · game</p>
+              <p class="meta">Steam</p>
+              <div class="chip-row"><span class="hashtag">#EmergencyCallTheFirefightingSimulation3</span><span class="hashtag">#Gamescom2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Emergency Call - The Firefighting Simulation 3 Gamescom 2026 · buy Emergency Call - The Firefighting Simulation 3 · Emergency Call - The Firefighting Simulation 3 gameplay · Gamescom 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#06</span>
+              <h5>I’m No Demonlord</h5>
+              <p class="meta">5 Aug 2026 · game</p>
+              <p class="meta">Steam</p>
+              <div class="chip-row"><span class="hashtag">#IMNoDemonlord</span><span class="hashtag">#Gamescom2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">I’m No Demonlord Gamescom 2026 · buy I’m No Demonlord · I’m No Demonlord gameplay · Gamescom 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#07</span>
+              <h5>Kill The Shadow</h5>
+              <p class="meta">5 Aug 2026 · game</p>
+              <p class="meta">Steam</p>
+              <div class="chip-row"><span class="hashtag">#KillTheShadow</span><span class="hashtag">#Gamescom2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Kill The Shadow Gamescom 2026 · buy Kill The Shadow · Kill The Shadow gameplay · Gamescom 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#08</span>
+              <h5>Lies of P Complete Edition</h5>
+              <p class="meta">5 Aug 2026 · game</p>
+              <p class="meta">Nintendo</p>
+              <div class="chip-row"><span class="hashtag">#LiesOfPCompleteEdition</span><span class="hashtag">#Gamescom2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Lies of P Complete Edition Gamescom 2026 · buy Lies of P Complete Edition · Lies of P Complete Edition gameplay · Gamescom 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#09</span>
+              <h5>Mazey Village</h5>
+              <p class="meta">5 Aug 2026 · game</p>
+              <p class="meta">Steam</p>
+              <div class="chip-row"><span class="hashtag">#MazeyVillage</span><span class="hashtag">#Gamescom2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Mazey Village Gamescom 2026 · buy Mazey Village · Mazey Village gameplay · Gamescom 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#10</span>
+              <h5>OBAKEIDORO 2 Chase &amp; Seek</h5>
+              <p class="meta">5 Aug 2026 · game</p>
+              <p class="meta">Nintendo</p>
+              <div class="chip-row"><span class="hashtag">#OBAKEIDORO2ChaseSeek</span><span class="hashtag">#Gamescom2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">OBAKEIDORO 2 Chase &amp; Seek Gamescom 2026 · buy OBAKEIDORO 2 Chase &amp; Seek · OBAKEIDORO 2 Chase &amp; Seek gameplay · Gamescom 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#11</span>
+              <h5>Pih 2</h5>
+              <p class="meta">5 Aug 2026 · game</p>
+              <p class="meta">Steam</p>
+              <div class="chip-row"><span class="hashtag">#Pih2</span><span class="hashtag">#Gamescom2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Pih 2 Gamescom 2026 · buy Pih 2 · Pih 2 gameplay · Gamescom 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#12</span>
+              <h5>Ranchbound</h5>
+              <p class="meta">5 Aug 2026 · game</p>
+              <p class="meta">Steam</p>
+              <div class="chip-row"><span class="hashtag">#Ranchbound</span><span class="hashtag">#Gamescom2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Ranchbound Gamescom 2026 · buy Ranchbound · Ranchbound gameplay · Gamescom 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#13</span>
+              <h5>ROUTE16R</h5>
+              <p class="meta">5 Aug 2026 · game</p>
+              <p class="meta">Steam</p>
+              <div class="chip-row"><span class="hashtag">#ROUTE16R</span><span class="hashtag">#Gamescom2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">ROUTE16R Gamescom 2026 · buy ROUTE16R · ROUTE16R gameplay · Gamescom 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#14</span>
+              <h5>Spooky Spirit Shooting Gallery</h5>
+              <p class="meta">5 Aug 2026 · game</p>
+              <p class="meta">Nintendo</p>
+              <div class="chip-row"><span class="hashtag">#SpookySpiritShootingGallery</span><span class="hashtag">#Gamescom2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Spooky Spirit Shooting Gallery Gamescom 2026 · buy Spooky Spirit Shooting Gallery · Spooky Spirit Shooting Gallery gameplay · Gamescom 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#15</span>
+              <h5>Lost &amp; Found: A This Bed We Made Story</h5>
+              <p class="meta">5 Aug 2026 · announced</p>
+              <p class="meta">WIN</p>
+              <div class="chip-row"><span class="hashtag">#LostFoundAThisBedWeMadeStory</span><span class="hashtag">#Gamescom2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Lost &amp; Found: A This Bed We Made Story Gamescom 2026 · buy Lost &amp; Found: A This Bed We Made Story · Lost &amp; Found: A This Bed We Made Story gameplay · Gamescom 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#16</span>
+              <h5>Approximately Up</h5>
+              <p class="meta">6 Aug 2026 · game</p>
+              <p class="meta">Steam</p>
+              <div class="chip-row"><span class="hashtag">#ApproximatelyUp</span><span class="hashtag">#Gamescom2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Approximately Up Gamescom 2026 · buy Approximately Up · Approximately Up gameplay · Gamescom 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#17</span>
+              <h5>Capy Castaway</h5>
+              <p class="meta">6 Aug 2026 · game</p>
+              <p class="meta">Steam</p>
+              <div class="chip-row"><span class="hashtag">#CapyCastaway</span><span class="hashtag">#Gamescom2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Capy Castaway Gamescom 2026 · buy Capy Castaway · Capy Castaway gameplay · Gamescom 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#18</span>
+              <h5>Delta Force Hawk Ops - Alpha Access</h5>
+              <p class="meta">6 Aug 2026 · game</p>
+              <p class="meta">Steam</p>
+              <div class="chip-row"><span class="hashtag">#DeltaForceHawkOpsAlphaAccess</span><span class="hashtag">#Gamescom2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Delta Force Hawk Ops - Alpha Access Gamescom 2026 · buy Delta Force Hawk Ops - Alpha Access · Delta Force Hawk Ops - Alpha Access gameplay · Gamescom 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#19</span>
+              <h5>Dig, Dig, Die</h5>
+              <p class="meta">6 Aug 2026 · game</p>
+              <p class="meta">Steam</p>
+              <div class="chip-row"><span class="hashtag">#DigDigDie</span><span class="hashtag">#Gamescom2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Dig, Dig, Die Gamescom 2026 · buy Dig, Dig, Die · Dig, Dig, Die gameplay · Gamescom 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#20</span>
+              <h5>Echobreaker</h5>
+              <p class="meta">6 Aug 2026 · game</p>
+              <p class="meta">Steam</p>
+              <div class="chip-row"><span class="hashtag">#Echobreaker</span><span class="hashtag">#Gamescom2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Echobreaker Gamescom 2026 · buy Echobreaker · Echobreaker gameplay · Gamescom 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#21</span>
+              <h5>FixFox</h5>
+              <p class="meta">6 Aug 2026 · game</p>
+              <p class="meta">Nintendo</p>
+              <div class="chip-row"><span class="hashtag">#FixFox</span><span class="hashtag">#Gamescom2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">FixFox Gamescom 2026 · buy FixFox · FixFox gameplay · Gamescom 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#22</span>
+              <h5>INK ENIGMA 2 Hidden Object Challenges</h5>
+              <p class="meta">6 Aug 2026 · game</p>
+              <p class="meta">Xbox Live</p>
+              <div class="chip-row"><span class="hashtag">#INKENIGMA2HiddenObjectChallenges</span><span class="hashtag">#Gamescom2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">INK ENIGMA 2 Hidden Object Challenges Gamescom 2026 · buy INK ENIGMA 2 Hidden Object Challenges · INK ENIGMA 2 Hidden Object Challenges gameplay · Gamescom 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#23</span>
+              <h5>IRON NEST Heavy Turret Simulator</h5>
+              <p class="meta">6 Aug 2026 · game</p>
+              <p class="meta">Steam</p>
+              <div class="chip-row"><span class="hashtag">#IRONNESTHeavyTurretSimulator</span><span class="hashtag">#Gamescom2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">IRON NEST Heavy Turret Simulator Gamescom 2026 · buy IRON NEST Heavy Turret Simulator · IRON NEST Heavy Turret Simulator gameplay · Gamescom 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#24</span>
+              <h5>MARVEL Tōkon Fighting Souls</h5>
+              <p class="meta">6 Aug 2026 · game</p>
+              <p class="meta">Steam</p>
+              <div class="chip-row"><span class="hashtag">#MARVELTKonFightingSouls</span><span class="hashtag">#Gamescom2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">MARVEL Tōkon Fighting Souls Gamescom 2026 · buy MARVEL Tōkon Fighting Souls · MARVEL Tōkon Fighting Souls gameplay · Gamescom 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#25</span>
+              <h5>MARVEL Tōkon Fighting Souls Digital Deluxe Edition</h5>
+              <p class="meta">6 Aug 2026 · game</p>
+              <p class="meta">Steam</p>
+              <div class="chip-row"><span class="hashtag">#MARVELTKonFightingSoulsDigitalDeluxeEditi</span><span class="hashtag">#Gamescom2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">MARVEL Tōkon Fighting Souls Digital Deluxe Edition Gamescom 2026 · buy MARVEL Tōkon Fighting Souls Digital Deluxe Edition · MARVEL Tōkon Fighting Souls Digital Deluxe Edition gameplay · Gamescom 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#26</span>
+              <h5>Montabi</h5>
+              <p class="meta">6 Aug 2026 · game</p>
+              <p class="meta">Steam</p>
+              <div class="chip-row"><span class="hashtag">#Montabi</span><span class="hashtag">#Gamescom2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Montabi Gamescom 2026 · buy Montabi · Montabi gameplay · Gamescom 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#27</span>
+              <h5>ReStory Chill Electronics Repairs</h5>
+              <p class="meta">6 Aug 2026 · game</p>
+              <p class="meta">Steam</p>
+              <div class="chip-row"><span class="hashtag">#ReStoryChillElectronicsRepairs</span><span class="hashtag">#Gamescom2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">ReStory Chill Electronics Repairs Gamescom 2026 · buy ReStory Chill Electronics Repairs · ReStory Chill Electronics Repairs gameplay · Gamescom 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#28</span>
+              <h5>Sovereign Tower</h5>
+              <p class="meta">6 Aug 2026 · game</p>
+              <p class="meta">Steam</p>
+              <div class="chip-row"><span class="hashtag">#SovereignTower</span><span class="hashtag">#Gamescom2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Sovereign Tower Gamescom 2026 · buy Sovereign Tower · Sovereign Tower gameplay · Gamescom 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#29</span>
+              <h5>Spiritstead</h5>
+              <p class="meta">6 Aug 2026 · game</p>
+              <p class="meta">Steam</p>
+              <div class="chip-row"><span class="hashtag">#Spiritstead</span><span class="hashtag">#Gamescom2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Spiritstead Gamescom 2026 · buy Spiritstead · Spiritstead gameplay · Gamescom 2026 highlights</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#30</span>
+              <h5>Talespinner</h5>
+              <p class="meta">6 Aug 2026 · game</p>
+              <p class="meta">Nintendo</p>
+              <div class="chip-row"><span class="hashtag">#Talespinner</span><span class="hashtag">#Gamescom2026</span><span class="hashtag">#ad</span><span class="hashtag">#FYP</span><span class="hashtag">#ForYou</span></div>
+              <p class="meta seo">Talespinner Gamescom 2026 · buy Talespinner · Talespinner gameplay · Gamescom 2026 highlights</p>
+            </article></div>
+          </section>
+        </article>
+  </main>
+  <p class="colophon">Floor Brief · mapped products from the live catalog and promotion plans · 2026-09-01</p>
+</body>
+</html>

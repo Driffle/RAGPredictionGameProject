@@ -1,15 +1,18 @@
 #!/usr/bin/env python3
-"""Export Floor Brief's top Sep–Dec 2026 events to PDF and DOCX.
+"""Export Floor Brief top-event desks to PDF and DOCX.
 
 Layout mirrors the website desk: dark mast, kicker, event lede cards,
 runtime KPIs, social engagement tags, and a mapped-products grid of
-thirty recommended games per event.
+thirty recommended games per event. Pass --start/--end/--stem to build
+another window; defaults keep the Sep–Dec 2026 brief.
 """
 
 from __future__ import annotations
 
+import argparse
 import html
 import io
+import re
 import shutil
 import sys
 from datetime import date
@@ -47,10 +50,14 @@ LINE = "2A3148"
 
 MAJOR_WEIGHTS = (
     ("the game awards", 90),
-    ("state of play", 88),
-    ("nintendo direct", 84),
+    ("gamescom", 87),
+    ("summer game fest", 86),
+    ("e3", 85),
+    ("state of play", 84),
+    ("nintendo direct", 83),
     ("tokyo game show", 80),
-    ("steam next fest", 82),
+    ("steam next fest", 78),
+    ("xbox games showcase", 76),
     ("pax west", 50),
     ("blizzcon", 60),
     ("paris games week", 58),
@@ -58,6 +65,7 @@ MAJOR_WEIGHTS = (
     ("golden joystick", 48),
     ("g-star", 46),
 )
+E3_NAME = re.compile(r"\be3\b", re.I)
 
 
 def nice_date(value: str | None) -> str:
@@ -94,13 +102,42 @@ def load_calendar() -> list[dict]:
     return list(historical_events()) + list(projected_events()) + list(load_events())
 
 
+def _name_matches(name: str, needle: str) -> bool:
+    if needle == "e3":
+        return bool(E3_NAME.search(name))
+    return needle in name
+
+
+def event_family(row: dict) -> str:
+    name = (row.get("event") or "").lower()
+    if "the game awards" in name:
+        return "the game awards"
+    if "gamescom" in name:
+        return "gamescom"
+    if "summer game fest" in name:
+        return "summer game fest"
+    if "state of play" in name:
+        return "state of play"
+    if "nintendo direct" in name:
+        return "nintendo direct"
+    if E3_NAME.search(name):
+        return "e3"
+    if "steam next fest" in name:
+        return "steam next fest"
+    if "tokyo game show" in name:
+        return "tokyo game show"
+    if "xbox games showcase" in name or "xbox developer direct" in name:
+        return "xbox showcase"
+    return canonical_event_name(row)
+
+
 def event_score(row: dict) -> tuple:
     name = (row.get("event") or "").lower()
     event_type = (row.get("event_type") or "").lower()
     status = f"{row.get('confirmation') or ''} {row.get('status') or ''}".lower()
     score = 0
     for needle, points in MAJOR_WEIGHTS:
-        if needle in name:
+        if _name_matches(name, needle):
             score += points
             break
     else:
@@ -114,6 +151,10 @@ def event_score(row: dict) -> tuple:
         score -= 20
     if "partner" in name:
         score -= 40
+    if "concert" in name or "hollywood bowl" in name:
+        score -= 60
+    if "opening night" in name or "future games show" in name:
+        score -= 16
     if "confirm" in status:
         score += 18
     precision = row_precision(row)
@@ -121,8 +162,8 @@ def event_score(row: dict) -> tuple:
         score += 8
     elif precision == "month":
         score -= 6
-    start = row.get("start_date") or "9999"
-    return (-score, start, name)
+    start = row.get("start_date") or "0000-01-01"
+    return (-score, tuple(-ord(ch) for ch in start), name)
 
 
 def top_events(rows: list[dict], *, limit: int = 5) -> list[dict]:
@@ -133,13 +174,7 @@ def top_events(rows: list[dict], *, limit: int = 5) -> list[dict]:
     picked: list[dict] = []
     seen_family: set[str] = set()
     for row in gaming:
-        name = (row.get("event") or "").lower()
-        if "state of play" in name:
-            family = "state of play"
-        elif "nintendo direct" in name:
-            family = "nintendo direct"
-        else:
-            family = canonical_event_name(row)
+        family = event_family(row)
         if not family or family in seen_family:
             continue
         seen_family.add(family)
@@ -269,9 +304,25 @@ def build_payload() -> dict:
                 ],
             }
         )
+    start_label = nice_date(RANGE_START.isoformat())
+    end_label = nice_date(RANGE_END.isoformat())
     return {
         "as_of": date.today().isoformat(),
-        "range_label": f"{nice_date(RANGE_START.isoformat())} → {nice_date(RANGE_END.isoformat())}",
+        "range_label": f"{start_label} → {end_label}",
+        "kicker": f"Live desk · {RANGE_START.year}–{RANGE_END.year}",
+        "intro_title": "Which event windows are live?",
+        "intro_body": (
+            f"Top five merchandising events overlapping {start_label}–{end_label}, ranked like the Floor Brief desk: "
+            "confirmed showcases and expos first. Each card lists the event runtime, social engagement tags "
+            "(TikTok, Instagram, YouTube Shorts, X), and thirty catalog games to recommend — with product hashtags, "
+            "post windows, and SEO keywords. Console showcases keep first-party owned-studio games "
+            "(SIE on State of Play, Nintendo on Directs)."
+        ),
+        "intro_short": (
+            f"Top five merchandising events overlapping {start_label}–{end_label}. "
+            "Each card lists the event runtime, social engagement tags, and thirty catalog games to recommend. "
+            "Console showcases keep first-party owned-studio games."
+        ),
         "events": events,
     }
 
@@ -395,15 +446,15 @@ def render_html(payload: dict) -> str:
   <div class="aurora"></div>
   <header class="mast">
     <div>
-      <p class="kicker"><span class="pulse-dot"></span> Live desk · 2026–2030</p>
+      <p class="kicker"><span class="pulse-dot"></span> {html.escape(payload["kicker"])}</p>
       <h1>Floor Brief</h1>
     </div>
     <p class="range">Event window<br><b style="color:{INK}">{html.escape(payload["range_label"])}</b><br>As of {html.escape(payload["as_of"])}</p>
   </header>
   <main>
     <div class="intro">
-      <h2>Which event windows are live?</h2>
-      <p>Top five merchandising events overlapping 1 Sep 2026–31 Dec 2026, ranked like the Floor Brief desk: confirmed showcases and expos first. Each card lists the event runtime, social engagement tags (TikTok, Instagram, YouTube Shorts, X), and thirty catalog games to recommend — with product hashtags, post windows, and SEO keywords. Console showcases keep first-party owned-studio games (SIE on State of Play, Nintendo on Directs).</p>
+      <h2>{html.escape(payload["intro_title"])}</h2>
+      <p>{html.escape(payload["intro_body"])}</p>
     </div>
     {"".join(cards)}
   </main>
@@ -468,7 +519,7 @@ def write_pdf(payload: dict, path: Path) -> None:
         [
             [
                 [
-                    Paragraph("LIVE DESK · 2026–2030", left_wrap),
+                    Paragraph(payload["kicker"].upper(), left_wrap),
                     Paragraph("Floor Brief", title),
                 ],
                 [
@@ -494,15 +545,8 @@ def write_pdf(payload: dict, path: Path) -> None:
     )
     story.append(mast)
     story.append(Spacer(1, 8))
-    story.append(Paragraph("Which event windows are live?", h2))
-    story.append(
-        Paragraph(
-            "Top five merchandising events overlapping 1 Sep 2026–31 Dec 2026. "
-            "Each card lists the event runtime, social engagement tags, and thirty catalog games to recommend. "
-            "Console showcases keep first-party owned-studio games.",
-            body,
-        )
-    )
+    story.append(Paragraph(payload["intro_title"], h2))
+    story.append(Paragraph(html.escape(payload["intro_short"]), body))
     story.append(Spacer(1, 8))
 
     def text(value: str, style: ParagraphStyle) -> Paragraph:
@@ -664,7 +708,7 @@ def write_docx(payload: dict, path: Path) -> None:
     _shade(mast.cell(0, 0), BG)
     _shade(mast.cell(0, 1), BG)
     left = mast.cell(0, 0).paragraphs[0]
-    _run(left, "●  LIVE DESK · 2026–2030", size=9, color=CYAN, bold=True)
+    _run(left, payload["kicker"].upper(), size=9, color=CYAN, bold=True)
     title = mast.cell(0, 0).add_paragraph()
     _run(title, "Floor Brief", size=28, color=CYAN, bold=True, font="Arial")
     right = mast.cell(0, 1).paragraphs[0]
@@ -678,13 +722,11 @@ def write_docx(payload: dict, path: Path) -> None:
     _run(asof, f"As of {payload['as_of']}", size=10, color=MUTED)
 
     intro = dark_table(1, 1)
-    _run(intro.cell(0, 0).paragraphs[0], "Which event windows are live?", size=18, color=INK, bold=True, font="Arial")
+    _run(intro.cell(0, 0).paragraphs[0], payload["intro_title"], size=18, color=INK, bold=True, font="Arial")
     p = intro.cell(0, 0).add_paragraph()
     _run(
         p,
-        "Top five merchandising events overlapping 1 Sep 2026–31 Dec 2026. "
-        "Each card lists the event runtime, social engagement tags, and thirty catalog games to recommend. "
-        "Console showcases keep first-party owned-studio games.",
+        payload["intro_short"],
         size=11,
         color=MUTED,
     )
@@ -793,7 +835,20 @@ def _strip_docx_images(path: Path) -> None:
     path.write_bytes(buf.getvalue())
 
 
-def main() -> None:
+def configure(*, start: date, end: date, stem: str) -> None:
+    global RANGE_START, RANGE_END, STEM
+    RANGE_START = start
+    RANGE_END = end
+    STEM = stem
+
+
+def main(argv: list[str] | None = None) -> None:
+    parser = argparse.ArgumentParser(description="Export a Floor Brief top-event PDF and DOCX")
+    parser.add_argument("--start", default=RANGE_START.isoformat())
+    parser.add_argument("--end", default=RANGE_END.isoformat())
+    parser.add_argument("--stem", default=STEM)
+    args = parser.parse_args(argv)
+    configure(start=date.fromisoformat(args.start), end=date.fromisoformat(args.end), stem=args.stem)
     payload = build_payload()
     html_path = DOCS / f"{STEM}.html"
     pdf_path = DOCS / f"{STEM}.pdf"
