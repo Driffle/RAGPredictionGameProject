@@ -4,7 +4,12 @@ import unittest
 from datetime import date
 
 from src.date_range import range_span
-from src.promote import build_plans, correlate_calendar_event, products_for_event
+from src.promote import (
+    build_plans,
+    correlate_calendar_event,
+    products_for_event,
+    recommended_games_for_event,
+)
 from src.store import FloorStore
 
 
@@ -86,6 +91,24 @@ class PromoteCoverageTests(unittest.TestCase):
         self.assertIn("Marvel's Spider-Man 2", titles)
         self.assertNotIn("Final Fantasy VII Rebirth", titles)
         self.assertNotIn("Fable", titles)
+
+    def test_state_of_play_keeps_every_sie_game_not_just_one_franchise(self) -> None:
+        events = [_event("PlayStation State of Play September 2026", "2026-09-03", "2026-09-03")]
+        catalog = [
+            _product("God of War Ragnarök", publisher="Sony Interactive Entertainment", release_date="2022-11-09"),
+            _product("God of War Ragnarok - Digital Deluxe Edition Upgrade DLC", publisher="Sony Interactive Entertainment", product_type="dlc", release_date="2024-09-19"),
+            _product("Marvel's Wolverine", publisher="Sony Interactive Entertainment", product_type="announced", release_date="2026-09-15"),
+            _product("Ghost of Yōtei", publisher="Sony Interactive Entertainment", release_date="2025-10-02"),
+            _product("Death Stranding 2: On the Beach", publisher="Sony Interactive Entertainment", release_date="2025-06-26"),
+            _product("Intergalactic: The Heretic Prophet", publisher="Sony Interactive Entertainment", product_type="announced", release_date="2028-01-01"),
+        ]
+        titles = [row["canonical_title"] for row in recommended_games_for_event(events[0], catalog, limit=10)]
+        self.assertEqual(len(titles), 5)
+        self.assertIn("Marvel's Wolverine", titles)
+        self.assertIn("Ghost of Yōtei", titles)
+        self.assertIn("Death Stranding 2: On the Beach", titles)
+        self.assertIn("Intergalactic: The Heretic Prophet", titles)
+        self.assertNotIn("God of War Ragnarok - Digital Deluxe Edition Upgrade DLC", titles)
 
     def test_nintendo_direct_recommends_nintendo_published(self) -> None:
         events = [_event("Nintendo Direct June 2026", "2026-06-09", "2026-06-09")]

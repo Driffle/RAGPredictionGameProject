@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>Floor Brief · Sep–Dec 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Syne:wght@700;800&display=swap" rel="stylesheet"/>
+  <style>
+    :root { --bg:#07080F; --ink:#F4F7FF; --muted:#9AA6C3; --cyan:#5CE1E6; --magenta:#FF5CA8; --amber:#FFC14A; --card:#0E1222; --line:#2A3148; }
+    * { box-sizing:border-box; }
+    html, body { margin:0; background:var(--bg); color:var(--ink); font:15px/1.5 "IBM Plex Sans", "Segoe UI", sans-serif; }
+    body { -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+    .aurora { position:fixed; inset:0; pointer-events:none; background:
+      radial-gradient(900px 500px at 12% -10%, rgba(92,225,230,.22), transparent 55%),
+      radial-gradient(700px 420px at 90% 8%, rgba(255,92,168,.18), transparent 50%),
+      radial-gradient(600px 400px at 70% 90%, rgba(255,193,74,.1), transparent 55%); }
+    .mast, main { position:relative; z-index:1; }
+    .mast { display:flex; justify-content:space-between; align-items:flex-end; padding:28px 36px 18px; border-bottom:1px solid rgba(255,255,255,.12); }
+    .kicker { margin:0; letter-spacing:.16em; text-transform:uppercase; font-size:11px; color:var(--cyan); display:flex; align-items:center; gap:8px; }
+    .pulse-dot { width:8px; height:8px; border-radius:50%; background:var(--cyan); }
+    .mast h1 { margin:6px 0 0; font-family:Syne, Palatino, sans-serif; font-size:48px; letter-spacing:-.04em; line-height:.9;
+      background:linear-gradient(120deg,#fff 20%,var(--cyan) 50%,var(--magenta) 90%); -webkit-background-clip:text; background-clip:text; color:transparent; }
+    .range { color:var(--muted); font-size:13px; text-align:right; }
+    main { padding:28px 36px 48px; width:min(1100px,100%); }
+    .intro h2 { font-family:Syne, sans-serif; font-size:32px; margin:0 0 8px; letter-spacing:-.03em; }
+    .intro p { margin:0 0 22px; color:var(--muted); max-width:70ch; }
+    .lede, .card { background:rgba(14,18,34,.86); border:1px solid rgba(255,255,255,.12); border-radius:20px; padding:22px; margin:0 0 22px; }
+    .lede-hero { display:grid; grid-template-columns:140px 1fr; gap:18px; align-items:start; }
+    .lede-cover { width:140px; height:180px; object-fit:cover; border-radius:14px; background:rgba(255,255,255,.06); }
+    .event-title { margin:0 0 8px; font-family:Syne, sans-serif; font-size:30px; letter-spacing:-.03em; }
+    .action { font-size:17px; color:var(--amber); margin:0 0 6px; }
+    .badge-row { display:flex; flex-wrap:wrap; gap:8px; margin:0 0 12px; }
+    .badge { font-size:10px; letter-spacing:.08em; text-transform:uppercase; padding:5px 9px; border-radius:999px; border:1px solid rgba(255,255,255,.12); }
+    .badge.on { border-color:var(--cyan); color:var(--cyan); }
+    .badge.live { border-color:#7dffb0; color:#7dffb0; }
+    .kpis { display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin:16px 0; }
+    .kpi { border:1px solid rgba(255,255,255,.12); border-radius:14px; padding:10px 12px; background:rgba(255,255,255,.03); }
+    .kpi b { display:block; font-size:16px; }
+    .kpi span { color:var(--muted); font-size:10px; letter-spacing:.1em; text-transform:uppercase; }
+    h4 { margin:0 0 12px; letter-spacing:.08em; text-transform:uppercase; font-size:11px; color:var(--cyan); }
+    .media-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; }
+    .media-tile { position:relative; padding:12px 12px 12px 70px; min-height:78px; border:1px solid rgba(255,255,255,.12); border-radius:16px; background:linear-gradient(145deg,rgba(255,255,255,.05),rgba(92,225,230,.04)); }
+    .media-tile img, .thumb-empty { position:absolute; left:12px; top:12px; width:44px; height:58px; object-fit:cover; border-radius:8px; background:rgba(255,255,255,.08); }
+    .media-tile h5 { margin:0 0 4px; font:700 15px/1.25 Syne, sans-serif; }
+    .meta { margin:3px 0; color:var(--muted); font-size:12px; }
+    .rank { position:absolute; right:10px; top:8px; color:var(--cyan); font-size:10px; letter-spacing:.12em; }
+    .colophon { color:var(--muted); font-size:11px; padding:0 36px 28px; }
+    @page { size:A4; margin:12mm; }
+    @media print {
+      .lede { break-inside:avoid; page-break-inside:avoid; }
+    }
+  </style>
+</head>
+<body>
+  <div class="aurora"></div>
+  <header class="mast">
+    <div>
+      <p class="kicker"><span class="pulse-dot"></span> Live desk · 2026–2030</p>
+      <h1>Floor Brief</h1>
+    </div>
+    <p class="range">Event window<br><b style="color:F4F7FF">1 Sep 2026 → 31 Dec 2026</b><br>As of 2026-09-01</p>
+  </header>
+  <main>
+    <div class="intro">
+      <h2>Which event windows are live?</h2>
+      <p>Top five merchandising events overlapping 1 Sep 2026–31 Dec 2026, ranked like the Floor Brief desk: confirmed showcases and expos first. Each card lists the event runtime and the ten catalog games to recommend in that window. Console showcases keep first-party owned-studio games (SIE on State of Play, Nintendo on Directs).</p>
+    </div>
+    
+        <article class="lede">
+          <div class="lede-hero">
+            <img class="lede-cover" src="/media/artwork/placeholders/event-playstation-state-of-play-september-2026.svg" alt="">
+            <div>
+              <div class="badge-row">
+                <span class="badge on">#01 · Digital Showcase</span>
+                <span class="badge live">confirmed</span>
+                <span class="badge on">Sony Interactive Entertainment</span>
+                <span class="badge">digital</span>
+              </div>
+              <h3 class="event-title">PlayStation State of Play September 2026</h3>
+              <p class="action">Event runtime 3 Sep 2026</p>
+              <p class="meta">Online</p>
+            </div>
+          </div>
+          <div class="kpis">
+            <div class="kpi"><b>3 Sep 2026</b><span>Runtime start</span></div>
+            <div class="kpi"><b>3 Sep 2026</b><span>Runtime end</span></div>
+            <div class="kpi"><b>10</b><span>Recommended games</span></div>
+            <div class="kpi"><b>digital</b><span>Attendance</span></div>
+          </div>
+          <section class="card">
+            <h4>Mapped products · top 10 recommended games</h4>
+            <div class="media-grid">
+            <article class="media-tile">
+              <span class="rank">#01</span>
+              <img src="/media/artwork/placeholders/product-god-of-war-laufey.svg" alt="">
+              <h5>God of War Laufey</h5>
+              <p class="meta">16 Feb 2027 · announced</p>
+              <p class="meta">PS5</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#02</span>
+              <img src="https://upload.wikimedia.org/wikipedia/en/5/53/Intergalactic_The_Heretic_Prophet_poster.png?utm_source=en.wikipedia.org&amp;utm_campaign=api&amp;utm_content=thumbnail_unscaled" alt="">
+              <h5>Intergalactic: The Heretic Prophet</h5>
+              <p class="meta">31 Dec 2028 · announced</p>
+              <p class="meta">PlayStation 5</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#03</span>
+              <img src="https://upload.wikimedia.org/wikipedia/en/3/3d/Marvel%27s_Wolverine_cover_art.jpg?utm_source=en.wikipedia.org&amp;utm_campaign=api&amp;utm_content=thumbnail_unscaled" alt="">
+              <h5>Marvel&#x27;s Wolverine</h5>
+              <p class="meta">15 Sep 2026 · announced</p>
+              <p class="meta">PlayStation 5</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#04</span>
+              <img src="https://upload.wikimedia.org/wikipedia/en/e/e0/Death_Stranding_2_Icon.jpg?utm_source=en.wikipedia.org&amp;utm_campaign=api&amp;utm_content=thumbnail_unscaled" alt="">
+              <h5>Death Stranding 2: On the Beach</h5>
+              <p class="meta">26 Jun 2025 · announced</p>
+              <p class="meta">PlayStation 5</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#05</span>
+              <img src="https://upload.wikimedia.org/wikipedia/en/1/18/Ghost_of_Y%C5%8Dtei_cover_art.png?utm_source=en.wikipedia.org&amp;utm_campaign=api&amp;utm_content=thumbnail_unscaled" alt="">
+              <h5>Ghost of Yōtei</h5>
+              <p class="meta">2 Oct 2025 · announced</p>
+              <p class="meta">PlayStation 5</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#06</span>
+              <img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/fd/God_of_War_Sons_of_Sparta.webp/330px-God_of_War_Sons_of_Sparta.webp.png?utm_source=en.wikipedia.org&amp;utm_campaign=api&amp;utm_content=thumbnail" alt="">
+              <h5>God of War: Sons of Sparta</h5>
+              <p class="meta">12 Feb 2026 · announced</p>
+              <p class="meta">PS5</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#07</span>
+              <img src="https://upload.wikimedia.org/wikipedia/en/8/8e/MarvelTokonFinal.jpg?utm_source=en.wikipedia.org&amp;utm_campaign=api&amp;utm_content=thumbnail_unscaled" alt="">
+              <h5>Marvel Tokon: Fighting Souls</h5>
+              <p class="meta">6 Aug 2026 · announced</p>
+              <p class="meta">WIN</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#08</span>
+              <img src="/media/artwork/placeholders/product-mlb-the-show.svg" alt="">
+              <h5>MLB The Show</h5>
+              <p class="meta">26 May 2026 · announced</p>
+              <p class="meta">iOS</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#09</span>
+              <img src="/media/artwork/placeholders/product-astro-bot.svg" alt="">
+              <h5>Astro Bot</h5>
+              <p class="meta">6 Sep 2024 · game</p>
+              <p class="meta">PSN</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#10</span>
+              <img src="/media/artwork/placeholders/product-bloodborne.svg" alt="">
+              <h5>Bloodborne</h5>
+              <p class="meta">15 Mar 2015 · game</p>
+              <p class="meta">PSN</p>
+            </article></div>
+          </section>
+        </article>
+        <article class="lede">
+          <div class="lede-hero">
+            <img class="lede-cover" src="/media/artwork/placeholders/event-nintendo-direct-september.svg" alt="">
+            <div>
+              <div class="badge-row">
+                <span class="badge on">#02 · Digital Showcase</span>
+                <span class="badge live">planning</span>
+                <span class="badge on">Nintendo</span>
+                <span class="badge">digital</span>
+              </div>
+              <h3 class="event-title">Nintendo Direct (September)</h3>
+              <p class="action">Event runtime 12 Sep 2026</p>
+              <p class="meta">Kyoto, Japan · Online / worldwide</p>
+            </div>
+          </div>
+          <div class="kpis">
+            <div class="kpi"><b>12 Sep 2026</b><span>Runtime start</span></div>
+            <div class="kpi"><b>12 Sep 2026</b><span>Runtime end</span></div>
+            <div class="kpi"><b>10</b><span>Recommended games</span></div>
+            <div class="kpi"><b>digital</b><span>Attendance</span></div>
+          </div>
+          <section class="card">
+            <h4>Mapped products · top 10 recommended games</h4>
+            <div class="media-grid">
+            <article class="media-tile">
+              <span class="rank">#01</span>
+              <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/af/Fire_Emblem_Fortune%27s_Weave_cover.jpg/330px-Fire_Emblem_Fortune%27s_Weave_cover.jpg?utm_source=en.wikipedia.org&amp;utm_campaign=api&amp;utm_content=thumbnail" alt="">
+              <h5>Fire Emblem: Fortune&#x27;s Weave</h5>
+              <p class="meta">17 Sep 2026 · announced</p>
+              <p class="meta">NS2</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#02</span>
+              <img src="/media/artwork/placeholders/product-nintendo-switch-sports-resort.svg" alt="">
+              <h5>Nintendo Switch Sports Resort</h5>
+              <p class="meta">22 Oct 2026 · announced</p>
+              <p class="meta">NS2</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#03</span>
+              <img src="/media/artwork/placeholders/product-pokémon-waves.svg" alt="">
+              <h5>Pokémon Waves</h5>
+              <p class="meta">1 Jan 2027 · announced</p>
+              <p class="meta">Multi</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#04</span>
+              <img src="/media/artwork/placeholders/product-pokémon-winds.svg" alt="">
+              <h5>Pokémon Winds</h5>
+              <p class="meta">1 Jan 2027 · announced</p>
+              <p class="meta">Multi</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#05</span>
+              <img src="/media/artwork/placeholders/product-xenoblade-chronicles-3-nintendo-switch-2-edition.svg" alt="">
+              <h5>Xenoblade Chronicles 3 – Nintendo Switch 2 Edition</h5>
+              <p class="meta">3 Dec 2026 · announced</p>
+              <p class="meta">NS2</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#06</span>
+              <img src="https://upload.wikimedia.org/wikipedia/en/1/1f/Animal_Crossing_New_Horizons.jpg?utm_source=en.wikipedia.org&amp;utm_campaign=api&amp;utm_content=thumbnail_unscaled" alt="">
+              <h5>Animal Crossing: New Horizons</h5>
+              <p class="meta">15 Jan 2026 · announced</p>
+              <p class="meta">Multi</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#07</span>
+              <img src="https://upload.wikimedia.org/wikipedia/en/1/1f/Animal_Crossing_New_Horizons.jpg?utm_source=en.wikipedia.org&amp;utm_campaign=api&amp;utm_content=thumbnail_unscaled" alt="">
+              <h5>Animal Crossing: New Horizons – Nintendo Switch 2 Edition</h5>
+              <p class="meta">15 Jan 2026 · announced</p>
+              <p class="meta">NS2</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#08</span>
+              <img src="https://upload.wikimedia.org/wikipedia/en/0/08/Balloon-kid.jpg?utm_source=en.wikipedia.org&amp;utm_campaign=api&amp;utm_content=thumbnail_unscaled" alt="">
+              <h5>Balloon Kid</h5>
+              <p class="meta">4 Feb 2026 · announced</p>
+              <p class="meta">NS</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#09</span>
+              <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/DonkeyKong64CoverArt.jpg/330px-DonkeyKong64CoverArt.jpg?utm_source=en.wikipedia.org&amp;utm_campaign=api&amp;utm_content=thumbnail" alt="">
+              <h5>Donkey Kong 64</h5>
+              <p class="meta">4 Jun 2026 · announced</p>
+              <p class="meta">NS</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#10</span>
+              <img src="/media/artwork/placeholders/product-dr-mario-puzzle-league.svg" alt="">
+              <h5>Dr. Mario &amp; Puzzle League</h5>
+              <p class="meta">7 Jul 2026 · announced</p>
+              <p class="meta">NS</p>
+            </article></div>
+          </section>
+        </article>
+        <article class="lede">
+          <div class="lede-hero">
+            <img class="lede-cover" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Tgs2008_gates.jpg/330px-Tgs2008_gates.jpg?utm_source=en.wikipedia.org&amp;utm_campaign=api&amp;utm_content=thumbnail" alt="">
+            <div>
+              <div class="badge-row">
+                <span class="badge on">#03 · Gaming Expo</span>
+                <span class="badge live">confirmed</span>
+                
+                <span class="badge">physical</span>
+              </div>
+              <h3 class="event-title">Tokyo Game Show 2026</h3>
+              <p class="action">Event runtime 17 Sep 2026 → 21 Sep 2026</p>
+              <p class="meta">Makuhari Messe, Chiba</p>
+            </div>
+          </div>
+          <div class="kpis">
+            <div class="kpi"><b>17 Sep 2026</b><span>Runtime start</span></div>
+            <div class="kpi"><b>21 Sep 2026</b><span>Runtime end</span></div>
+            <div class="kpi"><b>10</b><span>Recommended games</span></div>
+            <div class="kpi"><b>physical</b><span>Attendance</span></div>
+          </div>
+          <section class="card">
+            <h4>Mapped products · top 10 recommended games</h4>
+            <div class="media-grid">
+            <article class="media-tile">
+              <span class="rank">#01</span>
+              <img src="https://upload.wikimedia.org/wikipedia/en/2/2c/Virtual_Boy_Dragon_Hopper_cover_art.jpg?utm_source=en.wikipedia.org&amp;utm_campaign=api&amp;utm_content=thumbnail_unscaled" alt="">
+              <h5>Dragon Hopper</h5>
+              <p class="meta">4 Aug 2026 · announced</p>
+              <p class="meta">NS</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#02</span>
+              <img src="https://upload.wikimedia.org/wikipedia/en/a/a1/Final_Fantasy_XIV%2C_A_Realm_Reborn_box_cover.jpg?utm_source=en.wikipedia.org&amp;utm_campaign=api&amp;utm_content=thumbnail_unscaled" alt="">
+              <h5>Final Fantasy XIV: Evercold</h5>
+              <p class="meta">1 Jan 2027 · announced</p>
+              <p class="meta">WIN</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#03</span>
+              <img src="/media/artwork/placeholders/product-aggelos-2.svg" alt="">
+              <h5>Aggelos 2</h5>
+              <p class="meta">27 Aug 2026 · game</p>
+              <p class="meta">Nintendo</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#04</span>
+              <img src="/media/artwork/placeholders/product-lous-lagoon.svg" alt="">
+              <h5>Lou&#x27;s Lagoon</h5>
+              <p class="meta">27 Aug 2026 · game</p>
+              <p class="meta">Steam</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#05</span>
+              <img src="https://upload.wikimedia.org/wikipedia/en/1/14/Metal_Gear_2_Boxart.JPG?utm_source=en.wikipedia.org&amp;utm_campaign=api&amp;utm_content=thumbnail_unscaled" alt="">
+              <h5>Metal Gear Solid Master Collection Vol. 2</h5>
+              <p class="meta">27 Aug 2026 · game</p>
+              <p class="meta">Nintendo</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#06</span>
+              <img src="https://upload.wikimedia.org/wikipedia/en/9/95/Resonance_cover_art.jpg?utm_source=en.wikipedia.org&amp;utm_campaign=api&amp;utm_content=thumbnail_unscaled" alt="">
+              <h5>Resonance A Plague Tale Legacy</h5>
+              <p class="meta">27 Aug 2026 · game</p>
+              <p class="meta">Xbox Live</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#07</span>
+              <img src="https://upload.wikimedia.org/wikipedia/en/9/95/Star_Wars_Zero_Company_cover_art.jpg?utm_source=en.wikipedia.org&amp;utm_campaign=api&amp;utm_content=thumbnail_unscaled" alt="">
+              <h5>STAR WARS Zero Company</h5>
+              <p class="meta">27 Aug 2026 · game</p>
+              <p class="meta">Steam</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#08</span>
+              <img src="/media/artwork/placeholders/product-aggelos-ii.svg" alt="">
+              <h5>Aggelos II</h5>
+              <p class="meta">27 Aug 2026 · announced</p>
+              <p class="meta">WIN</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#09</span>
+              <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Brigandine_The_Legend_of_Runersia_coverart.png?utm_source=en.wikipedia.org&amp;utm_campaign=api&amp;utm_content=thumbnail_unscaled" alt="">
+              <h5>Brigandine: Abyss</h5>
+              <p class="meta">27 Aug 2026 · announced</p>
+              <p class="meta">NS2</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#10</span>
+              <img src="https://upload.wikimedia.org/wikipedia/en/6/61/Hakuoki_video_game_key_visual.jpg?utm_source=en.wikipedia.org&amp;utm_campaign=api&amp;utm_content=thumbnail_unscaled" alt="">
+              <h5>Hakuoki Ibun: Berezinskii no Majo</h5>
+              <p class="meta">27 Aug 2026 · announced</p>
+              <p class="meta">NS</p>
+            </article></div>
+          </section>
+        </article>
+        <article class="lede">
+          <div class="lede-hero">
+            <img class="lede-cover" src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9c/Steam_%28service%29.png/330px-Steam_%28service%29.png?utm_source=en.wikipedia.org&amp;utm_campaign=api&amp;utm_content=thumbnail" alt="">
+            <div>
+              <div class="badge-row">
+                <span class="badge on">#04 · Digital Festival</span>
+                <span class="badge live">planning</span>
+                
+                <span class="badge">digital</span>
+              </div>
+              <h3 class="event-title">Steam Next Fest (October)</h3>
+              <p class="action">Event runtime 13 Oct 2026 → 20 Oct 2026</p>
+              <p class="meta">Bellevue, United States · Online / worldwide</p>
+            </div>
+          </div>
+          <div class="kpis">
+            <div class="kpi"><b>13 Oct 2026</b><span>Runtime start</span></div>
+            <div class="kpi"><b>20 Oct 2026</b><span>Runtime end</span></div>
+            <div class="kpi"><b>10</b><span>Recommended games</span></div>
+            <div class="kpi"><b>digital</b><span>Attendance</span></div>
+          </div>
+          <section class="card">
+            <h4>Mapped products · top 10 recommended games</h4>
+            <div class="media-grid">
+            <article class="media-tile">
+              <span class="rank">#01</span>
+              <img src="https://upload.wikimedia.org/wikipedia/en/8/82/Serious_Sam_-_Shatterverse.jpg?utm_source=en.wikipedia.org&amp;utm_campaign=api&amp;utm_content=thumbnail_unscaled" alt="">
+              <h5>Serious Sam: Shatterverse</h5>
+              <p class="meta">31 Aug 2026 · announced</p>
+              <p class="meta">WIN</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#02</span>
+              <img src="/media/artwork/placeholders/product-cupid-paraside.svg" alt="">
+              <h5>Cupid Paraside</h5>
+              <p class="meta">22 Sep 2026 · game</p>
+              <p class="meta">Steam</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#03</span>
+              <img src="https://upload.wikimedia.org/wikipedia/en/6/6e/Tigger%27s_Honey_Hunt_Coverart.png?utm_source=en.wikipedia.org&amp;utm_campaign=api&amp;utm_content=thumbnail_unscaled" alt="">
+              <h5>Rivage</h5>
+              <p class="meta">22 Sep 2026 · game</p>
+              <p class="meta">Xbox Live</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#04</span>
+              <img src="/media/artwork/placeholders/product-stuntboost.svg" alt="">
+              <h5>STUNTBOOST</h5>
+              <p class="meta">22 Sep 2026 · game</p>
+              <p class="meta">Steam</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#05</span>
+              <img src="https://upload.wikimedia.org/wikipedia/en/6/64/Cupid_Parasite_cover.png?utm_source=en.wikipedia.org&amp;utm_campaign=api&amp;utm_content=thumbnail_unscaled" alt="">
+              <h5>Cupid Parasite</h5>
+              <p class="meta">22 Sep 2026 · announced</p>
+              <p class="meta">WIN</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#06</span>
+              <img src="https://upload.wikimedia.org/wikipedia/en/e/ef/Dune_Awakening_cover_art.jpg?utm_source=en.wikipedia.org&amp;utm_campaign=api&amp;utm_content=thumbnail_unscaled" alt="">
+              <h5>Dune: Awakening</h5>
+              <p class="meta">22 Sep 2026 · announced</p>
+              <p class="meta">PS5</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#07</span>
+              <img src="/media/artwork/placeholders/product-ebitapes.svg" alt="">
+              <h5>EbiTapes</h5>
+              <p class="meta">22 Sep 2026 · announced</p>
+              <p class="meta">WIN</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#08</span>
+              <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/af/Fallout.jpg/330px-Fallout.jpg?utm_source=en.wikipedia.org&amp;utm_campaign=api&amp;utm_content=thumbnail" alt="">
+              <h5>Well Dweller</h5>
+              <p class="meta">22 Sep 2026 · announced</p>
+              <p class="meta">WIN</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#09</span>
+              <img src="https://upload.wikimedia.org/wikipedia/en/5/59/BladeRunner_PC_Game_%28Front_Cover%29.jpg?utm_source=en.wikipedia.org&amp;utm_campaign=api&amp;utm_content=thumbnail_unscaled" alt="">
+              <h5>Wind Runners</h5>
+              <p class="meta">23 Sep 2026 · game</p>
+              <p class="meta">Steam</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#10</span>
+              <img src="/media/artwork/placeholders/product-winmon.svg" alt="">
+              <h5>WinMon</h5>
+              <p class="meta">23 Sep 2026 · game</p>
+              <p class="meta">Steam</p>
+            </article></div>
+          </section>
+        </article>
+        <article class="lede">
+          <div class="lede-hero">
+            <img class="lede-cover" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/The_Game_Awards_Logo_2024.svg/330px-The_Game_Awards_Logo_2024.svg.png?utm_source=en.wikipedia.org&amp;utm_campaign=api&amp;utm_content=thumbnail" alt="">
+            <div>
+              <div class="badge-row">
+                <span class="badge on">#05 · Awards + Showcase</span>
+                <span class="badge live">confirmed</span>
+                
+                <span class="badge">hybrid</span>
+              </div>
+              <h3 class="event-title">The Game Awards 2026</h3>
+              <p class="action">Event runtime 10 Dec 2026</p>
+              <p class="meta">Peacock Theater, Los Angeles</p>
+            </div>
+          </div>
+          <div class="kpis">
+            <div class="kpi"><b>10 Dec 2026</b><span>Runtime start</span></div>
+            <div class="kpi"><b>10 Dec 2026</b><span>Runtime end</span></div>
+            <div class="kpi"><b>10</b><span>Recommended games</span></div>
+            <div class="kpi"><b>hybrid</b><span>Attendance</span></div>
+          </div>
+          <section class="card">
+            <h4>Mapped products · top 10 recommended games</h4>
+            <div class="media-grid">
+            <article class="media-tile">
+              <span class="rank">#01</span>
+              <img src="https://upload.wikimedia.org/wikipedia/en/4/46/Grand_Theft_Auto_VI.png?utm_source=en.wikipedia.org&amp;utm_campaign=api&amp;utm_content=thumbnail_unscaled" alt="">
+              <h5>Grand Theft Auto VI</h5>
+              <p class="meta">19 Nov 2026 · game</p>
+              <p class="meta">Rockstar Games</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#02</span>
+              <img src="/media/artwork/placeholders/product-the-binding-of-isaac-repentance.svg" alt="">
+              <h5>The Binding of Isaac: Repentance+</h5>
+              <p class="meta">19 Nov 2026 · announced</p>
+              <p class="meta">NS2</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#03</span>
+              <img src="/media/artwork/placeholders/product-volvys-adventure-reslimed.svg" alt="">
+              <h5>Volvy’s Adventure: Reslimed</h5>
+              <p class="meta">19 Nov 2026 · announced</p>
+              <p class="meta">WIN</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#04</span>
+              <img src="/media/artwork/placeholders/product-gothic-3-classic.svg" alt="">
+              <h5>Gothic 3 Classic</h5>
+              <p class="meta">24 Nov 2026 · announced</p>
+              <p class="meta">PS4</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#05</span>
+              <img src="/media/artwork/placeholders/product-expelled-from-paradise.svg" alt="">
+              <h5>Expelled from Paradise</h5>
+              <p class="meta">26 Nov 2026 · announced</p>
+              <p class="meta">WIN</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#06</span>
+              <img src="/media/artwork/placeholders/product-kimiiro-patra-if.svg" alt="">
+              <h5>Kimiiro Patra IF</h5>
+              <p class="meta">26 Nov 2026 · announced</p>
+              <p class="meta">WIN</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#07</span>
+              <img src="/media/artwork/placeholders/product-koganei-so-and-the-golden-swallowtail-butterfly.svg" alt="">
+              <h5>Koganei-so and the Golden Swallowtail Butterfly</h5>
+              <p class="meta">26 Nov 2026 · announced</p>
+              <p class="meta">Multi</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#08</span>
+              <img src="/media/artwork/placeholders/product-10.svg" alt="">
+              <h5>10</h5>
+              <p class="meta">1 Dec 2026 · announced</p>
+              <p class="meta">The Game Awards 2026 is scheduled to be held at the Peacock Theater in Los Angeles.</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#09</span>
+              <img src="/media/artwork/placeholders/product-dumpster-gang.svg" alt="">
+              <h5>Dumpster Gang</h5>
+              <p class="meta">1 Dec 2026 · announced</p>
+              <p class="meta">WIN</p>
+            </article>
+            <article class="media-tile">
+              <span class="rank">#10</span>
+              <img src="https://upload.wikimedia.org/wikipedia/en/5/58/Scott_Pilgrim_EX_artwork.jpg?utm_source=en.wikipedia.org&amp;utm_campaign=api&amp;utm_content=thumbnail_unscaled" alt="">
+              <h5>The Adventures of Bryan Scott</h5>
+              <p class="meta">1 Dec 2026 · announced</p>
+              <p class="meta">Multi</p>
+            </article></div>
+          </section>
+        </article>
+  </main>
+  <p class="colophon">Floor Brief · mapped products from the live catalog and promotion plans · 2026-09-01</p>
+</body>
+</html>

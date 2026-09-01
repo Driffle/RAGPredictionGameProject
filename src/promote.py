@@ -341,7 +341,14 @@ def _parsed_end(row: dict) -> date | None:
 
 
 def _is_junk_title(title: str) -> bool:
-    return bool(re.search(r"playgrounds|mobile|arcade|random 1 key|try to get", title or "", re.I))
+    return bool(
+        re.search(
+            r"playgrounds|mobile|arcade|random 1 key|try to get|\bbundle\b|kickoff|"
+            r"^\d[\d.]*\s+.+\bsequel\b",
+            title or "",
+            re.I,
+        )
+    )
 
 
 def event_bucket(row: dict) -> str:
@@ -503,6 +510,79 @@ def _products_in_bucket(
     return chosen
 
 
+def select_owned_games(catalog: list[dict], spec, *, limit: int | None = 10) -> list[dict]:
+    """Unique first-party games for a showcase owner, announced and upcoming first."""
+    today = date.today().isoformat()
+    scored: list[tuple[tuple, dict]] = []
+    for item in catalog:
+        if not is_owned_product(item, spec):
+            continue
+        title = item.get("canonical_title") or item.get("product_title") or ""
+        if _is_junk_title(title) or product_role(item) != "game":
+            continue
+        announced = 0 if (item.get("product_type") or "").lower() == "announced" else 1
+        release = item.get("release_date") or ""
+        future = 0 if release >= today else 1
+        scored.append(((announced, future, release, title.lower()), item))
+    scored.sort(key=lambda item: item[0][2] or "", reverse=True)
+    scored.sort(key=lambda item: (item[0][0], item[0][1], item[0][3]))
+    chosen: list[dict] = []
+    seen: set[str] = set()
+    for _, item in scored:
+        key = base_edition_title(item.get("canonical_title") or "").lower()
+        if not key or key in seen:
+            continue
+        seen.add(key)
+        chosen.append(item)
+        if limit and len(chosen) >= limit:
+            break
+    return chosen
+
+
+def recommended_games_for_event(
+    row: dict,
+    catalog: list[dict],
+    *,
+    limit: int = 10,
+    title_index: dict[str, list[dict]] | None = None,
+) -> list[dict]:
+    """Top catalog games to merchandise for this event window."""
+    owner = showcase_owner(calendar_label(row))
+    if owner:
+        owned = select_owned_games(catalog, owner, limit=limit)
+        if owned:
+            return owned
+    picked = products_for_event(row, catalog, title_index=title_index)
+    games: list[dict] = []
+    seen: set[str] = set()
+
+    def add(item: dict) -> None:
+        title = item.get("canonical_title") or item.get("product_title") or ""
+        if not title or _is_junk_title(title) or product_role(item) != "game":
+            return
+        key = base_edition_title(title).lower()
+        if not key or key in seen:
+            return
+        seen.add(key)
+        games.append(item)
+
+    for item in picked:
+        add(item)
+        if len(games) >= limit:
+            return games[:limit]
+    for item in _products_near_window(row, catalog, limit=limit):
+        add(item)
+        if len(games) >= limit:
+            return games[:limit]
+    bucket = event_bucket(row)
+    pool = [item for item in catalog if product_bucket(item) == bucket]
+    for item in _products_in_bucket(row, pool or catalog, limit=limit):
+        add(item)
+        if len(games) >= limit:
+            return games[:limit]
+    return games[:limit]
+
+
 def products_for_event(
     row: dict,
     catalog: list[dict],
@@ -516,32 +596,9 @@ def products_for_event(
     """At least one catalog SKU for this event: franchise, window, then bucket."""
     owner = showcase_owner(calendar_label(row))
     if owner:
-        owned = [
-            item
-            for item in catalog
-            if is_owned_product(item, owner) and not _is_junk_title(item.get("canonical_title") or "")
-        ]
-        if owned:
-            queries = owned_search_queries(owner)
-            chosen = _select_products(
-                owned,
-                queries,
-                title_index=title_index,
-                game_limit=8,
-                max_total=10,
-            )
-            if len(chosen) < 4:
-                seen = {(item.get("canonical_title") or "").lower() for item in chosen}
-                extra = [
-                    item
-                    for item in owned
-                    if product_role(item) == "game"
-                    and (item.get("canonical_title") or "").lower() not in seen
-                ]
-                extra.sort(key=lambda item: item.get("release_date") or "", reverse=True)
-                chosen.extend(extra[: 8 - len(chosen)])
-            if chosen:
-                return chosen
+        chosen = select_owned_games(catalog, owner, limit=10)
+        if chosen:
+            return chosen
     queries = queries_for_calendar_row(row)
     label = calendar_label(row).lower()
     rank_queries = [query for query in queries if query != label]
