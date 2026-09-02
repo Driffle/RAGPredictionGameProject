@@ -271,11 +271,19 @@ function uniqueEventResults(rows) {
     const name = raw.toLowerCase().replace(/\s+20\d{2}\s*$/, "");
     const start = String(row.start || row.runtime_start || row.event_start || "").slice(0, 10);
     const key = `${name}|${start}`;
-    if (!name || isQuarterTimeframe(raw) || seen.has(key)) continue;
+    if (!name || isQuarterTimeframe(raw) || isProductReleaseWindow(row) || seen.has(key)) continue;
     seen.add(key);
     out.push(row);
   }
   return out;
+}
+
+function isProductReleaseWindow(row) {
+  const name = String(row?.name || row?.event || row || "").toLowerCase();
+  const type = String(row?.type || row?.event_type || "").toLowerCase();
+  const source = String(row?.source || "").toLowerCase();
+  const category = String(row?.category || "").toLowerCase();
+  return source === "announced_product_window" || type === "product release" || name.includes("release window") || category.includes("announced product");
 }
 
 function calendarRangeParams() {

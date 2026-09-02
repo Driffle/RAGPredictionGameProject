@@ -66,6 +66,26 @@ def calendar_name(row: dict) -> str:
     return (row.get("event") or row.get("ip_adaptation") or row.get("name") or "").strip()
 
 
+def is_product_release_window(row: dict | str | None) -> bool:
+    """True for merchandising pads around a SKU launch, not a named event."""
+    if not isinstance(row, dict):
+        name = str(row or "").lower()
+        return "release window" in name
+    source = (row.get("source") or "").lower()
+    event_type = (row.get("event_type") or row.get("type") or row.get("medium") or "").lower()
+    category = (row.get("category") or "").lower()
+    name = calendar_name(row).lower()
+    if source == "announced_product_window":
+        return True
+    if event_type == "product release":
+        return True
+    if "release window" in name:
+        return True
+    if "announced product" in category:
+        return True
+    return False
+
+
 def is_quarter_timeframe(value: dict | str | None) -> bool:
     """True when a listing is a Q1–Q4 window, not a named event."""
     name = calendar_name(value) if isinstance(value, dict) else (value or "")

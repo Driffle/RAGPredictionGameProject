@@ -197,18 +197,22 @@ def calendar_range_payload(
     products_per_event: int = 10,
 ) -> dict:
     """List overlapping events with promote / cross-sell products for each."""
-    from src.calendar_dedupe import dedupe_calendar_rows, unique_event_listings
+    from src.calendar_dedupe import dedupe_calendar_rows, is_product_release_window, unique_event_listings
     from src.cross_sell import cross_sell_payload
 
     start_year, start_month = parse_month_year(start_year, start_month)
     end_year, end_month = parse_month_year(end_year, end_month)
     range_start, range_end = range_span(start_year, start_month, end_year, end_month)
 
-    pool = list(events) + list(adaptations)
+    pool = [row for row in list(events) + list(adaptations) if not is_product_release_window(row)]
     matched = unique_event_listings(
         dedupe_calendar_rows(events_in_range(pool, range_start, range_end, kind=kind, precision=precision))
     )
-    matched = [row for row in matched if event_on_or_after_horizon(row)][: max(1, limit)]
+    matched = [
+        row
+        for row in matched
+        if event_on_or_after_horizon(row) and not is_product_release_window(row)
+    ][: max(1, limit)]
 
     event_cards = []
     all_titles: dict[str, dict] = {}
@@ -296,7 +300,7 @@ def calendar_range_payload(
         "unique_products": len(all_titles),
         "in_short": [
             f"Range {range_start.isoformat()} → {range_end.isoformat()}.",
-            f"{len(event_cards)} event / release windows overlap this period.",
+            f"{len(event_cards)} events overlap this period.",
             f"{exact_count} have a confirmed day; the rest are month/quarter/year windows.",
             f"{with_products} windows have promote / cross-sell products mapped.",
             f"{len(all_titles)} unique catalog titles appear across those windows.",
