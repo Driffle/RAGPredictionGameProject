@@ -49,6 +49,15 @@ def _product(title: str, **extra) -> dict:
 
 
 class PromoteCoverageTests(unittest.TestCase):
+    def test_generic_expo_gets_at_least_ten_games(self) -> None:
+        events = [_event("Gamescom", "2026-08-26", "2026-08-30")]
+        catalog = [
+            _product(f"Expo Game {index:02d}", platform="Steam", release_date=f"2026-0{(index % 8) + 1}-{(index % 27) + 1:02d}")
+            for index in range(1, 16)
+        ]
+        titles = [row["canonical_title"] for row in recommended_games_for_event(events[0], catalog, limit=10)]
+        self.assertGreaterEqual(len(titles), 10)
+
     def test_generic_expo_gets_a_catalog_product(self) -> None:
         events = [_event("Gamescom", "2026-08-26", "2026-08-30")]
         catalog = [_product("Fable", platform="Xbox Series X/S", release_date="2026-09-01")]

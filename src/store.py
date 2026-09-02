@@ -26,12 +26,14 @@ from src.load_data import load_adaptations, load_catalog, load_events
 from src.match import franchise_keys_for_text, superhero_universe_for_row
 from src.orders import ORDER_YEARS, load_order_dashboard
 from src.promote import (
+    MIN_EVENT_GAME_RECS,
     build_plans,
     correlate_calendar_event,
     correlation_indexes,
     make_promotion_plan,
     plans_active_on,
     product_role,
+    recommended_games_for_event,
 )
 from src.priorities import (
     filter_trend_bundle,
@@ -922,7 +924,10 @@ class FloorStore:
                 if title and title.lower() not in seen:
                     seen.add(title.lower())
                     products.append(self._title_card(title))
-        products = self._backfill_owned_products(name, prioritize_owned(name, products))
+        products = self._ensure_min_event_games(
+            row,
+            self._backfill_owned_products(name, prioritize_owned(name, products), limit=MIN_EVENT_GAME_RECS),
+        )
         start = row.get("start_date") or ""
         end = row.get("end_date") or start
         live = bool(start and start <= today <= (end or start))
@@ -1029,7 +1034,7 @@ class FloorStore:
             range_end=range_end,
         )[:12]
         universe = superhero_universe_for_row(row)
-        product_cap = 36 if universe else 12
+        product_cap = 36 if universe else max(12, MIN_EVENT_GAME_RECS)
         window_cap = 16 if universe else 8
         kit_limit = 16 if universe else 8
         synced_windows = related_plans[:window_cap]
@@ -1110,8 +1115,13 @@ class FloorStore:
             }
             return out
 
-        products = self._backfill_owned_products(
-            label, [enrich(plan) for plan in payload.get("products") or []]
+        products = self._ensure_min_event_games(
+            row,
+            self._backfill_owned_products(
+                label, [enrich(plan) for plan in payload.get("products") or []], limit=MIN_EVENT_GAME_RECS
+            ),
+        ) if row else self._backfill_owned_products(
+            label, [enrich(plan) for plan in payload.get("products") or []], limit=MIN_EVENT_GAME_RECS
         )
         by_role: dict[str, list[dict]] = {}
         for item in products:
@@ -1181,7 +1191,7 @@ class FloorStore:
             kind=kind,
             precision=precision,
             limit=limit,
-            products_per_event=8,
+            products_per_event=MIN_EVENT_GAME_RECS,
         )
         enriched_events = []
         range_plans: list[dict] = []
@@ -1189,7 +1199,11 @@ class FloorStore:
             art = _cover(card.get("name"), "event")
             products = []
             event_name = card.get("name") or ""
-            for product in card.get("products") or []:
+            event_row = self.resolve_event(event_name)
+            source_products = list(card.get("products") or [])
+            if event_row:
+                source_products = self._ensure_min_event_games(event_row, source_products)
+            for product in source_products:
                 title = product.get("canonical_title") or ""
                 part = _cover(title, "product")
                 row = _public_social(
@@ -1205,6 +1219,8 @@ class FloorStore:
                     "image_url": art.get("image_url") or "",
                     "image_source": art.get("source") or "",
                     "products": products,
+                    "product_count": len(products),
+                    "game_count": sum(1 for item in products if (item.get("role") or "game") == "game"),
                     "content_marketing": kit,
                     "top_hashtags": ((kit.get("correlations") or [{}])[0].get("top_hashtags") or [])[:4],
                 }
@@ -1467,7 +1483,44 @@ class FloorStore:
             product["year_max_events"] = filled
         return product
 
-    def _backfill_owned_products(self, event: str, products: list[dict], *, limit: int = 8) -> list[dict]:
+    def _is_event_game_rec(self, item: dict) -> bool:
+        role = (item.get("role") or "").lower()
+        if role:
+            return role == "game"
+        types = {str(kind).lower() for kind in (item.get("product_types") or [])}
+        if types & {"dlc", "currency", "edition"} and not (types & {"game", "announced"}):
+            return False
+        if types:
+            return True
+        return product_role(item) == "game"
+
+    def _ensure_min_event_games(
+        self,
+        row: dict,
+        products: list[dict],
+        *,
+        limit: int = MIN_EVENT_GAME_RECS,
+    ) -> list[dict]:
+        out = list(products or [])
+        seen = {(item.get("canonical_title") or "").lower() for item in out if item.get("canonical_title")}
+        if sum(1 for item in out if self._is_event_game_rec(item)) >= limit:
+            return out
+        for item in recommended_games_for_event(row, self.catalog, limit=limit):
+            title = item.get("canonical_title") or item.get("product_title") or ""
+            key = title.lower()
+            if not key or key in seen:
+                continue
+            card = self._title_card(title)
+            card["role"] = "game"
+            if item.get("platform") and not card.get("platform"):
+                card["platform"] = item.get("platform")
+            out.append(card)
+            seen.add(key)
+            if sum(1 for rec in out if self._is_event_game_rec(rec)) >= limit:
+                break
+        return out
+
+    def _backfill_owned_products(self, event: str, products: list[dict], *, limit: int = MIN_EVENT_GAME_RECS) -> list[dict]:
         spec = showcase_owner(event)
         if not spec:
             return products
@@ -1493,30 +1546,36 @@ class FloorStore:
                     break
         return owned[:limit] or products
 
-    def _owned_recommendations(self, event: str, existing: list[dict] | None, *, limit: int = 5) -> list[dict]:
+    def _owned_recommendations(self, event: str, existing: list[dict] | None, *, limit: int = MIN_EVENT_GAME_RECS) -> list[dict]:
         spec = showcase_owner(event)
-        if not spec:
-            return list(existing or [])
         owned = [
             dict(row)
             for row in existing or []
-            if is_owned_title(row.get("canonical_title") or "", spec)
+            if not spec or is_owned_title(row.get("canonical_title") or "", spec)
         ]
         seen = {(row.get("canonical_title") or "").lower() for row in owned}
-        for needle in spec.title_needles:
-            if len(owned) >= limit:
-                break
-            for hit in self.search_products(needle, limit=2):
-                title = hit.get("canonical_title") or ""
-                if not title or title.lower() in seen:
-                    continue
-                hero = (self.by_title.get(title.lower()) or [hit])[0]
-                if not is_owned_product(hero, spec):
-                    continue
-                owned.append({"canonical_title": title, "year_gmv": 0})
-                seen.add(title.lower())
+        if spec:
+            for needle in spec.title_needles:
                 if len(owned) >= limit:
                     break
+                for hit in self.search_products(needle, limit=2):
+                    title = hit.get("canonical_title") or ""
+                    if not title or title.lower() in seen:
+                        continue
+                    hero = (self.by_title.get(title.lower()) or [hit])[0]
+                    if not is_owned_product(hero, spec):
+                        continue
+                    owned.append({"canonical_title": title, "year_gmv": 0})
+                    seen.add(title.lower())
+                    if len(owned) >= limit:
+                        break
+        row = self.resolve_event(event)
+        if row:
+            padded = self._ensure_min_event_games(row, owned, limit=limit)
+            return [
+                {"canonical_title": item.get("canonical_title") or "", "year_gmv": item.get("year_gmv") or 0}
+                for item in padded
+            ]
         return owned[:limit] or list(existing or [])
 
     def _ensure_leader_event_names(self, orders: dict) -> dict:

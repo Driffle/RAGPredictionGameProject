@@ -194,7 +194,7 @@ def calendar_range_payload(
     kind: str = "",
     precision: str = "",
     limit: int = 80,
-    products_per_event: int = 8,
+    products_per_event: int = 10,
 ) -> dict:
     """List overlapping events with promote / cross-sell products for each."""
     from src.calendar_dedupe import dedupe_calendar_rows, unique_event_listings

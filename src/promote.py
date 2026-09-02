@@ -39,6 +39,8 @@ CURRENCY_MARKERS = (
     "madden points",
     "the show packs",
 )
+MIN_EVENT_GAME_RECS = 10
+
 LEAD_IN_DAYS = {
     "sports": 14,
     "esports": 10,
@@ -543,7 +545,7 @@ def recommended_games_for_event(
     row: dict,
     catalog: list[dict],
     *,
-    limit: int = 10,
+    limit: int = MIN_EVENT_GAME_RECS,
     title_index: dict[str, list[dict]] | None = None,
 ) -> list[dict]:
     """Top catalog games to merchandise for this event window."""
@@ -570,6 +572,8 @@ def recommended_games_for_event(
         add(item)
         if len(games) >= limit:
             return games[:limit]
+    if superhero_universe_for_row(row):
+        return games[:limit]
     for item in _products_near_window(row, catalog, limit=limit):
         add(item)
         if len(games) >= limit:
@@ -606,7 +610,7 @@ def products_for_event(
     """At least one catalog SKU for this event: franchise, window, then bucket."""
     owner = showcase_owner(calendar_label(row))
     if owner:
-        chosen = select_owned_games(catalog, owner, limit=10)
+        chosen = select_owned_games(catalog, owner, limit=MIN_EVENT_GAME_RECS)
         if chosen:
             return chosen
     queries = queries_for_calendar_row(row)

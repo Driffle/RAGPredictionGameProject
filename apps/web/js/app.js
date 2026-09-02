@@ -620,7 +620,7 @@ function renderMarketSections(markets) {
         <p class="meta">${escapeHtml(market.language || "")}${market.location ? ` · ${escapeHtml(market.location)}` : ""}</p>
         <b>${t("brief.marketProducts")}</b>
         <ul>
-          ${(market.products || []).slice(0, 8).map((product) => `<li>
+          ${(market.products || []).slice(0, 10).map((product) => `<li>
             <button type="button" class="linkish" data-open-product="${escapeHtml(product.canonical_title)}">${escapeHtml(product.canonical_title)}</button>
             ${product.role ? `<span class="meta"> · ${escapeHtml(labelKind(product.role))}</span>` : ""}
           </li>`).join("") || `<li class="meta">${t("traffic.noProducts")}</li>`}
@@ -927,7 +927,7 @@ function renderCalendarBrief(data) {
           <p>${escapeHtml(row.related || labelStatus(row.confirmation) || "")}</p>
           ${row.hero ? `<p class="meta">${t("common.hero")}: <button type="button" class="linkish" data-open-product="${escapeHtml(row.hero)}">${escapeHtml(row.hero)}</button></p>` : `<p class="meta">${t("common.noMappedProducts")}</p>`}
           ${(row.top_hashtags || []).length ? `<div class="chip-row">${row.top_hashtags.map((tag) => `<span class="hashtag">${escapeHtml(tag)}</span>`).join("")}</div>` : ""}
-          ${(row.products || []).length ? `<div class="social-card-list">${row.products.slice(0, 4).map(renderSocialCard).join("")}</div>` : ""}
+          ${(row.products || []).length ? `<div class="social-card-list">${row.products.slice(0, 10).map(renderSocialCard).join("")}</div>` : ""}
           <p class="meta">
             <button type="button" class="linkish" data-open-crosssell="${escapeHtml(row.name)}">${t("crosssell.submit")}</button>
           </p>
