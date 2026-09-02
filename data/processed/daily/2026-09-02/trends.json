@@ -1,0 +1,634 @@
+{
+  "fetched_on": "2026-09-02",
+  "google_trends": [
+    {
+      "source": "google_trends",
+      "geo": "AU",
+      "title": "dark matter",
+      "traffic": 200,
+      "traffic_label": "200+",
+      "published": "Tue, 1 Sep 2026 20:40:00 -0700",
+      "news": [
+        "'This could be it': Dark matter detector finds hint of unknown particle (ABC News & Headlines \u2013 Australian Broadcasting Corporation)",
+        "The greatest scientific mystery of our time may have just flashed in a gold mine (The Age)",
+        "The first signs of dark matter particles may finally have been spotted (New Scientist)"
+      ],
+      "blob": "dark matter 'This could be it': Dark matter detector finds hint of unknown particle (ABC News & Headlines \u2013 Australian Broadcasting Corporation) The greatest scientific mystery of our time may have just flashed in a gold mine (The Age) The first signs of dark matter particles may finally have been spotted (New Scientist)"
+    },
+    {
+      "source": "google_trends",
+      "geo": "JP",
+      "title": "playstation",
+      "traffic": 200,
+      "traffic_label": "200+",
+      "published": "Tue, 1 Sep 2026 21:50:00 -0700",
+      "news": [
+        "Facing lawsuit, Sony argues it\u2019s already obvious that digital games aren\u2019t owned by consumers (Game File | Stephen Totilo)",
+        "PlayStation Is Set to Pay Out $7.85 Million to Users as Part of Class-Action Lawsuit (IGN)",
+        "You Can't Own A Video Game Because Other People Also Own Video Games, Sony Argues In Court Filing (Aftermath)"
+      ],
+      "blob": "playstation Facing lawsuit, Sony argues it\u2019s already obvious that digital games aren\u2019t owned by consumers (Game File | Stephen Totilo) PlayStation Is Set to Pay Out $7.85 Million to Users as Part of Class-Action Lawsuit (IGN) You Can't Own A Video Game Because Other People Also Own Video Games, Sony Argues In Court Filing (Aftermath)"
+    },
+    {
+      "source": "google_trends",
+      "geo": "DE",
+      "title": "konami",
+      "traffic": 100,
+      "traffic_label": "100+",
+      "published": "Tue, 1 Sep 2026 22:00:00 -0700",
+      "news": [
+        "Noch in dieser Woche gibt\u2019s ein spannendes JRPG-Comeback von Konami (jpgames.de)",
+        "Konami Press Start \u2013 Pr\u00e4sentation mit Details zu Castlevania: Belmont's Curse und Silent Hill: Townfall angek\u00fcndigt (ntower)",
+        "Showcase 2026: KONAMI PRESS START - Konami zeigt neue Szenen zu drei kommenden Spielen (XboxDynasty)"
+      ],
+      "blob": "konami Noch in dieser Woche gibt\u2019s ein spannendes JRPG-Comeback von Konami (jpgames.de) Konami Press Start \u2013 Pr\u00e4sentation mit Details zu Castlevania: Belmont's Curse und Silent Hill: Townfall angek\u00fcndigt (ntower) Showcase 2026: KONAMI PRESS START - Konami zeigt neue Szenen zu drei kommenden Spielen (XboxDynasty)"
+    }
+  ],
+  "wikipedia": [
+    {
+      "source": "wikipedia_pageviews",
+      "article": "Grand Theft Auto",
+      "queries": [
+        "grand theft auto",
+        "gta"
+      ],
+      "as_of": "2026-09-01",
+      "views": 10212,
+      "baseline": 9327,
+      "spike_ratio": 1.09,
+      "series": [
+        [
+          "20260822",
+          5291
+        ],
+        [
+          "20260823",
+          5570
+        ],
+        [
+          "20260824",
+          5709
+        ],
+        [
+          "20260825",
+          5654
+        ],
+        [
+          "20260826",
+          6672
+        ],
+        [
+          "20260827",
+          11983
+        ],
+        [
+          "20260828",
+          26806
+        ],
+        [
+          "20260829",
+          17456
+        ],
+        [
+          "20260830",
+          15515
+        ],
+        [
+          "20260831",
+          13856
+        ],
+        [
+          "20260901",
+          10212
+        ]
+      ]
+    },
+    {
+      "source": "wikipedia_pageviews",
+      "article": "Fortnite",
+      "queries": [
+        "fortnite"
+      ],
+      "as_of": "2026-09-01",
+      "views": 2047,
+      "baseline": 2027,
+      "spike_ratio": 1.01,
+      "series": [
+        [
+          "20260822",
+          2018
+        ],
+        [
+          "20260823",
+          1924
+        ],
+        [
+          "20260824",
+          2099
+        ],
+        [
+          "20260825",
+          2057
+        ],
+        [
+          "20260826",
+          2156
+        ],
+        [
+          "20260827",
+          2036
+        ],
+        [
+          "20260828",
+          2009
+        ],
+        [
+          "20260829",
+          1850
+        ],
+        [
+          "20260830",
+          1863
+        ],
+        [
+          "20260831",
+          2059
+        ],
+        [
+          "20260901",
+          2047
+        ]
+      ]
+    },
+    {
+      "source": "wikipedia_pageviews",
+      "article": "Minecraft",
+      "queries": [
+        "minecraft"
+      ],
+      "as_of": "2026-09-01",
+      "views": 4859,
+      "baseline": 5006,
+      "spike_ratio": 0.97,
+      "series": [
+        [
+          "20260822",
+          4580
+        ],
+        [
+          "20260823",
+          4600
+        ],
+        [
+          "20260824",
+          4662
+        ],
+        [
+          "20260825",
+          4978
+        ],
+        [
+          "20260826",
+          5525
+        ],
+        [
+          "20260827",
+          5464
+        ],
+        [
+          "20260828",
+          5384
+        ],
+        [
+          "20260829",
+          4847
+        ],
+        [
+          "20260830",
+          5035
+        ],
+        [
+          "20260831",
+          5287
+        ],
+        [
+          "20260901",
+          4859
+        ]
+      ]
+    },
+    {
+      "source": "wikipedia_pageviews",
+      "article": "Superman",
+      "queries": [
+        "superman"
+      ],
+      "as_of": "2026-09-01",
+      "views": 2584,
+      "baseline": 2688,
+      "spike_ratio": 0.96,
+      "series": [
+        [
+          "20260822",
+          2521
+        ],
+        [
+          "20260823",
+          2760
+        ],
+        [
+          "20260824",
+          2694
+        ],
+        [
+          "20260825",
+          2682
+        ],
+        [
+          "20260826",
+          2434
+        ],
+        [
+          "20260827",
+          2411
+        ],
+        [
+          "20260828",
+          2611
+        ],
+        [
+          "20260829",
+          2926
+        ],
+        [
+          "20260830",
+          2723
+        ],
+        [
+          "20260831",
+          2747
+        ],
+        [
+          "20260901",
+          2584
+        ]
+      ]
+    },
+    {
+      "source": "wikipedia_pageviews",
+      "article": "Star Wars",
+      "queries": [
+        "star wars"
+      ],
+      "as_of": "2026-09-01",
+      "views": 4568,
+      "baseline": 4989,
+      "spike_ratio": 0.92,
+      "series": [
+        [
+          "20260822",
+          5091
+        ],
+        [
+          "20260823",
+          5517
+        ],
+        [
+          "20260824",
+          5187
+        ],
+        [
+          "20260825",
+          4873
+        ],
+        [
+          "20260826",
+          4778
+        ],
+        [
+          "20260827",
+          4746
+        ],
+        [
+          "20260828",
+          4761
+        ],
+        [
+          "20260829",
+          4888
+        ],
+        [
+          "20260830",
+          5464
+        ],
+        [
+          "20260831",
+          5103
+        ],
+        [
+          "20260901",
+          4568
+        ]
+      ]
+    },
+    {
+      "source": "wikipedia_pageviews",
+      "article": "Call of Duty",
+      "queries": [
+        "call of duty",
+        "modern warfare"
+      ],
+      "as_of": "2026-09-01",
+      "views": 5452,
+      "baseline": 6088,
+      "spike_ratio": 0.9,
+      "series": [
+        [
+          "20260822",
+          7086
+        ],
+        [
+          "20260823",
+          6953
+        ],
+        [
+          "20260824",
+          6499
+        ],
+        [
+          "20260825",
+          5983
+        ],
+        [
+          "20260826",
+          5342
+        ],
+        [
+          "20260827",
+          5262
+        ],
+        [
+          "20260828",
+          5883
+        ],
+        [
+          "20260829",
+          6194
+        ],
+        [
+          "20260830",
+          6251
+        ],
+        [
+          "20260831",
+          5893
+        ],
+        [
+          "20260901",
+          5452
+        ]
+      ]
+    },
+    {
+      "source": "wikipedia_pageviews",
+      "article": "Grand Theft Auto VI",
+      "queries": [
+        "grand theft auto",
+        "gta"
+      ],
+      "as_of": "2026-09-01",
+      "views": 27833,
+      "baseline": 31210,
+      "spike_ratio": 0.89,
+      "series": [
+        [
+          "20260822",
+          19995
+        ],
+        [
+          "20260823",
+          22386
+        ],
+        [
+          "20260824",
+          21113
+        ],
+        [
+          "20260825",
+          19501
+        ],
+        [
+          "20260826",
+          25350
+        ],
+        [
+          "20260827",
+          48544
+        ],
+        [
+          "20260828",
+          96567
+        ],
+        [
+          "20260829",
+          53640
+        ],
+        [
+          "20260830",
+          42843
+        ],
+        [
+          "20260831",
+          37071
+        ],
+        [
+          "20260901",
+          27833
+        ]
+      ]
+    },
+    {
+      "source": "wikipedia_pageviews",
+      "article": "Batman",
+      "queries": [
+        "batman",
+        "arkham"
+      ],
+      "as_of": "2026-09-01",
+      "views": 3313,
+      "baseline": 3753,
+      "spike_ratio": 0.88,
+      "series": [
+        [
+          "20260822",
+          3664
+        ],
+        [
+          "20260823",
+          3731
+        ],
+        [
+          "20260824",
+          3659
+        ],
+        [
+          "20260825",
+          4056
+        ],
+        [
+          "20260826",
+          3989
+        ],
+        [
+          "20260827",
+          3712
+        ],
+        [
+          "20260828",
+          3839
+        ],
+        [
+          "20260829",
+          3613
+        ],
+        [
+          "20260830",
+          3776
+        ],
+        [
+          "20260831",
+          3795
+        ],
+        [
+          "20260901",
+          3313
+        ]
+      ]
+    },
+    {
+      "source": "wikipedia_pageviews",
+      "article": "Marvel's Spider-Man 2",
+      "queries": [
+        "spider-man",
+        "spiderman",
+        "miles morales"
+      ],
+      "as_of": "2026-09-01",
+      "views": 2118,
+      "baseline": 2526,
+      "spike_ratio": 0.84,
+      "series": [
+        [
+          "20260822",
+          2984
+        ],
+        [
+          "20260823",
+          3105
+        ],
+        [
+          "20260824",
+          2836
+        ],
+        [
+          "20260825",
+          2369
+        ],
+        [
+          "20260826",
+          2402
+        ],
+        [
+          "20260827",
+          2236
+        ],
+        [
+          "20260828",
+          2468
+        ],
+        [
+          "20260829",
+          2584
+        ],
+        [
+          "20260830",
+          2756
+        ],
+        [
+          "20260831",
+          2329
+        ],
+        [
+          "20260901",
+          2118
+        ]
+      ]
+    },
+    {
+      "source": "wikipedia_pageviews",
+      "article": "Spider-Man",
+      "queries": [
+        "spider-man",
+        "spiderman",
+        "miles morales"
+      ],
+      "as_of": "2026-09-01",
+      "views": 7154,
+      "baseline": 9313,
+      "spike_ratio": 0.77,
+      "series": [
+        [
+          "20260822",
+          12310
+        ],
+        [
+          "20260823",
+          13240
+        ],
+        [
+          "20260824",
+          12103
+        ],
+        [
+          "20260825",
+          11396
+        ],
+        [
+          "20260826",
+          10342
+        ],
+        [
+          "20260827",
+          8285
+        ],
+        [
+          "20260828",
+          8109
+        ],
+        [
+          "20260829",
+          7902
+        ],
+        [
+          "20260830",
+          8153
+        ],
+        [
+          "20260831",
+          7628
+        ],
+        [
+          "20260901",
+          7154
+        ]
+      ]
+    }
+  ],
+  "filter": {
+    "scope": "product_and_event_datasets",
+    "google_kept": 3,
+    "google_removed": 57,
+    "wikipedia_kept": 10,
+    "wikipedia_removed": 0
+  }
+}
