@@ -15,7 +15,7 @@ from src.coverage import cross_media_releases
 from src.cross_sell import cross_sell_payload, unique_events
 from src.daily_brief import run as run_daily_brief
 from src.database import live_meta, refresh_live_database
-from src.date_range import calendar_range_payload, is_current_or_in_range, range_span
+from src.date_range import calendar_range_payload, event_on_or_after_horizon, is_current_or_in_range, range_span
 from src.dates import annotate_event, annotate_product, confirmation_kind
 from src.documents import load_rag_meta
 from src.first_party import is_owned_product, is_owned_title, prioritize_owned, showcase_owner
@@ -730,6 +730,8 @@ class FloorStore:
             if kind and (row.get("kind") or "event").lower() != kind.lower():
                 continue
             if mode and (row.get("attendance_mode") or "").lower() != mode.lower():
+                continue
+            if not event_on_or_after_horizon(row):
                 continue
             name = _search_text(row.get("event") or row.get("ip_adaptation") or "")
             related = _search_text(row.get("related_game") or "")

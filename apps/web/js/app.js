@@ -744,9 +744,7 @@ async function lookupEvent(name) {
   status.hidden = false;
   status.textContent = t("status.event");
   try {
-    const params = calendarRangeParams();
-    params.set("q", name);
-    const data = await getJSON(`/api/event?${params}`);
+    const data = await getJSON(`/api/event?${new URLSearchParams({ q: name })}`);
     status.hidden = true;
     renderEventBrief(data);
   } catch (err) {

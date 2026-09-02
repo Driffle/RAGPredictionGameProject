@@ -3,31 +3,45 @@
   "google_trends": [
     {
       "source": "google_trends",
+      "geo": "JP",
+      "title": "playstation",
+      "traffic": 500,
+      "traffic_label": "500+",
+      "published": "Tue, 1 Sep 2026 21:50:00 -0700",
+      "news": [
+        "State of Play & State of Play Japan return on September 3 (PlayStation.Blog)",
+        "A PlayStation State of Play stream is happening this week, with a look at 'Final Fantasy VII Revelation' (Mashable SEA)",
+        "16 PS5 Predictions for State of Play September 2026 (Push Square)"
+      ],
+      "blob": "playstation State of Play & State of Play Japan return on September 3 (PlayStation.Blog) A PlayStation State of Play stream is happening this week, with a look at 'Final Fantasy VII Revelation' (Mashable SEA) 16 PS5 Predictions for State of Play September 2026 (Push Square)"
+    },
+    {
+      "source": "google_trends",
       "geo": "AU",
       "title": "dark matter",
       "traffic": 200,
       "traffic_label": "200+",
       "published": "Tue, 1 Sep 2026 20:40:00 -0700",
       "news": [
-        "'This could be it': Dark matter detector finds hint of unknown particle (ABC News & Headlines \u2013 Australian Broadcasting Corporation)",
         "The greatest scientific mystery of our time may have just flashed in a gold mine (The Age)",
-        "The first signs of dark matter particles may finally have been spotted (New Scientist)"
+        "The first signs of dark matter particles may finally have been spotted (New Scientist)",
+        "Have we finally found dark matter? (Scientific American)"
       ],
-      "blob": "dark matter 'This could be it': Dark matter detector finds hint of unknown particle (ABC News & Headlines \u2013 Australian Broadcasting Corporation) The greatest scientific mystery of our time may have just flashed in a gold mine (The Age) The first signs of dark matter particles may finally have been spotted (New Scientist)"
+      "blob": "dark matter The greatest scientific mystery of our time may have just flashed in a gold mine (The Age) The first signs of dark matter particles may finally have been spotted (New Scientist) Have we finally found dark matter? (Scientific American)"
     },
     {
       "source": "google_trends",
-      "geo": "JP",
-      "title": "playstation",
+      "geo": "US",
+      "title": "resident evil 2026",
       "traffic": 200,
       "traffic_label": "200+",
-      "published": "Tue, 1 Sep 2026 21:50:00 -0700",
+      "published": "Tue, 1 Sep 2026 22:10:00 -0700",
       "news": [
-        "Facing lawsuit, Sony argues it\u2019s already obvious that digital games aren\u2019t owned by consumers (Game File | Stephen Totilo)",
-        "PlayStation Is Set to Pay Out $7.85 Million to Users as Part of Class-Action Lawsuit (IGN)",
-        "You Can't Own A Video Game Because Other People Also Own Video Games, Sony Argues In Court Filing (Aftermath)"
+        "Resident Evil Popcorn Bucket Gives Horror Fans Their Own Organ Transplant (Yahoo)",
+        "Regal\u2019s New \u2018Resident Evil\u2019 Popcorn Bucket Is Actually a Bag, and It\u2019s Perfectly Unhinged (IMDb)",
+        "Resident Evil Movie Popcorn Bucket Is Gross But Fitting (GameSpot)"
       ],
-      "blob": "playstation Facing lawsuit, Sony argues it\u2019s already obvious that digital games aren\u2019t owned by consumers (Game File | Stephen Totilo) PlayStation Is Set to Pay Out $7.85 Million to Users as Part of Class-Action Lawsuit (IGN) You Can't Own A Video Game Because Other People Also Own Video Games, Sony Argues In Court Filing (Aftermath)"
+      "blob": "resident evil 2026 Resident Evil Popcorn Bucket Gives Horror Fans Their Own Organ Transplant (Yahoo) Regal\u2019s New \u2018Resident Evil\u2019 Popcorn Bucket Is Actually a Bag, and It\u2019s Perfectly Unhinged (IMDb) Resident Evil Movie Popcorn Bucket Is Gross But Fitting (GameSpot)"
     },
     {
       "source": "google_trends",
@@ -39,12 +53,69 @@
       "news": [
         "Noch in dieser Woche gibt\u2019s ein spannendes JRPG-Comeback von Konami (jpgames.de)",
         "Konami Press Start \u2013 Pr\u00e4sentation mit Details zu Castlevania: Belmont's Curse und Silent Hill: Townfall angek\u00fcndigt (ntower)",
-        "Showcase 2026: KONAMI PRESS START - Konami zeigt neue Szenen zu drei kommenden Spielen (XboxDynasty)"
+        "Konami Press Start: Showcase mit Silent Hill, Castlevania & mehr angek\u00fcndigt - doch ein erhofftes Spiel fehlt (PLAY3.DE)"
       ],
-      "blob": "konami Noch in dieser Woche gibt\u2019s ein spannendes JRPG-Comeback von Konami (jpgames.de) Konami Press Start \u2013 Pr\u00e4sentation mit Details zu Castlevania: Belmont's Curse und Silent Hill: Townfall angek\u00fcndigt (ntower) Showcase 2026: KONAMI PRESS START - Konami zeigt neue Szenen zu drei kommenden Spielen (XboxDynasty)"
+      "blob": "konami Noch in dieser Woche gibt\u2019s ein spannendes JRPG-Comeback von Konami (jpgames.de) Konami Press Start \u2013 Pr\u00e4sentation mit Details zu Castlevania: Belmont's Curse und Silent Hill: Townfall angek\u00fcndigt (ntower) Konami Press Start: Showcase mit Silent Hill, Castlevania & mehr angek\u00fcndigt - doch ein erhofftes Spiel fehlt (PLAY3.DE)"
     }
   ],
   "wikipedia": [
+    {
+      "source": "wikipedia_pageviews",
+      "article": "The Last of Us",
+      "queries": [
+        "the last of us"
+      ],
+      "as_of": "2026-09-01",
+      "views": 1258,
+      "baseline": 1107,
+      "spike_ratio": 1.14,
+      "series": [
+        [
+          "20260822",
+          1064
+        ],
+        [
+          "20260823",
+          1089
+        ],
+        [
+          "20260824",
+          1121
+        ],
+        [
+          "20260825",
+          1171
+        ],
+        [
+          "20260826",
+          1093
+        ],
+        [
+          "20260827",
+          994
+        ],
+        [
+          "20260828",
+          1050
+        ],
+        [
+          "20260829",
+          1171
+        ],
+        [
+          "20260830",
+          1324
+        ],
+        [
+          "20260831",
+          1302
+        ],
+        [
+          "20260901",
+          1258
+        ]
+      ]
+    },
     {
       "source": "wikipedia_pageviews",
       "article": "Grand Theft Auto",
@@ -105,6 +176,64 @@
     },
     {
       "source": "wikipedia_pageviews",
+      "article": "FIFA",
+      "queries": [
+        "fifa",
+        "ea sports fc"
+      ],
+      "as_of": "2026-09-01",
+      "views": 2289,
+      "baseline": 2231,
+      "spike_ratio": 1.03,
+      "series": [
+        [
+          "20260822",
+          2222
+        ],
+        [
+          "20260823",
+          2144
+        ],
+        [
+          "20260824",
+          2366
+        ],
+        [
+          "20260825",
+          2428
+        ],
+        [
+          "20260826",
+          2445
+        ],
+        [
+          "20260827",
+          3156
+        ],
+        [
+          "20260828",
+          2215
+        ],
+        [
+          "20260829",
+          1808
+        ],
+        [
+          "20260830",
+          2241
+        ],
+        [
+          "20260831",
+          2221
+        ],
+        [
+          "20260901",
+          2289
+        ]
+      ]
+    },
+    {
+      "source": "wikipedia_pageviews",
       "article": "Fortnite",
       "queries": [
         "fortnite"
@@ -157,6 +286,121 @@
         [
           "20260901",
           2047
+        ]
+      ]
+    },
+    {
+      "source": "wikipedia_pageviews",
+      "article": "The Last of Us (TV series)",
+      "queries": [
+        "the last of us"
+      ],
+      "as_of": "2026-09-01",
+      "views": 3960,
+      "baseline": 4016,
+      "spike_ratio": 0.99,
+      "series": [
+        [
+          "20260822",
+          4147
+        ],
+        [
+          "20260823",
+          4415
+        ],
+        [
+          "20260824",
+          4102
+        ],
+        [
+          "20260825",
+          3930
+        ],
+        [
+          "20260826",
+          3706
+        ],
+        [
+          "20260827",
+          3776
+        ],
+        [
+          "20260828",
+          3906
+        ],
+        [
+          "20260829",
+          3888
+        ],
+        [
+          "20260830",
+          4566
+        ],
+        [
+          "20260831",
+          4272
+        ],
+        [
+          "20260901",
+          3960
+        ]
+      ]
+    },
+    {
+      "source": "wikipedia_pageviews",
+      "article": "EA Sports FC",
+      "queries": [
+        "ea sports fc",
+        "fifa"
+      ],
+      "as_of": "2026-09-01",
+      "views": 502,
+      "baseline": 513,
+      "spike_ratio": 0.98,
+      "series": [
+        [
+          "20260822",
+          492
+        ],
+        [
+          "20260823",
+          520
+        ],
+        [
+          "20260824",
+          579
+        ],
+        [
+          "20260825",
+          511
+        ],
+        [
+          "20260826",
+          475
+        ],
+        [
+          "20260827",
+          516
+        ],
+        [
+          "20260828",
+          527
+        ],
+        [
+          "20260829",
+          464
+        ],
+        [
+          "20260830",
+          523
+        ],
+        [
+          "20260831",
+          479
+        ],
+        [
+          "20260901",
+          502
         ]
       ]
     },
@@ -507,6 +751,120 @@
     },
     {
       "source": "wikipedia_pageviews",
+      "article": "NBA 2K",
+      "queries": [
+        "nba 2k"
+      ],
+      "as_of": "2026-09-01",
+      "views": 500,
+      "baseline": 568,
+      "spike_ratio": 0.88,
+      "series": [
+        [
+          "20260822",
+          642
+        ],
+        [
+          "20260823",
+          538
+        ],
+        [
+          "20260824",
+          436
+        ],
+        [
+          "20260825",
+          464
+        ],
+        [
+          "20260826",
+          594
+        ],
+        [
+          "20260827",
+          625
+        ],
+        [
+          "20260828",
+          653
+        ],
+        [
+          "20260829",
+          590
+        ],
+        [
+          "20260830",
+          547
+        ],
+        [
+          "20260831",
+          499
+        ],
+        [
+          "20260901",
+          500
+        ]
+      ]
+    },
+    {
+      "source": "wikipedia_pageviews",
+      "article": "Madden NFL",
+      "queries": [
+        "madden nfl"
+      ],
+      "as_of": "2026-09-01",
+      "views": 411,
+      "baseline": 478,
+      "spike_ratio": 0.86,
+      "series": [
+        [
+          "20260822",
+          518
+        ],
+        [
+          "20260823",
+          520
+        ],
+        [
+          "20260824",
+          476
+        ],
+        [
+          "20260825",
+          494
+        ],
+        [
+          "20260826",
+          501
+        ],
+        [
+          "20260827",
+          466
+        ],
+        [
+          "20260828",
+          470
+        ],
+        [
+          "20260829",
+          480
+        ],
+        [
+          "20260830",
+          439
+        ],
+        [
+          "20260831",
+          437
+        ],
+        [
+          "20260901",
+          411
+        ]
+      ]
+    },
+    {
+      "source": "wikipedia_pageviews",
       "article": "Marvel's Spider-Man 2",
       "queries": [
         "spider-man",
@@ -626,9 +984,9 @@
   ],
   "filter": {
     "scope": "product_and_event_datasets",
-    "google_kept": 3,
-    "google_removed": 57,
-    "wikipedia_kept": 10,
+    "google_kept": 4,
+    "google_removed": 0,
+    "wikipedia_kept": 16,
     "wikipedia_removed": 0
   }
 }

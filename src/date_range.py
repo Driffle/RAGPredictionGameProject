@@ -170,6 +170,18 @@ def events_in_range(
     return out
 
 
+LIVE_EVENT_FLOOR = date(2026, 1, 1)
+
+
+def event_on_or_after_horizon(row: dict, floor: date = LIVE_EVENT_FLOOR) -> bool:
+    """True when an event's runtime starts in the live desk (2026 onward)."""
+    start, _ = event_window(row)
+    if start:
+        return start >= floor
+    stamp = (row.get("start_date") or row.get("runtime_start") or row.get("start") or "")[:10]
+    return bool(stamp) and stamp >= floor.isoformat()
+
+
 def calendar_range_payload(
     *,
     start_year: int,
@@ -195,7 +207,8 @@ def calendar_range_payload(
     pool = list(events) + list(adaptations)
     matched = unique_event_listings(
         dedupe_calendar_rows(events_in_range(pool, range_start, range_end, kind=kind, precision=precision))
-    )[: max(1, limit)]
+    )
+    matched = [row for row in matched if event_on_or_after_horizon(row)][: max(1, limit)]
 
     event_cards = []
     all_titles: dict[str, dict] = {}
@@ -211,6 +224,7 @@ def calendar_range_payload(
                 "role": plan.get("role") or "",
                 "platform": plan.get("platform") or "",
                 "offer": plan.get("offer") or "",
+                "release_date": plan.get("release_date") or "",
                 "product_type": plan.get("product_type") or "",
                 "promo_family": plan.get("promo_family") or "",
                 "promo_start": plan.get("promo_start") or xs.get("promo_start") or "",

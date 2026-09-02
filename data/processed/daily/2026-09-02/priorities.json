@@ -6,14 +6,13 @@
     "platform": "Steam",
     "role": "game",
     "edition_year": 0,
-    "score": 108.0,
+    "score": 78.0,
     "sources": [
       "event_window"
     ],
     "reasons": [
       "Promote BOKURA planet as the storefront equivalent of Future Games Show at Gamescom (Star Ocean: The Second Story R, Dreamin' Her, K-pop Idol Stories: Road to Debut, The Dream Of A Cockspur) for the full event runtime 2026-08-26 to 2026-08-30, with a expo lead-in and afterglow around those dates.",
       "Promote BOKURA planet as the storefront equivalent of Gamescom 2026 (Star Ocean: The Second Story R, Dreamin' Her, K-pop Idol Stories: Road to Debut, The Dream Of A Cockspur) for the full event runtime 2026-08-26 to 2026-08-30, with a expo lead-in and afterglow around those dates.",
-      "Promote BOKURA planet as the storefront equivalent of PAX West (Star Ocean: The Second Story R, Dreamin' Her, K-pop Idol Stories: Road to Debut, The Dream Of A Cockspur) for the full event runtime 2026-08-28 to 2026-08-31, with a expo lead-in and afterglow around those dates.",
       "Promote BOKURA planet as the storefront equivalent of PAX West (The Dream Of A Cockspur, Suika Game, Prelude: Dark Pain, BOKURA) for the full event runtime 2026-09-04 to 2026-09-07, with a expo lead-in and afterglow around those dates."
     ],
     "tactics": [
@@ -81,32 +80,6 @@
     "as_of": "2026-09-02"
   },
   {
-    "canonical_title": "Star Ocean: The Second Story R",
-    "product_id": "live:Q119833222",
-    "product_sku": "",
-    "platform": "Multi",
-    "role": "game",
-    "edition_year": 0,
-    "score": 78.0,
-    "sources": [
-      "event_window"
-    ],
-    "reasons": [
-      "Promote Star Ocean: The Second Story R as the storefront equivalent of Future Games Show at Gamescom (Star Ocean: The Second Story R, Dreamin' Her, K-pop Idol Stories: Road to Debut, The Dream Of A Cockspur) for the full event runtime 2026-08-26 to 2026-08-30, with a expo lead-in and afterglow around those dates.",
-      "Promote Star Ocean: The Second Story R as the storefront equivalent of Gamescom 2026 (Star Ocean: The Second Story R, Dreamin' Her, K-pop Idol Stories: Road to Debut, The Dream Of A Cockspur) for the full event runtime 2026-08-26 to 2026-08-30, with a expo lead-in and afterglow around those dates.",
-      "Promote Star Ocean: The Second Story R as the storefront equivalent of PAX West (Star Ocean: The Second Story R, Dreamin' Her, K-pop Idol Stories: Road to Debut, The Dream Of A Cockspur) for the full event runtime 2026-08-28 to 2026-08-31, with a expo lead-in and afterglow around those dates."
-    ],
-    "tactics": [
-      "Amplify announcements the same day; feature matching catalog SKUs within hours of a trailer"
-    ],
-    "queries": [],
-    "event": "PAX West",
-    "promo_start": "2026-08-21",
-    "promo_end": "2026-09-03",
-    "rank": 4,
-    "as_of": "2026-09-02"
-  },
-  {
     "canonical_title": "Astro Bot",
     "product_id": "89317",
     "product_sku": "9933202",
@@ -128,7 +101,7 @@
     "event": "PlayStation State of Play September 2026",
     "promo_start": "2026-08-27",
     "promo_end": "2026-09-06",
-    "rank": 5,
+    "rank": 4,
     "as_of": "2026-09-02"
   },
   {
@@ -153,7 +126,7 @@
     "event": "PlayStation State of Play September 2026",
     "promo_start": "2026-08-27",
     "promo_end": "2026-09-06",
-    "rank": 6,
+    "rank": 5,
     "as_of": "2026-09-02"
   },
   {
@@ -178,7 +151,7 @@
     "event": "PlayStation State of Play September 2026",
     "promo_start": "2026-08-27",
     "promo_end": "2026-09-06",
-    "rank": 7,
+    "rank": 6,
     "as_of": "2026-09-02"
   },
   {
@@ -203,7 +176,7 @@
     "event": "PlayStation State of Play September 2026",
     "promo_start": "2026-08-27",
     "promo_end": "2026-09-06",
-    "rank": 8,
+    "rank": 7,
     "as_of": "2026-09-02"
   },
   {
@@ -228,7 +201,7 @@
     "event": "PlayStation State of Play September 2026",
     "promo_start": "2026-08-27",
     "promo_end": "2026-09-06",
-    "rank": 9,
+    "rank": 8,
     "as_of": "2026-09-02"
   },
   {
@@ -253,7 +226,7 @@
     "event": "PlayStation State of Play September 2026",
     "promo_start": "2026-08-27",
     "promo_end": "2026-09-06",
-    "rank": 10,
+    "rank": 9,
     "as_of": "2026-09-02"
   },
   {
@@ -278,7 +251,7 @@
     "event": "PlayStation State of Play September 2026",
     "promo_start": "2026-08-27",
     "promo_end": "2026-09-06",
-    "rank": 11,
+    "rank": 10,
     "as_of": "2026-09-02"
   },
   {
@@ -304,7 +277,7 @@
     "event": "Hashire Hebereke: EX release window",
     "promo_start": "2026-08-27",
     "promo_end": "2026-09-20",
-    "rank": 12,
+    "rank": 11,
     "as_of": "2026-09-02"
   },
   {
@@ -329,7 +302,7 @@
     "event": "PlayStation State of Play September 2026",
     "promo_start": "2026-08-27",
     "promo_end": "2026-09-06",
-    "rank": 13,
+    "rank": 12,
     "as_of": "2026-09-02"
   },
   {
@@ -354,14 +327,14 @@
     "event": "Golden Axe",
     "promo_start": "2026-08-26",
     "promo_end": "2026-09-30",
-    "rank": 14,
+    "rank": 13,
     "as_of": "2026-09-02"
   },
   {
-    "canonical_title": "World of Warcraft Dragonflight",
-    "product_id": "40588",
-    "product_sku": "9884514",
-    "platform": "Battle.net",
+    "canonical_title": "Star Ocean: The Second Story R",
+    "product_id": "live:Q119833222",
+    "product_sku": "",
+    "platform": "Multi",
     "role": "game",
     "edition_year": 0,
     "score": 48.0,
@@ -369,17 +342,43 @@
       "event_window"
     ],
     "reasons": [
-      "Promote World of Warcraft Dragonflight as the storefront equivalent of BlizzCon (Warcraft, Diablo, Overwatch) for the full event runtime 2026-09-12 to 2026-09-13, with a esports lead-in and afterglow around those dates.",
-      "Promote World of Warcraft Dragonflight as the storefront equivalent of BlizzCon 2026 (Warcraft, Diablo, Overwatch) for the full event runtime 2026-09-12 to 2026-09-13, with a esports lead-in and afterglow around those dates."
+      "Promote Star Ocean: The Second Story R as the storefront equivalent of Future Games Show at Gamescom (Star Ocean: The Second Story R, Dreamin' Her, K-pop Idol Stories: Road to Debut, The Dream Of A Cockspur) for the full event runtime 2026-08-26 to 2026-08-30, with a expo lead-in and afterglow around those dates.",
+      "Promote Star Ocean: The Second Story R as the storefront equivalent of Gamescom 2026 (Star Ocean: The Second Story R, Dreamin' Her, K-pop Idol Stories: Road to Debut, The Dream Of A Cockspur) for the full event runtime 2026-08-26 to 2026-08-30, with a expo lead-in and afterglow around those dates."
     ],
     "tactics": [
-      "Homepage takeover on series days; pair the game with watch-to-play / drop campaigns",
-      "Geo-boost regions hosting or broadcasting the championship"
+      "Amplify announcements the same day; feature matching catalog SKUs within hours of a trailer"
     ],
     "queries": [],
-    "event": "BlizzCon 2026",
-    "promo_start": "2026-09-02",
-    "promo_end": "2026-09-18",
+    "event": "Gamescom 2026",
+    "promo_start": "2026-08-19",
+    "promo_end": "2026-09-02",
+    "rank": 14,
+    "as_of": "2026-09-02"
+  },
+  {
+    "canonical_title": "Resident Evil",
+    "product_id": "146675",
+    "product_sku": "9990081",
+    "platform": "Steam",
+    "role": "game",
+    "edition_year": 2026,
+    "score": 31.010299956639813,
+    "sources": [
+      "google_trends"
+    ],
+    "reasons": [
+      "Google Trends (US) lists \u201cresident evil 2026\u201d (200+ searches). Highlight equivalent catalog games today. Related coverage: Resident Evil Popcorn Bucket Gives Horror Fans Their Own Organ Transplant (Yahoo)."
+    ],
+    "tactics": [
+      "Feature this IP on the storefront homepage for the next 24 hours while search interest is elevated",
+      "Reuse the trending headline/movie/news creative rather than generic key-art",
+      "Hold current-edition price; attach DLC/currency underneath the hero SKU"
+    ],
+    "queries": [
+      "resident evil"
+    ],
+    "trend_title": "resident evil 2026",
+    "trend_geo": "US",
     "rank": 15,
     "as_of": "2026-09-02"
   }

@@ -57,3 +57,28 @@ class PromoWindowFilterTests(unittest.TestCase):
             "event_end": "2027-12-17",
         }
         self.assertTrue(is_current_or_in_range(row, today=date(2026, 8, 20)))
+
+
+class LiveEventHorizonTests(unittest.TestCase):
+    def test_drops_pre_2026_events(self) -> None:
+        from src.date_range import event_on_or_after_horizon
+
+        self.assertFalse(
+            event_on_or_after_horizon(
+                {"event": "Gamescom 2025", "start_date": "2025-08-20", "end_date": "2025-08-24"}
+            )
+        )
+        self.assertTrue(
+            event_on_or_after_horizon(
+                {
+                    "event": "PlayStation State of Play September 2026",
+                    "start_date": "2026-09-03",
+                    "end_date": "2026-09-03",
+                }
+            )
+        )
+        self.assertTrue(
+            event_on_or_after_horizon(
+                {"event": "The Game Awards 2027", "start_date": "2027-12-09", "end_date": "2027-12-09"}
+            )
+        )

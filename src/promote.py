@@ -1021,6 +1021,7 @@ def _make_plan(row: dict, product: dict, *, queries: list[str]) -> dict | None:
         "platform": product.get("platform") or "",
         "product_type": product.get("product_type") or "",
         "role": role,
+        "release_date": product.get("release_date") or "",
         "edition_year": edition_year(product.get("canonical_title"), product.get("release_date")),
         "offer": _offer(family, role),
         "strategy_summary": _strategy_summary(row, product, family),

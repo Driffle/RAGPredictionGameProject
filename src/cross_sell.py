@@ -61,6 +61,8 @@ def unique_events(plans: list[dict], *, limit: int = 40) -> list[str]:
         key = (canonical_event_name(event), (start or "")[:4])
         if not event or is_quarter_timeframe(event) or key in seen or not key[0]:
             continue
+        if (start or "")[:10] < "2026-01-01":
+            continue
         seen.add(key)
         bucket = upcoming if start >= today else past
         bucket.append((start or "9999", event))
