@@ -23,7 +23,7 @@ from src.geo_placement import apply_event_geo, market_sections, placement_payloa
 from src.official_dates import apply_event_overrides, apply_product_overrides
 from src.historical_calendar import historical_adaptations
 from src.load_data import load_adaptations, load_catalog, load_events
-from src.match import franchise_keys_for_text, superhero_universe_for_row
+from src.match import franchise_keys_for_text, is_superhero_release_window, superhero_universe_for_row
 from src.orders import ORDER_YEARS, load_order_dashboard
 from src.promote import (
     MIN_EVENT_GAME_RECS,
@@ -34,12 +34,19 @@ from src.promote import (
     plans_active_on,
     product_role,
     recommended_games_for_event,
+    superhero_catalog_games,
 )
 from src.priorities import (
     filter_trend_bundle,
     load_cached_brief,
     rank_daily_priorities,
     save_daily_brief,
+)
+from src.trend_interest import (
+    PIN_EVENTS,
+    PIN_PRODUCTS,
+    build_lookup_interest,
+    fill_missing_lookup_wiki,
 )
 from src.provenance import display_source, stamp_provenance
 
@@ -195,6 +202,7 @@ class FloorStore:
         self._dashboard_cache = None
         self._refresh_trends(refresh=False)
         self._build_featured()
+        self._ensure_featured_wiki()
         self.meta = live_meta()
         self.loaded = True
 
@@ -206,14 +214,17 @@ class FloorStore:
     def refresh_trends(self) -> None:
         self._refresh_trends(refresh=True)
         self._build_featured()
+        self._ensure_featured_wiki()
 
     def _refresh_trends(self, *, refresh: bool) -> None:
         cached = None if refresh else load_cached_brief()
         if cached and not refresh:
             bundle, _ = cached
+            calendar = self.events + self.adaptations
+            bundle = fill_missing_lookup_wiki(bundle, self.catalog, calendar)
             self.bundle = filter_trend_bundle(
                 self.catalog,
-                self.events + self.adaptations,
+                calendar,
                 bundle,
             )
             self.priorities = rank_daily_priorities(
@@ -260,6 +271,39 @@ class FloorStore:
             if len(ordered) >= 80:
                 break
         self.featured = ordered[:80]
+
+    def _lookup_pins(self) -> tuple[list[dict], list[dict]]:
+        products: list[dict] = []
+        seen_titles: set[str] = set()
+        for title in self.featured[:PIN_PRODUCTS]:
+            rows = self.by_title.get(title.lower()) or []
+            if not rows or title.lower() in seen_titles:
+                continue
+            seen_titles.add(title.lower())
+            products.append(rows[0])
+        events: list[dict] = []
+        seen_events: set[str] = set()
+        for card in self.search_events("", limit=PIN_EVENTS):
+            name = (card.get("name") or "").strip().lower()
+            if not name or name in seen_events:
+                continue
+            row = self.resolve_event(card.get("name") or "")
+            if not row:
+                continue
+            seen_events.add(name)
+            events.append(row)
+        return products, events
+
+    def _ensure_featured_wiki(self) -> None:
+        products, events = self._lookup_pins()
+        calendar = self.events + self.adaptations
+        self.bundle = fill_missing_lookup_wiki(
+            self.bundle,
+            self.catalog,
+            calendar,
+            pin_products=products,
+            pin_events=events,
+        )
 
     def _lookup_plans(self, mapping: dict[str, list[dict]], key: str, field: str) -> list[dict]:
         if mapping:
@@ -924,10 +968,11 @@ class FloorStore:
                 if title and title.lower() not in seen:
                     seen.add(title.lower())
                     products.append(self._title_card(title))
-        products = self._ensure_min_event_games(
-            row,
-            self._backfill_owned_products(name, prioritize_owned(name, products), limit=MIN_EVENT_GAME_RECS),
-        )
+        seeded = self._backfill_owned_products(name, prioritize_owned(name, products), limit=MIN_EVENT_GAME_RECS)
+        if is_superhero_release_window(row):
+            products = self._superhero_release_products(row, seeded)
+        else:
+            products = self._ensure_min_event_games(row, seeded)
         start = row.get("start_date") or ""
         end = row.get("end_date") or start
         live = bool(start and start <= today <= (end or start))
@@ -1034,7 +1079,10 @@ class FloorStore:
             range_end=range_end,
         )[:12]
         universe = superhero_universe_for_row(row)
-        product_cap = 36 if universe else max(12, MIN_EVENT_GAME_RECS)
+        if is_superhero_release_window(row):
+            product_cap = max(len(products), MIN_EVENT_GAME_RECS)
+        else:
+            product_cap = 36 if universe else max(12, MIN_EVENT_GAME_RECS)
         window_cap = 16 if universe else 8
         kit_limit = 16 if universe else 8
         synced_windows = related_plans[:window_cap]
@@ -1115,14 +1163,15 @@ class FloorStore:
             }
             return out
 
-        products = self._ensure_min_event_games(
-            row,
-            self._backfill_owned_products(
-                label, [enrich(plan) for plan in payload.get("products") or []], limit=MIN_EVENT_GAME_RECS
-            ),
-        ) if row else self._backfill_owned_products(
+        seeded = self._backfill_owned_products(
             label, [enrich(plan) for plan in payload.get("products") or []], limit=MIN_EVENT_GAME_RECS
         )
+        if row and is_superhero_release_window(row):
+            products = self._superhero_release_products(row, seeded)
+        elif row:
+            products = self._ensure_min_event_games(row, seeded)
+        else:
+            products = seeded
         by_role: dict[str, list[dict]] = {}
         for item in products:
             by_role.setdefault(item.get("role") or "game", []).append(item)
@@ -1482,6 +1531,31 @@ class FloorStore:
                 filled.append(item)
             product["year_max_events"] = filled
         return product
+
+    def _superhero_release_products(self, row: dict, products: list[dict]) -> list[dict]:
+        universe = superhero_universe_for_row(row)
+        if not universe:
+            return products
+        lead = (row.get("related_game") or "").strip().lower()
+        out: list[dict] = []
+        seen: set[str] = set()
+
+        def add(title: str) -> None:
+            key = (title or "").strip().lower()
+            if not key or key in seen:
+                return
+            seen.add(key)
+            card = self._title_card(title)
+            card["role"] = "game"
+            out.append(card)
+
+        if lead:
+            add(lead)
+        for item in products:
+            add(item.get("canonical_title") or "")
+        for item in superhero_catalog_games(self.catalog, primary=universe):
+            add(item.get("canonical_title") or "")
+        return out
 
     def _is_event_game_rec(self, item: dict) -> bool:
         role = (item.get("role") or "").lower()
@@ -1894,6 +1968,18 @@ class FloorStore:
                     "image_url": art.get("image_url") or "",
                 }
             )
+        lookup_interest = []
+        pin_products, pin_events = self._lookup_pins()
+        for row in build_lookup_interest(
+            google=google,
+            wiki=wiki,
+            catalog=self.catalog,
+            events=self.events + self.adaptations,
+            pin_products=pin_products,
+            pin_events=pin_events,
+        ):
+            art = _cover(row["query"], row["kind"])
+            lookup_interest.append({**row, "image_url": art.get("image_url") or ""})
         return {
             "as_of": date.today().isoformat(),
             "kpis": {
@@ -1902,6 +1988,12 @@ class FloorStore:
                 "priority_titles": len(self.priorities),
                 "total_google_traffic": sum(row["traffic"] for row in traffic_rows),
                 "total_wiki_views": sum(row["views"] for row in wiki_rows),
+                "lookup_titles": len(lookup_interest),
+                "lookup_google_searches": sum(row["google_searches"] for row in lookup_interest),
+                "lookup_searches": sum(row.get("searches") or 0 for row in lookup_interest),
+                "lookup_wiki_views": sum(
+                    row["wiki_window_views"] or row["wiki_views"] for row in lookup_interest
+                ),
                 "geographies": len(placement["tracked_geos"]),
                 "placement_events": sum(
                     row["event_count"] for row in placement["placements"].values()
@@ -1916,11 +2008,13 @@ class FloorStore:
             "google_top": traffic_rows[:18],
             "wikipedia_top": wiki_rows[:18],
             "priority_scores": priority_rows,
+            "lookup_interest": lookup_interest,
             "geo_placement": placement,
             "source_mix": [
                 ("Google Trends", len(google)),
                 ("Wikipedia pageviews", len(wiki)),
                 ("Merchandising priorities", len(self.priorities)),
+                ("Product & event lookups", len(lookup_interest)),
             ],
         }
 

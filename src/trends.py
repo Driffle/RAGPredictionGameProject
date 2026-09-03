@@ -13,7 +13,7 @@ import xml.etree.ElementTree as ET
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import date, timedelta
 from statistics import median
-from urllib.parse import quote
+from urllib.parse import quote, unquote
 
 from src.http import http_get
 
@@ -64,6 +64,10 @@ WIKI_WATCHLIST = {
     "Overwatch": ["overwatch"],
     "F1 (formula racing)": ["f1"],
     "PGA Tour": ["pga tour"],
+    "Marvel's Wolverine": ["wolverine", "marvel's wolverine"],
+    "Ghost of Yōtei": ["ghost of yotei", "ghost of tsushima"],
+    "Intergalactic: The Heretic Prophet": ["intergalactic"],
+    "Resident Evil Requiem": ["resident evil"],
 }
 
 
@@ -125,15 +129,44 @@ def fetch_google_trends(geos: tuple[str, ...] = DEFAULT_GEOS) -> list[dict]:
 
 
 def _wiki_article_path(title: str) -> str:
-    return quote(title.replace(" ", "_"), safe=":_()")
+    cleaned = unquote((title or "").replace(" ", "_"))
+    return quote(cleaned, safe=":_()")
 
 
-def fetch_wiki_pageviews(as_of: date | None = None, days: int = 10) -> list[dict]:
+def _pageview_range(
+    as_of: date,
+    days: int,
+    window: tuple[date, date] | None,
+) -> tuple[date, date]:
+    yesterday = as_of - timedelta(days=1)
+    if window:
+        start, end = window
+        end = min(end, yesterday)
+        if end < start or (end - start).days < max(3, days - 1):
+            start = yesterday - timedelta(days=days)
+            end = yesterday
+        else:
+            start = min(start, end)
+        return start, end
+    return yesterday - timedelta(days=days), yesterday
+
+
+def fetch_wiki_pageviews(
+    as_of: date | None = None,
+    days: int = 10,
+    extra_watchlist: dict[str, list[str]] | None = None,
+    *,
+    include_default: bool = True,
+    windows: dict[str, tuple[date, date]] | None = None,
+) -> list[dict]:
     """Recent English Wikipedia pageviews for the game/movie watchlist."""
-    end = (as_of or date.today()) - timedelta(days=1)
-    start = end - timedelta(days=days)
+    day = as_of or date.today()
+    watchlist: dict[str, list[str]] = dict(WIKI_WATCHLIST) if include_default else {}
+    if extra_watchlist:
+        watchlist.update(extra_watchlist)
 
     def one_article(article: str, queries: list[str]) -> dict | None:
+        start, end = _pageview_range(day, days, (windows or {}).get(article))
         url = (
             "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/"
             f"en.wikipedia/all-access/user/{_wiki_article_path(article)}/"
@@ -160,13 +193,16 @@ def fetch_wiki_pageviews(as_of: date | None = None, days: int = 10) -> list[dict
             "baseline": int(baseline),
             "spike_ratio": round(ratio, 2),
             "series": points,
+            "window_start": start.isoformat(),
+            "window_end": end.isoformat(),
+            "window_views": sum(views for _, views in points),
         }
 
     rows: list[dict] = []
     with ThreadPoolExecutor(max_workers=8) as pool:
         futures = [
             pool.submit(one_article, article, queries)
-            for article, queries in WIKI_WATCHLIST.items()
+            for article, queries in watchlist.items()
         ]
         for future in as_completed(futures):
             row = future.result()
@@ -176,9 +212,18 @@ def fetch_wiki_pageviews(as_of: date | None = None, days: int = 10) -> list[dict
     return rows
 
 
-def collect_trend_bundle(as_of: date | None = None) -> dict:
+def collect_trend_bundle(
+    as_of: date | None = None,
+    extra_watchlist: dict[str, list[str]] | None = None,
+    windows: dict[str, tuple[date, date]] | None = None,
+) -> dict:
     google = fetch_google_trends()
-    wiki = fetch_wiki_pageviews(as_of=as_of)
+    wiki = fetch_wiki_pageviews(
+        as_of=as_of,
+        days=14 if extra_watchlist else 10,
+        extra_watchlist=extra_watchlist,
+        windows=windows,
+    )
     return {
         "fetched_on": (as_of or date.today()).isoformat(),
         "google_trends": google,

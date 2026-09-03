@@ -60,6 +60,7 @@
           <ul id="suggest" class="suggest" hidden role="listbox"></ul>
         </label>
         <button type="submit" class="go" data-i18n="product.submit">Look up</button>
+        <button type="button" class="go ghost js-download-pdf" data-i18n="common.downloadPdf">Download PDF</button>
       </form>
       <p id="lookup-status" class="status" hidden></p>
       <div id="brief" class="brief" hidden></div>
@@ -81,6 +82,7 @@
           <ul id="event-suggest" class="suggest" hidden role="listbox"></ul>
         </label>
         <button type="submit" class="go" data-i18n="event.submit">Open window</button>
+        <button type="button" class="go ghost js-download-pdf" data-i18n="common.downloadPdf">Download PDF</button>
       </form>
       <div class="filter-strip" aria-label="Event filters">
         <label><span data-i18n="event.year">Year</span><select id="event-year"><option value="">2026–2030</option><option>2026</option><option>2027</option><option>2028</option><option>2029</option><option>2030</option></select></label>
@@ -109,6 +111,7 @@
           <ul id="crosssell-suggest" class="suggest" hidden role="listbox"></ul>
         </label>
         <button type="submit" class="go" data-i18n="crosssell.submit">Cross-sell kit</button>
+        <button type="button" class="go ghost js-download-pdf" data-i18n="common.downloadPdf">Download PDF</button>
       </form>
       <p id="crosssell-status" class="status" hidden></p>
       <div id="crosssell-brief" class="brief" hidden></div>
@@ -167,6 +170,7 @@
           </select>
         </label>
         <button type="submit" class="go" data-i18n="calendar.submit">List windows</button>
+        <button type="button" class="go ghost js-download-pdf" data-i18n="common.downloadPdf">Download PDF</button>
       </form>
       <div class="filter-strip" aria-label="Quick ranges">
         <button type="button" class="go ghost cal-preset" data-sm="6" data-sy="2026" data-em="8" data-ey="2026" data-i18n="calendar.presetJunAug">Jun–Aug 2026</button>
@@ -182,11 +186,12 @@
       <div class="intro dash-intro">
         <div>
           <h2 data-i18n="trends.title">Search trend desk</h2>
-          <p data-i18n="trends.intro">Google Trends RSS topics ranked by traffic, linked to merchandising priorities and cover art.</p>
+          <p data-i18n="trends.intro">Search and pageview counts for the same product and event lookups, including launch windows like Marvel's Wolverine.</p>
         </div>
         <div class="dash-tools">
           <p id="trends-asof" class="meta"></p>
           <button type="button" id="refresh-trends-page" class="go ghost" data-i18n="trends.refresh">Refresh trends</button>
+          <button type="button" class="go ghost js-download-pdf" data-i18n="common.downloadPdf">Download PDF</button>
         </div>
       </div>
       <p id="trends-status" class="status" data-i18n="trends.loading">Loading trend analysis…</p>
@@ -194,9 +199,14 @@
     </section>
 
     <section id="page-traffic" class="page">
-      <div class="intro">
-        <h2 data-i18n="traffic.title">Traffic &amp; pageview analysis</h2>
-        <p data-i18n="traffic.intro">Gaming search signals plus country-wise product and event placement.</p>
+      <div class="intro dash-intro">
+        <div>
+          <h2 data-i18n="traffic.title">Traffic &amp; pageview analysis</h2>
+          <p data-i18n="traffic.intro">Gaming search signals plus country-wise product and event placement.</p>
+        </div>
+        <div class="dash-tools">
+          <button type="button" class="go ghost js-download-pdf" data-i18n="common.downloadPdf">Download PDF</button>
+        </div>
       </div>
       <p id="traffic-status" class="status" data-i18n="traffic.loading">Loading traffic charts…</p>
       <div id="traffic-board" hidden></div>
@@ -212,6 +222,7 @@
           <p id="dash-asof" class="meta"></p>
           <button type="button" id="refresh-db" class="go ghost" data-i18n="dash.refreshDb">Refresh database</button>
           <button type="button" id="refresh-trends" class="go ghost" data-i18n="dash.refreshTrends">Refresh trends</button>
+          <button type="button" class="go ghost js-download-pdf" data-i18n="common.downloadPdf">Download PDF</button>
         </div>
       </div>
       <p id="dash-status" class="status" data-i18n="dash.loading">Loading dashboard…</p>
@@ -219,9 +230,14 @@
     </section>
 
     <section id="page-archive" class="page">
-      <div class="intro">
-        <h2 data-i18n="archive.title">Archive</h2>
-        <p data-i18n="archive.intro">Every tracked gaming event worldwide from 2022 through 2026, with the exact runtime dates for that edition.</p>
+      <div class="intro dash-intro">
+        <div>
+          <h2 data-i18n="archive.title">Archive</h2>
+          <p data-i18n="archive.intro">Every tracked gaming event worldwide from 2022 through 2026, with the exact runtime dates for that edition.</p>
+        </div>
+        <div class="dash-tools">
+          <button type="button" class="go ghost js-download-pdf" data-i18n="common.downloadPdf">Download PDF</button>
+        </div>
       </div>
       <form id="archive-form" class="desk-form" autocomplete="off">
         <label>
@@ -249,6 +265,8 @@
     Daily Wikipedia product + event checks · catalog · Google Trends RSS · Wikimedia pageviews
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.2/dist/jspdf.umd.min.js"></script>
   <script src="/static/js/i18n.js"></script>
   <script src="/static/js/app.js"></script>
 </body>

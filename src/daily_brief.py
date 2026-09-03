@@ -23,6 +23,7 @@ from src.priorities import (
     save_daily_brief,
 )
 from src.promote import build_plans
+from src.trend_interest import fill_missing_lookup_wiki, watchlist_for_lookups
 from src.trends import collect_trend_bundle
 
 
@@ -66,11 +67,13 @@ def run(*, refresh: bool = False, on: date | None = None, fetch: bool = True) ->
         except FileNotFoundError as exc:
             print(f"orders skipped: {exc}")
 
+    calendar = events + adaptations
     if not refresh and cache_is_fresh(day):
         cached = load_cached_brief(day)
         if cached:
             bundle, _ = cached
-            bundle = filter_trend_bundle(catalog, events + adaptations, bundle)
+            bundle = fill_missing_lookup_wiki(bundle, catalog, calendar, as_of=day)
+            bundle = filter_trend_bundle(catalog, calendar, bundle)
             priorities = rank_daily_priorities(catalog, plans, bundle, on=day)
             folder = save_daily_brief(bundle, priorities, day)
             return {
@@ -84,8 +87,9 @@ def run(*, refresh: bool = False, on: date | None = None, fetch: bool = True) ->
                 "orders": order_meta,
             }
 
-    bundle = collect_trend_bundle(as_of=day)
-    bundle = filter_trend_bundle(catalog, events + adaptations, bundle)
+    extra, windows = watchlist_for_lookups(catalog, calendar, as_of=day)
+    bundle = collect_trend_bundle(as_of=day, extra_watchlist=extra, windows=windows)
+    bundle = filter_trend_bundle(catalog, calendar, bundle)
     priorities = rank_daily_priorities(catalog, plans, bundle, on=day)
     folder = save_daily_brief(bundle, priorities, day)
     return {

@@ -273,34 +273,106 @@ def _is_superhero_media(row: dict) -> bool:
     return any(token in event_type for token in ("film", "theatrical", "ott", "series", "streaming"))
 
 
+def superhero_universe_for_title(value: str | None) -> str | None:
+    """Marvel or DC from a catalog game title, using brand and character IPs."""
+    text = normalize_franchise_text(value)
+    if not text:
+        return None
+    if re.search(r"\bmarvel\b", text):
+        return "marvel"
+    if re.search(r"\bdc\b", text) or "dc comics" in text or "dc universe" in text:
+        return "dc"
+    keys = franchise_keys_for_text(value)
+    mapped = {CHARACTER_UNIVERSE[key] for key in keys if key in CHARACTER_UNIVERSE}
+    if "marvel" in keys or "marvel" in mapped:
+        return "marvel"
+    if "dc" in keys or "dc" in mapped:
+        return "dc"
+    marvel_needles = (
+        "spider man",
+        "spiderman",
+        "wolverine",
+        "midnight suns",
+        "guardians of the galaxy",
+        "x men",
+        "deadpool",
+        "venom",
+        "miles morales",
+        "spider verse",
+    )
+    dc_needles = (
+        "batman",
+        "arkham knight",
+        "arkham asylum",
+        "arkham city",
+        "arkham origins",
+        "superman",
+        "supergirl",
+        "injustice",
+        "gotham knights",
+        "suicide squad",
+        "wonder woman",
+        "justice league",
+        "lego batman",
+        "lego dc",
+    )
+    if any(needle in text for needle in marvel_needles):
+        return "marvel"
+    if any(needle in text for needle in dc_needles):
+        return "dc"
+    return None
+
+
+def is_superhero_release_window(row: dict | str | None) -> bool:
+    """True for a Marvel/DC SKU merchandising window (not a film or expo)."""
+    if not isinstance(row, dict):
+        name = str(row or "")
+        if "release window" not in name.lower():
+            return False
+        return superhero_universe_for_title(name) in {"marvel", "dc"}
+    name = f"{row.get('event') or ''} {row.get('ip_adaptation') or ''} {row.get('related_game') or ''}"
+    source = (row.get("source") or "").lower()
+    event_type = (row.get("event_type") or row.get("type") or "").lower()
+    if (
+        "release window" not in name.lower()
+        and source != "announced_product_window"
+        and event_type != "product release"
+    ):
+        return False
+    return superhero_universe_for_row(row) in {"marvel", "dc"}
+
+
 def superhero_universe_for_row(row: dict | str | None) -> str | None:
-    """Marvel or DC when the row is a superhero film/series, else None.
+    """Marvel or DC for superhero films/series and those games' release windows.
 
     Conventions and mixed 'Marvel, DC, Star Wars' related-game fields stay
     generic so they do not swallow the whole superhero catalog.
     """
     if not isinstance(row, dict):
-        text = normalize_franchise_text(row)
-        if any(hint in text for hint in _MARVEL_NAME_HINTS):
-            return "marvel"
-        if any(hint in text for hint in _DC_NAME_HINTS) or re.search(r"\bdc\b", text):
-            return "dc"
-        return None
+        return superhero_universe_for_title(row)
     related = normalize_franchise_text(row.get("related_game") or "")
     if related in {"marvel", "mcu"}:
         return "marvel"
     if related in {"dc", "dcu", "dc comics"}:
         return "dc"
+    blob = f"{row.get('event') or ''} {row.get('ip_adaptation') or ''} {row.get('related_game') or ''}"
+    source = (row.get("source") or "").lower()
+    event_type = (row.get("event_type") or "").lower()
+    is_release_window = (
+        "release window" in blob.lower()
+        or source == "announced_product_window"
+        or event_type == "product release"
+    )
+    if is_release_window:
+        return superhero_universe_for_title(blob)
     if not _is_superhero_media(row):
         return None
-    blob = normalize_franchise_text(
-        f"{row.get('event') or ''} {row.get('ip_adaptation') or ''} {row.get('related_game') or ''}"
-    )
-    if any(hint in blob for hint in _MARVEL_NAME_HINTS):
+    text = normalize_franchise_text(blob)
+    if any(hint in text for hint in _MARVEL_NAME_HINTS) or re.search(r"\bmarvel\b", text):
         return "marvel"
-    if any(hint in blob for hint in _DC_NAME_HINTS) or re.search(r"\bdc\b", blob):
+    if any(hint in text for hint in _DC_NAME_HINTS) or re.search(r"\bdc\b", text):
         return "dc"
-    return None
+    return superhero_universe_for_title(blob)
 
 
 def franchises_overlap(left: str | None, right: str | None) -> bool:

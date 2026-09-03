@@ -618,3 +618,40 @@ th, td { text-align: left; padding: 8px 8px; border-bottom: 1px solid var(--line
     transition: none !important;
   }
 }
+
+body.is-pdf-export .aurora,
+body.is-pdf-export .grain,
+body.is-pdf-export .mast,
+body.is-pdf-export .colophon,
+body.is-pdf-export .desk-form,
+body.is-pdf-export .filter-strip,
+body.is-pdf-export .dash-tools,
+body.is-pdf-export .js-download-pdf,
+body.is-pdf-export .nav-toggle,
+body.is-pdf-export .status[hidden] {
+  display: none !important;
+}
+body.is-pdf-export .page { display: none !important; }
+body.is-pdf-export .page.is-on {
+  display: block !important;
+  background: var(--bg);
+  color: var(--ink);
+  padding: 24px;
+}
+body.is-pdf-export,
+body.is-pdf-export .page.is-on {
+  background: #07080f !important;
+}
+
+@media print {
+  .aurora, .grain, .mast, .colophon, .desk-form, .filter-strip, .dash-tools,
+  .js-download-pdf, .nav-toggle, .status[hidden] { display: none !important; }
+  .page { display: none !important; }
+  .page.is-on { display: block !important; }
+  body {
+    background: #07080f;
+    color: #f4f7ff;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}

@@ -1529,13 +1529,74 @@ async function loadTrendsBoard(force = false) {
     status.hidden = true;
     root.hidden = false;
     root.dataset.ready = "1";
+    const locale = activeLocale();
+    const dash = "—";
+    const lookupRows = d.lookup_interest || [];
+    const googleCell = (row) => {
+      if (!row.google_searches) {
+        return `<span class="meta">${escapeHtml(t("trends.notTrending"))}</span>`;
+      }
+      const geos = (row.google_geos || []).join(", ");
+      const label = row.google_label || Number(row.google_searches).toLocaleString(locale);
+      return `${escapeHtml(label)}${geos ? ` <span class="meta">${escapeHtml(geos)}</span>` : ""}`;
+    };
+    const searchesCell = (row) => {
+      const n = Number(row.searches || row.google_searches || row.wiki_window_views || row.wiki_views || 0);
+      if (!n) return dash;
+      const source = row.search_source === "google_trends"
+        ? t("trends.searchSourceGoogle")
+        : t("trends.searchSourceWiki");
+      const geos = (row.google_geos || []).join(", ");
+      return `<b>${n.toLocaleString(locale)}</b> <span class="meta">${escapeHtml(source)}${geos ? ` · ${escapeHtml(geos)}` : ""}</span>`;
+    };
+    const wikiCell = (row) => {
+      const windowViews = row.wiki_window_views || row.wiki_views;
+      if (!windowViews) return dash;
+      const latest = row.wiki_views
+        ? ` <span class="meta">${Number(row.wiki_views).toLocaleString(locale)} ${escapeHtml(t("trends.dailyViews"))}</span>`
+        : "";
+      return `${Number(windowViews).toLocaleString(locale)}${latest}`;
+    };
+    const queryButton = (row) => row.kind === "event"
+      ? `<button type="button" class="linkish" data-open-event="${escapeHtml(row.query)}">${escapeHtml(row.query)}</button>`
+      : `<button type="button" class="linkish" data-open="${escapeHtml(row.query)}">${escapeHtml(row.query)}</button>`;
     root.innerHTML = `
       <div class="kpis">
-        <div class="kpi"><b>${Number(d.kpis.google_topics).toLocaleString(activeLocale())}</b><span>${t("trends.topics")}</span></div>
-        <div class="kpi"><b>${Number(d.kpis.total_google_traffic).toLocaleString(activeLocale())}</b><span>${t("trends.matchedTraffic")}</span></div>
-        <div class="kpi"><b>${Number(d.kpis.wikipedia_spikes).toLocaleString(activeLocale())}</b><span>${t("trends.wikiSpikes")}</span></div>
-        <div class="kpi"><b>${Number(d.kpis.priority_titles).toLocaleString(activeLocale())}</b><span>${t("trends.priorities")}</span></div>
+        <div class="kpi"><b>${Number(d.kpis.google_topics).toLocaleString(locale)}</b><span>${t("trends.topics")}</span></div>
+        <div class="kpi"><b>${Number(d.kpis.total_google_traffic).toLocaleString(locale)}</b><span>${t("trends.matchedTraffic")}</span></div>
+        <div class="kpi"><b>${Number(d.kpis.wikipedia_spikes).toLocaleString(locale)}</b><span>${t("trends.wikiSpikes")}</span></div>
+        <div class="kpi"><b>${Number(d.kpis.priority_titles).toLocaleString(locale)}</b><span>${t("trends.priorities")}</span></div>
       </div>
+      <section class="card" style="margin-top:18px">
+        <h4>${t("trends.lookupTitle")}</h4>
+        <p class="meta">${t("trends.lookupIntro")}</p>
+        <div class="kpis">
+          <div class="kpi"><b>${Number(d.kpis.lookup_titles || lookupRows.length).toLocaleString(locale)}</b><span>${t("trends.lookupKpi")}</span></div>
+          <div class="kpi"><b>${Number(d.kpis.lookup_searches || d.kpis.lookup_google_searches || 0).toLocaleString(locale)}</b><span>${t("trends.searches")}</span></div>
+          <div class="kpi"><b>${Number(d.kpis.lookup_wiki_views || 0).toLocaleString(locale)}</b><span>${t("trends.wikiPageviews")}</span></div>
+        </div>
+        <div class="table-scroll">
+          <table><thead><tr>
+            <th>${t("trends.query")}</th>
+            <th>${t("trends.kind")}</th>
+            <th>${t("trends.window")}</th>
+            <th>${t("trends.searches")}</th>
+            <th>${t("trends.googleSearches")}</th>
+            <th>${t("trends.wikiViews")}</th>
+            <th>${t("trends.spike")}</th>
+          </tr></thead><tbody>
+            ${lookupRows.map((row) => `<tr>
+              <td>${queryButton(row)}</td>
+              <td>${escapeHtml(row.kind === "event" ? t("trends.kindEvent") : t("trends.kindProduct"))}</td>
+              <td class="meta">${row.window_start ? `${niceDate(row.window_start)} → ${niceDate(row.window_end)}` : dash}</td>
+              <td>${searchesCell(row)}</td>
+              <td>${googleCell(row)}</td>
+              <td>${wikiCell(row)}</td>
+              <td>${row.spike_ratio ? `${escapeHtml(String(row.spike_ratio))}×` : dash}</td>
+            </tr>`).join("")}
+          </tbody></table>
+        </div>
+      </section>
       <div class="grid-2">
         <section class="card chart-card">
           <h4>${t("trends.googleTopics")}</h4>
@@ -1564,7 +1625,7 @@ async function loadTrendsBoard(force = false) {
           ${(d.google_top || []).map((row) => `<tr>
             <td>${escapeHtml(row.label)}</td>
             <td>${escapeHtml(row.geo)}</td>
-            <td>${Number(row.traffic).toLocaleString(activeLocale())}</td>
+            <td>${Number(row.traffic).toLocaleString(locale)}</td>
             <td class="meta">${escapeHtml(row.news || "")}</td>
           </tr>`).join("")}
         </tbody></table>
@@ -1600,6 +1661,11 @@ async function loadTrendsBoard(force = false) {
       $("#query").value = btn.dataset.open;
       showPage("lookup");
       lookup(btn.dataset.open);
+    }));
+    root.querySelectorAll("[data-open-event]").forEach((btn) => btn.addEventListener("click", () => {
+      $("#event-query").value = btn.dataset.openEvent;
+      showPage("event");
+      lookupEvent(btn.dataset.openEvent);
     }));
   } catch (err) {
     status.textContent = err.message;
@@ -1755,9 +1821,106 @@ async function loadTrafficBoard(force = false) {
   }
 }
 
+function activePageName() {
+  return (document.querySelector(".page.is-on")?.id || "page-lookup").replace("page-", "");
+}
+
+const PDF_STATUS = {
+  lookup: "lookup-status",
+  event: "event-status",
+  crosssell: "crosssell-status",
+  calendar: "calendar-status",
+  trends: "trends-status",
+  traffic: "traffic-status",
+  dashboard: "dash-status",
+  archive: "archive-status",
+};
+
+function pageHasResults(name) {
+  const selectors = {
+    lookup: "#brief",
+    event: "#event-brief, #event-results",
+    crosssell: "#crosssell-brief",
+    calendar: "#calendar-brief",
+    trends: "#trends-board",
+    traffic: "#traffic-board",
+    dashboard: "#dashboard",
+    archive: "#archive-board",
+  };
+  return [...document.querySelectorAll(selectors[name] || "")].some(
+    (el) => el && !el.hidden && String(el.innerText || "").trim()
+  );
+}
+
+function setPdfStatus(name, message) {
+  const el = document.getElementById(PDF_STATUS[name] || "lookup-status");
+  if (!el) return;
+  if (!message) {
+    el.hidden = true;
+    return;
+  }
+  el.hidden = false;
+  el.textContent = message;
+}
+
+async function downloadActivePdf() {
+  const name = activePageName();
+  if (!pageHasResults(name)) {
+    setPdfStatus(name, t("common.pdfEmpty"));
+    return;
+  }
+  const page = document.querySelector(".page.is-on");
+  const html2canvas = window.html2canvas;
+  const JsPDF = window.jspdf?.jsPDF;
+  if (!html2canvas || !JsPDF || !page) {
+    window.print();
+    return;
+  }
+  setPdfStatus(name, t("common.pdfSaving"));
+  const buttons = $$(".js-download-pdf");
+  buttons.forEach((btn) => { btn.disabled = true; });
+  document.body.classList.add("is-pdf-export");
+  try {
+    if (document.fonts?.ready) await document.fonts.ready;
+    await new Promise((resolve) => requestAnimationFrame(() => requestAnimationFrame(resolve)));
+    const canvas = await html2canvas(page, {
+      backgroundColor: "#07080f",
+      scale: 2,
+      useCORS: true,
+      logging: false,
+      windowWidth: Math.max(page.scrollWidth, 1100),
+    });
+    const img = canvas.toDataURL("image/jpeg", 0.92);
+    const pdf = new JsPDF({ unit: "pt", format: "a4", orientation: "p" });
+    const pageWidth = pdf.internal.pageSize.getWidth();
+    const pageHeight = pdf.internal.pageSize.getHeight();
+    const imgWidth = pageWidth;
+    const imgHeight = (canvas.height * imgWidth) / canvas.width;
+    let heightLeft = imgHeight;
+    let position = 0;
+    pdf.addImage(img, "JPEG", 0, position, imgWidth, imgHeight);
+    heightLeft -= pageHeight;
+    while (heightLeft > 0) {
+      position -= pageHeight;
+      pdf.addPage();
+      pdf.addImage(img, "JPEG", 0, position, imgWidth, imgHeight);
+      heightLeft -= pageHeight;
+    }
+    const stamp = new Date().toISOString().slice(0, 10);
+    pdf.save(`floor-brief-${name}-${stamp}.pdf`);
+    setPdfStatus(name, "");
+  } catch (err) {
+    setPdfStatus(name, err.message || t("common.pdfFailed"));
+  } finally {
+    document.body.classList.remove("is-pdf-export");
+    buttons.forEach((btn) => { btn.disabled = false; });
+  }
+}
+
 function boot() {
   document.title = `${t("shell.title")} — ${t("shell.kicker")}`;
   $$(".tab").forEach((tab) => tab.addEventListener("click", () => showPage(tab.dataset.page)));
+  $$(".js-download-pdf").forEach((btn) => btn.addEventListener("click", () => downloadActivePdf()));
   $("#nav-toggle").addEventListener("click", () => $("#tabs").classList.toggle("is-open"));
   $("#featured").addEventListener("change", (ev) => { if (ev.target.value) { $("#query").value = ev.target.value; lookup(ev.target.value); } });
   $("#featured-event").addEventListener("change", (ev) => { if (ev.target.value) { $("#event-query").value = ev.target.value; lookupEvent(ev.target.value); } });

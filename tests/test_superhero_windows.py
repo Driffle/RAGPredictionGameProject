@@ -6,7 +6,7 @@ from datetime import date
 from src.content_marketing import seo_keywords, social_pack
 from src.coverage import cross_media_releases
 from src.match import queries_for_calendar_row, superhero_universe_for_row
-from src.promote import build_plans, products_for_event
+from src.promote import build_plans, products_for_event, recommended_games_for_event
 
 
 def _film(name: str, related: str, start: str = "2026-12-18") -> dict:
@@ -109,7 +109,61 @@ class SuperheroWindowTests(unittest.TestCase):
         self.assertIn(("Avengers: Doomsday", "Marvel's Spider-Man 2"), mapped)
         self.assertIn(("Avengers: Doomsday", "Marvel's Wolverine"), mapped)
 
-    def test_marvel_seo_and_hashtags(self) -> None:
+    def test_marvel_release_window_lists_marvel_then_dc(self) -> None:
+        row = {
+            "kind": "event",
+            "event": "Marvel's Wolverine release window",
+            "related_game": "Marvel's Wolverine",
+            "event_type": "Product Release",
+            "source": "announced_product_window",
+            "start_date": "2026-09-15",
+            "end_date": "2026-09-29",
+        }
+        self.assertEqual(superhero_universe_for_row(row), "marvel")
+        catalog = [
+            _product("Marvel's Wolverine", release_date="2026-09-15", product_type="announced"),
+            _product("Marvel's Spider-Man 2", release_date="2023-10-20"),
+            _product("Marvel's Midnight Suns", release_date="2022-12-02"),
+            _product("Batman: Arkham Knight", release_date="2015-06-23"),
+            _product("Injustice 2", release_date="2017-05-16"),
+            _product("Fable", release_date="2027-02-23"),
+        ]
+        titles = [item["canonical_title"] for item in recommended_games_for_event(row, catalog)]
+        self.assertEqual(
+            titles,
+            [
+                "Marvel's Wolverine",
+                "Marvel's Midnight Suns",
+                "Marvel's Spider-Man 2",
+                "Batman: Arkham Knight",
+                "Injustice 2",
+            ],
+        )
+        self.assertNotIn("Fable", titles)
+
+    def test_dc_release_window_lists_dc_then_marvel(self) -> None:
+        row = {
+            "kind": "event",
+            "event": "Batman: Arkham Knight release window",
+            "related_game": "Batman: Arkham Knight",
+            "event_type": "Product Release",
+            "source": "announced_product_window",
+            "start_date": "2015-06-23",
+            "end_date": "2015-07-07",
+        }
+        self.assertEqual(superhero_universe_for_row(row), "dc")
+        catalog = [
+            _product("Marvel's Spider-Man 2", release_date="2023-10-20"),
+            _product("Marvel's Wolverine", release_date="2026-09-15", product_type="announced"),
+            _product("Batman: Arkham Knight", release_date="2015-06-23"),
+            _product("Injustice 2", release_date="2017-05-16"),
+            _product("Gotham Knights", release_date="2022-10-21"),
+            _product("Fable", release_date="2027-02-23"),
+        ]
+        titles = [item["canonical_title"] for item in recommended_games_for_event(row, catalog)]
+        self.assertEqual(titles[:3], ["Batman: Arkham Knight", "Gotham Knights", "Injustice 2"])
+        self.assertEqual(titles[3:], ["Marvel's Wolverine", "Marvel's Spider-Man 2"])
+        self.assertNotIn("Fable", titles)
         keys = " ".join(seo_keywords("Marvel's Wolverine", "Avengers: Doomsday", "adaptation", "game")).lower()
         self.assertIn("marvel games", keys)
         self.assertIn("avengers", keys)

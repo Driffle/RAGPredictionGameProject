@@ -24,9 +24,11 @@ from src.match import (
     build_title_index,
     catalog_around_window,
     franchise_keys_for_text,
+    is_superhero_release_window,
     queries_for_calendar_row,
     rank_catalog,
     superhero_universe_for_row,
+    superhero_universe_for_title,
 )
 from src.paths import DATA_PROCESSED
 
@@ -541,6 +543,41 @@ def select_owned_games(catalog: list[dict], spec, *, limit: int | None = 10) -> 
     return chosen
 
 
+def superhero_catalog_games(catalog: list[dict], *, primary: str) -> list[dict]:
+    """Every unique Marvel and DC catalog game, home universe first."""
+    secondary = "dc" if primary == "marvel" else "marvel"
+    buckets: dict[str, list[dict]] = {primary: [], secondary: []}
+    seen: set[str] = set()
+    today = date.today().isoformat()
+    for item in catalog:
+        if product_role(item) != "game":
+            continue
+        title = item.get("canonical_title") or item.get("product_title") or ""
+        if not title or _is_junk_title(title):
+            continue
+        universe = superhero_universe_for_title(title)
+        if universe not in buckets:
+            continue
+        key = base_edition_title(title).lower()
+        if not key or key in seen:
+            continue
+        seen.add(key)
+        buckets[universe].append(item)
+
+    def sort_key(item: dict) -> tuple:
+        title = (item.get("canonical_title") or "").lower()
+        announced = 0 if (item.get("product_type") or "").lower() == "announced" else 1
+        release = item.get("release_date") or ""
+        future = 0 if release >= today else 1
+        return (announced, future, title)
+
+    ordered: list[dict] = []
+    for universe in (primary, secondary):
+        buckets[universe].sort(key=sort_key)
+        ordered.extend(buckets[universe])
+    return ordered
+
+
 def recommended_games_for_event(
     row: dict,
     catalog: list[dict],
@@ -549,6 +586,16 @@ def recommended_games_for_event(
     title_index: dict[str, list[dict]] | None = None,
 ) -> list[dict]:
     """Top catalog games to merchandise for this event window."""
+    if is_superhero_release_window(row):
+        universe = superhero_universe_for_row(row)
+        if universe:
+            games = superhero_catalog_games(catalog, primary=universe)
+            lead = (row.get("related_game") or "").strip().lower()
+            if lead:
+                head = [item for item in games if (item.get("canonical_title") or "").lower() == lead]
+                rest = [item for item in games if (item.get("canonical_title") or "").lower() != lead]
+                games = head + rest
+            return games
     owner = showcase_owner(calendar_label(row))
     if owner:
         owned = select_owned_games(catalog, owner, limit=limit)

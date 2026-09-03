@@ -22,6 +22,8 @@ from src.promote import (
 # Map free-text trend / news language onto catalog franchise queries.
 TREND_PATTERNS: list[tuple[re.Pattern[str], list[str]]] = [
     (re.compile(r"spider[-\s]?man|spiderman|miles morales", re.I), ["spider-man", "spiderman", "miles morales"]),
+    (re.compile(r"wolverine", re.I), ["wolverine", "marvel's wolverine"]),
+    (re.compile(r"ghost of y[oō]tei", re.I), ["ghost of yotei", "ghost of tsushima"]),
     (re.compile(r"\bbatman\b|arkham", re.I), ["batman", "arkham"]),
     (re.compile(r"\bsuperman\b", re.I), ["superman"]),
     (re.compile(r"star wars|andor|mandalorian", re.I), ["star wars"]),
