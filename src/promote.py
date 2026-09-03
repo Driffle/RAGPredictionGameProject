@@ -11,7 +11,8 @@ import gzip
 import re
 from datetime import date, timedelta
 
-from src.calendar_dedupe import is_gaming_world_event, is_quarter_timeframe
+from src.calendar_dedupe import is_gaming_world_event, is_product_release_window, is_quarter_timeframe
+from src.company_geo import product_origin_geos
 from src.dates import confirmation_kind
 from src.documents import keyword_retrieve
 from src.first_party import (
@@ -19,14 +20,23 @@ from src.first_party import (
     owned_search_queries,
     showcase_owner,
 )
+from src.geo_placement import GEO_META, WORLDWIDE_GEO, geos_for_event, host_spec_for_event
 from src.load_data import gzip_sidecar, parse_date
 from src.match import (
+    FRANCHISE_COMPANIES,
+    GENERIC_RELATED,
     build_title_index,
     catalog_around_window,
+    compact_title_key,
+    companies_overlap,
+    company_key,
+    franchise_companies_for_keys,
     franchise_keys_for_text,
     is_superhero_release_window,
+    normalize_franchise_text,
     queries_for_calendar_row,
     rank_catalog,
+    series_stem_for_title,
     superhero_universe_for_row,
     superhero_universe_for_title,
 )
@@ -578,6 +588,169 @@ def superhero_catalog_games(catalog: list[dict], *, primary: str) -> list[dict]:
     return ordered
 
 
+def _lead_launch_titles(row: dict) -> list[str]:
+    names = _split_titles(row.get("correlated_announced")) + _split_titles(row.get("related_game"))
+    stripped = re.sub(r"\s+release window$", "", calendar_label(row), flags=re.I).strip()
+    if stripped and stripped.lower() not in {name.lower() for name in names}:
+        names.append(stripped)
+    return [name for name in names if name and name.lower() not in GENERIC_RELATED]
+
+
+def _product_company_keys(item: dict) -> set[str]:
+    keys = franchise_keys_for_text(item.get("canonical_title") or "") | franchise_keys_for_text(
+        item.get("franchise") or ""
+    )
+    companies = {company_key(item.get("developer")), company_key(item.get("publisher"))}
+    companies |= franchise_companies_for_keys(keys)
+    return {key for key in companies if key}
+
+
+def launch_window_games(
+    row: dict,
+    catalog: list[dict],
+    *,
+    limit: int | None = None,
+) -> list[dict]:
+    """Every franchise, developer, and publisher sibling for a SKU launch window."""
+    leads = _lead_launch_titles(row)
+    if not leads:
+        return []
+    lead_compacts = {compact_title_key(name) for name in leads if compact_title_key(name)}
+    lead_keys: set[str] = set()
+    lead_stems: set[str] = set()
+    lead_companies: set[str] = set()
+    organizer = company_key(row.get("organizer") or row.get("publisher") or row.get("developer") or "")
+    if organizer:
+        lead_companies.add(organizer)
+    for lead in leads:
+        lead_keys |= set(franchise_keys_for_text(lead))
+        stem = series_stem_for_title(lead)
+        if stem:
+            lead_stems.add(stem)
+    for item in catalog:
+        title = item.get("canonical_title") or item.get("product_title") or ""
+        compact = compact_title_key(title)
+        if compact and compact in lead_compacts:
+            lead_keys |= set(franchise_keys_for_text(title)) | set(franchise_keys_for_text(item.get("franchise") or ""))
+            lead_companies |= _product_company_keys(item)
+            stem = series_stem_for_title(title)
+            if stem:
+                lead_stems.add(stem)
+    lead_companies |= franchise_companies_for_keys(lead_keys)
+    company_franchises = {
+        key
+        for key, company in FRANCHISE_COMPANIES.items()
+        if company_key(company) and company_key(company) in lead_companies
+    }
+    wanted_keys = lead_keys | company_franchises
+    today = date.today().isoformat()
+    scored: list[tuple[tuple, dict]] = []
+    seen: set[str] = set()
+    for item in catalog:
+        title = item.get("canonical_title") or item.get("product_title") or ""
+        if not title or _is_junk_title(title):
+            continue
+        role = product_role(item)
+        compact = compact_title_key(title)
+        item_keys = set(franchise_keys_for_text(title)) | set(franchise_keys_for_text(item.get("franchise") or ""))
+        stem_hit = any(
+            re.search(rf"(?<!\w){re.escape(stem)}(?!\w)", normalize_franchise_text(title))
+            for stem in lead_stems
+        )
+        is_lead = bool(compact and compact in lead_compacts)
+        franchise_hit = bool(item_keys & wanted_keys) or stem_hit
+        company_hit = companies_overlap(_product_company_keys(item), lead_companies)
+        if role == "currency":
+            continue
+        titled_dlc = "dlc" in title.lower() or (item.get("product_type") or "").lower() == "dlc"
+        if titled_dlc and not is_lead:
+            continue
+        if role != "game" and not (is_lead or franchise_hit or stem_hit):
+            continue
+        if not (is_lead or franchise_hit or company_hit):
+            continue
+        key = base_edition_title(title).lower()
+        if not key or key in seen:
+            continue
+        seen.add(key)
+        announced = 0 if (item.get("product_type") or "").lower() == "announced" else 1
+        release = item.get("release_date") or ""
+        future = 0 if release >= today else 1
+        scored.append(
+            (
+                (0 if is_lead else 1, 0 if franchise_hit else 1, 0 if company_hit else 1, announced, future, title.lower()),
+                item,
+            )
+        )
+    scored.sort(key=lambda item: item[0])
+    games = [item for _, item in scored]
+    if limit is not None:
+        return games[:limit]
+    return games
+
+
+def event_origin_geos(row: dict) -> tuple[str, ...]:
+    """Host countries whose local studios should be merchandised at this event."""
+    if is_product_release_window(row):
+        return ()
+    if promo_family(row) in {"sports", "awards", "commerce", "adaptation"}:
+        return ()
+    host = host_spec_for_event(calendar_label(row))
+    if host and host["digital"]:
+        return ()
+    return tuple(geo for geo in geos_for_event(row) if geo and geo != WORLDWIDE_GEO)
+
+
+def games_from_host_country(
+    row: dict,
+    catalog: list[dict],
+    *,
+    geos: tuple[str, ...] | None = None,
+    limit: int | None = None,
+) -> list[dict]:
+    """Catalog games whose developer or publisher is based in the event's country."""
+    wanted = set(geos or event_origin_geos(row))
+    if not wanted:
+        return []
+    named = {
+        compact_title_key(name)
+        for name in _split_titles(row.get("correlated_announced")) + _split_titles(row.get("related_game"))
+        if compact_title_key(name)
+    }
+    today = date.today().isoformat()
+    scored: list[tuple[tuple, dict]] = []
+    seen: set[str] = set()
+    for item in catalog:
+        title = item.get("canonical_title") or item.get("product_title") or ""
+        if not title or _is_junk_title(title):
+            continue
+        if product_role(item) == "currency":
+            continue
+        titled_dlc = "dlc" in title.lower() or (item.get("product_type") or "").lower() == "dlc"
+        if titled_dlc:
+            continue
+        if product_role(item) != "game":
+            continue
+        origins = product_origin_geos(item)
+        if not (origins & wanted):
+            continue
+        key = base_edition_title(title).lower()
+        if not key or key in seen:
+            continue
+        seen.add(key)
+        compact = compact_title_key(title)
+        named_hit = bool(compact and compact in named)
+        announced = 0 if (item.get("product_type") or "").lower() == "announced" else 1
+        release = item.get("release_date") or ""
+        future = 0 if release >= today else 1
+        scored.append(((0 if named_hit else 1, announced, future, title.lower()), item))
+    scored.sort(key=lambda item: item[0])
+    games = [item for _, item in scored]
+    if limit is not None:
+        return games[:limit]
+    return games
+
+
 def recommended_games_for_event(
     row: dict,
     catalog: list[dict],
@@ -601,6 +774,15 @@ def recommended_games_for_event(
         owned = select_owned_games(catalog, owner, limit=limit)
         if owned:
             return owned
+    if is_product_release_window(row):
+        studio = launch_window_games(row, catalog, limit=None)
+        if studio:
+            return studio
+    origin = event_origin_geos(row)
+    if origin:
+        local = games_from_host_country(row, catalog, geos=origin, limit=None)
+        if local:
+            return local
     picked = products_for_event(row, catalog, title_index=title_index)
     games: list[dict] = []
     seen: set[str] = set()
@@ -660,6 +842,15 @@ def products_for_event(
         chosen = select_owned_games(catalog, owner, limit=MIN_EVENT_GAME_RECS)
         if chosen:
             return chosen
+    if is_product_release_window(row) and not superhero_universe_for_row(row):
+        launch = launch_window_games(row, catalog, limit=max(MIN_EVENT_GAME_RECS, 24))
+        if launch:
+            return launch
+    origin = event_origin_geos(row)
+    if origin:
+        local = games_from_host_country(row, catalog, geos=origin, limit=max(MIN_EVENT_GAME_RECS, 24))
+        if local:
+            return local
     queries = queries_for_calendar_row(row)
     label = calendar_label(row).lower()
     rank_queries = [query for query in queries if query != label]
@@ -1018,6 +1209,21 @@ def _strategy_summary(row: dict, product: dict, family: str) -> str:
             f"Promote {title} with the full DC catalog during {label} "
             f"({related}) — Arkham, Injustice, and other DC games in the database. "
             f"Runtime {start} to {end} with a play-before-you-watch lead-in."
+        )
+    if is_product_release_window(row):
+        studio = row.get("organizer") or product.get("publisher") or product.get("developer") or ""
+        studio_bit = f" and other {studio} titles" if studio else " and other games from the same developer and publisher"
+        return (
+            f"Promote {title} with the rest of the franchise{studio_bit} during {label}. "
+            f"Runtime {start} to {end}, with a {family} lead-in and afterglow around those dates."
+        )
+    origin = event_origin_geos(row)
+    if origin:
+        countries = [GEO_META[geo]["country"] for geo in origin if geo in GEO_META]
+        place = " / ".join(countries) or "the host country"
+        return (
+            f"Promote {title} with games from {place} developers and publishers during {label}. "
+            f"Runtime {start} to {end}, with a {family} lead-in and afterglow around those dates."
         )
     return (
         f"Promote {title} as the storefront equivalent of {label} "

@@ -9,7 +9,13 @@ from functools import lru_cache
 
 from src.artwork import artwork_for, load_artwork
 from src.audit_changes import load_changes
-from src.calendar_dedupe import is_gaming_world_event, is_quarter_timeframe, split_deduped_calendar, unique_event_listings
+from src.calendar_dedupe import (
+    is_gaming_world_event,
+    is_product_release_window,
+    is_quarter_timeframe,
+    split_deduped_calendar,
+    unique_event_listings,
+)
 from src.content_marketing import content_kit_for_plans, correlation_from_plan
 from src.coverage import cross_media_releases
 from src.cross_sell import cross_sell_payload, unique_events
@@ -27,9 +33,13 @@ from src.match import franchise_keys_for_text, is_superhero_release_window, supe
 from src.orders import ORDER_YEARS, load_order_dashboard
 from src.promote import (
     MIN_EVENT_GAME_RECS,
+    base_edition_title,
     build_plans,
     correlate_calendar_event,
     correlation_indexes,
+    event_origin_geos,
+    games_from_host_country,
+    launch_window_games,
     make_promotion_plan,
     plans_active_on,
     product_role,
@@ -558,6 +568,7 @@ class FloorStore:
             range_start=range_start,
             range_end=range_end,
         )
+        related_games = self._related_studio_games(title, hero)
         siblings = [_public_product(row) for row in rows[:12]]
         is_announced = (hero.get("product_type") or "").lower() == "announced" or "announc" in (
             hero.get("confirmation") or hero.get("status") or ""
@@ -603,6 +614,7 @@ class FloorStore:
             },
             "cross_media": synced_media,
             "related_events": related_events[:16],
+            "related_games": related_games,
             "trends": trend,
             "content_marketing": content_kit_for_plans(related_plans[:10], perspective="product", limit=6),
         }
@@ -971,6 +983,10 @@ class FloorStore:
         seeded = self._backfill_owned_products(name, prioritize_owned(name, products), limit=MIN_EVENT_GAME_RECS)
         if is_superhero_release_window(row):
             products = self._superhero_release_products(row, seeded)
+        elif is_product_release_window(row):
+            products = self._studio_release_products(row, seeded)
+        elif event_origin_geos(row):
+            products = self._host_country_products(row, seeded)
         else:
             products = self._ensure_min_event_games(row, seeded)
         start = row.get("start_date") or ""
@@ -1168,6 +1184,10 @@ class FloorStore:
         )
         if row and is_superhero_release_window(row):
             products = self._superhero_release_products(row, seeded)
+        elif row and is_product_release_window(row):
+            products = self._studio_release_products(row, seeded)
+        elif row and event_origin_geos(row):
+            products = self._host_country_products(row, seeded)
         elif row:
             products = self._ensure_min_event_games(row, seeded)
         else:
@@ -1555,6 +1575,77 @@ class FloorStore:
             add(item.get("canonical_title") or "")
         for item in superhero_catalog_games(self.catalog, primary=universe):
             add(item.get("canonical_title") or "")
+        return out
+
+    def _studio_release_products(self, row: dict, products: list[dict]) -> list[dict]:
+        lead = (row.get("related_game") or row.get("correlated_announced") or "").strip()
+        out: list[dict] = []
+        seen: set[str] = set()
+
+        def add(title: str) -> None:
+            key = (title or "").strip().lower()
+            if not key or key in seen:
+                return
+            seen.add(key)
+            card = self._title_card(title)
+            card["role"] = "game"
+            out.append(card)
+
+        if lead:
+            add(lead.split(",")[0].strip())
+        for item in products:
+            add(item.get("canonical_title") or "")
+        for item in launch_window_games(row, self.catalog):
+            add(item.get("canonical_title") or "")
+        return out or products
+
+    def _host_country_products(self, row: dict, products: list[dict]) -> list[dict]:
+        out: list[dict] = []
+        seen: set[str] = set()
+
+        def add(title: str) -> None:
+            key = (title or "").strip().lower()
+            if not key or key in seen:
+                return
+            seen.add(key)
+            card = self._title_card(title)
+            card["role"] = "game"
+            out.append(card)
+
+        for item in products:
+            add(item.get("canonical_title") or "")
+        for item in games_from_host_country(row, self.catalog):
+            add(item.get("canonical_title") or "")
+        return out or products
+
+    def _related_studio_games(self, title: str, hero: dict) -> list[dict]:
+        window = next(
+            (
+                row
+                for row in self.events
+                if is_product_release_window(row)
+                and title.lower() in f"{row.get('related_game') or ''} {row.get('event') or ''}".lower()
+            ),
+            {
+                "event": f"{title} release window",
+                "related_game": title,
+                "source": "announced_product_window",
+                "event_type": "Product Release",
+                "organizer": hero.get("publisher") or hero.get("developer") or "",
+            },
+        )
+        current = base_edition_title(title).lower()
+        out: list[dict] = []
+        seen: set[str] = set()
+        for item in launch_window_games(window, self.catalog):
+            name = item.get("canonical_title") or ""
+            key = base_edition_title(name).lower()
+            if not key or key == current or key in seen:
+                continue
+            seen.add(key)
+            out.append(self._title_card(name))
+            if len(out) >= 60:
+                break
         return out
 
     def _is_event_game_rec(self, item: dict) -> bool:

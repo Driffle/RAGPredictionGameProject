@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/static/css/app.css" />
+  <link rel="stylesheet" href="/static/css/app.css?v=studio1" />
 </head>
 <body>
   <div class="aurora" aria-hidden="true"></div>
@@ -261,13 +261,16 @@
     </section>
   </main>
 
+  <div id="pdf-ready" class="pdf-ready" hidden>
+    <a id="pdf-ready-link" download>Save PDF</a>
+  </div>
   <footer class="colophon" data-i18n="shell.footer">
     Daily Wikipedia product + event checks · catalog · Google Trends RSS · Wikimedia pageviews
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.2/dist/jspdf.umd.min.js"></script>
-  <script src="/static/js/i18n.js"></script>
-  <script src="/static/js/app.js"></script>
+  <script src="/static/js/i18n.js?v=studio1"></script>
+  <script src="/static/js/app.js?v=studio1"></script>
 </body>
 </html>

@@ -5,11 +5,12 @@ from __future__ import annotations
 import sys
 from pathlib import Path
 
-from fastapi import FastAPI, HTTPException, Query
+from fastapi import FastAPI, HTTPException, Query, Request
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import FileResponse
+from fastapi.responses import FileResponse, Response
 from fastapi.staticfiles import StaticFiles
 
+from apps.pdf_export import store_pdf_export, take_pdf_export
 from src.artwork import ARTWORK_DIR
 from src.paths import DATA_PROCESSED, PROJECT_ROOT
 from src.store import get_store
@@ -190,6 +191,29 @@ def refresh_trends() -> dict:
 @app.post("/api/database/refresh")
 def refresh_database() -> dict:
     return {"ok": True, **get_store().refresh_database()}
+
+
+@app.post("/api/export-pdf")
+async def export_pdf(request: Request, filename: str = Query("floor-brief.pdf")) -> dict:
+    data = await request.body()
+    try:
+        token = store_pdf_export(filename, data)
+    except ValueError as exc:
+        raise HTTPException(status_code=400, detail=str(exc)) from exc
+    return {"id": token, "url": f"/api/export-pdf/{token}"}
+
+
+@app.get("/api/export-pdf/{token}")
+def download_export_pdf(token: str) -> Response:
+    row = take_pdf_export(token)
+    if not row:
+        raise HTTPException(status_code=404, detail="PDF expired")
+    filename, data = row
+    return Response(
+        content=data,
+        media_type="application/pdf",
+        headers={"Content-Disposition": f'attachment; filename="{filename}"'},
+    )
 
 
 @app.get("/")

@@ -260,6 +260,8 @@ _EVENT_HOSTS: tuple[tuple[str, tuple[str, ...], str, bool], ...] = (
     ("taipei game show", ("TW",), "Taipei", False),
     ("tokyo game show", ("JP",), "Tokyo", False),
     ("chinajoy", ("CN",), "Shanghai", False),
+    ("g-star", ("KR",), "Busan", False),
+    ("gstar", ("KR",), "Busan", False),
     ("paris games week", ("FR",), "Paris", False),
     ("tour de france", ("FR",), "France", False),
 )

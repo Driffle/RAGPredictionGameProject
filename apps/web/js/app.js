@@ -577,6 +577,18 @@ function renderBrief(data) {
         <ul>${actionTactics(action).map((tactic) => `<li>${escapeHtml(tactic)}</li>`).join("")}</ul>
       </section>
     </div>
+    ${(data.related_games || []).length ? `<section class="card" style="margin-top:18px">
+      <h4>${t("brief.alsoPromote")}</h4>
+      <div class="priority-art">
+        ${data.related_games.map((row) => `<article>
+          ${coverHtml(row.image_url, row.canonical_title)}
+          <div>
+            <button type="button" class="linkish" data-open-related-game="${escapeHtml(row.canonical_title)}">${escapeHtml(row.canonical_title)}</button>
+            <p class="meta">${escapeHtml(row.release_label || niceDate(row.release_date))}</p>
+          </div>
+        </article>`).join("")}
+      </div>
+    </section>` : ""}
     ${renderContentMarketing(data.content_marketing)}
     <div class="grid-2">
       <section class="card feature-card">
@@ -613,6 +625,10 @@ function renderBrief(data) {
     $("#event-query").value = btn.dataset.relatedEvent;
     showPage("event");
     lookupEvent(btn.dataset.relatedEvent);
+  }));
+  $$("[data-open-related-game]", $("#brief")).forEach((btn) => btn.addEventListener("click", () => {
+    $("#query").value = btn.dataset.openRelatedGame;
+    lookup(btn.dataset.openRelatedGame);
   }));
   bindContentMarketing($("#brief"));
 }
@@ -1836,20 +1852,27 @@ const PDF_STATUS = {
   archive: "archive-status",
 };
 
-function pageHasResults(name) {
-  const selectors = {
-    lookup: "#brief",
-    event: "#event-brief, #event-results",
-    crosssell: "#crosssell-brief",
-    calendar: "#calendar-brief",
-    trends: "#trends-board",
-    traffic: "#traffic-board",
-    dashboard: "#dashboard",
-    archive: "#archive-board",
-  };
-  return [...document.querySelectorAll(selectors[name] || "")].some(
+const PDF_CAPTURE = {
+  lookup: "#brief",
+  event: "#event-brief, #event-results",
+  crosssell: "#crosssell-brief",
+  calendar: "#calendar-brief",
+  trends: "#trends-board",
+  traffic: "#traffic-board",
+  dashboard: "#dashboard",
+  archive: "#archive-board",
+};
+
+function visiblePdfNodes(name) {
+  const selector = PDF_CAPTURE[name];
+  if (!selector) return [];
+  return [...document.querySelectorAll(selector)].filter(
     (el) => el && !el.hidden && String(el.innerText || "").trim()
   );
+}
+
+function pageHasResults(name) {
+  return visiblePdfNodes(name).length > 0;
 }
 
 function setPdfStatus(name, message) {
@@ -1863,52 +1886,186 @@ function setPdfStatus(name, message) {
   el.textContent = message;
 }
 
+function pdfCaptureTarget(name) {
+  const nodes = visiblePdfNodes(name);
+  if (nodes.length === 1) return nodes[0];
+  return document.querySelector(".page.is-on");
+}
+
+function offerPdfLink(blob, filename) {
+  const wrap = $("#pdf-ready");
+  const link = $("#pdf-ready-link");
+  if (!wrap || !link) return;
+  if (wrap._url) URL.revokeObjectURL(wrap._url);
+  wrap._url = URL.createObjectURL(blob);
+  link.href = wrap._url;
+  link.download = filename;
+  link.textContent = t("common.downloadPdf");
+  wrap.hidden = false;
+}
+
+function triggerAnchorDownload(blob, filename) {
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = filename;
+  a.rel = "noopener";
+  a.style.display = "none";
+  document.body.appendChild(a);
+  a.click();
+  setTimeout(() => {
+    a.remove();
+    URL.revokeObjectURL(url);
+  }, 4000);
+}
+
+function canvasToPdfBlob(JsPDF, canvas) {
+  const pdf = new JsPDF({ unit: "pt", format: "a4", orientation: "p" });
+  const pageW = pdf.internal.pageSize.getWidth();
+  const pageH = pdf.internal.pageSize.getHeight();
+  const sliceH = Math.max(1, Math.floor((canvas.width * pageH) / pageW));
+  const slice = document.createElement("canvas");
+  let y = 0;
+  let page = 0;
+  while (y < canvas.height) {
+    const h = Math.min(sliceH, canvas.height - y);
+    slice.width = canvas.width;
+    slice.height = h;
+    const ctx = slice.getContext("2d");
+    ctx.fillStyle = "#07080f";
+    ctx.fillRect(0, 0, slice.width, h);
+    ctx.drawImage(canvas, 0, y, canvas.width, h, 0, 0, canvas.width, h);
+    const img = slice.toDataURL("image/jpeg", 0.82);
+    if (page) pdf.addPage();
+    pdf.addImage(img, "JPEG", 0, 0, pageW, (h * pageW) / canvas.width);
+    y += h;
+    page += 1;
+    if (page > 40) break;
+  }
+  return pdf.output("blob");
+}
+
+function textToPdfBlob(JsPDF, title, text) {
+  const pdf = new JsPDF({ unit: "pt", format: "a4", orientation: "p" });
+  pdf.setFontSize(14);
+  pdf.text(String(title || "Floor Brief"), 36, 48);
+  pdf.setFontSize(10);
+  const lines = pdf.splitTextToSize(String(text || "").trim() || "No results", 523);
+  let y = 72;
+  for (const line of lines) {
+    if (y > 780) {
+      pdf.addPage();
+      y = 48;
+    }
+    pdf.text(line, 36, y);
+    y += 14;
+  }
+  return pdf.output("blob");
+}
+
+async function buildPdfBlob(name) {
+  const JsPDF = window.jspdf?.jsPDF;
+  if (!JsPDF) throw new Error(t("common.pdfFailed"));
+  const target = pdfCaptureTarget(name);
+  const html2canvas = window.html2canvas;
+  if (html2canvas && target) {
+    document.body.classList.add("is-pdf-export");
+    try {
+      if (document.fonts?.ready) await document.fonts.ready;
+      await new Promise((resolve) => requestAnimationFrame(() => requestAnimationFrame(resolve)));
+      const width = Math.max(target.scrollWidth || 0, target.clientWidth || 0, 800);
+      const scale = width > 1400 || (target.scrollHeight || 0) > 4000 ? 1 : 1.5;
+      const canvas = await html2canvas(target, {
+        backgroundColor: "#07080f",
+        scale,
+        useCORS: true,
+        allowTaint: true,
+        logging: false,
+        windowWidth: Math.max(width, 1100),
+        ignoreElements: (el) => {
+          const cls = el.classList;
+          if (!cls) return false;
+          return cls.contains("aurora") || cls.contains("grain") || cls.contains("mast")
+            || cls.contains("desk-form") || cls.contains("filter-strip") || cls.contains("dash-tools")
+            || cls.contains("js-download-pdf") || cls.contains("nav-toggle") || cls.contains("pdf-ready")
+            || cls.contains("colophon");
+        },
+      });
+      if (canvas.width && canvas.height) return canvasToPdfBlob(JsPDF, canvas);
+    } catch (_) {
+      // Same-origin capture can fail on tainted images; fall back to a text PDF.
+    } finally {
+      document.body.classList.remove("is-pdf-export");
+    }
+  }
+  return textToPdfBlob(JsPDF, document.title, target?.innerText || document.body.innerText);
+}
+
+async function persistPdfBlob(blob, filename, fileHandle) {
+  offerPdfLink(blob, filename);
+  if (fileHandle) {
+    const writable = await fileHandle.createWritable();
+    await writable.write(blob);
+    await writable.close();
+    return "saved";
+  }
+  const uploaded = await fetch("/api/export-pdf?filename=" + encodeURIComponent(filename), {
+    method: "POST",
+    headers: { "Content-Type": "application/pdf" },
+    body: blob,
+  }).then((res) => (res.ok ? res.json() : null)).catch(() => null);
+  if (uploaded?.id && window.pywebview?.api?.save_pdf) {
+    const ok = await window.pywebview.api.save_pdf(uploaded.id, filename);
+    return ok ? "saved" : "cancelled";
+  }
+  triggerAnchorDownload(blob, filename);
+  if (uploaded?.url) {
+    const frame = document.createElement("iframe");
+    frame.hidden = true;
+    frame.src = uploaded.url;
+    document.body.appendChild(frame);
+    setTimeout(() => frame.remove(), 60000);
+  }
+  return "offered";
+}
+
 async function downloadActivePdf() {
   const name = activePageName();
   if (!pageHasResults(name)) {
     setPdfStatus(name, t("common.pdfEmpty"));
     return;
   }
-  const page = document.querySelector(".page.is-on");
-  const html2canvas = window.html2canvas;
   const JsPDF = window.jspdf?.jsPDF;
-  if (!html2canvas || !JsPDF || !page) {
+  if (!JsPDF) {
     window.print();
     return;
+  }
+  const stamp = new Date().toISOString().slice(0, 10);
+  const filename = `floor-brief-${name}-${stamp}.pdf`;
+  let fileHandle = null;
+  if (window.showSaveFilePicker) {
+    try {
+      fileHandle = await window.showSaveFilePicker({
+        suggestedName: filename,
+        types: [{ description: "PDF", accept: { "application/pdf": [".pdf"] } }],
+      });
+    } catch (err) {
+      if (err && err.name === "AbortError") {
+        setPdfStatus(name, t("common.pdfCancelled"));
+        return;
+      }
+    }
   }
   setPdfStatus(name, t("common.pdfSaving"));
   const buttons = $$(".js-download-pdf");
   buttons.forEach((btn) => { btn.disabled = true; });
-  document.body.classList.add("is-pdf-export");
   try {
-    if (document.fonts?.ready) await document.fonts.ready;
-    await new Promise((resolve) => requestAnimationFrame(() => requestAnimationFrame(resolve)));
-    const canvas = await html2canvas(page, {
-      backgroundColor: "#07080f",
-      scale: 2,
-      useCORS: true,
-      logging: false,
-      windowWidth: Math.max(page.scrollWidth, 1100),
-    });
-    const img = canvas.toDataURL("image/jpeg", 0.92);
-    const pdf = new JsPDF({ unit: "pt", format: "a4", orientation: "p" });
-    const pageWidth = pdf.internal.pageSize.getWidth();
-    const pageHeight = pdf.internal.pageSize.getHeight();
-    const imgWidth = pageWidth;
-    const imgHeight = (canvas.height * imgWidth) / canvas.width;
-    let heightLeft = imgHeight;
-    let position = 0;
-    pdf.addImage(img, "JPEG", 0, position, imgWidth, imgHeight);
-    heightLeft -= pageHeight;
-    while (heightLeft > 0) {
-      position -= pageHeight;
-      pdf.addPage();
-      pdf.addImage(img, "JPEG", 0, position, imgWidth, imgHeight);
-      heightLeft -= pageHeight;
-    }
-    const stamp = new Date().toISOString().slice(0, 10);
-    pdf.save(`floor-brief-${name}-${stamp}.pdf`);
-    setPdfStatus(name, "");
+    const blob = await buildPdfBlob(name);
+    if (!blob || blob.size < 8) throw new Error(t("common.pdfFailed"));
+    const result = await persistPdfBlob(blob, filename, fileHandle);
+    if (result === "cancelled") setPdfStatus(name, t("common.pdfCancelled"));
+    else if (result === "saved") setPdfStatus(name, t("common.pdfSaved"));
+    else setPdfStatus(name, t("common.pdfReady"));
   } catch (err) {
     setPdfStatus(name, err.message || t("common.pdfFailed"));
   } finally {

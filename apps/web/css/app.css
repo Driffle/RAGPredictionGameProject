@@ -628,6 +628,7 @@ body.is-pdf-export .filter-strip,
 body.is-pdf-export .dash-tools,
 body.is-pdf-export .js-download-pdf,
 body.is-pdf-export .nav-toggle,
+body.is-pdf-export .pdf-ready,
 body.is-pdf-export .status[hidden] {
   display: none !important;
 }
@@ -643,9 +644,31 @@ body.is-pdf-export .page.is-on {
   background: #07080f !important;
 }
 
+.pdf-ready {
+  position: sticky;
+  bottom: 16px;
+  z-index: 20;
+  display: flex;
+  justify-content: center;
+  padding: 0 16px 16px;
+}
+.pdf-ready[hidden] { display: none !important; }
+.pdf-ready a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 18px;
+  border-radius: 999px;
+  background: var(--cyan);
+  color: #07080f;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: var(--glow);
+}
+
 @media print {
   .aurora, .grain, .mast, .colophon, .desk-form, .filter-strip, .dash-tools,
-  .js-download-pdf, .nav-toggle, .status[hidden] { display: none !important; }
+  .js-download-pdf, .nav-toggle, .pdf-ready, .status[hidden] { display: none !important; }
   .page { display: none !important; }
   .page.is-on { display: block !important; }
   body {

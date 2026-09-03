@@ -134,6 +134,18 @@ FRANCHISE_ALIASES = {
     "mafia": ["mafia"],
     "fable": ["fable"],
     "okami": ["okami", "ōkami"],
+    "onimusha": ["onimusha"],
+    "mega man": ["mega man", "megaman"],
+    "dead rising": ["dead rising"],
+    "dragon's dogma": ["dragon's dogma", "dragons dogma"],
+    "ace attorney": ["ace attorney", "phoenix wright"],
+    "pragmata": ["pragmata"],
+    "genshin impact": ["genshin"],
+    "honkai": ["honkai"],
+    "zenless zone zero": ["zenless"],
+    "wuthering waves": ["wuthering waves"],
+    "black myth": ["black myth"],
+    "honor of kings": ["honor of kings"],
 }
 
 
@@ -144,6 +156,158 @@ def normalize_franchise_text(value: str | None) -> str:
     text = re.sub(r"\bspider\s*man\b", "spiderman", text)
     text = re.sub(r"\s+", " ", text)
     return text.strip()
+
+
+# First-party / publisher catalogs used to expand a game's launch window.
+FRANCHISE_COMPANIES = {
+    "onimusha": "capcom",
+    "resident evil": "capcom",
+    "monster hunter": "capcom",
+    "street fighter": "capcom",
+    "devil may cry": "capcom",
+    "mega man": "capcom",
+    "okami": "capcom",
+    "dragon's dogma": "capcom",
+    "dead rising": "capcom",
+    "ace attorney": "capcom",
+    "pragmata": "capcom",
+    "mario": "nintendo",
+    "zelda": "nintendo",
+    "pokemon": "nintendo",
+    "metroid": "nintendo",
+    "nintendo franchises": "nintendo",
+    "final fantasy": "square enix",
+    "final fantasy vii": "square enix",
+    "elden ring": "fromsoftware",
+    "sekiro: shadows die twice": "fromsoftware",
+    "sonic": "sega",
+    "genshin impact": "mihoyo",
+    "honkai": "mihoyo",
+    "zenless zone zero": "mihoyo",
+    "wuthering waves": "kuro games",
+    "black myth": "game science",
+    "honor of kings": "tencent",
+}
+
+_COMPANY_GENERIC = frozenset({
+    "unknown",
+    "n a",
+    "na",
+    "tba",
+    "tbd",
+    "various",
+    "self",
+    "self published",
+    "indie",
+    "independent",
+    "online retail",
+})
+_COMMON_SERIES_STEMS = frozenset({
+    "ghost",
+    "super",
+    "world",
+    "dark",
+    "dead",
+    "star",
+    "call",
+    "grand",
+    "last",
+    "age",
+    "war",
+    "god",
+    "dragon",
+    "final",
+    "resident",
+    "ninja",
+    "shadow",
+    "legend",
+    "legends",
+    "tales",
+    "story",
+    "quest",
+    "battle",
+    "warrior",
+    "warriors",
+    "heroes",
+    "hero",
+    "king",
+    "knight",
+    "monster",
+    "hunter",
+    "street",
+    "fighter",
+    "metal",
+    "gear",
+    "silent",
+    "tomb",
+    "raider",
+    "new",
+    "the",
+    "game",
+    "games",
+    "edition",
+    "legacy",
+    "chronicles",
+})
+
+
+def compact_title_key(value: str | None) -> str:
+    return re.sub(r"[^a-z0-9]+", "", (value or "").lower())
+
+
+def company_key(value: str | None) -> str:
+    """Normalize studio/publisher strings, including wiki-table leftovers."""
+    text = (value or "").lower()
+    text = re.sub(r"<[^>]+>", " ", text)
+    text = re.sub(r"colspan\s*=\s*\"?\d+\"?\s*\|?", " ", text)
+    text = text.replace("|", " ")
+    text = re.sub(
+        r"\b(inc|ltd|llc|co|corp|corporation|company|games|studios?|entertainment|interactive|software|limited|gmbh|s\.?a\.?)\b",
+        " ",
+        text,
+    )
+    text = re.sub(r"[^a-z0-9&]+", " ", text)
+    text = re.sub(r"\s+", " ", text).strip()
+    if not text or text in _COMPANY_GENERIC:
+        return ""
+    return text
+
+
+def companies_overlap(left: set[str], right: set[str]) -> bool:
+    for a in left:
+        for b in right:
+            if not a or not b:
+                continue
+            if a == b:
+                return True
+            if min(len(a), len(b)) >= 4 and (a in b or b in a):
+                return True
+    return False
+
+
+def series_stem_for_title(value: str | None) -> str | None:
+    """Distinctive series token: Onimusha: Way of the Sword → onimusha."""
+    text = normalize_franchise_text(value)
+    text = re.sub(r"\s+release window$", "", text)
+    if not text:
+        return None
+    head = re.split(r"\s+(?:-|:)\s+", text, maxsplit=1)[0]
+    words = [word for word in head.split() if word not in {"the", "a", "an", "of", "and"}]
+    if not words:
+        return None
+    stem = words[0] if len(words[0]) >= 5 else " ".join(words[:2])
+    if len(stem) < 5 or stem in _COMMON_SERIES_STEMS:
+        return None
+    return stem
+
+
+def franchise_companies_for_keys(keys: set[str] | frozenset[str]) -> set[str]:
+    out: set[str] = set()
+    for key in keys:
+        company = company_key(FRANCHISE_COMPANIES.get(key))
+        if company:
+            out.add(company)
+    return out
 
 
 # Character IPs that merchandising treats as the Marvel or DC catalog.

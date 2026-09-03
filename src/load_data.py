@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import csv
 import gzip
+import re
 import zipfile
 from datetime import date, datetime
 from pathlib import Path
@@ -128,8 +129,16 @@ def _apply_live_catalog(rows: list[dict], *, games_only: bool) -> list[dict]:
     from src.database import live_announced, live_overlay
 
     overlay = live_overlay()
+    compact_overlay = {
+        re.sub(r"[^a-z0-9]+", "", key): value
+        for key, value in overlay.items()
+        if re.sub(r"[^a-z0-9]+", "", key)
+    }
     for row in rows:
         extra = overlay.get((row.get("canonical_title") or "").lower()) or {}
+        if not extra:
+            compact = re.sub(r"[^a-z0-9]+", "", (row.get("canonical_title") or "").lower())
+            extra = compact_overlay.get(compact) or {}
         for key, value in extra.items():
             if value:
                 row[key] = value
